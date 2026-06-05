@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLASH HQ — Team War Room</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#080b14; --bg2:#0c1120; --panel:#111a2e; --panel2:#16213a;
+  --line:#21314f; --line2:#2c4067;
+  --gold:#c8aa6e; --gold-bright:#f0e6d2; --teal:#0ac8b9; --blue:#0397ab;
+  --red:#ff4655; --txt:#cdd8ee; --txt-dim:#7e8db0; --txt-faint:#566180;
+  --top:#e0503e; --jng:#3fb950; --mid:#4b9cff; --adc:#f0b232; --sup:#c586e0;
+  --good:#3fb950; --mid-wr:#e6c34a; --bad:#e0503e;
+  --font-d:'Chakra Petch',sans-serif; --font-b:'Rajdhani',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font-b); background:var(--bg); color:var(--txt);
+  min-height:100vh; overflow-x:hidden; line-height:1.45;
+  background-image:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(10,200,185,.10), transparent 60%),
+    radial-gradient(ellipse 70% 50% at 100% 0%, rgba(200,170,110,.08), transparent 55%),
+    linear-gradient(180deg,#080b14,#0a0e1a 40%,#080b14);
+  background-attachment:fixed;
+}
+body::before{ /* hex grid texture */
+  content:""; position:fixed; inset:0; pointer-events:none; opacity:.4; z-index:0;
+  background-image:
+    linear-gradient(rgba(33,49,79,.25) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(33,49,79,.25) 1px,transparent 1px);
+  background-size:46px 46px; mask-image:radial-gradient(ellipse 100% 70% at 50% 0%,#000,transparent 80%);
+}
+.wrap{position:relative;z-index:1;max-width:1240px;margin:0 auto;padding:0 20px 80px}
+
+/* ── Header ── */
+header{position:relative;padding:34px 0 18px;text-align:center}
+.kicker{font-family:var(--font-d);letter-spacing:.5em;font-size:11px;color:var(--teal);
+  text-transform:uppercase;margin-bottom:10px;padding-left:.5em}
+h1{font-family:var(--font-d);font-weight:700;font-size:clamp(38px,7vw,76px);line-height:.92;
+  letter-spacing:.02em;color:var(--gold-bright);text-transform:uppercase;
+  text-shadow:0 0 30px rgba(200,170,110,.25)}
+h1 .accent{color:var(--gold);-webkit-text-stroke:1px var(--gold);text-stroke:1px var(--gold);color:transparent}
+.sub{color:var(--txt-dim);font-size:15px;margin-top:8px;letter-spacing:.18em;text-transform:uppercase}
+.diamond{display:inline-block;width:7px;height:7px;background:var(--gold);transform:rotate(45deg);margin:0 12px;vertical-align:middle}
+
+/* ── Countdown banner ── */
+.countdown{display:flex;justify-content:center;align-items:stretch;gap:2px;margin:24px auto 0;
+  max-width:560px;border:1px solid var(--line2);background:rgba(12,17,32,.7);
+  clip-path:polygon(14px 0,100% 0,100% calc(100% - 14px),calc(100% - 14px) 100%,0 100%,0 14px)}
+.cd-label{display:flex;align-items:center;padding:0 18px;font-family:var(--font-d);font-size:11px;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--gold);background:rgba(200,170,110,.07);
+  border-right:1px solid var(--line2);text-align:left;line-height:1.2}
+.cd-units{display:flex;flex:1}
+.cd-unit{flex:1;padding:12px 6px;text-align:center;border-right:1px solid var(--line)}
+.cd-unit:last-child{border-right:0}
+.cd-num{font-family:var(--font-d);font-weight:700;font-size:30px;color:var(--gold-bright);line-height:1}
+.cd-u{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--txt-faint);margin-top:5px}
+
+/* ── Nav ── */
+nav{position:sticky;top:0;z-index:30;display:flex;flex-wrap:wrap;justify-content:center;gap:6px;
+  padding:14px 0 12px;margin:22px 0 30px;
+  background:linear-gradient(180deg,var(--bg) 60%,transparent);
+  backdrop-filter:blur(4px)}
+.tab{font-family:var(--font-d);font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--txt-dim);background:var(--panel);border:1px solid var(--line);padding:9px 16px;cursor:pointer;
+  transition:.18s;clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px)}
+.tab:hover{color:var(--gold-bright);border-color:var(--line2);background:var(--panel2)}
+.tab.active{color:var(--bg);background:var(--gold);border-color:var(--gold);
+  box-shadow:0 0 22px rgba(200,170,110,.4)}
+
+/* ── Sections ── */
+.view{display:none;animation:fade .5s ease both}
+.view.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.sec-title{font-family:var(--font-d);font-weight:700;font-size:13px;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--gold);margin:0 0 16px;display:flex;align-items:center;gap:12px}
+.sec-title::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line2),transparent)}
+.sec-title .n{color:var(--txt-faint);font-size:11px}
+
+/* ── Panels / cards ── */
+.panel{background:linear-gradient(160deg,var(--panel),var(--bg2));border:1px solid var(--line);
+  padding:22px;position:relative;
+  clip-path:polygon(16px 0,100% 0,100% calc(100% - 16px),calc(100% - 16px) 100%,0 100%,0 16px)}
+.panel::before{content:"";position:absolute;top:0;left:0;width:16px;height:16px;
+  border-top:2px solid var(--gold);border-left:2px solid var(--gold);opacity:.6}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(2,1fr)} .g3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:840px){.g2,.g3{grid-template-columns:1fr}}
+
+/* ── Overview ── */
+.identity{font-family:var(--font-d);font-size:clamp(20px,3vw,30px);font-weight:600;line-height:1.25;
+  color:var(--txt);margin-bottom:6px}
+.identity b{color:var(--teal)}
+.lineup{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:18px}
+@media(max-width:680px){.lineup{grid-template-columns:repeat(2,1fr)}}
+.seat{background:var(--bg2);border:1px solid var(--line);padding:14px 10px;text-align:center;position:relative;overflow:hidden}
+.seat .role{font-family:var(--font-d);font-size:11px;letter-spacing:.15em;text-transform:uppercase;font-weight:700}
+.seat .who{font-size:19px;font-weight:600;color:var(--gold-bright);margin-top:4px}
+.seat .hdl{font-size:11px;color:var(--txt-faint);letter-spacing:.05em}
+.seat .bar{position:absolute;left:0;bottom:0;width:100%;height:3px}
+.kv{display:flex;gap:10px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--line)}
+.kv:last-child{border-bottom:0}
+.kv .k{font-family:var(--font-d);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);min-width:74px}
+.tag{display:inline-block;font-family:var(--font-d);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+  padding:3px 9px;border:1px solid var(--line2);color:var(--txt-dim);margin:2px 3px 2px 0}
+.tag.good{color:var(--good);border-color:rgba(63,185,80,.4)}
+.tag.warn{color:var(--adc);border-color:rgba(240,178,50,.4)}
+.tag.bad{color:var(--red);border-color:rgba(255,70,85,.4)}
+
+/* ── Roster ── */
+.player{cursor:pointer}
+.phead{display:flex;align-items:center;gap:14px}
+.pavatar{width:46px;height:46px;flex:none;display:grid;place-items:center;font-family:var(--font-d);font-weight:700;
+  font-size:20px;color:var(--bg);transform:rotate(45deg);position:relative}
+.pavatar span{transform:rotate(-45deg)}
+.pname{font-family:var(--font-d);font-size:21px;font-weight:700;color:var(--gold-bright);line-height:1}
+.phandle{font-size:12px;color:var(--txt-faint);letter-spacing:.05em}
+.prank{margin-left:auto;text-align:right}
+.prank .r{font-family:var(--font-d);font-weight:700;font-size:15px}
+.prank .l{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--txt-faint)}
+.roles-mini{display:flex;gap:4px;margin:14px 0 4px;flex-wrap:wrap}
+.rolepill{font-family:var(--font-d);font-size:10px;letter-spacing:.08em;text-transform:uppercase;
+  padding:3px 8px;border-radius:2px;font-weight:600;color:#fff;opacity:.92}
+.pool{margin-top:14px;display:none}
+.player.open .pool{display:block;animation:fade .35s both}
+.champ-row{display:flex;align-items:center;gap:10px;padding:6px 0}
+.champ-ico{width:30px;height:30px;flex:none;border-radius:4px;background:var(--bg2);border:1px solid var(--line2);
+  display:grid;place-items:center;font-size:10px;font-family:var(--font-d);color:var(--txt-dim);overflow:hidden}
+.champ-ico img{width:100%;height:100%;object-fit:cover}
+.champ-nm{font-weight:600;font-size:14px;min-width:96px}
+.champ-gm{font-size:11px;color:var(--txt-faint);min-width:42px}
+.wrbar{flex:1;height:7px;background:var(--bg);border:1px solid var(--line);position:relative;overflow:hidden}
+.wrbar i{position:absolute;left:0;top:0;height:100%;display:block}
+.wrnum{font-family:var(--font-d);font-weight:700;font-size:13px;min-width:38px;text-align:right}
+.expand-hint{font-size:11px;color:var(--teal);letter-spacing:.1em;text-transform:uppercase;margin-top:12px}
+
+/* ── Comps ── */
+.comp{margin-bottom:16px}
+.comp-head{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.comp-badge{font-family:var(--font-d);font-weight:700;font-size:22px;width:42px;height:42px;flex:none;
+  display:grid;place-items:center;color:var(--bg);transform:rotate(45deg)}
+.comp-badge span{transform:rotate(-45deg)}
+.comp-name{font-family:var(--font-d);font-size:22px;font-weight:700;color:var(--gold-bright);line-height:1}
+.comp-id{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--txt-dim)}
+.comp-tier{margin-left:auto;font-family:var(--font-d);font-size:10px;letter-spacing:.15em;text-transform:uppercase;
+  font-weight:700;padding:5px 11px;border:1px solid}
+.tier-PRIMARY{color:var(--gold);border-color:var(--gold);background:rgba(200,170,110,.08)}
+.tier-SECONDARY{color:var(--teal);border-color:var(--teal);background:rgba(10,200,185,.07)}
+.tier-SAFE{color:var(--mid);border-color:var(--mid);background:rgba(75,156,255,.07)}
+.tier-FLEX{color:var(--sup);border-color:var(--sup);background:rgba(197,134,224,.07)}
+.tier-DEV{color:var(--txt-dim);border-color:var(--line2)}
+.comp-roles{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:16px 0}
+@media(max-width:680px){.comp-roles{grid-template-columns:repeat(2,1fr)}}
+.cr{background:var(--bg2);border:1px solid var(--line);padding:10px 8px;position:relative}
+.cr .crole{font-family:var(--font-d);font-size:9px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+.cr .cpick{display:flex;align-items:center;gap:7px;margin-top:7px}
+.cr .cpick .champ-ico{width:26px;height:26px}
+.cr .cchamp{font-weight:600;font-size:13px;line-height:1.05}
+.cr .cplayer{font-size:10px;color:var(--txt-faint);text-transform:uppercase;letter-spacing:.05em}
+.cr .cbackup{font-size:10px;color:var(--txt-faint);margin-top:6px;letter-spacing:.02em}
+.cr .cbackup b{color:var(--txt-dim);font-weight:600}
+.comp-meta{display:grid;gap:8px;font-size:14px}
+.cm-row{display:flex;gap:10px}
+.cm-row .ic{font-family:var(--font-d);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  min-width:96px;font-weight:700}
+.cm-win .ic{color:var(--good)} .cm-spike .ic{color:var(--gold)} .cm-lose .ic{color:var(--red)}
+
+/* ── Draft Lab ── */
+.lab-intro{font-size:15px;color:var(--txt-dim);margin-bottom:18px;max-width:760px}
+.lab-intro b{color:var(--gold-bright)}
+.banpool{margin-bottom:8px}
+.bp-role{margin-bottom:14px}
+.bp-rlabel{font-family:var(--font-d);font-size:11px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;
+  margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.bp-rlabel::before{content:"";width:10px;height:10px;transform:rotate(45deg)}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{display:flex;align-items:center;gap:7px;background:var(--panel);border:1px solid var(--line2);
+  padding:5px 11px 5px 5px;cursor:pointer;transition:.14s;user-select:none;font-weight:600;font-size:13px}
+.chip:hover{border-color:var(--gold);transform:translateY(-1px)}
+.chip .champ-ico{width:24px;height:24px}
+.chip.banned{background:rgba(255,70,85,.09);border-color:rgba(255,70,85,.5);color:var(--txt-faint)}
+.chip.banned .champ-nm-c{text-decoration:line-through;text-decoration-color:var(--red)}
+.chip.banned .champ-ico{filter:grayscale(1) brightness(.55)}
+.lab-controls{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:6px 0 22px;
+  padding:12px 16px;background:var(--bg2);border:1px solid var(--line)}
+.bancount{font-family:var(--font-d);font-weight:700;color:var(--red);font-size:15px}
+.bancount span{color:var(--txt-dim);font-weight:400;font-size:13px;letter-spacing:.05em}
+.btn{font-family:var(--font-d);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;
+  padding:8px 16px;border:1px solid var(--line2);background:var(--panel);color:var(--txt-dim);cursor:pointer;transition:.15s}
+.btn:hover{border-color:var(--gold);color:var(--gold-bright)}
+.scenarios{display:flex;gap:6px;flex-wrap:wrap;margin-left:auto}
+.lab-result{display:grid;gap:10px}
+.lc{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;
+  background:linear-gradient(160deg,var(--panel),var(--bg2));border:1px solid var(--line);padding:12px 16px;transition:.2s}
+.lc.intact{border-left:3px solid var(--good)}
+.lc.fallback{border-left:3px solid var(--mid-wr)}
+.lc.broken{border-left:3px solid var(--red);opacity:.82}
+.lc-badge{font-family:var(--font-d);font-weight:700;font-size:18px;width:34px;height:34px;display:grid;place-items:center;
+  color:var(--bg);transform:rotate(45deg)}
+.lc-badge span{transform:rotate(-45deg)}
+.lc-name{font-family:var(--font-d);font-weight:700;font-size:16px;color:var(--gold-bright)}
+.lc-sub{font-size:11px;letter-spacing:.05em;color:var(--txt-faint);text-transform:uppercase}
+.lc-picks{display:flex;gap:5px;flex-wrap:wrap;margin-top:7px}
+.lc-pick{display:flex;align-items:center;gap:5px;font-size:12px;background:var(--bg2);border:1px solid var(--line);
+  padding:3px 8px 3px 3px}
+.lc-pick .champ-ico{width:20px;height:20px}
+.lc-pick.fb{border-color:rgba(230,195,74,.5);background:rgba(230,195,74,.06)}
+.lc-pick.fb .lc-pk-nm{color:var(--mid-wr)}
+.lc-pick.dead{border-color:rgba(255,70,85,.5);background:rgba(255,70,85,.07)}
+.lc-pick.dead .lc-pk-nm{color:var(--red);text-decoration:line-through}
+.lc-status{font-family:var(--font-d);font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;text-align:right;min-width:104px}
+.lc-status.intact{color:var(--good)} .lc-status.fallback{color:var(--mid-wr)} .lc-status.broken{color:var(--red)}
+.lc-status small{display:block;font-size:9px;color:var(--txt-faint);font-weight:400;letter-spacing:.05em}
+@media(max-width:680px){.lc{grid-template-columns:auto 1fr}.lc-status{grid-column:2;text-align:left;margin-top:4px}}
+
+/* ── Prep ── */
+.phase{margin-bottom:14px;border-left:3px solid var(--line2);padding-left:0}
+.phase-head{display:flex;align-items:center;gap:12px;padding:12px 16px;background:var(--bg2);border:1px solid var(--line);cursor:pointer}
+.phase-dot{width:12px;height:12px;transform:rotate(45deg);flex:none}
+.phase-title{font-family:var(--font-d);font-weight:700;font-size:15px;letter-spacing:.05em}
+.phase-when{margin-left:auto;font-size:12px;color:var(--txt-faint);letter-spacing:.08em;text-transform:uppercase}
+.phase-body{padding:6px 16px 4px;display:none}
+.phase.open .phase-body{display:block;animation:fade .3s both}
+.task{display:flex;align-items:flex-start;gap:11px;padding:9px 0;border-bottom:1px solid var(--line);cursor:pointer}
+.task:last-child{border-bottom:0}
+.checkbox{width:18px;height:18px;flex:none;border:1px solid var(--line2);margin-top:1px;display:grid;place-items:center;
+  transition:.15s;font-size:12px;color:transparent}
+.task.done .checkbox{background:var(--gold);border-color:var(--gold);color:var(--bg)}
+.task.done .task-txt{color:var(--txt-faint);text-decoration:line-through;text-decoration-color:var(--line2)}
+.task-txt{font-size:14px}.task-txt b{color:var(--gold-bright)}
+.progress-wrap{margin:0 0 24px}
+.progress-bar{height:8px;background:var(--bg2);border:1px solid var(--line);overflow:hidden}
+.progress-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--teal));width:0;transition:.4s}
+.progress-lbl{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--txt-faint);margin-bottom:7px;font-family:var(--font-d)}
+
+/* ── Meta ── */
+.tier-table{width:100%;border-collapse:collapse;font-size:13px}
+.tier-table th{font-family:var(--font-d);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);
+  text-align:left;padding:10px 12px;border-bottom:1px solid var(--line2)}
+.tier-table td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+.tier-table tr:hover td{background:rgba(200,170,110,.03)}
+.role-cell{font-family:var(--font-d);font-weight:700;font-size:13px;letter-spacing:.06em}
+.ours{color:var(--good);font-size:12px}
+.mini-champ{display:inline-block;padding:1px 7px;background:var(--bg2);border:1px solid var(--line);margin:2px 3px 2px 0;font-size:12px}
+.footer{text-align:center;margin-top:50px;padding-top:24px;border-top:1px solid var(--line);
+  color:var(--txt-faint);font-size:12px;letter-spacing:.08em}
+.footer b{color:var(--gold)}
+
+/* ── Start Here ── */
+.howto{background:rgba(10,200,185,.08);border:1px solid rgba(10,200,185,.35);padding:16px 20px;margin-bottom:26px;
+  font-size:16px;color:var(--txt);clip-path:polygon(12px 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%,0 12px)}
+.howto b{color:var(--teal)}
+.plan-h{font-family:var(--font-d);font-weight:700;font-size:15px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
+.step{display:flex;gap:13px;align-items:flex-start;padding:11px 0;border-bottom:1px solid var(--line)}
+.step:last-child{border-bottom:0}
+.step-n{font-family:var(--font-d);font-weight:700;font-size:16px;width:28px;height:28px;flex:none;display:grid;place-items:center;
+  background:var(--good);color:var(--bg);border-radius:50%}
+.plan-h+#planDont~* .step-n,.panel:has(.plan-h[style*="red"]) .step-n{background:var(--red)}
+.step-x{width:28px;height:28px;flex:none;display:grid;place-items:center;font-size:17px;color:var(--red);font-weight:700}
+.step-txt{font-size:15.5px;padding-top:2px}.step-txt b{color:var(--gold-bright)}
+.step-txt .why{display:block;font-size:13px;color:var(--txt-faint);margin-top:2px}
+
+.jobcard{position:relative;overflow:hidden}
+.jobcard .jc-bar{position:absolute;top:0;left:0;width:5px;height:100%}
+.jc-top{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+.jc-ico{width:58px;height:58px;flex:none;border:2px solid var(--line2);border-radius:8px;overflow:hidden;background:var(--bg2)}
+.jc-ico img{width:100%;height:100%;object-fit:cover}
+.jc-name{font-family:var(--font-d);font-size:24px;font-weight:700;color:var(--gold-bright);line-height:1}
+.jc-role{font-family:var(--font-d);font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-top:3px}
+.jc-main{font-size:14px;margin:10px 0 12px;padding:9px 12px;background:var(--bg2);border:1px solid var(--line)}
+.jc-main b{color:var(--gold-bright);font-size:16px}
+.jc-label{font-family:var(--font-d);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin:12px 0 4px}
+.jc-fight{font-size:15px;line-height:1.5}
+.jc-practice{font-size:14px;color:var(--txt-dim);line-height:1.5}
+.jc-practice b{color:var(--teal)}
+
+.glossary{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+@media(max-width:680px){.glossary{grid-template-columns:1fr}}
+.gloss{display:flex;gap:10px;padding:11px 8px;border-bottom:1px solid var(--line);font-size:14px}
+.gloss .word{font-family:var(--font-d);font-weight:700;color:var(--gold);min-width:96px;text-transform:capitalize}
+.gloss .def{color:var(--txt-dim)}
+.cm-plain{font-size:15.5px;color:var(--txt);background:rgba(200,170,110,.06);border-left:3px solid var(--gold);
+  padding:10px 14px;margin-bottom:10px;line-height:1.5}
+.cm-plain b{color:var(--gold-bright)}
+
+/* ── Mobile / phone ── */
+@media(max-width:600px){
+  .wrap{padding:0 12px 60px}
+  header{padding:22px 0 10px}
+  .sub{font-size:12px;letter-spacing:.1em}
+  .diamond{margin:0 7px}
+  /* tab bar = one swipeable row, not 3 stacked rows */
+  nav{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;gap:6px;padding:12px 2px 10px;
+    -webkit-overflow-scrolling:touch;scrollbar-width:none;margin:16px -12px 22px;padding-left:12px}
+  nav::-webkit-scrollbar{display:none}
+  .tab{flex:0 0 auto;white-space:nowrap;padding:11px 15px;font-size:13px}
+  .countdown{max-width:100%}
+  .cd-label{padding:0 11px;font-size:10px}
+  .cd-num{font-size:23px}
+  .cd-unit{padding:11px 4px}
+  .panel{padding:15px}
+  .identity{font-size:19px;line-height:1.3}
+  .sec-title{font-size:11px;letter-spacing:.18em}
+  .howto{font-size:15px;padding:14px 15px}
+  .lineup{grid-template-columns:repeat(2,1fr)}
+  .comp-roles{grid-template-columns:repeat(2,1fr)}
+  .tier-table{font-size:12px}
+  .tier-table th,.tier-table td{padding:8px 7px}
+  .step-txt,.jc-fight{font-size:15px}
+  .lab-controls{gap:10px}
+  .scenarios{margin-left:0;width:100%}
+  h1{font-size:46px}
+}
+@media(max-width:380px){
+  .lineup,.comp-roles{grid-template-columns:1fr 1fr}
+  .cd-num{font-size:20px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">EUW · Gold/Plat · 5-Stack</div>
+  <h1>CLASH <span class="accent">HQ</span></h1>
+  <div class="sub">War Room<span class="diamond"></span>Patch 26.11<span class="diamond"></span>Win Condition: Teamfight</div>
+  <div class="countdown" id="cd">
+    <div class="cd-label">Next<br>Clash<br>Jun 20</div>
+    <div class="cd-units">
+      <div class="cd-unit"><div class="cd-num" id="cd-d">--</div><div class="cd-u">Days</div></div>
+      <div class="cd-unit"><div class="cd-num" id="cd-h">--</div><div class="cd-u">Hrs</div></div>
+      <div class="cd-unit"><div class="cd-num" id="cd-m">--</div><div class="cd-u">Min</div></div>
+      <div class="cd-unit"><div class="cd-num" id="cd-s">--</div><div class="cd-u">Sec</div></div>
+    </div>
+  </div>
+</header>
+
+<nav id="nav">
+  <button class="tab active" data-v="start">★ Start Here</button>
+  <button class="tab" data-v="war">War Room</button>
+  <button class="tab" data-v="roster">Roster</button>
+  <button class="tab" data-v="comps">Comps</button>
+  <button class="tab" data-v="draft">Draft Lab</button>
+  <button class="tab" data-v="prep">Prep · 15d</button>
+  <button class="tab" data-v="meta">Meta</button>
+</nav>
+
+<!-- START HERE -->
+<section class="view active" id="start">
+  <div class="howto">👋 New here? This page tells you <b>what to play</b> and <b>what to do</b> for Clash. Find your name below. That's it.</div>
+
+  <div class="sec-title">The Game Plan <span class="n">// read this, it's the whole strategy</span></div>
+  <div class="grid g2" style="margin-bottom:8px">
+    <div class="panel">
+      <div class="plan-h" style="color:var(--good)">✅ DO THIS — every game</div>
+      <div id="planDo"></div>
+    </div>
+    <div class="panel">
+      <div class="plan-h" style="color:var(--red)">⛔ NEVER DO THIS</div>
+      <div id="planDont"></div>
+    </div>
+  </div>
+
+  <div class="sec-title" style="margin-top:30px">Your Job <span class="n">// find your name</span></div>
+  <div class="grid g2" id="jobsGrid"></div>
+
+  <div class="sec-title" style="margin-top:30px">Confusing Words, Explained <span class="n">// what the jargon means</span></div>
+  <div class="panel"><div class="glossary" id="glossary"></div></div>
+</section>
+
+<!-- WAR ROOM -->
+<section class="view" id="war">
+  <div class="sec-title">Team Identity <span class="n">// who we are</span></div>
+  <div class="panel" style="margin-bottom:16px">
+    <div class="identity">We win by <b>hard-engage teamfighting</b>. Elite engage-support depth + a control mid + tank top + a flex carry jungle. We start fights on our terms and collapse — not scale, not poke.</div>
+    <div class="lineup" id="lineup"></div>
+  </div>
+  <div class="grid g3">
+    <div class="panel">
+      <div class="sec-title" style="margin-bottom:10px">Strengths</div>
+      <span class="tag good">Engage supports (Rell/Ali/Morg)</span>
+      <span class="tag good">Control + engage mid</span>
+      <span class="tag good">Tank tops</span>
+      <span class="tag good">Geeth flex carry JG</span>
+      <span class="tag good">Meta-aligned (26.11)</span>
+    </div>
+    <div class="panel">
+      <div class="sec-title" style="margin-bottom:10px">Gaps to fix</div>
+      <span class="tag warn">ADC weakest role (~47%)</span>
+      <span class="tag warn">Harendra pool too wide</span>
+      <span class="tag bad">No enchanter yet</span>
+    </div>
+    <div class="panel">
+      <div class="sec-title" style="margin-bottom:10px">Biggest levers</div>
+      <div style="font-size:14px;color:var(--txt-dim)">1. <b style="color:var(--gold-bright)">Harendra</b> → 3 tanks (Malphite/Sion/Shen)<br>2. <b style="color:var(--gold-bright)">Shabir</b> → lock Caitlyn ADC<br>3. <b style="color:var(--gold-bright)">Geeth</b> → add hard-engage JG (Wukong)</div>
+    </div>
+  </div>
+</section>
+
+<!-- ROSTER -->
+<section class="view" id="roster">
+  <div class="sec-title">The Roster <span class="n">// tap a card for full champ pool</span></div>
+  <div class="grid g2" id="rosterGrid"></div>
+</section>
+
+<!-- COMPS -->
+<section class="view" id="comps">
+  <div class="sec-title">Comp Playbook <span class="n">// 5 identities, ranked for our pools</span></div>
+  <div id="compList"></div>
+</section>
+
+<!-- DRAFT LAB -->
+<section class="view" id="draft">
+  <div class="sec-title">Draft Lab <span class="n">// ban simulator — depth = survival</span></div>
+  <div class="lab-intro">Enemies <b>will ban our champs.</b> Click any champ below to ban it (like the enemy would). Every comp recalculates live — <b>green</b> = intact, <b>amber</b> = falling back to a backup, <b>red</b> = a role with no options left. The more depth a comp has, the more bans it survives.</div>
+  <div class="lab-controls">
+    <div class="bancount"><span id="banN">0</span> <span>champs banned</span></div>
+    <button class="btn" id="resetBans">Reset</button>
+    <div class="scenarios">
+      <button class="btn" data-scn="meta">Ban meta picks</button>
+      <button class="btn" data-scn="engage">Ban our engage</button>
+    </div>
+  </div>
+  <div class="grid g2" style="align-items:start">
+    <div class="panel">
+      <div class="sec-title" style="margin-bottom:14px">Our Champion Pool <span class="n">// click to ban</span></div>
+      <div class="banpool" id="banpool"></div>
+    </div>
+    <div class="panel">
+      <div class="sec-title" style="margin-bottom:14px">Comp Viability <span class="n">// live</span></div>
+      <div class="lab-result" id="labResult"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PREP -->
+<section class="view" id="prep">
+  <div class="sec-title">15-Day Countdown <span class="n">// → Jun 20 · progress saves automatically</span></div>
+  <div class="progress-wrap">
+    <div class="progress-lbl"><span>Prep Progress</span><span id="progTxt">0 / 0</span></div>
+    <div class="progress-bar"><i id="progFill"></i></div>
+  </div>
+  <div id="phases"></div>
+</section>
+
+<!-- META -->
+<section class="view" id="meta">
+  <div class="sec-title">Meta Brief <span class="n">// patch 26.11 · engage meta</span></div>
+  <div class="panel" style="margin-bottom:16px">
+    <div style="font-size:15px;color:var(--txt-dim)">📈 <b style="color:var(--teal)">Engage-support meta.</b> Aftershock buffs + enchanter nerfs pushed Rell/Leona/Seraphine/Morgana to the top, tanks rule top lane, and coordination beats mechanics at Gold/Plat. <b style="color:var(--gold-bright)">This patch is shaped to favor how we already play.</b></div>
+  </div>
+  <div class="panel" style="margin-bottom:16px">
+    <table class="tier-table">
+      <thead><tr><th>Role</th><th>S-Tier</th><th>Strong A-Tier</th><th>What we already play</th></tr></thead>
+      <tbody id="tierBody"></tbody>
+    </table>
+  </div>
+  <div class="grid g2">
+    <div class="panel">
+      <div class="sec-title" style="margin-bottom:12px">Default Bans</div>
+      <div><span class="mini-champ">Malphite</span><span class="mini-champ">Master Yi</span><span class="mini-champ">Smolder</span></div>
+      <div style="font-size:13px;color:var(--txt-dim);margin-top:12px">Swap to ban an enemy one-trick after scouting. Ban <b style="color:var(--gold-bright)">Morgana</b> if we commit to engage (her shield blanks us). Ban <b style="color:var(--gold-bright)">Janna/Tahm</b> vs disengage teams.</div>
+    </div>
+    <div class="panel">
+      <div class="sec-title" style="margin-bottom:12px">Clash Day Reminders</div>
+      <div style="font-size:13px;color:var(--txt-dim);line-height:1.7">▸ Scout opponents on dpm.lol/op.gg first<br>▸ Group mid-game — fight on our terms<br>▸ Engage from fog/flanks, call one target<br>▸ Take objectives off picks, don't throw leads<br>▸ Let Geeth pick last to counter/fill</div>
+    </div>
+  </div>
+</section>
+
+<div class="footer">CLASH HQ · built from dpm.lol scans 2026-06-05 · <b>Default lineup:</b> Harendra Top · Geeth JG · Steven Mid · Shabir ADC · Eshantha Sup</div>
+</div>
+
+<script>
+const ROLE_C={Top:'#e0503e',Jungle:'#3fb950',Mid:'#4b9cff',ADC:'#f0b232',Support:'#c586e0'};
+const API={Malphite:'Malphite',Sion:'Sion',Shen:'Shen',Wukong:'MonkeyKing',Vi:'Vi',Viego:'Viego',Nocturne:'Nocturne',Briar:'Briar',Warwick:'Warwick',"Kha'Zix":'Khazix',Annie:'Annie',Orianna:'Orianna',Galio:'Galio',LeBlanc:'Leblanc',Diana:'Diana',Akali:'Akali',Lux:'Lux',Caitlyn:'Caitlyn',Ashe:'Ashe',Jinx:'Jinx',Kalista:'Kalista',"Miss Fortune":'MissFortune',Rell:'Rell',Alistar:'Alistar',Morgana:'Morgana',Thresh:'Thresh',Braum:'Braum',Seraphine:'Seraphine',Yorick:'Yorick',Veigar:'Veigar',Talon:'Talon',Ekko:'Ekko',Yone:'Yone',Twitch:'Twitch',Lissandra:'Lissandra',Maokai:'Maokai',"Tahm Kench":'TahmKench',Smolder:'Smolder'};
+function icoURL(n){const a=API[n]||n.replace(/[^A-Za-z]/g,'');return`https://cdn.communitydragon.org/latest/champion/${a}/square`;}
+function ico(n,cls){const init=n.replace(/[^A-Za-z]/g,'').slice(0,3).toUpperCase();
+  return`<span class="champ-ico ${cls||''}"><img src="${icoURL(n)}" alt="${n}" onerror="this.style.display='none';this.parentNode.textContent='${init}'"></span>`;}
+function wrColor(w){return w>=55?'var(--good)':w>=48?'var(--mid-wr)':'var(--bad)';}
+
+/* ── Data ── */
+const PLAYERS=[
+ {name:'Shabir',handle:'TribuIation#EUW',rank:'Gold III',init:'S',roles:['Jungle','ADC'],clash:'ADC',
+  pool:[['Kha\'Zix',101,49],['Xerath',40,55],['Jinx',37,49],['Caitlyn',32,50],['Warwick',26,54],['Kalista',15,60],['Ekko',15,60],['Twitch',13,69],['Lissandra',13,69]],
+  note:'Jungle main who flexes ADC. Caitlyn = our reliable Clash carry. Kha\'Zix is the dive-comp JG card.'},
+ {name:'Harendra',handle:'Merkedi#Neru',rank:'Bronze IV*',init:'H',roles:['Top','Jungle'],clash:'Top',
+  pool:[['Malphite',10,40],['Shen',8,50],['Sylas',11,36],['Shyvana',5,60],['Udyr',4,75],['Sion',3,67],['Kai\'Sa',3,67]],
+  note:'Widest, shallowest pool — our #1 improvement lever. Collapse to 3 tanks: Malphite / Sion / Shen.'},
+ {name:'Steven',handle:'OrionVII#EUW',rank:'Gold IV',init:'St',roles:['Mid'],clash:'Mid',
+  pool:[['Lux',68,60],['Mel',67,42],['LeBlanc',36,58],['Annie',20,65],['Diana',13,54],['Yone',12,58],['Veigar',9,67],['Orianna',14,43]],
+  note:'Deep, dependable mid main. Annie/Orianna/Galio fit our engage identity perfectly. Bench Yasuo for Clash.'},
+ {name:'Eshantha',handle:'Quiet Rapture#SKT',rank:'Gold III · peak Gold I',init:'E',roles:['Support','Mid','Top'],clash:'Support',
+  pool:[['Veigar',40,73],['Alistar',25,64],['Anivia',23,52],['Morgana',13,69],['Yorick',13,69],['Rell',7,71],['Seraphine',7,57],['Galio',15,60]],
+  note:'Highest peak on the team. Elite engage-support pool = the engine of our #1 comp. Our shot-caller for fights.'},
+ {name:'Geeth',handle:'Synister#ezclp',rank:'Gold I 🔥',init:'G',roles:['Jungle','ADC','Mid','Top','Support'],clash:'Jungle',
+  pool:[['Viego',13,69],['Talon',10,70],['Shen',6,83],['Lux',5,80],['Briar',9,56],['Maokai',6,67],['Tahm Kench',7,57],['Nocturne',14,50]],
+  note:'True all-role flex & best/hottest player. Default jungle (Viego 69%). The swing piece every comp is built around.'}
+];
+const SEATS=[['Top','Harendra','Merkedi'],['Jungle','Geeth','Synister'],['Mid','Steven','OrionVII'],['ADC','Shabir','TribuIation'],['Support','Eshantha','Quiet Rapture']];
+
+const COMPS=[
+ {id:'A',name:'Wombo',tag:'Hard-Engage Teamfight',tier:'PRIMARY',color:'#c8aa6e',
+  roles:[{r:'Top',p:'Harendra',k:['Malphite','Sion','Shen']},{r:'Jungle',p:'Geeth',k:['Wukong','Vi','Viego','Nocturne']},{r:'Mid',p:'Steven',k:['Annie','Orianna','Galio']},{r:'ADC',p:'Shabir',k:['Caitlyn','Ashe','Jinx']},{r:'Support',p:'Eshantha',k:['Rell','Alistar','Morgana']}],
+  win:'Group at 2 items / lvl 6+. Find one engage → chain CC a target → 5v5 ace → take Baron/Dragon.',
+  spike:'Mid game (ults online, 2 items). Strongest 14–28 min.',
+  lose:'Hard disengage + poke. Counter by engaging from fog/flanks at objectives.'},
+ {id:'B',name:'Lights Out',tag:'Pick & Catch',tier:'SECONDARY',color:'#0ac8b9',
+  roles:[{r:'Top',p:'Harendra',k:['Shen','Sion']},{r:'Jungle',p:'Geeth',k:['Nocturne','Vi','Kha\'Zix']},{r:'Mid',p:'Steven',k:['LeBlanc','Annie','Diana']},{r:'ADC',p:'Shabir',k:['Jinx','Caitlyn']},{r:'Support',p:'Eshantha',k:['Morgana','Thresh','Rell']}],
+  win:'Control vision, catch one carry/jungler out → take Baron/objectives 5v4. Avoid straight 5v5.',
+  spike:'Mid game; snowballs once Jinx gets 2–3 kills.',
+  lose:'Grouped comps that never get caught + strong waveclear. Fall back to Comp A.'},
+ {id:'C',name:'Front-to-Back',tag:'Stable Teamfight',tier:'SAFE',color:'#4b9cff',
+  roles:[{r:'Top',p:'Harendra',k:['Sion','Malphite']},{r:'Jungle',p:'Geeth',k:['Viego','Briar','Warwick']},{r:'Mid',p:'Steven',k:['Orianna','Lux','Annie']},{r:'ADC',p:'Shabir',k:['Caitlyn','Jinx','Kalista']},{r:'Support',p:'Eshantha',k:['Alistar','Rell','Braum']}],
+  win:'Stand behind tanks, Orianna ball on frontline → Shockwave, Caitlyn + Viego mop up. Lowest variance.',
+  spike:'Even-to-late; very flexible. Great blind pick.',
+  lose:'Can get out-scaled by a dedicated hypercarry — close by mid game.'},
+ {id:'D',name:'Bug Hunt',tag:'Dive / Assassinate',tier:'FLEX',color:'#c586e0',
+  roles:[{r:'Top',p:'Harendra',k:['Malphite','Sion']},{r:'Jungle',p:'Shabir',k:['Kha\'Zix','Viego']},{r:'Mid',p:'Steven',k:['Diana','Akali','LeBlanc']},{r:'ADC',p:'Geeth',k:['Miss Fortune','Caitlyn']},{r:'Support',p:'Eshantha',k:['Rell','Alistar']}],
+  win:'Flex card: Shabir→Kha\'Zix JG, Geeth→ADC. Blow up their primary carry in the first 2 sec of every fight.',
+  spike:'Early-mid (8–18 min). Snowball off picks.',
+  lose:'Peel-heavy / tanky frontlines (can\'t reach carry). Only vs divable comps.'},
+ {id:'E',name:'Bunker',tag:'Protect-the-Carry',tier:'DEV',color:'#7e8db0',
+  roles:[{r:'Top',p:'Harendra',k:['Sion','Malphite']},{r:'Jungle',p:'Geeth',k:['Viego','Warwick']},{r:'Mid',p:'Steven',k:['Lux','Orianna','Morgana']},{r:'ADC',p:'Shabir',k:['Jinx','Kalista']},{r:'Support',p:'Eshantha',k:['Seraphine','Braum','Morgana']}],
+  win:'Peel a hypercarry (Jinx/Kalista) with Seraphine + tanks. Developmental — needs Eshantha\'s Seraphine online.',
+  spike:'Late game.',
+  lose:'Our weakest archetype until we have a real enchanter. Park it for now.'}
+];
+
+const PLAIN={
+ A:'Walk around as a group of 5. <b>Harendra (Malphite) and Eshantha jump in first</b> to start the fight, then everyone piles onto the same enemy. Use this when both teams want to fight.',
+ B:'Hide in the bushes near Dragon/Baron, <b>catch ONE enemy who walks alone</b>, and kill them fast. Then take the objective while they\'re down a player. Use when the enemy plays slow and scared.',
+ C:'The <b>safe, hard-to-mess-up</b> one. Hide behind your tanks, let them walk in, and your ADC shoots from the back. Pick this when you\'re not sure what the enemy is doing.',
+ D:'<b>Jump on the enemy\'s squishy damage dealers and delete them.</b> Only use this when the enemy has no big tanks protecting their carries.',
+ E:'Protect one super-strong ADC and let them win the game. <b>We can\'t do this well yet</b> (no enchanter) — ignore it for now.'
+};
+const TIERS=[
+ ['Top','Malphite, Sion, Garen, Renekton','Kayle, Yone, K\'Sante','Malphite, Shen, Sion'],
+ ['Jungle','Nocturne, Briar, Master Yi, Viego','Wukong, Vi, Lee Sin, Shyvana','Viego, Briar, Nocturne, Kha\'Zix'],
+ ['Mid','Yasuo, Zed, Galio, Annie','Orianna, Fizz, Xerath, Veigar','Annie, LeBlanc, Lux, Orianna, Galio'],
+ ['ADC','Caitlyn, Jinx, Ashe','Ezreal, Smolder, Senna, Kai\'Sa','Caitlyn, Jinx, Kalista'],
+ ['Support','Rell, Leona, Seraphine, Morgana','Taric, Thresh, Nautilus, Braum','Rell, Alistar, Morgana, Seraphine']
+];
+
+const PHASES=[
+ {t:'Phase 1 — Lock #1 Champs',w:'Jun 5–9',c:'#3fb950',tasks:['<b>Harendra</b> → Malphite (the keystone — top priority)','<b>Shabir</b> → Caitlyn','<b>Eshantha</b> → Rell','<b>Steven</b> → Annie','<b>Geeth</b> → Viego + start Wukong','First 5-man flex game on voice']},
+ {t:'Phase 2 — Add #2 + Rehearse Engage',w:'Jun 10–14',c:'#e6c34a',tasks:['Add #2: Sion / Ashe / Alistar / Orianna / Vi','Scrim <b>Comp A (Wombo)</b> ×2','Practice the engage chain + calling one target','Engage from fog/flanks drills']},
+ {t:'Phase 3 — Comps + Mock Drafts',w:'Jun 15–18',c:'#f0b232',tasks:['Scrim <b>Comp B (Pick)</b>','Scrim <b>Comp C (Front-to-Back)</b>','2 mock drafts with the Draft Lab','Decide the final 3 comps we trust']},
+ {t:'Phase 4 — Taper + Prep',w:'Jun 19',c:'#4b9cff',tasks:['One light mock draft — no new champs','Everyone confirms #1 + #2 per role','Re-check meta for a new patch','Logistics: all 5 available + comms working']},
+ {t:'🏆 Clash Day',w:'Jun 20',c:'#c8aa6e',tasks:['Scout opponents → call comp + bans','Open the Draft Lab during every draft','Default bans: Malphite / Master Yi / Smolder','Group mid-game, fight on our terms, don\'t throw']}
+];
+
+/* ── Render ── */
+function el(h){const d=document.createElement('div');d.innerHTML=h;return d.firstElementChild;}
+
+/* ── SAFETY LAYER (wire nav FIRST so tabs always work, even if anything below fails) ── */
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+function safe(fn){try{fn()}catch(e){console.warn('CLASH HQ:',e)}}
+function showView(v){
+  document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.v===v));
+  document.querySelectorAll('.view').forEach(x=>x.classList.toggle('active',x.id===v));
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>showView(t.dataset.v)));
+
+// Lineup
+document.getElementById('lineup').innerHTML=SEATS.map(s=>`
+  <div class="seat"><div class="role" style="color:${ROLE_C[s[0]]}">${s[0]}</div>
+  <div class="who">${s[1]}</div><div class="hdl">${s[2]}</div>
+  <span class="bar" style="background:${ROLE_C[s[0]]}"></span></div>`).join('');
+
+// Roster
+document.getElementById('rosterGrid').innerHTML=PLAYERS.map(p=>`
+ <div class="panel player">
+   <div class="phead">
+     <div class="pavatar" style="background:${ROLE_C[p.roles[0]]}"><span>${p.init}</span></div>
+     <div><div class="pname">${p.name}</div><div class="phandle">${p.handle}</div></div>
+     <div class="prank"><div class="r" style="color:var(--gold-bright)">${p.rank}</div><div class="l">Solo Queue</div></div>
+   </div>
+   <div class="roles-mini">${p.roles.map(r=>`<span class="rolepill" style="background:${ROLE_C[r]}">${r}</span>`).join('')}
+     <span class="rolepill" style="background:transparent;border:1px solid var(--gold);color:var(--gold)">Clash: ${p.clash}</span></div>
+   <div style="font-size:13px;color:var(--txt-dim);margin-top:8px">${p.note}</div>
+   <div class="pool">${p.pool.map(c=>`
+     <div class="champ-row">${ico(c[0])}<span class="champ-nm">${c[0]}</span>
+     <span class="champ-gm">${c[1]}g</span>
+     <span class="wrbar"><i style="width:${c[2]}%;background:${wrColor(c[2])}"></i></span>
+     <span class="wrnum" style="color:${wrColor(c[2])}">${c[2]}%</span></div>`).join('')}</div>
+   <div class="expand-hint">▾ tap for champ pool</div>
+ </div>`).join('');
+document.querySelectorAll('.player').forEach(p=>p.onclick=()=>p.classList.toggle('open'));
+
+// Comps
+document.getElementById('compList').innerHTML=COMPS.map(c=>`
+ <div class="panel comp">
+   <div class="comp-head">
+     <div class="comp-badge" style="background:${c.color}"><span>${c.id}</span></div>
+     <div><div class="comp-name">${c.name}</div><div class="comp-id">${c.tag}</div></div>
+     <div class="comp-tier tier-${c.tier}">${c.tier}</div>
+   </div>
+   <div class="comp-roles">${c.roles.map(rr=>`
+     <div class="cr"><div class="crole" style="color:${ROLE_C[rr.r]}">${rr.r} · ${rr.p}</div>
+       <div class="cpick">${ico(rr.k[0])}<div><div class="cchamp">${rr.k[0]}</div></div></div>
+       <div class="cbackup"><b>↳</b> ${rr.k.slice(1).join(', ')||'—'}</div></div>`).join('')}</div>
+   <div class="cm-plain">👉 <b>In plain English:</b> ${PLAIN[c.id]}</div>
+   <div class="comp-meta">
+     <div class="cm-row cm-win"><span class="ic">Win Con</span><span>${c.win}</span></div>
+     <div class="cm-row cm-spike"><span class="ic">Power Spike</span><span>${c.spike}</span></div>
+     <div class="cm-row cm-lose"><span class="ic">Loses To</span><span>${c.lose}</span></div>
+   </div>
+ </div>`).join('');
+
+// Meta
+document.getElementById('tierBody').innerHTML=TIERS.map(t=>`<tr>
+  <td class="role-cell" style="color:${ROLE_C[t[0]]}">${t[0]}</td>
+  <td>${t[1].split(', ').map(c=>`<span class="mini-champ">${c}</span>`).join('')}</td>
+  <td style="color:var(--txt-dim)">${t[2]}</td>
+  <td class="ours">${t[3]}</td></tr>`).join('');
+
+/* ── Start Here data ── */
+const GAMEPLAN_DO=[
+ ['Stick together','Once it\'s mid-game (~15 min), walk around as a <b>group of 5</b>. Never wander off alone.'],
+ ['Start fights together','<b>Harendra and Eshantha go in FIRST.</b> The second they engage, everyone else jumps in too — instantly.'],
+ ['Kill ONE person','Everyone attacks the <b>same enemy</b> — usually their ADC or mid. Call the name out loud on voice.'],
+ ['Take the prize','After you win the fight, <b>take Baron, Dragon, or towers.</b> That\'s what actually wins — then close the game.']
+];
+const GAMEPLAN_DONT=[
+ 'Don\'t fight 1v1 or 2v2 — <b>wait for the team.</b>',
+ 'Don\'t chase kills into the enemy base. You\'ll die.',
+ 'Don\'t split up to push different lanes (for now).',
+ 'Don\'t throw a lead — <b>when ahead, play safe</b> and take objectives.'
+];
+const JOBS={
+ Harendra:{role:'Top Lane · TANK',main:'Malphite',
+   fight:'You go <b>IN FIRST.</b> Walk up and press <b>R (ult)</b> onto as many enemies as you can to start the fight. You\'re the tank — you soak damage, you\'re not here for kills.',
+   practice:'Only play <b>Malphite, Sion, and Shen.</b> Drop the other 30 champs.'},
+ Geeth:{role:'Jungle · SHOTCALLER',main:'Viego',
+   fight:'Gank lanes, take <b>Dragon/Baron</b>, and clean up fights (finish off low-HP enemies). You\'re the best player — <b>make the calls.</b>',
+   practice:'<b>Viego</b> is your main. Also learn <b>Wukong</b> for a strong fight-starting ult.'},
+ Steven:{role:'Mid Lane',main:'Annie',
+   fight:'Keep your stun ready (<b>Annie\'s shield turns white</b> at 4 stacks). When the fight starts, <b>Flash in + ult Tibbers</b> to stun the whole enemy team.',
+   practice:'<b>Annie</b> first, then Orianna and Galio. Don\'t play Yasuo in Clash.'},
+ Shabir:{role:'ADC · Bot Lane',main:'Caitlyn',
+   fight:'Stand at the <b>BACK</b> and shoot from far away. <b>Never walk in first.</b> Let the tanks start the fight, then you deal the damage safely.',
+   practice:'Play <b>Caitlyn</b> until she feels easy. Add Ashe as backup.'},
+ Eshantha:{role:'Support · FIGHT STARTER',main:'Rell',
+   fight:'You + Harendra <b>start the fights.</b> Jump in and lock enemies down with your engage. Then <b>protect Shabir</b> if enemies try to kill him.',
+   practice:'<b>Rell</b> is #1, then Alistar. Both are easy to start fights with.'}
+};
+const GLOSSARY=[
+ ['Engage','Starting the fight by jumping in. Tanks & support do this first.'],
+ ['Peel','Protecting your ADC by blocking/stunning enemies that jump on them.'],
+ ['Carry','The player who deals the most damage (ADC or mid). Keep them alive.'],
+ ['Frontline','The tanks who stand in front and take the damage.'],
+ ['Poke','Chipping the enemy\'s health from far away before a fight starts.'],
+ ['CC','Stuns, slows, knock-ups — anything that stops an enemy from moving.'],
+ ['Objective','Dragon, Baron, Towers. The stuff that actually wins the game.'],
+ ['Spike','The moment your champ suddenly gets strong (a key item or level).'],
+ ['Wave / minions','The little soldiers. Killing them = gold (called "farm" / "CS").'],
+ ['Splitpush','One person pushing a side lane alone. We mostly DON\'T do this.']
+];
+const ORDER5=['Harendra','Geeth','Steven','Shabir','Eshantha'];
+
+// render game plan
+document.getElementById('planDo').innerHTML=GAMEPLAN_DO.map((s,i)=>`
+ <div class="step"><span class="step-n">${i+1}</span><span class="step-txt"><b>${s[0]}.</b> ${s[1]}</span></div>`).join('');
+document.getElementById('planDont').innerHTML=GAMEPLAN_DONT.map(t=>`
+ <div class="step"><span class="step-x">✕</span><span class="step-txt">${t}</span></div>`).join('');
+
+// render job cards
+document.getElementById('jobsGrid').innerHTML=ORDER5.map(name=>{
+ const p=PLAYERS.find(x=>x.name===name),j=JOBS[name],col=ROLE_C[p.clash];
+ const init=j.main.replace(/[^A-Za-z]/g,'').slice(0,3).toUpperCase();
+ return`<div class="panel jobcard"><span class="jc-bar" style="background:${col}"></span>
+   <div class="jc-top"><div class="jc-ico"><img src="${icoURL(j.main)}" alt="${j.main}" onerror="this.parentNode.textContent='${init}'"></div>
+     <div><div class="jc-name">${name}</div><div class="jc-role" style="color:${col}">${j.role}</div></div></div>
+   <div class="jc-main">🎯 Main champ to play: <b>${j.main}</b></div>
+   <div class="jc-label">In a fight, your job is:</div>
+   <div class="jc-fight">${j.fight}</div>
+   <div class="jc-label" style="margin-top:14px">Practice this:</div>
+   <div class="jc-practice">${j.practice}</div></div>`;
+}).join('');
+
+// render glossary
+document.getElementById('glossary').innerHTML=GLOSSARY.map(g=>`
+ <div class="gloss"><span class="word">${g[0]}</span><span class="def">${g[1]}</span></div>`).join('');
+
+/* ── Draft Lab ── */
+const banned=new Set();
+const POOL_BY_ROLE={};
+COMPS.forEach(c=>c.roles.forEach(rr=>rr.k.forEach(k=>{
+  (POOL_BY_ROLE[rr.r]=POOL_BY_ROLE[rr.r]||new Set()).add(k);
+})));
+const ROLE_ORDER=['Top','Jungle','Mid','ADC','Support'];
+function renderBanpool(){
+  document.getElementById('banpool').innerHTML=ROLE_ORDER.map(role=>{
+    const champs=[...(POOL_BY_ROLE[role]||[])].sort();
+    return`<div class="bp-role"><div class="bp-rlabel" style="color:${ROLE_C[role]}">${role}</div>
+     <div class="chips">${champs.map(n=>`<div class="chip ${banned.has(n)?'banned':''}" data-c="${n}">${ico(n)}<span class="champ-nm-c">${n}</span></div>`).join('')}</div></div>`;
+  }).join('');
+  document.querySelectorAll('.chip').forEach(ch=>ch.onclick=()=>{const n=ch.dataset.c;banned.has(n)?banned.delete(n):banned.add(n);update();});
+}
+function update(){
+  renderBanpool();
+  document.getElementById('banN').textContent=banned.size;
+  const res=COMPS.map(c=>{
+    let fallbacks=0,broken=0;
+    const picks=c.roles.map(rr=>{
+      const avail=rr.k.find(k=>!banned.has(k));
+      const isFb=avail&&avail!==rr.k[0];
+      if(broken||avail){}
+      if(!avail)broken++; else if(isFb)fallbacks++;
+      return{role:rr.r,champ:avail,orig:rr.k[0],fb:isFb,dead:!avail};
+    });
+    let cls=broken?'broken':fallbacks?'fallback':'intact';
+    return{c,picks,fallbacks,broken,cls};
+  });
+  document.getElementById('labResult').innerHTML=res.map(R=>`
+   <div class="lc ${R.cls}">
+     <div class="lc-badge" style="background:${R.c.color}"><span>${R.c.id}</span></div>
+     <div><div class="lc-name">${R.c.name}</div><div class="lc-sub">${R.c.tag}</div>
+       <div class="lc-picks">${R.picks.map(p=>`
+         <span class="lc-pick ${p.dead?'dead':p.fb?'fb':''}">${p.champ?ico(p.champ):''}<span class="lc-pk-nm">${p.champ||p.role+' ✕'}</span></span>`).join('')}</div></div>
+     <div class="lc-status ${R.cls}">${R.broken?'Broken':R.fallbacks?'Fallbacks':'Intact'}
+       <small>${R.broken?R.broken+' role(s) dead':R.fallbacks?R.fallbacks+' backup pick(s)':'all primaries up'}</small></div>
+   </div>`).join('');
+}
+document.getElementById('resetBans').onclick=()=>{banned.clear();update();};
+document.querySelectorAll('[data-scn]').forEach(b=>b.onclick=()=>{
+  banned.clear();
+  const scn=b.dataset.scn;
+  const sets={meta:['Malphite','Caitlyn','Rell','Viego','Annie'],engage:['Malphite','Rell','Wukong','Alistar','Annie']};
+  (sets[scn]||[]).forEach(n=>banned.add(n));update();
+});
+safe(update);
+
+/* ── Prep with localStorage (storage-safe) ── */
+const LS='clashhq_prep_v1';
+let done={};
+safe(()=>{done=JSON.parse(store.get(LS)||'{}')});
+function renderPhases(){
+  let total=0,d=0;
+  document.getElementById('phases').innerHTML=PHASES.map((ph,pi)=>`
+   <div class="phase ${pi<2?'open':''}">
+     <div class="phase-head"><span class="phase-dot" style="background:${ph.c}"></span>
+       <span class="phase-title">${ph.t}</span><span class="phase-when">${ph.w}</span></div>
+     <div class="phase-body">${ph.tasks.map((t,ti)=>{const id=pi+'-'+ti;total++;if(done[id])d++;
+       return`<div class="task ${done[id]?'done':''}" data-id="${id}"><span class="checkbox">✓</span><span class="task-txt">${t}</span></div>`;}).join('')}</div>
+   </div>`).join('');
+  document.querySelectorAll('.phase-head').forEach(h=>h.onclick=()=>h.parentNode.classList.toggle('open'));
+  document.querySelectorAll('.task').forEach(t=>t.onclick=e=>{e.stopPropagation();const id=t.dataset.id;done[id]=!done[id];store.set(LS,JSON.stringify(done));renderPhases();});
+  document.getElementById('progTxt').textContent=d+' / '+total;
+  document.getElementById('progFill').style.width=(total?d/total*100:0)+'%';
+}
+safe(renderPhases);
+
+/* ── Countdown ── */
+const TARGET=new Date('2026-06-20T18:00:00').getTime();
+function tick(){
+  const diff=TARGET-Date.now();
+  if(diff<0){document.getElementById('cd-d').textContent='LIVE';return;}
+  const dd=Math.floor(diff/864e5),hh=Math.floor(diff%864e5/36e5),mm=Math.floor(diff%36e5/6e4),ss=Math.floor(diff%6e4/1e3);
+  document.getElementById('cd-d').textContent=dd;
+  document.getElementById('cd-h').textContent=String(hh).padStart(2,'0');
+  document.getElementById('cd-m').textContent=String(mm).padStart(2,'0');
+  document.getElementById('cd-s').textContent=String(ss).padStart(2,'0');
+}
+tick();setInterval(tick,1000);
+</script>
+</body>
+</html>
