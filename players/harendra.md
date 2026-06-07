@@ -22,4 +22,5 @@
 1. **Malphite** — engage R is the keystone of our #1 comp; S-tier, easy. Make this his one-trick.
 2. **Sion** — S-tier, near-unkillable, easy, great Clash frontline + objective soak.
 3. **Shen** — global ult R for cross-map plays / saving a fed carry. Keep as 3rd.
-> Goal: go from 30 shallow champs → **3 deep, comfortable tanks**. This alone raises the team's floor the most.
+4. **Maokai** *(optional 4th)* — interchangeable engage tank: R sends a wave of roots across the whole fight (a 4th AoE CC). Easy, durable, low-econ. Pick up only after the first 3 are comfortable.
+> Goal: go from 30 shallow champs → **3 deep, comfortable tanks** (Maokai a 4th in the same archetype). This alone raises the team's floor the most.

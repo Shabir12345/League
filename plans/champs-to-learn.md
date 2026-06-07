@@ -14,7 +14,8 @@ Your scattered 30-champ pool is the team's biggest variance. Collapse it to **3 
 1. **Malphite** ★ — the keystone engage for Comp A. S-tier, low-mechanics, R wins fights. *Make this your one-trick.*
 2. **Sion** — S-tier, unkillable frontline + objective soak. Easy. Comp C anchor.
 3. **Shen** — global R for cross-map saves (Comp B). Keep as 3rd.
-> Drop: Sylas, Ornn (0-4), Volibear (0-4), and the one-off long tail. **3 deep > 30 shallow.**
+4. **Maokai** *(optional 4th)* — same engage-tank archetype; R is a teamfight-wide root (a 4th AoE CC for us). Add only once 1–3 are comfortable.
+> Drop: Sylas, Ornn (0-4), Volibear (0-4), and the one-off long tail. **3–4 deep > 30 shallow.**
 
 ## ★ Shabir (ADC) — FIX THE TEAM'S WEAK ROLE
 Your jungle is fine; the team needs your **ADC** solid.
@@ -41,7 +42,8 @@ Deep pool already; just pick the right 3 for our comps.
 You're the best player; default to jungle.
 1. **Viego** ★ — primary Clash JG (69%, S-tier). Deepen.
 2. **Wukong** (and/or **Vi**) — add a **hard-engage** jungle for Comp A's point-and-click R initiation. *This is the gap in your JG pool.*
-3. Keep **Talon** (mid) + **Shen** (top) + **MF/Caitlyn** (ADC) warm for flex/Comp D.
+3. **Shen / Maokai in the jungle** — you already win on both (Shen 83%, Maokai 67% from top); take a few clears to add a tank-engage JG (global R / root) for Wombo / Front-to-Back / Pick / Control.
+4. Keep **Talon** (mid) + **Shen** (top) + **MF/Caitlyn** (ADC) warm for flex/Comp D.
 
 ---
 

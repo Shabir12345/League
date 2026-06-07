@@ -11,11 +11,13 @@ Ranked by realistic win% **for us at Gold/Plat**, weighting comfort + meta (bala
 ## 🥇 Comp A — "Wombo" Hard-Engage Teamfight  *(PRIMARY — practice this most)*
 | Role | Player | Champ | Backup |
 |------|--------|-------|--------|
-| Top | Harendra | **Malphite** | Sion |
-| JG | Geeth | **Wukong** | Vi / Viego |
+| Top | Harendra | **Malphite** | Sion / Maokai |
+| JG | Geeth | **Wukong** | Vi / Viego / Maokai / Shen |
 | Mid | Steven | **Annie** | Orianna / Galio |
 | ADC | Shabir | **Caitlyn** | Ashe |
 | Sup | Eshantha | **Rell** | Alistar |
+
+> **New tank options:** **Maokai** (top *or* jungle) — his R is a teamfight-wide root, a 4th AoE engage on top of Malphite/Wukong/Annie. **Shen** jungle adds a global R for cross-map plays. Geeth already wins on both (Shen 83%, Maokai 67%).
 
 - **Why it's #1:** Every piece is meta AND in our pools. Three+ AoE engages (Malphite R, Wukong R, Rell W→R, Annie flash-Tibbers) = we start every fight and chain CC a target into oblivion before they react. Caitlyn cleans up from range.
 - **Win condition:** Group at 2 items / level 6+. Find one good engage (Malphite or Wukong flank) → everyone dumps → 5v5 ace → take Baron/Dragon. Don't split, don't poke — **group and look for the all-in.**
@@ -30,10 +32,12 @@ Ranked by realistic win% **for us at Gold/Plat**, weighting comfort + meta (bala
 | Role | Player | Champ | Backup |
 |------|--------|-------|--------|
 | Top | Harendra | **Shen** | Sion |
-| JG | Geeth | **Nocturne** | Vi |
+| JG | Geeth | **Nocturne** | Vi / Shen |
 | Mid | Steven | **LeBlanc** | Annie |
 | ADC | Shabir | **Jinx** | Caitlyn |
 | Sup | Eshantha | **Morgana** | Thresh |
+
+> **Shen jungle** is a strong pick-comp option here — his global R lets us catch on one side of the map and instantly save/collapse on the other.
 
 - **Why:** When the enemy wants to scale or sit back, we don't wait — we **catch one person out** and take the map 5v4. Nocturne R (vision denial) + Morgana Q bind + LeBlanc burst = instant delete. Shen R saves picks elsewhere. Jinx snowballs off the free objectives.
 - **Win condition:** Control vision, lurk around objectives, **pick off their carry/jungler → take Baron/Dragon/towers** while they're down a man. Avoid straight 5v5 if you haven't gotten a pick.
@@ -46,11 +50,13 @@ Ranked by realistic win% **for us at Gold/Plat**, weighting comfort + meta (bala
 ## 🥉 Comp C — "Front-to-Back" Stable Teamfight  *(SAFE — when in doubt / vs. unknown)*
 | Role | Player | Champ | Backup |
 |------|--------|-------|--------|
-| Top | Harendra | **Sion** | Malphite |
-| JG | Geeth | **Viego** | Briar |
+| Top | Harendra | **Sion** | Malphite / Maokai |
+| JG | Geeth | **Viego** | Briar / Maokai / Shen |
 | Mid | Steven | **Orianna** | Lux |
 | ADC | Shabir | **Caitlyn** | Jinx |
 | Sup | Eshantha | **Alistar** | Rell |
+
+> **Maokai** (top or jungle) suits this comp well — a durable frontline that roots the enemy onto Orianna's Shockwave. **Shen** jungle adds peel + a global R.
 
 - **Why:** The lowest-variance comp. Two tanks (Sion + Alistar) frontline, Orianna Shockwave is the teamfight wincon, Caitlyn deals damage from the back, Viego cleans up. Hard to throw, hard to int, scales fine.
 - **Win condition:** Stand behind your tanks, let them engage, **Orianna ball on the frontline → Shockwave**, Caitlyn + Viego mop up. Play standard, don't force — out-execute them in neutral fights.
@@ -89,6 +95,11 @@ Ranked by realistic win% **for us at Gold/Plat**, weighting comfort + meta (bala
 | Squishy/immobile backline, no peel | **D (Dive)** |
 | They have their own engage / mirror | **A (Wombo)** — out-execute the fight |
 | We just want our highest-practice comfort | **A (Wombo)** |
+
+## Tank flex options (added Jun 7)
+- **Maokai — Top *or* Jungle.** Premier engage tank: Nature's Grasp (Q) + W root + ult sends a wave of roots across the whole fight. Slots into **A (Wombo)**, **C (Front-to-Back)**, **D (Dive setup)**, and the **Bunker** peel comp. Harendra learns it as a 4th tank; Geeth already runs it (67%).
+- **Shen — Jungle.** Global R for cross-map saves/collapses; taunt is peel + a pick tool. Best in **B (Pick)**, **C (Front-to-Back)**, **A (Wombo)**, and **Control**. Geeth's highest-WR champ (83%) — natural for his flex JG seat.
+- Both keep our identity intact (more engage / frontline) while widening what we can flex into without leaving the tank archetype.
 
 ## Cross-comp principles
 - **Geeth drafts last** whenever possible — his flex lets us counter-pick the final role.

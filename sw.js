@@ -1,5 +1,5 @@
 /* Clash HQ service worker. Bump CACHE on every deploy so clients pick up new data. */
-const CACHE = 'clashhq-v3';
+const CACHE = 'clashhq-v4';
 const ASSETS = [
   './', './index.html', './css/styles.css',
   './js/analysis-core.js', './js/render.js', './js/app.js',

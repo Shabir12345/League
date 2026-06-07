@@ -1,6 +1,6 @@
 const TIERS=[
- ['Top','Malphite, Sion, Garen, Renekton','Kayle, Yone, K\'Sante','Malphite, Shen, Sion'],
- ['Jungle','Nocturne, Briar, Master Yi, Viego','Wukong, Vi, Lee Sin, Shyvana','Viego, Briar, Nocturne, Kha\'Zix'],
+ ['Top','Malphite, Sion, Garen, Renekton','Kayle, Yone, K\'Sante','Malphite, Shen, Sion, Maokai'],
+ ['Jungle','Nocturne, Briar, Master Yi, Viego','Wukong, Vi, Lee Sin, Shyvana','Viego, Briar, Nocturne, Kha\'Zix, Shen, Maokai'],
  ['Mid','Yasuo, Zed, Galio, Annie','Orianna, Fizz, Xerath, Veigar','Annie, LeBlanc, Lux, Orianna, Galio'],
  ['ADC','Caitlyn, Jinx, Ashe','Ezreal, Smolder, Senna, Kai\'Sa','Caitlyn, Jinx, Kalista'],
  ['Support','Rell, Leona, Seraphine, Morgana','Taric, Thresh, Nautilus, Braum','Rell, Alistar, Morgana, Seraphine']
@@ -29,10 +29,10 @@ const GAMEPLAN_DONT=[
 const JOBS={
  Harendra:{role:'Top Lane · TANK',main:'Malphite',
    fight:'You go <b>IN FIRST.</b> Walk up and press <b>R (ult)</b> onto as many enemies as you can to start the fight. You\'re the tank — you soak damage, you\'re not here for kills.',
-   practice:'Only play <b>Malphite, Sion, and Shen.</b> Drop the other 30 champs.'},
+   practice:'Play <b>Malphite, Sion, and Shen.</b> <b>Maokai</b> is a fine 4th engage-tank option (R is a teamfight-wide root). Drop the other 30 champs.'},
  Geeth:{role:'Jungle · SHOTCALLER',main:'Viego',
    fight:'Gank lanes, take <b>Dragon/Baron</b>, and clean up fights (finish off low-HP enemies). You\'re the best player — <b>make the calls.</b>',
-   practice:'<b>Viego</b> is your main. Also learn <b>Wukong</b> for a strong fight-starting ult.'},
+   practice:'<b>Viego</b> is your main. Also learn <b>Wukong</b> for a strong fight-starting ult. <b>Shen</b> (83%) and <b>Maokai</b> (67%) are ready-made tank/engage junglers you already win on.'},
  Steven:{role:'Mid Lane',main:'Annie',
    fight:'Keep your stun ready (<b>Annie\'s shield turns white</b> at 4 stacks). When the fight starts, <b>Flash in + ult Tibbers</b> to stun the whole enemy team.',
    practice:'<b>Annie</b> first, then Orianna and Galio. Don\'t play Yasuo in Clash.'},

@@ -27,8 +27,8 @@ Quick reference for draft + bans. Full detail in `comps/playbook.md`.
 | Engage / coinflip teamfight | **A Wombo** | 2 of: Malphite/Wukong/Annie + Rell |
 
 ## Step 4 — Pick order (general)
-1. **Early:** grab contested engage/tanks first — **Malphite / Sion / Rell** (rarely countered, high value).
-2. **Middle:** secure the jungle (**Wukong/Viego/Nocturne**) per comp.
+1. **Early:** grab contested engage/tanks first — **Malphite / Sion / Rell** (rarely countered, high value). **Maokai** is an uncontested alternative tank (top or jungle).
+2. **Middle:** secure the jungle (**Wukong/Viego/Nocturne**, or **Shen/Maokai** for a tank-engage JG) per comp.
 3. **Last:** flexible picks — **Annie, Caitlyn, Orianna, LeBlanc** — and let **Geeth pick last** to fill/counter.
 4. Always end with **≥2 engage tools** on the board.
 
@@ -48,4 +48,9 @@ Quick reference for draft + bans. Full detail in `comps/playbook.md`.
 
 ## If our core gets banned
 - Malphite + Rell gone → **Sion + Alistar + Annie** still gives 3 engages (Comp C).
+- Malphite + Sion + Shen all gone → **Maokai** top (engage tank, R is a teamfight root).
 - Caitlyn gone → **Ashe** (Shabir) or **Jinx**.
+
+## Tank flex (top or jungle)
+- **Maokai:** top OR jungle — engage tank, R roots the whole fight. Fits Wombo / Front-to-Back / Bunker.
+- **Shen (JG):** global R for cross-map saves/picks — great in the **Pick** comp. Geeth's best champ (83%).
