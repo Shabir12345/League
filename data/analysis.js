@@ -3,6 +3,39 @@
    Supports show vision score on dpm (not CS/m), so their csm is left 0 (the UI hides it). */
 const DAILY_LOG = [
   {
+    date: '2026-06-05',
+    headline: 'Tested aggressive role-swap drafts — went 1–2. The Miss Fortune peel comp split 1–1 and hard-won the 33-min game (Geeth MF 25/3/10 behind Alistar + Shen peel).',
+    games: [
+      { dur:'35:33', queue:'Flex', result:'L', comp:'other',
+        note:'Role-swap experiment (Eshantha top Anivia, Shabir jg Khazix, Harendra ADC Ezreal). Scattered — lost the long game.',
+        lineup:[
+          {role:'Top',player:'Eshantha',champ:'Anivia',k:8,d:6,a:13,csm:7.5,kp:50},
+          {role:'Jungle',player:'Shabir',champ:'Khazix',k:14,d:10,a:10,csm:5.5,kp:57},
+          {role:'Mid',player:'Steven',champ:'Diana',k:7,d:13,a:9,csm:4.8,kp:38},
+          {role:'ADC',player:'Harendra',champ:'Ezreal',k:4,d:11,a:9,csm:6.1,kp:31},
+          {role:'Support',player:'Geeth',champ:'Pantheon',k:9,d:11,a:6,csm:0,kp:36}
+        ]},
+      { dur:'22:48', queue:'Flex', result:'L', comp:'president',
+        note:'Peel-for-MF (Geeth MF + Braum). Lost early — never got MF online before the 23-min close.',
+        lineup:[
+          {role:'Top',player:'Harendra',champ:'Shen',k:0,d:5,a:6,csm:5.7,kp:50},
+          {role:'Jungle',player:'Shabir',champ:'Rammus',k:2,d:4,a:8,csm:5.1,kp:83},
+          {role:'Mid',player:'Steven',champ:'Yone',k:2,d:4,a:0,csm:6.9,kp:17},
+          {role:'ADC',player:'Geeth',champ:'MissFortune',k:7,d:4,a:3,csm:7.1,kp:83},
+          {role:'Support',player:'Eshantha',champ:'Braum',k:1,d:4,a:7,csm:0,kp:67}
+        ]},
+      { dur:'33:29', queue:'Flex', result:'W', comp:'president',
+        note:'Peel-for-MF worked. Geeth MF 25/3/10 free-firing behind Alistar + Shen — the "Protect the President" archetype\'s first win.',
+        lineup:[
+          {role:'Top',player:'Harendra',champ:'Shen',k:3,d:6,a:16,csm:5.7,kp:42},
+          {role:'Jungle',player:'Shabir',champ:'Rammus',k:6,d:3,a:27,csm:6.1,kp:73},
+          {role:'Mid',player:'Steven',champ:'Yone',k:7,d:5,a:10,csm:6.6,kp:38},
+          {role:'ADC',player:'Geeth',champ:'MissFortune',k:25,d:3,a:10,csm:5.8,kp:78},
+          {role:'Support',player:'Eshantha',champ:'Alistar',k:4,d:5,a:26,csm:0,kp:67}
+        ]}
+    ]
+  },
+  {
     date: '2026-06-06',
     headline: '1–2 on comp tests. The one win was the grouped Viego/Orianna/Caitlyn fight (61% KP, Rell MVP); both losses came from low KP or losing the early game.',
     games: [
