@@ -67,16 +67,33 @@ const DAILY_LOG = [
           {role:'Support',player:'Eshantha',champ:'Alistar',k:1,d:8,a:8,csm:0,kp:82}
         ]}
     ]
+  },
+  {
+    date: '2026-06-07',
+    headline: 'Played 3 games but only ONE was a true 5-stack — the others were excluded (29:53 loss missing Harendra/top, 27:43 missing Steven/mid). The lone all-5 game was a clean 29-min win on a pick & catch comp (Lights Out\'s first 5-stack win).',
+    games: [
+      { dur:'29:42', queue:'Flex', result:'W', comp:'B',
+        note:'Pick & catch (Nocturne + LeBlanc + Morgana binding + Ashe global arrow). Caught carries out and snowballed off picks — 74% KP on Morgana, all five above 40%. Only full 5-stack of the day.',
+        lineup:[
+          {role:'Top',player:'Harendra',champ:'Shen',k:6,d:6,a:15,csm:6.2,kp:40},
+          {role:'Jungle',player:'Geeth',champ:'Nocturne',k:10,d:1,a:19,csm:7.2,kp:55},
+          {role:'Mid',player:'Steven',champ:'LeBlanc',k:17,d:4,a:8,csm:4.9,kp:47},
+          {role:'ADC',player:'Shabir',champ:'Ashe',k:13,d:6,a:17,csm:6.3,kp:57},
+          {role:'Support',player:'Eshantha',champ:'Morgana',k:7,d:4,a:32,csm:0,kp:74}
+        ]}
+    ]
   }
 ];
 
 const FOCUS = [
   { id:'kp', priority:1, status:'open', title:'Group by ~14 min and fight as 5',
-    why:'Both losses had low kill participation; the win had 61% KP. Stop fighting spread out.' },
-  { id:'early', priority:2, status:'open', title:'Stabilise the early game',
+    why:'Every 5-stack win has come from grouping — Jun 6 control win (61% KP) and Jun 7 pick win (74% KP on Morgana, all five 40%+). Losses fight spread out.' },
+  { id:'pick', priority:2, status:'open', title:'Lights Out (pick & catch) is online',
+    why:'First 5-stack win for the Nocturne/LeBlanc/Morgana/Ashe pick comp — Ashe arrow + Morgana Q to catch one, then collapse. Keep it in the pocket alongside the control comp.' },
+  { id:'early', priority:3, status:'open', title:'Stabilise the early game',
     why:'The 24-min loss was decided before our teamfight spike — don’t fall behind pre-14.' },
-  { id:'engagesup', priority:3, status:'open', title:'Default to Rell over Alistar as primary engage',
+  { id:'engagesup', priority:4, status:'open', title:'Default to Rell over Alistar as primary engage',
     why:'The win ran Rell (MVP); the harder loss ran Alistar and the early game wasn’t rescued.' },
-  { id:'mid', priority:4, status:'open', title:'Prefer Orianna over Annie mid',
+  { id:'mid', priority:5, status:'open', title:'Prefer Orianna over Annie mid',
     why:'Orianna (12/1/14) was on the winning side; Shockwave is a more reliable teamfight button for us than Annie all-in.' }
 ];
