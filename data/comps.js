@@ -1,0 +1,40 @@
+const COMPS=[
+ {id:'A',name:'Wombo',tag:'Hard-Engage Teamfight',tier:'PRIMARY',color:'#c8aa6e',
+  source:'claude',status:'core',
+  roles:[{r:'Top',p:'Harendra',k:['Malphite','Sion','Shen']},{r:'Jungle',p:'Geeth',k:['Wukong','Vi','Viego','Nocturne']},{r:'Mid',p:'Steven',k:['Annie','Orianna','Galio']},{r:'ADC',p:'Shabir',k:['Caitlyn','Ashe','Jinx']},{r:'Support',p:'Eshantha',k:['Rell','Alistar','Morgana']}],
+  win:'Group at 2 items / lvl 6+. Find one engage → chain CC a target → 5v5 ace → take Baron/Dragon.',
+  spike:'Mid game (ults online, 2 items). Strongest 14–28 min.',
+  lose:'Hard disengage + poke. Counter by engaging from fog/flanks at objectives.'},
+ {id:'B',name:'Lights Out',tag:'Pick & Catch',tier:'SECONDARY',color:'#0ac8b9',
+  source:'claude',status:'core',
+  roles:[{r:'Top',p:'Harendra',k:['Shen','Sion']},{r:'Jungle',p:'Geeth',k:['Nocturne','Vi','Kha\'Zix']},{r:'Mid',p:'Steven',k:['LeBlanc','Annie','Diana']},{r:'ADC',p:'Shabir',k:['Jinx','Caitlyn']},{r:'Support',p:'Eshantha',k:['Morgana','Thresh','Rell']}],
+  win:'Control vision, catch one carry/jungler out → take Baron/objectives 5v4. Avoid straight 5v5.',
+  spike:'Mid game; snowballs once Jinx gets 2–3 kills.',
+  lose:'Grouped comps that never get caught + strong waveclear. Fall back to Comp A.'},
+ {id:'C',name:'Front-to-Back',tag:'Stable Teamfight',tier:'SAFE',color:'#4b9cff',
+  source:'claude',status:'core',
+  roles:[{r:'Top',p:'Harendra',k:['Sion','Malphite']},{r:'Jungle',p:'Geeth',k:['Viego','Briar','Warwick']},{r:'Mid',p:'Steven',k:['Orianna','Lux','Annie']},{r:'ADC',p:'Shabir',k:['Caitlyn','Jinx','Kalista']},{r:'Support',p:'Eshantha',k:['Alistar','Rell','Braum']}],
+  win:'Stand behind tanks, Orianna ball on frontline → Shockwave, Caitlyn + Viego mop up. Lowest variance.',
+  spike:'Even-to-late; very flexible. Great blind pick.',
+  lose:'Can get out-scaled by a dedicated hypercarry — close by mid game.'},
+ {id:'D',name:'Bug Hunt',tag:'Dive / Assassinate',tier:'FLEX',color:'#c586e0',
+  source:'claude',status:'core',
+  roles:[{r:'Top',p:'Harendra',k:['Malphite','Sion']},{r:'Jungle',p:'Shabir',k:['Kha\'Zix','Viego']},{r:'Mid',p:'Steven',k:['Diana','Akali','LeBlanc']},{r:'ADC',p:'Geeth',k:['Miss Fortune','Caitlyn']},{r:'Support',p:'Eshantha',k:['Rell','Alistar']}],
+  win:'Flex card: Shabir→Kha\'Zix JG, Geeth→ADC. Blow up their primary carry in the first 2 sec of every fight.',
+  spike:'Early-mid (8–18 min). Snowball off picks.',
+  lose:'Peel-heavy / tanky frontlines (can\'t reach carry). Only vs divable comps.'},
+ {id:'E',name:'Bunker',tag:'Protect-the-Carry',tier:'DEV',color:'#7e8db0',
+  source:'claude',status:'core',
+  roles:[{r:'Top',p:'Harendra',k:['Sion','Malphite']},{r:'Jungle',p:'Geeth',k:['Viego','Warwick']},{r:'Mid',p:'Steven',k:['Lux','Orianna','Morgana']},{r:'ADC',p:'Shabir',k:['Jinx','Kalista']},{r:'Support',p:'Eshantha',k:['Seraphine','Braum','Morgana']}],
+  win:'Peel a hypercarry (Jinx/Kalista) with Seraphine + tanks. Developmental — needs Eshantha\'s Seraphine online.',
+  spike:'Late game.',
+  lose:'Our weakest archetype until we have a real enchanter. Park it for now.'}
+];
+
+const PLAIN={
+ A:'Walk around as a group of 5. <b>Harendra (Malphite) and Eshantha jump in first</b> to start the fight, then everyone piles onto the same enemy. Use this when both teams want to fight.',
+ B:'Hide in the bushes near Dragon/Baron, <b>catch ONE enemy who walks alone</b>, and kill them fast. Then take the objective while they\'re down a player. Use when the enemy plays slow and scared.',
+ C:'The <b>safe, hard-to-mess-up</b> one. Hide behind your tanks, let them walk in, and your ADC shoots from the back. Pick this when you\'re not sure what the enemy is doing.',
+ D:'<b>Jump on the enemy\'s squishy damage dealers and delete them.</b> Only use this when the enemy has no big tanks protecting their carries.',
+ E:'Protect one super-strong ADC and let them win the game. <b>We can\'t do this well yet</b> (no enchanter) — ignore it for now.'
+};

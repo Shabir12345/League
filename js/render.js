@@ -1,0 +1,155 @@
+/* ── Render helpers ── */
+function el(h){const d=document.createElement('div');d.innerHTML=h;return d.firstElementChild;}
+function icoURL(n){const a=API[n]||n.replace(/[^A-Za-z]/g,'');return`https://cdn.communitydragon.org/latest/champion/${a}/square`;}
+function ico(n,cls){const init=n.replace(/[^A-Za-z]/g,'').slice(0,3).toUpperCase();
+  return`<span class="champ-ico ${cls||''}"><img src="${icoURL(n)}" alt="${n}" onerror="this.style.display='none';this.parentNode.textContent='${init}'"></span>`;}
+function wrColor(w){return w>=55?'var(--good)':w>=48?'var(--mid-wr)':'var(--bad)';}
+
+/* ── Storage helpers ── */
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+function safe(fn){try{fn()}catch(e){console.warn('CLASH HQ:',e)}}
+
+/* ── Prep constants/vars ── */
+const LS='classhq_prep_v1';
+let done={};
+safe(()=>{done=JSON.parse(store.get(LS)||'{}')});
+function renderPhases(){
+  let total=0,d=0;
+  document.getElementById('phases').innerHTML=PHASES.map((ph,pi)=>`
+   <div class="phase ${pi<2?'open':''}">
+     <div class="phase-head"><span class="phase-dot" style="background:${ph.c}"></span>
+       <span class="phase-title">${ph.t}</span><span class="phase-when">${ph.w}</span></div>
+     <div class="phase-body">${ph.tasks.map((t,ti)=>{const id=pi+'-'+ti;total++;if(done[id])d++;
+       return`<div class="task ${done[id]?'done':''}" data-id="${id}"><span class="checkbox">✓</span><span class="task-txt">${t}</span></div>`;}).join('')}</div>
+   </div>`).join('');
+  document.querySelectorAll('.phase-head').forEach(h=>h.onclick=()=>h.parentNode.classList.toggle('open'));
+  document.querySelectorAll('.task').forEach(t=>t.onclick=e=>{e.stopPropagation();const id=t.dataset.id;done[id]=!done[id];store.set(LS,JSON.stringify(done));renderPhases();});
+  document.getElementById('progTxt').textContent=d+' / '+total;
+  document.getElementById('progFill').style.width=(total?d/total*100:0)+'%';
+}
+
+/* ── Draft Lab ── */
+const banned=new Set();
+const POOL_BY_ROLE={};
+COMPS.forEach(c=>c.roles.forEach(rr=>rr.k.forEach(k=>{
+  (POOL_BY_ROLE[rr.r]=POOL_BY_ROLE[rr.r]||new Set()).add(k);
+})));
+const ROLE_ORDER=['Top','Jungle','Mid','ADC','Support'];
+function renderBanpool(){
+  document.getElementById('banpool').innerHTML=ROLE_ORDER.map(role=>{
+    const champs=[...(POOL_BY_ROLE[role]||[])].sort();
+    return`<div class="bp-role"><div class="bp-rlabel" style="color:${ROLE_C[role]}">${role}</div>
+     <div class="chips">${champs.map(n=>`<div class="chip ${banned.has(n)?'banned':''}" data-c="${n}">${ico(n)}<span class="champ-nm-c">${n}</span></div>`).join('')}</div></div>`;
+  }).join('');
+  document.querySelectorAll('.chip').forEach(ch=>ch.onclick=()=>{const n=ch.dataset.c;banned.has(n)?banned.delete(n):banned.add(n);update();});
+}
+function update(){
+  renderBanpool();
+  document.getElementById('banN').textContent=banned.size;
+  const res=COMPS.map(c=>{
+    let fallbacks=0,broken=0;
+    const picks=c.roles.map(rr=>{
+      const avail=rr.k.find(k=>!banned.has(k));
+      const isFb=avail&&avail!==rr.k[0];
+      if(broken||avail){}
+      if(!avail)broken++; else if(isFb)fallbacks++;
+      return{role:rr.r,champ:avail,orig:rr.k[0],fb:isFb,dead:!avail};
+    });
+    let cls=broken?'broken':fallbacks?'fallback':'intact';
+    return{c,picks,fallbacks,broken,cls};
+  });
+  document.getElementById('labResult').innerHTML=res.map(R=>`
+   <div class="lc ${R.cls}">
+     <div class="lc-badge" style="background:${R.c.color}"><span>${R.c.id}</span></div>
+     <div><div class="lc-name">${R.c.name}</div><div class="lc-sub">${R.c.tag}</div>
+       <div class="lc-picks">${R.picks.map(p=>`
+         <span class="lc-pick ${p.dead?'dead':p.fb?'fb':''}">${p.champ?ico(p.champ):''}<span class="lc-pk-nm">${p.champ||p.role+' ✕'}</span></span>`).join('')}</div></div>
+     <div class="lc-status ${R.cls}">${R.broken?'Broken':R.fallbacks?'Fallbacks':'Intact'}
+       <small>${R.broken?R.broken+' role(s) dead':R.fallbacks?R.fallbacks+' backup pick(s)':'all primaries up'}</small></div>
+   </div>`).join('');
+}
+document.getElementById('resetBans').onclick=()=>{banned.clear();update();};
+document.querySelectorAll('[data-scn]').forEach(b=>b.onclick=()=>{
+  banned.clear();
+  const scn=b.dataset.scn;
+  const sets={meta:['Malphite','Caitlyn','Rell','Viego','Annie'],engage:['Malphite','Rell','Wukong','Alistar','Annie']};
+  (sets[scn]||[]).forEach(n=>banned.add(n));update();
+});
+safe(update);
+
+/* ── Lineup ── */
+document.getElementById('lineup').innerHTML=SEATS.map(s=>`
+  <div class="seat"><div class="role" style="color:${ROLE_C[s[0]]}">${s[0]}</div>
+  <div class="who">${s[1]}</div><div class="hdl">${s[2]}</div>
+  <span class="bar" style="background:${ROLE_C[s[0]]}"></span></div>`).join('');
+
+/* ── Roster ── */
+document.getElementById('rosterGrid').innerHTML=PLAYERS.map(p=>`
+ <div class="panel player">
+   <div class="phead">
+     <div class="pavatar" style="background:${ROLE_C[p.roles[0]]}"><span>${p.init}</span></div>
+     <div><div class="pname">${p.name}</div><div class="phandle">${p.handle}</div></div>
+     <div class="prank"><div class="r" style="color:var(--gold-bright)">${p.rank}</div><div class="l">Solo Queue</div></div>
+   </div>
+   <div class="roles-mini">${p.roles.map(r=>`<span class="rolepill" style="background:${ROLE_C[r]}">${r}</span>`).join('')}
+     <span class="rolepill" style="background:transparent;border:1px solid var(--gold);color:var(--gold)">Clash: ${p.clash}</span></div>
+   <div style="font-size:13px;color:var(--txt-dim);margin-top:8px">${p.note}</div>
+   <div class="pool">${p.pool.map(c=>`
+     <div class="champ-row">${ico(c[0])}<span class="champ-nm">${c[0]}</span>
+     <span class="champ-gm">${c[1]}g</span>
+     <span class="wrbar"><i style="width:${c[2]}%;background:${wrColor(c[2])}"></i></span>
+     <span class="wrnum" style="color:${wrColor(c[2])}">${c[2]}%</span></div>`).join('')}</div>
+   <div class="expand-hint">▾ tap for champ pool</div>
+ </div>`).join('');
+document.querySelectorAll('.player').forEach(p=>p.onclick=()=>p.classList.toggle('open'));
+
+/* ── Comps ── */
+document.getElementById('compList').innerHTML=COMPS.map(c=>`
+ <div class="panel comp">
+   <div class="comp-head">
+     <div class="comp-badge" style="background:${c.color}"><span>${c.id}</span></div>
+     <div><div class="comp-name">${c.name}</div><div class="comp-id">${c.tag}</div></div>
+     <div class="comp-tier tier-${c.tier}">${c.tier}</div>
+   </div>
+   <div class="comp-roles">${c.roles.map(rr=>`
+     <div class="cr"><div class="crole" style="color:${ROLE_C[rr.r]}">${rr.r} · ${rr.p}</div>
+       <div class="cpick">${ico(rr.k[0])}<div><div class="cchamp">${rr.k[0]}</div></div></div>
+       <div class="cbackup"><b>↳</b> ${rr.k.slice(1).join(', ')||'—'}</div></div>`).join('')}</div>
+   <div class="cm-plain">👉 <b>In plain English:</b> ${PLAIN[c.id]}</div>
+   <div class="comp-meta">
+     <div class="cm-row cm-win"><span class="ic">Win Con</span><span>${c.win}</span></div>
+     <div class="cm-row cm-spike"><span class="ic">Power Spike</span><span>${c.spike}</span></div>
+     <div class="cm-row cm-lose"><span class="ic">Loses To</span><span>${c.lose}</span></div>
+   </div>
+ </div>`).join('');
+
+/* ── Meta tier table ── */
+document.getElementById('tierBody').innerHTML=TIERS.map(t=>`<tr>
+  <td class="role-cell" style="color:${ROLE_C[t[0]]}">${t[0]}</td>
+  <td>${t[1].split(', ').map(c=>`<span class="mini-champ">${c}</span>`).join('')}</td>
+  <td style="color:var(--txt-dim)">${t[2]}</td>
+  <td class="ours">${t[3]}</td></tr>`).join('');
+
+/* ── Start Here: planDo / planDont / jobsGrid / glossary ── */
+document.getElementById('planDo').innerHTML=GAMEPLAN_DO.map((s,i)=>`
+ <div class="step"><span class="step-n">${i+1}</span><span class="step-txt"><b>${s[0]}.</b> ${s[1]}</span></div>`).join('');
+document.getElementById('planDont').innerHTML=GAMEPLAN_DONT.map(t=>`
+ <div class="step"><span class="step-x">✕</span><span class="step-txt">${t}</span></div>`).join('');
+
+document.getElementById('jobsGrid').innerHTML=ORDER5.map(name=>{
+ const p=PLAYERS.find(x=>x.name===name),j=JOBS[name],col=ROLE_C[p.clash];
+ const init=j.main.replace(/[^A-Za-z]/g,'').slice(0,3).toUpperCase();
+ return`<div class="panel jobcard"><span class="jc-bar" style="background:${col}"></span>
+   <div class="jc-top"><div class="jc-ico"><img src="${icoURL(j.main)}" alt="${j.main}" onerror="this.parentNode.textContent='${init}'"></div>
+     <div><div class="jc-name">${name}</div><div class="jc-role" style="color:${col}">${j.role}</div></div></div>
+   <div class="jc-main">🎯 Main champ to play: <b>${j.main}</b></div>
+   <div class="jc-label">In a fight, your job is:</div>
+   <div class="jc-fight">${j.fight}</div>
+   <div class="jc-label" style="margin-top:14px">Practice this:</div>
+   <div class="jc-practice">${j.practice}</div></div>`;
+}).join('');
+
+document.getElementById('glossary').innerHTML=GLOSSARY.map(g=>`
+ <div class="gloss"><span class="word">${g[0]}</span><span class="def">${g[1]}</span></div>`).join('');
+
+safe(renderPhases);
