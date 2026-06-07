@@ -4,4 +4,4 @@ Thumbs.db
 *.tmp
 
 .playwright-mcp/
-analysis-tab.png
+analysis-*.png
