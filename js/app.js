@@ -18,3 +18,10 @@ function tick(){
   document.getElementById('cd-s').textContent=String(ss).padStart(2,'0');
 }
 tick();setInterval(tick,1000);
+
+/* ── PWA: register service worker ── */
+if('serviceWorker' in navigator){
+  window.addEventListener('load',()=>{
+    navigator.serviceWorker.register('sw.js').catch(e=>console.warn('SW:',e));
+  });
+}
