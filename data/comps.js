@@ -1,5 +1,5 @@
 const COMPS=[
- {id:'A',name:'Wombo',tag:'Hard-Engage Teamfight',tier:'PRIMARY',color:'#c8aa6e',
+ {id:'wombo',name:'Wombo',tag:'Hard-Engage Teamfight',tier:'PRIMARY',color:'#c8aa6e',
   source:'claude',status:'core',
   roles:[{r:'Top',p:'Harendra',k:['Malphite','Sion','Shen']},{r:'Jungle',p:'Geeth',k:['Wukong','Vi','Viego','Nocturne']},{r:'Mid',p:'Steven',k:['Annie','Orianna','Galio']},{r:'ADC',p:'Shabir',k:['Caitlyn','Ashe','Jinx']},{r:'Support',p:'Eshantha',k:['Rell','Alistar','Morgana']}],
   win:'Group at 2 items / lvl 6+. Find one engage → chain CC a target → 5v5 ace → take Baron/Dragon.',
@@ -11,7 +11,7 @@ const COMPS=[
   win:'Control vision, catch one carry/jungler out → take Baron/objectives 5v4. Avoid straight 5v5.',
   spike:'Mid game; snowballs once Jinx gets 2–3 kills.',
   lose:'Grouped comps that never get caught + strong waveclear. Fall back to Comp A.'},
- {id:'C',name:'Front-to-Back',tag:'Stable Teamfight',tier:'SAFE',color:'#4b9cff',
+ {id:'ftb',name:'Front-to-Back',tag:'Stable Teamfight',tier:'SAFE',color:'#4b9cff',
   source:'claude',status:'core',
   roles:[{r:'Top',p:'Harendra',k:['Sion','Malphite']},{r:'Jungle',p:'Geeth',k:['Viego','Briar','Warwick']},{r:'Mid',p:'Steven',k:['Orianna','Lux','Annie']},{r:'ADC',p:'Shabir',k:['Caitlyn','Jinx','Kalista']},{r:'Support',p:'Eshantha',k:['Alistar','Rell','Braum']}],
   win:'Stand behind tanks, Orianna ball on frontline → Shockwave, Caitlyn + Viego mop up. Lowest variance.',
@@ -29,12 +29,47 @@ const COMPS=[
   win:'Peel a hypercarry (Jinx/Kalista) with Seraphine + tanks. Developmental — needs Eshantha\'s Seraphine online.',
   spike:'Late game.',
   lose:'Our weakest archetype until we have a real enchanter. Park it for now.'}
+,{id:'control',name:'Control Teamfight',tag:'Proven winner (Jun 6)',tier:'PRIMARY',color:'#3fb950',
+  source:'claude',status:'core',
+  roles:[{r:'Top',p:'Harendra',k:['Shen','Malphite']},{r:'Jungle',p:'Geeth',k:['Viego','Wukong']},{r:'Mid',p:'Steven',k:['Orianna','Lux']},{r:'ADC',p:'Shabir',k:['Caitlyn','Ashe']},{r:'Support',p:'Eshantha',k:['Rell','Alistar']}],
+  win:'Rell engage → Orianna Shockwave → Caitlyn cleans up; Shen R impacts the map. Group and teamfight as 5.',
+  spike:'Mid game; very strong once Orianna/Viego hit 2 items.',
+  lose:'Early-game snowball comps if we fall behind pre-14. Don\'t give up the early game.'}
+,{id:'snowball',name:'Aggressive Snowball',tag:'Lane Kingdom',tier:'FLEX',color:'#e0503e',
+  source:'eshantha',status:'proposed',
+  roles:[{r:'Top',p:'Eshantha',k:['Anivia']},{r:'Jungle',p:'Harendra',k:['Volibear']},{r:'Mid',p:'Geeth',k:['Talon']},{r:'ADC',p:'Shabir',k:['Draven']},{r:'Support',p:'Steven',k:['Morgana']}],
+  win:'Pure early aggression — Talon/Voli invade, Draven snowballs, Anivia traps lanes. 8–10 kill lead by 15.',
+  spike:'Early (0–15 min).',
+  lose:'Falls off if the early lead doesn\'t convert. Proposed — untested.'}
+,{id:'president',name:'Protect the President',tag:'Peel for MF',tier:'FLEX',color:'#c586e0',
+  source:'eshantha',status:'proposed',
+  roles:[{r:'Top',p:'Harendra',k:['Shen']},{r:'Jungle',p:'Shabir',k:['Warwick']},{r:'Mid',p:'Steven',k:['Orianna']},{r:'ADC',p:'Geeth',k:['Miss Fortune']},{r:'Support',p:'Eshantha',k:['Alistar']}],
+  win:'Keep Geeth\'s MF alive to channel Bullet Time. Fight only when MF can free-fire.',
+  spike:'Mid game.',
+  lose:'Dive assassins (Zed/Rengar) bypass peel. Proposed — untested.'}
+,{id:'zone',name:'Zone Control',tag:'Suffocate the map',tier:'FLEX',color:'#0397ab',
+  source:'eshantha',status:'proposed',
+  roles:[{r:'Top',p:'Eshantha',k:['Anivia']},{r:'Jungle',p:'Harendra',k:['Ivern']},{r:'Mid',p:'Steven',k:['Veigar']},{r:'ADC',p:'Geeth',k:['Caitlyn']},{r:'Support',p:'Shabir',k:['Rell']}],
+  win:'Wall/cage/traps make every objective a prison. Force enemies to enter your fortress.',
+  spike:'Mid-late.',
+  lose:'Mobile/flank champs (Hecarim) skip the zone. Proposed — untested.'}
+,{id:'poke',name:'Poke & Distance',tag:'Bleed them dry',tier:'FLEX',color:'#4b9cff',
+  source:'eshantha',status:'proposed',
+  roles:[{r:'Top',p:'Eshantha',k:['Anivia']},{r:'Jungle',p:'Harendra',k:['Ivern']},{r:'Mid',p:'Steven',k:['Lux']},{r:'ADC',p:'Geeth',k:['Caitlyn']},{r:'Support',p:'Shabir',k:['Morgana']}],
+  win:'Chunk enemies before fights; start objectives only after they\'re low. Never flip Baron.',
+  spike:'Mid game.',
+  lose:'Hard engage that closes distance. Proposed — untested.'}
 ];
 
 const PLAIN={
- A:'Walk around as a group of 5. <b>Harendra (Malphite) and Eshantha jump in first</b> to start the fight, then everyone piles onto the same enemy. Use this when both teams want to fight.',
+ wombo:'Walk around as a group of 5. <b>Harendra (Malphite) and Eshantha jump in first</b> to start the fight, then everyone piles onto the same enemy. Use this when both teams want to fight.',
  B:'Hide in the bushes near Dragon/Baron, <b>catch ONE enemy who walks alone</b>, and kill them fast. Then take the objective while they\'re down a player. Use when the enemy plays slow and scared.',
- C:'The <b>safe, hard-to-mess-up</b> one. Hide behind your tanks, let them walk in, and your ADC shoots from the back. Pick this when you\'re not sure what the enemy is doing.',
+ ftb:'The <b>safe, hard-to-mess-up</b> one. Hide behind your tanks, let them walk in, and your ADC shoots from the back. Pick this when you\'re not sure what the enemy is doing.',
  D:'<b>Jump on the enemy\'s squishy damage dealers and delete them.</b> Only use this when the enemy has no big tanks protecting their carries.',
- E:'Protect one super-strong ADC and let them win the game. <b>We can\'t do this well yet</b> (no enchanter) — ignore it for now.'
+ E:'Protect one super-strong ADC and let them win the game. <b>We can\'t do this well yet</b> (no enchanter) — ignore it for now.',
+ control:'Stand behind your tanks, Steven drops the Orianna Shockwave, Caitlyn cleans up from range — this is the comp that <b>won on June 6</b>. Group and fight as five.',
+ snowball:'Win every lane early and run them over before 15 minutes. <b>Proposed by Eshantha — not tested yet.</b>',
+ president:'Everyone protects Geeth on Miss Fortune so he can ult safely into the fight. <b>Proposed — untested.</b>',
+ zone:'Lock down objectives with walls/cages/traps so the enemy can\'t walk in. <b>Proposed — untested.</b>',
+ poke:'Chip them from range until they\'re too low to fight, then take the objective. <b>Proposed — untested.</b>'
 };

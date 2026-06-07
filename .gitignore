@@ -2,3 +2,6 @@
 Thumbs.db
 .playwright-mcp/
 *.tmp
+
+.playwright-mcp/
+analysis-tab.png
