@@ -1,0 +1,33 @@
+name: Refresh player data
+
+on:
+  schedule:
+    - cron: '0 4 * * *'   # daily 04:00 UTC
+  workflow_dispatch:        # manual "Run workflow" button
+
+permissions:
+  contents: write           # allow the action to commit data
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run pipeline
+        env:
+          RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
+        run: node pipeline/run.js
+      - name: Commit updated data
+        run: |
+          git config user.name "clash-hq-bot"
+          git config user.email "actions@github.com"
+          git add data/players
+          if git diff --staged --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "data: refresh player profiles [skip ci]"
+            git push
+          fi
