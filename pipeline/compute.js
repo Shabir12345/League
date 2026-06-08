@@ -73,4 +73,42 @@ function isFiveStack(match, rosterPuuids) {
   return ours.length === 5 && teams.size === 1;
 }
 
-module.exports = { participantFor, roleOf, laneOpponent, statAtMinute, gameStats, isFiveStack };
+const avg = arr => arr.length ? arr.reduce((s, n) => s + n, 0) / arr.length : 0;
+
+function aggregateChampPool(games) {
+  const by = {};
+  games.forEach(g => { (by[g.champ] = by[g.champ] || []).push(g); });
+  return Object.entries(by).map(([champ, gs]) => {
+    const diffs = gs.map(g => g.csDiff10).filter(v => v != null);
+    return {
+      champ,
+      games: gs.length,
+      wr: Math.round(gs.filter(g => g.win).length / gs.length * 100),
+      kda: round2(avg(gs.map(g => g.kda))),
+      csm: round2(avg(gs.map(g => g.csm))),
+      csDiff10: diffs.length ? round2(avg(diffs)) : null
+    };
+  }).sort((a, b) => b.games - a.games);
+}
+
+function aggregateRoleSplits(games) {
+  const by = {};
+  games.forEach(g => { (by[g.role] = by[g.role] || []).push(g); });
+  return Object.entries(by).map(([role, gs]) => ({
+    role,
+    games: gs.length,
+    wr: Math.round(gs.filter(g => g.win).length / gs.length * 100)
+  })).sort((a, b) => b.games - a.games);
+}
+
+function form(games, n) {
+  return games.slice(0, n).map(g => (g.win ? 'W' : 'L'));
+}
+
+module.exports = {
+  participantFor, roleOf, laneOpponent,
+  statAtMinute,
+  gameStats,
+  isFiveStack,
+  aggregateChampPool, aggregateRoleSplits, form
+};

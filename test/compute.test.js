@@ -89,3 +89,39 @@ test('isFiveStack false when the five are split across teams', () => {
 test('isFiveStack false when fewer than five roster members are present', () => {
   assert.strictEqual(C.isFiveStack(match, [PUUIDS.OURS, PUUIDS.MATE]), false);
 });
+
+const GAMES = [ // newest-first
+  { champ:'Ahri', role:'Mid', win:true,  kda:3.0, csm:7.0, csDiff10:10 },
+  { champ:'Ahri', role:'Mid', win:false, kda:1.0, csm:6.0, csDiff10:-2 },
+  { champ:'Zed',  role:'Mid', win:true,  kda:2.0, csm:8.0, csDiff10:5  }
+];
+
+test('aggregateChampPool groups, counts, averages and rounds', () => {
+  const pool = C.aggregateChampPool(GAMES);
+  const ahri = pool.find(c => c.champ === 'Ahri');
+  assert.strictEqual(ahri.games, 2);
+  assert.strictEqual(ahri.wr, 50);
+  assert.strictEqual(ahri.kda, 2.0);
+  assert.strictEqual(ahri.csm, 6.5);
+  assert.strictEqual(ahri.csDiff10, 4);
+});
+
+test('aggregateChampPool sorts by games descending', () => {
+  const pool = C.aggregateChampPool(GAMES);
+  assert.strictEqual(pool[0].champ, 'Ahri');
+});
+
+test('aggregateRoleSplits groups by role with WR', () => {
+  const roles = C.aggregateRoleSplits(GAMES);
+  assert.deepStrictEqual(roles, [{ role:'Mid', games:3, wr:67 }]);
+});
+
+test('form returns most-recent-first W/L capped at n', () => {
+  assert.deepStrictEqual(C.form(GAMES, 2), ['W', 'L']);
+});
+
+test('aggregateChampPool ignores null csDiff10 in the average', () => {
+  const g = [{ champ:'X', role:'Mid', win:true, kda:1, csm:5, csDiff10:null },
+             { champ:'X', role:'Mid', win:true, kda:1, csm:5, csDiff10:8 }];
+  assert.strictEqual(C.aggregateChampPool(g)[0].csDiff10, 8);
+});
