@@ -28,6 +28,9 @@ jobs:
           if git diff --staged --quiet; then
             echo "No data changes."
           else
-            git commit -m "data: refresh player profiles [skip ci]"
+            # No [skip ci]: this workflow only runs on schedule/dispatch (never on
+            # push), so the data commit can't loop — and dropping the tag lets
+            # Vercel/Pages auto-redeploy the fresh data.
+            git commit -m "data: refresh player profiles"
             git push
           fi
