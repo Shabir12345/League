@@ -100,8 +100,10 @@ document.getElementById('rosterGrid').innerHTML=PLAYERS.map(p=>`
      <span class="wrbar"><i style="width:${c[2]}%;background:${wrColor(c[2])}"></i></span>
      <span class="wrnum" style="color:${wrColor(c[2])}">${c[2]}%</span></div>`).join('')}</div>
    <div class="expand-hint">▾ tap for champ pool</div>
+   <div class="pf-link" data-pf="${p.name}">View data profile →</div>
  </div>`).join('');
 document.querySelectorAll('.player').forEach(p=>p.onclick=()=>p.classList.toggle('open'));
+document.querySelectorAll('.pf-link').forEach(l=>l.addEventListener('click',e=>{ e.stopPropagation(); openProfile(l.dataset.pf); }));
 
 /* ── Comps ── */
 document.getElementById('compList').innerHTML=COMPS.map(c=>`
@@ -227,3 +229,169 @@ function renderAnalysis(){
   document.querySelectorAll('#anLog .phase-head').forEach(h=>h.onclick=()=>h.parentNode.classList.toggle('open'));
 }
 safe(renderAnalysis);
+
+/* ── Profiles ── */
+const PROFILE_FILES = { Harendra:'harendra', Geeth:'geeth', Steven:'steven', Shabir:'shabir', Eshantha:'eshantha' };
+let PROFILES = null;            // { Harendra:{json}|null, ... } once a load attempt finishes
+let profilesLoading = false;
+let profileState = { player:null, side:'soloFlex' };  // side: 'soloFlex' | 'fiveStack'
+
+function relTime(ts){
+  const s = Math.floor((Date.now()-ts)/1000);
+  if(s<60) return 'just now';
+  const m = Math.floor(s/60); if(m<60) return m+'m ago';
+  const h = Math.floor(m/60); if(h<24) return h+'h ago';
+  return Math.floor(h/24)+'d ago';
+}
+function diffColor(v){ return v>0?'var(--good)':v<0?'var(--bad)':'var(--txt-dim)'; }
+
+function loadProfiles(){
+  if(PROFILES || profilesLoading){ renderProfiles(); return; }
+  profilesLoading = true;
+  renderProfiles();               // show loading state
+  Promise.allSettled(ORDER5.map(name =>
+    fetch(`data/players/${PROFILE_FILES[name]}.json`)
+      .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+  )).then(results => {
+    PROFILES = {};
+    ORDER5.forEach((name,i) => { PROFILES[name] = results[i].status==='fulfilled' ? results[i].value : null; });
+    profilesLoading = false;
+    renderProfiles();
+  });
+}
+
+function renderProfiles(){
+  const root = document.getElementById('profiles');
+  if(!PROFILES && profilesLoading){
+    root.innerHTML = `<div class="sec-title">Player Profiles</div><div class="panel"><div class="an-headline">Loading live player data…</div></div>`;
+    return;
+  }
+  if(!PROFILES) return;           // tab never opened yet
+  if(profileState.player) renderPlayerPage(profileState.player);
+  else renderProfilesOverview();
+}
+
+function renderProfilesOverview(){
+  const loaded = ORDER5.filter(n => PROFILES[n]);
+  if(!loaded.length){
+    document.getElementById('profiles').innerHTML =
+      `<div class="sec-title">Player Profiles</div>
+       <div class="panel"><div class="an-headline">Profiles need to load online once. Connect to the internet and reopen this tab.</div></div>`;
+    return;
+  }
+  const oldest = Math.min(...loaded.map(n => new Date(PROFILES[n].generatedAt).getTime()));
+  const cards = ORDER5.map(name => {
+    const d = PROFILES[name];
+    if(!d) return `<div class="panel pf-ov err">${name} — couldn't load data. Check connection.</div>`;
+    const top  = (d.soloFlex.champPool||[])[0];
+    const role = (d.soloFlex.roleSplits||[])[0];
+    const pips = (d.soloFlex.form||[]).map(r => `<span class="pip ${r}">${r}</span>`).join('');
+    return `<div class="panel pf-ov" data-player="${name}">
+      <div class="pf-ov-head">
+        ${top?ico(top.champ):''}
+        <div><div class="pf-ov-name">${name}</div>
+          <div class="pf-ov-rank">${d.rank.solo||'Unranked'}${d.rank.flex?` · ${d.rank.flex} (flex)`:''}</div></div>
+        ${role?`<div class="pf-ov-role" style="color:${ROLE_C[role.role]||'var(--gold)'}">${role.role}</div>`:''}
+      </div>
+      ${top?`<div class="pf-ov-main">Main: <b>${top.champ}</b> · <span style="color:${wrColor(top.wr)}">${top.wr}% WR</span> · ${top.games} gms</div>`:''}
+      <div class="form-pips">${pips}</div>
+    </div>`;
+  }).join('');
+  document.getElementById('profiles').innerHTML =
+    `<div class="sec-title">Player Profiles <span class="n">// tap a player · live from Riot</span></div>
+     <div class="grid g3">${cards}</div>
+     <div class="pf-updated">Updated ${relTime(oldest)}</div>`;
+  document.querySelectorAll('#profiles [data-player]').forEach(c => c.onclick = () => {
+    profileState.player = c.dataset.player; profileState.side = 'soloFlex';
+    renderProfiles(); window.scrollTo({ top:0, behavior:'smooth' });
+  });
+}
+
+function renderPlayerPage(name){
+  const root = document.getElementById('profiles');
+  const d = PROFILES[name];
+  const backHTML = `<div class="pf-back" id="pfBack">‹ Profiles</div>`;
+  if(!d){
+    root.innerHTML = backHTML + `<div class="panel"><div class="an-headline">Couldn't load ${name}'s data. Check your connection and reopen.</div></div>`;
+    document.getElementById('pfBack').onclick = backToOverview;
+    return;
+  }
+  const side  = profileState.side;                 // 'soloFlex' | 'fiveStack'
+  const agg   = d[side] || { champPool:[], roleSplits:[], form:[] };
+  const games = (d.games||[]).filter(g => side==='fiveStack' ? g.fiveStack : !g.fiveStack);
+  const pool  = [...(agg.champPool||[])].sort((a,b)=>b.games-a.games);
+  const empty = !pool.length && !games.length;
+
+  const pips = (agg.form||[]).map(r => `<span class="pip ${r}">${r}</span>`).join('') || '<span class="pf-empty">—</span>';
+
+  const poolHTML = pool.length ? pool.map(c => `
+    <div class="pf-cp-row">${ico(c.champ)}<span class="pf-cp-nm">${c.champ}</span>
+      <span class="pf-cp-g">${c.games}g</span>
+      <span class="pf-cp-wr" style="color:${wrColor(c.wr)}">${c.wr}%</span>
+      <span class="pf-cp-kda">${c.kda} KDA</span>
+      <span class="pf-cp-cs">${c.csm} CS/m</span>
+      <span class="pf-cp-d" style="color:${diffColor(c.csDiff10)}">${fmtDiff(c.csDiff10,{dec:1})} CSΔ10</span></div>`).join('')
+    : `<div class="pf-empty">No ${side==='fiveStack'?'5-stack':'solo/flex'} champ data yet.</div>`;
+
+  const la = laneAggregate(games);
+  const laneCell = (k, v) => `<div class="lane-cell"><div class="lane-k">${k}</div><div class="lane-v">${v}</div></div>`;
+  const laneHTML = games.length ? `<div class="pf-lane">
+      ${laneCell('CS @10', la.csAt10!=null?la.csAt10.toFixed(0):'—')}
+      ${laneCell('CSΔ @10', `<span style="color:${diffColor(la.csDiff10)}">${fmtDiff(la.csDiff10,{dec:1})}</span>`)}
+      ${laneCell('CSΔ @14', `<span style="color:${diffColor(la.csDiff14)}">${fmtDiff(la.csDiff14,{dec:1})}</span>`)}
+      ${laneCell('GoldΔ @10', `<span style="color:${diffColor(la.goldDiff10)}">${fmtDiff(la.goldDiff10,{k:true})}</span>`)}
+      ${laneCell('GoldΔ @14', `<span style="color:${diffColor(la.goldDiff14)}">${fmtDiff(la.goldDiff14,{k:true})}</span>`)}
+    </div><div class="pf-lane-n">Averages over ${la.n} game${la.n===1?'':'s'} vs lane opponent.</div>`
+    : `<div class="pf-empty">No ${side==='fiveStack'?'5-stack':'solo/flex'} games to measure.</div>`;
+
+  const rolesHTML = (agg.roleSplits||[]).length
+    ? `<div class="pf-roles">${agg.roleSplits.map(r=>`${r.role} ${r.games}g <span style="color:${wrColor(r.wr)}">${r.wr}%</span>`).join('  ·  ')}</div>`
+    : `<div class="pf-empty">No role data yet.</div>`;
+
+  const gamesHTML = games.length ? games.slice(0,20).map(g => `
+    <div class="pf-gm">
+      <b class="${g.win?'gm-w':'gm-l'}">${g.win?'W':'L'}</b>
+      ${ico(g.champ)}<span class="pf-gm-nm">${g.champ}</span>
+      <span class="pf-gm-kda">${g.k}/${g.d}/${g.a}</span>
+      <span class="pf-gm-cs">${g.csm} cs/m</span>
+      <span class="pf-gm-kp">${g.kp}% KP</span>
+      <span class="pf-gm-d" style="color:${diffColor(g.csDiff10)}">${fmtDiff(g.csDiff10,{dec:0})} csΔ10</span>
+    </div>`).join('')
+    : `<div class="pf-empty">No ${side==='fiveStack'?'5-stack':'solo/flex'} games yet.</div>`;
+
+  root.innerHTML = backHTML + `
+    <div class="pf-hero">
+      <div class="pf-hero-name">${name}</div>
+      <div class="pf-toggle">
+        <button class="pf-tg ${side==='soloFlex'?'on':''}" data-side="soloFlex">Solo/Flex</button>
+        <button class="pf-tg ${side==='fiveStack'?'on':''}" data-side="fiveStack">5-Stack</button>
+      </div>
+    </div>
+    <div class="pf-subline">
+      <span>${d.rank.solo||'Unranked'} (Solo)${d.rank.flex?` · ${d.rank.flex} (Flex)`:''}</span>
+      <span class="form-pips" style="margin:0">${pips}</span>
+      <span style="color:var(--txt-faint)">Updated ${relTime(new Date(d.generatedAt).getTime())}</span>
+    </div>
+    ${empty ? `<div class="panel"><div class="pf-empty">No ${side==='fiveStack'?'5-stack':'solo/flex'} games for ${name} yet.</div></div>` : `
+    <div class="sec-title" style="margin-top:6px">Champ Pool <span class="n">// real win rate</span></div>
+    <div class="panel" style="margin-bottom:8px">${poolHTML}</div>
+    <div class="sec-title" style="margin-top:22px">Lane / Early Game <span class="n">// vs lane opponent</span></div>
+    <div class="panel" style="margin-bottom:8px">${laneHTML}</div>
+    <div class="sec-title" style="margin-top:22px">Role Split</div>
+    <div class="panel" style="margin-bottom:8px">${rolesHTML}</div>
+    <div class="sec-title" style="margin-top:22px">Game-by-Game <span class="n">// recent</span></div>
+    <div class="panel">${gamesHTML}</div>`}
+  `;
+
+  document.getElementById('pfBack').onclick = backToOverview;
+  document.querySelectorAll('#profiles .pf-tg').forEach(b => b.onclick = () => {
+    profileState.side = b.dataset.side; renderProfiles();
+  });
+}
+
+function backToOverview(){ profileState.player = null; renderProfiles(); window.scrollTo({ top:0, behavior:'smooth' }); }
+
+function openProfile(name){
+  profileState.player = name; profileState.side = 'soloFlex';
+  showView('profiles'); loadProfiles();
+}
