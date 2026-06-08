@@ -1,0 +1,9 @@
+{
+  "name": "clash-hq",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Clash HQ — team war room (static PWA) + Riot data pipeline",
+  "scripts": {
+    "test": "node --test \"test/*.test.js\""
+  }
+}
