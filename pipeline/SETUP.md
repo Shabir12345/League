@@ -1,4 +1,4 @@
-# Setting up the Riot data pipeline
+I # Setting up the Riot data pipeline
 
 This makes Clash HQ refresh everyone's stats automatically once a day. You do
 this **once**. ~10 minutes.
