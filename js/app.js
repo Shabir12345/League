@@ -4,7 +4,10 @@ function showView(v){
   document.querySelectorAll('.view').forEach(x=>x.classList.toggle('active',x.id===v));
   window.scrollTo({top:0,behavior:'smooth'});
 }
-document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>showView(t.dataset.v)));
+document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
+  showView(t.dataset.v);
+  if(t.dataset.v==='profiles') loadProfiles();
+}));
 
 /* ── Countdown ── */
 const TARGET=new Date('2026-06-20T18:00:00').getTime();
