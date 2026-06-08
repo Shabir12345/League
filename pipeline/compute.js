@@ -13,4 +13,16 @@ function laneOpponent(match, me) {
   ) || null;
 }
 
-module.exports = { participantFor, roleOf, laneOpponent };
+function statAtMinute(timeline, participantId, minute) {
+  const frame = timeline.info.frames[minute];
+  if (!frame) return null;
+  const pf = frame.participantFrames[String(participantId)];
+  if (!pf) return null;
+  return {
+    cs: (pf.minionsKilled || 0) + (pf.jungleMinionsKilled || 0),
+    gold: pf.totalGold || 0,
+    xp: pf.xp || 0
+  };
+}
+
+module.exports = { participantFor, roleOf, laneOpponent, statAtMinute };

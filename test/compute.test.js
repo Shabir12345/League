@@ -22,3 +22,12 @@ test('laneOpponent finds the enemy in the same position', () => {
   const opp = C.laneOpponent(match, me);
   assert.strictEqual(opp.puuid, PUUIDS.OPP);
 });
+
+test('statAtMinute reads CS (lane+jungle) and gold from the frame', () => {
+  const s = C.statAtMinute(timeline, 1, 10);
+  assert.deepStrictEqual(s, { cs: 75, gold: 5000, xp: 6000 });
+});
+
+test('statAtMinute returns null when the game ended before that minute', () => {
+  assert.strictEqual(C.statAtMinute(timeline, 1, 99), null);
+});
