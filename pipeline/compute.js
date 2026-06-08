@@ -66,4 +66,11 @@ function gameStats(match, timeline, puuid) {
   };
 }
 
-module.exports = { participantFor, roleOf, laneOpponent, statAtMinute, gameStats };
+function isFiveStack(match, rosterPuuids) {
+  const ours = match.info.participants.filter(p => rosterPuuids.includes(p.puuid));
+  if (ours.length < 5) return false;
+  const teams = new Set(ours.map(p => p.teamId));
+  return ours.length === 5 && teams.size === 1;
+}
+
+module.exports = { participantFor, roleOf, laneOpponent, statAtMinute, gameStats, isFiveStack };

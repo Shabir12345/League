@@ -61,3 +61,31 @@ test('gameStats sets lane-diff fields to null when no lane opponent', () => {
   assert.strictEqual(r.csDiff10, null);
   assert.strictEqual(r.goldDiff10, null);
 });
+
+test('isFiveStack true when all five puuids share one team', () => {
+  const five = JSON.parse(JSON.stringify(match));
+  const ids = ['a', 'b', 'c', 'd', 'e'];
+  five.info.participants = ids.map((puuid, i) => ({
+    puuid, participantId: i + 1, teamId: 100, teamPosition: 'TOP',
+    championName: 'X', win: true, kills: 1, deaths: 1, assists: 1,
+    totalMinionsKilled: 1, neutralMinionsKilled: 0, visionScore: 1,
+    totalDamageDealtToChampions: 1, goldEarned: 1
+  }));
+  assert.strictEqual(C.isFiveStack(five, ids), true);
+});
+
+test('isFiveStack false when the five are split across teams', () => {
+  const split = JSON.parse(JSON.stringify(match));
+  const ids = ['a', 'b', 'c', 'd', 'e'];
+  split.info.participants = ids.map((puuid, i) => ({
+    puuid, participantId: i + 1, teamId: i < 4 ? 100 : 200, teamPosition: 'TOP',
+    championName: 'X', win: true, kills: 1, deaths: 1, assists: 1,
+    totalMinionsKilled: 1, neutralMinionsKilled: 0, visionScore: 1,
+    totalDamageDealtToChampions: 1, goldEarned: 1
+  }));
+  assert.strictEqual(C.isFiveStack(split, ids), false);
+});
+
+test('isFiveStack false when fewer than five roster members are present', () => {
+  assert.strictEqual(C.isFiveStack(match, [PUUIDS.OURS, PUUIDS.MATE]), false);
+});
