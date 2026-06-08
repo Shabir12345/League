@@ -227,3 +227,80 @@ function renderAnalysis(){
   document.querySelectorAll('#anLog .phase-head').forEach(h=>h.onclick=()=>h.parentNode.classList.toggle('open'));
 }
 safe(renderAnalysis);
+
+/* ── Profiles ── */
+const PROFILE_FILES = { Harendra:'harendra', Geeth:'geeth', Steven:'steven', Shabir:'shabir', Eshantha:'eshantha' };
+let PROFILES = null;            // { Harendra:{json}|null, ... } once a load attempt finishes
+let profilesLoading = false;
+let profileState = { player:null, side:'soloFlex' };  // side: 'soloFlex' | 'fiveStack'
+
+function relTime(ts){
+  const s = Math.floor((Date.now()-ts)/1000);
+  if(s<60) return 'just now';
+  const m = Math.floor(s/60); if(m<60) return m+'m ago';
+  const h = Math.floor(m/60); if(h<24) return h+'h ago';
+  return Math.floor(h/24)+'d ago';
+}
+function diffColor(v){ return v>0?'var(--good)':v<0?'var(--bad)':'var(--txt-dim)'; }
+
+function loadProfiles(){
+  if(PROFILES || profilesLoading){ renderProfiles(); return; }
+  profilesLoading = true;
+  renderProfiles();               // show loading state
+  Promise.allSettled(ORDER5.map(name =>
+    fetch(`data/players/${PROFILE_FILES[name]}.json`)
+      .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+  )).then(results => {
+    PROFILES = {};
+    ORDER5.forEach((name,i) => { PROFILES[name] = results[i].status==='fulfilled' ? results[i].value : null; });
+    profilesLoading = false;
+    renderProfiles();
+  });
+}
+
+function renderProfiles(){
+  const root = document.getElementById('profiles');
+  if(!PROFILES && profilesLoading){
+    root.innerHTML = `<div class="sec-title">Player Profiles</div><div class="panel"><div class="an-headline">Loading live player data…</div></div>`;
+    return;
+  }
+  if(!PROFILES) return;           // tab never opened yet
+  if(profileState.player) renderPlayerPage(profileState.player);
+  else renderProfilesOverview();
+}
+
+function renderProfilesOverview(){
+  const loaded = ORDER5.filter(n => PROFILES[n]);
+  if(!loaded.length){
+    document.getElementById('profiles').innerHTML =
+      `<div class="sec-title">Player Profiles</div>
+       <div class="panel"><div class="an-headline">Profiles need to load online once. Connect to the internet and reopen this tab.</div></div>`;
+    return;
+  }
+  const oldest = Math.min(...loaded.map(n => new Date(PROFILES[n].generatedAt).getTime()));
+  const cards = ORDER5.map(name => {
+    const d = PROFILES[name];
+    if(!d) return `<div class="panel pf-ov err">${name} — couldn't load data. Check connection.</div>`;
+    const top  = (d.soloFlex.champPool||[])[0];
+    const role = (d.soloFlex.roleSplits||[])[0];
+    const pips = (d.soloFlex.form||[]).map(r => `<span class="pip ${r}">${r}</span>`).join('');
+    return `<div class="panel pf-ov" data-player="${name}">
+      <div class="pf-ov-head">
+        ${top?ico(top.champ):''}
+        <div><div class="pf-ov-name">${name}</div>
+          <div class="pf-ov-rank">${d.rank.solo||'Unranked'}${d.rank.flex?` · ${d.rank.flex} (flex)`:''}</div></div>
+        ${role?`<div class="pf-ov-role" style="color:${ROLE_C[role.role]||'var(--gold)'}">${role.role}</div>`:''}
+      </div>
+      ${top?`<div class="pf-ov-main">Main: <b>${top.champ}</b> · <span style="color:${wrColor(top.wr)}">${top.wr}% WR</span> · ${top.games} gms</div>`:''}
+      <div class="form-pips">${pips}</div>
+    </div>`;
+  }).join('');
+  document.getElementById('profiles').innerHTML =
+    `<div class="sec-title">Player Profiles <span class="n">// tap a player · live from Riot</span></div>
+     <div class="grid g3">${cards}</div>
+     <div class="pf-updated">Updated ${relTime(oldest)}</div>`;
+  document.querySelectorAll('#profiles [data-player]').forEach(c => c.onclick = () => {
+    profileState.player = c.dataset.player; profileState.side = 'soloFlex';
+    renderProfiles(); window.scrollTo({ top:0, behavior:'smooth' });
+  });
+}
