@@ -125,3 +125,28 @@ test('aggregateChampPool ignores null csDiff10 in the average', () => {
              { champ:'X', role:'Mid', win:true, kda:1, csm:5, csDiff10:8 }];
   assert.strictEqual(C.aggregateChampPool(g)[0].csDiff10, 8);
 });
+
+// — hardening against real (non-fixture) Riot data —
+
+test('gameStats throws when the puuid is not in the match', () => {
+  assert.throws(() => C.gameStats(match, timeline, 'nobody'), /not in match/);
+});
+
+test('gameStats does not produce Infinity csm for a remade (0-duration) game', () => {
+  const remade = JSON.parse(JSON.stringify(match));
+  remade.info.gameDuration = 0;
+  const r = C.gameStats(remade, timeline, PUUIDS.OURS);
+  assert.ok(Number.isFinite(r.csm));
+});
+
+test('gameStats defaults vision to 0 when visionScore is missing', () => {
+  const noVision = JSON.parse(JSON.stringify(match));
+  delete noVision.info.participants[0].visionScore;
+  const r = C.gameStats(noVision, timeline, PUUIDS.OURS);
+  assert.strictEqual(r.vision, 0);
+});
+
+test('form handles an empty array and n=0', () => {
+  assert.deepStrictEqual(C.form([], 5), []);
+  assert.deepStrictEqual(C.form(GAMES, 0), []);
+});

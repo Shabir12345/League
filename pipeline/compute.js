@@ -8,6 +8,9 @@ function roleOf(teamPosition) {
   return ROLE_MAP[teamPosition] || teamPosition || 'Unknown';
 }
 function laneOpponent(match, me) {
+  // Only meaningful on Summoner's Rift; an '' teamPosition (e.g. ARAM) would
+  // match the first enemy. The pipeline filters to SR ranked queues upstream.
+  if (!me.teamPosition) return null;
   return match.info.participants.find(
     p => p.teamId !== me.teamId && p.teamPosition === me.teamPosition
   ) || null;
@@ -29,8 +32,9 @@ const round2 = n => Math.round(n * 100) / 100;
 
 function gameStats(match, timeline, puuid) {
   const me = participantFor(match, puuid);
+  if (!me) throw new Error(`puuid ${puuid} not in match ${match.metadata.matchId}`);
   const info = match.info;
-  const mins = info.gameDuration / 60;
+  const mins = Math.max(info.gameDuration / 60, 1); // guard remakes (gameDuration 0)
   const team = info.participants.filter(p => p.teamId === me.teamId);
   const teamKills = team.reduce((s, p) => s + p.kills, 0);
   const teamDmg = team.reduce((s, p) => s + p.totalDamageDealtToChampions, 0);
@@ -53,7 +57,7 @@ function gameStats(match, timeline, puuid) {
     kda: round2((me.kills + me.assists) / Math.max(me.deaths, 1)),
     csm: round2(cs / mins),
     kp: teamKills ? Math.round((me.kills + me.assists) / teamKills * 100) : 0,
-    vision: me.visionScore,
+    vision: me.visionScore || 0,
     dmgShare: teamDmg ? round2(me.totalDamageDealtToChampions / teamDmg) : 0,
     csAt10: me10 ? me10.cs : null,
     goldAt10: me10 ? me10.gold : null,
@@ -70,7 +74,7 @@ function isFiveStack(match, rosterPuuids) {
   const ours = match.info.participants.filter(p => rosterPuuids.includes(p.puuid));
   if (ours.length < 5) return false;
   const teams = new Set(ours.map(p => p.teamId));
-  return ours.length === 5 && teams.size === 1;
+  return teams.size === 1; // all roster members present share one team
 }
 
 const avg = arr => arr.length ? arr.reduce((s, n) => s + n, 0) / arr.length : 0;
