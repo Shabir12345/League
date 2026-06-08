@@ -100,8 +100,10 @@ document.getElementById('rosterGrid').innerHTML=PLAYERS.map(p=>`
      <span class="wrbar"><i style="width:${c[2]}%;background:${wrColor(c[2])}"></i></span>
      <span class="wrnum" style="color:${wrColor(c[2])}">${c[2]}%</span></div>`).join('')}</div>
    <div class="expand-hint">▾ tap for champ pool</div>
+   <div class="pf-link" data-pf="${p.name}">View data profile →</div>
  </div>`).join('');
 document.querySelectorAll('.player').forEach(p=>p.onclick=()=>p.classList.toggle('open'));
+document.querySelectorAll('.pf-link').forEach(l=>l.addEventListener('click',e=>{ e.stopPropagation(); openProfile(l.dataset.pf); }));
 
 /* ── Comps ── */
 document.getElementById('compList').innerHTML=COMPS.map(c=>`
