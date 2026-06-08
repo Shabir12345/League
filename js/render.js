@@ -304,3 +304,92 @@ function renderProfilesOverview(){
     renderProfiles(); window.scrollTo({ top:0, behavior:'smooth' });
   });
 }
+
+function renderPlayerPage(name){
+  const root = document.getElementById('profiles');
+  const d = PROFILES[name];
+  const backHTML = `<div class="pf-back" id="pfBack">‹ Profiles</div>`;
+  if(!d){
+    root.innerHTML = backHTML + `<div class="panel"><div class="an-headline">Couldn't load ${name}'s data. Check your connection and reopen.</div></div>`;
+    document.getElementById('pfBack').onclick = backToOverview;
+    return;
+  }
+  const side  = profileState.side;                 // 'soloFlex' | 'fiveStack'
+  const agg   = d[side] || { champPool:[], roleSplits:[], form:[] };
+  const games = (d.games||[]).filter(g => side==='fiveStack' ? g.fiveStack : !g.fiveStack);
+  const pool  = [...(agg.champPool||[])].sort((a,b)=>b.games-a.games);
+  const empty = !pool.length && !games.length;
+
+  const pips = (agg.form||[]).map(r => `<span class="pip ${r}">${r}</span>`).join('') || '<span class="pf-empty">—</span>';
+
+  const poolHTML = pool.length ? pool.map(c => `
+    <div class="pf-cp-row">${ico(c.champ)}<span class="pf-cp-nm">${c.champ}</span>
+      <span class="pf-cp-g">${c.games}g</span>
+      <span class="pf-cp-wr" style="color:${wrColor(c.wr)}">${c.wr}%</span>
+      <span class="pf-cp-kda">${c.kda} KDA</span>
+      <span class="pf-cp-cs">${c.csm} CS/m</span>
+      <span class="pf-cp-d" style="color:${diffColor(c.csDiff10)}">${fmtDiff(c.csDiff10,{dec:1})} CSΔ10</span></div>`).join('')
+    : `<div class="pf-empty">No ${side==='fiveStack'?'5-stack':'solo/flex'} champ data yet.</div>`;
+
+  const la = laneAggregate(games);
+  const laneCell = (k, v) => `<div class="lane-cell"><div class="lane-k">${k}</div><div class="lane-v">${v}</div></div>`;
+  const laneHTML = games.length ? `<div class="pf-lane">
+      ${laneCell('CS @10', la.csAt10!=null?la.csAt10.toFixed(0):'—')}
+      ${laneCell('CSΔ @10', `<span style="color:${diffColor(la.csDiff10)}">${fmtDiff(la.csDiff10,{dec:1})}</span>`)}
+      ${laneCell('CSΔ @14', `<span style="color:${diffColor(la.csDiff14)}">${fmtDiff(la.csDiff14,{dec:1})}</span>`)}
+      ${laneCell('GoldΔ @10', `<span style="color:${diffColor(la.goldDiff10)}">${fmtDiff(la.goldDiff10,{k:true})}</span>`)}
+      ${laneCell('GoldΔ @14', `<span style="color:${diffColor(la.goldDiff14)}">${fmtDiff(la.goldDiff14,{k:true})}</span>`)}
+    </div><div class="pf-lane-n">Averages over ${la.n} game${la.n===1?'':'s'} vs lane opponent.</div>`
+    : `<div class="pf-empty">No ${side==='fiveStack'?'5-stack':'solo/flex'} games to measure.</div>`;
+
+  const rolesHTML = (agg.roleSplits||[]).length
+    ? `<div class="pf-roles">${agg.roleSplits.map(r=>`${r.role} ${r.games}g <span style="color:${wrColor(r.wr)}">${r.wr}%</span>`).join('  ·  ')}</div>`
+    : `<div class="pf-empty">No role data yet.</div>`;
+
+  const gamesHTML = games.length ? games.slice(0,20).map(g => `
+    <div class="pf-gm">
+      <b class="${g.win?'gm-w':'gm-l'}">${g.win?'W':'L'}</b>
+      ${ico(g.champ)}<span class="pf-gm-nm">${g.champ}</span>
+      <span class="pf-gm-kda">${g.k}/${g.d}/${g.a}</span>
+      <span class="pf-gm-cs">${g.csm} cs/m</span>
+      <span class="pf-gm-kp">${g.kp}% KP</span>
+      <span class="pf-gm-d" style="color:${diffColor(g.csDiff10)}">${fmtDiff(g.csDiff10,{dec:0})} csΔ10</span>
+    </div>`).join('')
+    : `<div class="pf-empty">No ${side==='fiveStack'?'5-stack':'solo/flex'} games yet.</div>`;
+
+  root.innerHTML = backHTML + `
+    <div class="pf-hero">
+      <div class="pf-hero-name">${name}</div>
+      <div class="pf-toggle">
+        <button class="pf-tg ${side==='soloFlex'?'on':''}" data-side="soloFlex">Solo/Flex</button>
+        <button class="pf-tg ${side==='fiveStack'?'on':''}" data-side="fiveStack">5-Stack</button>
+      </div>
+    </div>
+    <div class="pf-subline">
+      <span>${d.rank.solo||'Unranked'} (Solo)${d.rank.flex?` · ${d.rank.flex} (Flex)`:''}</span>
+      <span class="form-pips" style="margin:0">${pips}</span>
+      <span style="color:var(--txt-faint)">Updated ${relTime(new Date(d.generatedAt).getTime())}</span>
+    </div>
+    ${empty ? `<div class="panel"><div class="pf-empty">No ${side==='fiveStack'?'5-stack':'solo/flex'} games for ${name} yet.</div></div>` : `
+    <div class="sec-title" style="margin-top:6px">Champ Pool <span class="n">// real win rate</span></div>
+    <div class="panel" style="margin-bottom:8px">${poolHTML}</div>
+    <div class="sec-title" style="margin-top:22px">Lane / Early Game <span class="n">// vs lane opponent</span></div>
+    <div class="panel" style="margin-bottom:8px">${laneHTML}</div>
+    <div class="sec-title" style="margin-top:22px">Role Split</div>
+    <div class="panel" style="margin-bottom:8px">${rolesHTML}</div>
+    <div class="sec-title" style="margin-top:22px">Game-by-Game <span class="n">// recent</span></div>
+    <div class="panel">${gamesHTML}</div>`}
+  `;
+
+  document.getElementById('pfBack').onclick = backToOverview;
+  document.querySelectorAll('#profiles .pf-tg').forEach(b => b.onclick = () => {
+    profileState.side = b.dataset.side; renderProfiles();
+  });
+}
+
+function backToOverview(){ profileState.player = null; renderProfiles(); window.scrollTo({ top:0, behavior:'smooth' }); }
+
+function openProfile(name){
+  profileState.player = name; profileState.side = 'soloFlex';
+  showView('profiles'); loadProfiles();
+}
