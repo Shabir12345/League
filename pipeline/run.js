@@ -26,16 +26,15 @@ async function main() {
   if (!key) { console.error('FATAL: RIOT_API_KEY env var is not set.'); process.exit(1); }
   fs.mkdirSync(OUT_DIR, { recursive: true });
 
-  // Pass 1 — resolve every PUUID (from cache when possible).
+  // Pass 1 — resolve every PUUID fresh from the Riot ID each run.
+  // PUUIDs are encrypted per API key: a cached one from a previous key 400s
+  // ("Exception decrypting"). Match IDs are NOT key-encrypted, so existing
+  // history still merges correctly against the freshly-resolved PUUID.
   const state = {};
   for (const pl of cfg.players) {
     const existing = loadExisting(pl.file);
-    let puuid = existing && existing.puuid;
-    if (!puuid) {
-      const acct = await riot.getAccountByRiotId(pl.gameName, pl.tagLine, key);
-      puuid = acct.puuid;
-    }
-    state[pl.name] = { pl, existing: existing || { games: [] }, puuid };
+    const acct = await riot.getAccountByRiotId(pl.gameName, pl.tagLine, key);
+    state[pl.name] = { pl, existing: existing || { games: [] }, puuid: acct.puuid };
   }
   const rosterPuuids = cfg.players.map(p => state[p.name].puuid);
 
