@@ -1,12 +1,127 @@
 {
   "player": "Harendra",
-  "puuid": "dh0o4PAaK-1kOR9CTSd7EMxhgpS-NpbVrL0OA0NgeJKxjfID1fjZu-Hxqi2aiqdbU8ToFPOR0MaF6w",
-  "generatedAt": "2026-06-08T01:40:31.834Z",
+  "puuid": "q4q_teVE3JVjPkqQKIRQy4znJ8fgrCk2LHbQTZolQfPQiDL302Ry8aTT_s_njjGs8WfZM-Dw239OIw",
+  "generatedAt": "2026-06-14T18:43:00.661Z",
   "rank": {
-    "solo": "Bronze IV",
+    "solo": "Bronze III",
     "flex": "Bronze I"
   },
   "games": [
+    {
+      "matchId": "EUW1_7887436161",
+      "queue": 440,
+      "champ": "Kaisa",
+      "role": "ADC",
+      "win": true,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "kda": 0,
+      "csm": 3.37,
+      "kp": 0,
+      "vision": 0,
+      "dmgShare": 0.27,
+      "csAt10": null,
+      "goldAt10": null,
+      "csDiff10": null,
+      "goldDiff10": null,
+      "csDiff14": null,
+      "goldDiff14": null,
+      "fiveStack": true,
+      "date": 1781457929997
+    },
+    {
+      "matchId": "EUW1_7887389745",
+      "queue": 440,
+      "champ": "Senna",
+      "role": "ADC",
+      "win": true,
+      "k": 13,
+      "d": 6,
+      "a": 20,
+      "kda": 5.5,
+      "csm": 5.18,
+      "kp": 69,
+      "vision": 37,
+      "dmgShare": 0.27,
+      "csAt10": 48,
+      "goldAt10": 3915,
+      "csDiff10": -5,
+      "goldDiff10": 992,
+      "csDiff14": 6,
+      "goldDiff14": 2082,
+      "fiveStack": true,
+      "date": 1781455645631
+    },
+    {
+      "matchId": "EUW1_7884991294",
+      "queue": 440,
+      "champ": "Smolder",
+      "role": "ADC",
+      "win": true,
+      "k": 6,
+      "d": 2,
+      "a": 4,
+      "kda": 5,
+      "csm": 8.1,
+      "kp": 42,
+      "vision": 25,
+      "dmgShare": 0.31,
+      "csAt10": 69,
+      "goldAt10": 3582,
+      "csDiff10": -3,
+      "goldDiff10": -36,
+      "csDiff14": 6,
+      "goldDiff14": 54,
+      "fiveStack": false,
+      "date": 1781283773304
+    },
+    {
+      "matchId": "EUW1_7884938948",
+      "queue": 440,
+      "champ": "Malphite",
+      "role": "Top",
+      "win": false,
+      "k": 7,
+      "d": 8,
+      "a": 18,
+      "kda": 3.13,
+      "csm": 6.16,
+      "kp": 53,
+      "vision": 42,
+      "dmgShare": 0.23,
+      "csAt10": 52,
+      "goldAt10": 3385,
+      "csDiff10": 1,
+      "goldDiff10": 290,
+      "csDiff14": -2,
+      "goldDiff14": 424,
+      "fiveStack": false,
+      "date": 1781280984146
+    },
+    {
+      "matchId": "EUW1_7880670591",
+      "queue": 420,
+      "champ": "Malphite",
+      "role": "Top",
+      "win": true,
+      "k": 8,
+      "d": 2,
+      "a": 1,
+      "kda": 4.5,
+      "csm": 8.21,
+      "kp": 32,
+      "vision": 17,
+      "dmgShare": 0.29,
+      "csAt10": 73,
+      "goldAt10": 4145,
+      "csDiff10": 36,
+      "goldDiff10": 1724,
+      "csDiff14": 54,
+      "goldDiff14": 3195,
+      "fiveStack": false,
+      "date": 1780936736303
+    },
     {
       "matchId": "EUW1_7879794977",
       "queue": 440,
@@ -1271,121 +1386,6 @@
       "goldDiff14": 2220,
       "fiveStack": false,
       "date": 1755692898381
-    },
-    {
-      "matchId": "EUW1_7501158700",
-      "queue": 420,
-      "champ": "Yunara",
-      "role": "ADC",
-      "win": true,
-      "k": 6,
-      "d": 4,
-      "a": 6,
-      "kda": 3,
-      "csm": 6.05,
-      "kp": 27,
-      "vision": 12,
-      "dmgShare": 0.14,
-      "csAt10": 59,
-      "goldAt10": 2745,
-      "csDiff10": -8,
-      "goldDiff10": -598,
-      "csDiff14": -8,
-      "goldDiff14": -616,
-      "fiveStack": false,
-      "date": 1755690884253
-    },
-    {
-      "matchId": "EUW1_7501134841",
-      "queue": 420,
-      "champ": "Yunara",
-      "role": "ADC",
-      "win": true,
-      "k": 4,
-      "d": 2,
-      "a": 7,
-      "kda": 5.5,
-      "csm": 5.38,
-      "kp": 29,
-      "vision": 12,
-      "dmgShare": 0.13,
-      "csAt10": 46,
-      "goldAt10": 3235,
-      "csDiff10": -21,
-      "goldDiff10": -517,
-      "csDiff14": -14,
-      "goldDiff14": 102,
-      "fiveStack": false,
-      "date": 1755689199647
-    },
-    {
-      "matchId": "EUW1_7501116757",
-      "queue": 420,
-      "champ": "Yunara",
-      "role": "ADC",
-      "win": true,
-      "k": 8,
-      "d": 0,
-      "a": 6,
-      "kda": 14,
-      "csm": 6.11,
-      "kp": 44,
-      "vision": 16,
-      "dmgShare": 0.2,
-      "csAt10": 61,
-      "goldAt10": 3942,
-      "csDiff10": 4,
-      "goldDiff10": 1053,
-      "csDiff14": -3,
-      "goldDiff14": 797,
-      "fiveStack": false,
-      "date": 1755687572131
-    },
-    {
-      "matchId": "EUW1_7501089098",
-      "queue": 420,
-      "champ": "Yunara",
-      "role": "ADC",
-      "win": false,
-      "k": 4,
-      "d": 4,
-      "a": 7,
-      "kda": 2.75,
-      "csm": 6.71,
-      "kp": 52,
-      "vision": 15,
-      "dmgShare": 0.17,
-      "csAt10": 68,
-      "goldAt10": 3493,
-      "csDiff10": -7,
-      "goldDiff10": 430,
-      "csDiff14": -16,
-      "goldDiff14": 554,
-      "fiveStack": false,
-      "date": 1755685433930
-    },
-    {
-      "matchId": "EUW1_7501009550",
-      "queue": 420,
-      "champ": "Yunara",
-      "role": "ADC",
-      "win": false,
-      "k": 9,
-      "d": 4,
-      "a": 4,
-      "kda": 3.25,
-      "csm": 6.09,
-      "kp": 42,
-      "vision": 15,
-      "dmgShare": 0.21,
-      "csAt10": 46,
-      "goldAt10": 2838,
-      "csDiff10": -22,
-      "goldDiff10": -114,
-      "csDiff14": -40,
-      "goldDiff14": -1025,
-      "fiveStack": false,
-      "date": 1755675269207
     }
   ],
   "soloFlex": {
@@ -1397,14 +1397,6 @@
         "kda": 2.54,
         "csm": 4.72,
         "csDiff10": -8.3
-      },
-      {
-        "champ": "Yunara",
-        "games": 7,
-        "wr": 71,
-        "kda": 5.57,
-        "csm": 5.94,
-        "csDiff10": -9.57
       },
       {
         "champ": "Shen",
@@ -1423,20 +1415,20 @@
         "csDiff10": -5.4
       },
       {
+        "champ": "Malphite",
+        "games": 4,
+        "wr": 25,
+        "kda": 3.31,
+        "csm": 7.1,
+        "csDiff10": 5
+      },
+      {
         "champ": "Ezreal",
         "games": 3,
         "wr": 33,
         "kda": 2.67,
         "csm": 6.61,
         "csDiff10": -4.33
-      },
-      {
-        "champ": "Malphite",
-        "games": 2,
-        "wr": 0,
-        "kda": 2.8,
-        "csm": 7.02,
-        "csDiff10": -8.5
       },
       {
         "champ": "Sion",
@@ -1471,12 +1463,44 @@
         "csDiff10": 1.5
       },
       {
+        "champ": "Yunara",
+        "games": 2,
+        "wr": 100,
+        "kda": 5.25,
+        "csm": 5.64,
+        "csDiff10": -6.5
+      },
+      {
         "champ": "Jhin",
         "games": 2,
         "wr": 50,
         "kda": 6.13,
         "csm": 6.92,
         "csDiff10": 15.5
+      },
+      {
+        "champ": "Kaisa",
+        "games": 1,
+        "wr": 100,
+        "kda": 0,
+        "csm": 3.37,
+        "csDiff10": null
+      },
+      {
+        "champ": "Senna",
+        "games": 1,
+        "wr": 100,
+        "kda": 5.5,
+        "csm": 5.18,
+        "csDiff10": -5
+      },
+      {
+        "champ": "Smolder",
+        "games": 1,
+        "wr": 100,
+        "kda": 5,
+        "csm": 8.1,
+        "csDiff10": -3
       },
       {
         "champ": "Skarner",
@@ -1622,14 +1646,14 @@
         "wr": 52
       },
       {
-        "role": "ADC",
+        "role": "Top",
         "games": 17,
-        "wr": 59
+        "wr": 35
       },
       {
-        "role": "Top",
+        "role": "ADC",
         "games": 15,
-        "wr": 33
+        "wr": 67
       },
       {
         "role": "Mid",
@@ -1644,13 +1668,13 @@
     ],
     "form": [
       "W",
+      "W",
+      "W",
       "L",
-      "L",
+      "W",
       "W",
       "L",
       "L",
-      "L",
-      "W",
       "W",
       "L"
     ]
@@ -1672,6 +1696,22 @@
         "kda": 3.01,
         "csm": 5.7,
         "csDiff10": -3.5
+      },
+      {
+        "champ": "Kaisa",
+        "games": 1,
+        "wr": 100,
+        "kda": 0,
+        "csm": 3.37,
+        "csDiff10": null
+      },
+      {
+        "champ": "Senna",
+        "games": 1,
+        "wr": 100,
+        "kda": 5.5,
+        "csm": 5.18,
+        "csDiff10": -5
       },
       {
         "champ": "Malphite",
@@ -1748,14 +1788,14 @@
     ],
     "roleSplits": [
       {
+        "role": "ADC",
+        "games": 8,
+        "wr": 63
+      },
+      {
         "role": "Top",
         "games": 7,
         "wr": 43
-      },
-      {
-        "role": "ADC",
-        "games": 6,
-        "wr": 50
       },
       {
         "role": "Jungle",
@@ -1765,15 +1805,15 @@
     ],
     "form": [
       "W",
+      "W",
+      "W",
       "L",
       "W",
       "L",
       "L",
       "L",
       "W",
-      "W",
-      "L",
-      "L"
+      "W"
     ]
   }
 }
