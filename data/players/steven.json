@@ -1,12 +1,81 @@
 {
   "player": "Steven",
   "puuid": "rEUfV7nH6pNefn-stlAp3Egn0EYlr11hULP7Zdo8F0HBypEIcqZBYTHnpZC4GXko1ZmEK13LS9RboQ",
-  "generatedAt": "2026-06-15T09:56:13.496Z",
+  "generatedAt": "2026-06-16T09:21:41.236Z",
   "rank": {
     "solo": "Gold IV",
     "flex": "Silver II"
   },
   "games": [
+    {
+      "matchId": "EUW1_7888129406",
+      "queue": 420,
+      "champ": "Leblanc",
+      "role": "Mid",
+      "win": true,
+      "k": 12,
+      "d": 3,
+      "a": 3,
+      "kda": 5,
+      "csm": 5.8,
+      "kp": 32,
+      "vision": 18,
+      "dmgShare": 0.2,
+      "csAt10": 60,
+      "goldAt10": 3746,
+      "csDiff10": -10,
+      "goldDiff10": 79,
+      "csDiff14": -19,
+      "goldDiff14": 634,
+      "fiveStack": false,
+      "date": 1781522841805
+    },
+    {
+      "matchId": "EUW1_7888106033",
+      "queue": 420,
+      "champ": "Katarina",
+      "role": "Mid",
+      "win": false,
+      "k": 14,
+      "d": 12,
+      "a": 7,
+      "kda": 1.75,
+      "csm": 5.21,
+      "kp": 55,
+      "vision": 16,
+      "dmgShare": 0.2,
+      "csAt10": 71,
+      "goldAt10": 3409,
+      "csDiff10": 5,
+      "goldDiff10": -144,
+      "csDiff14": -11,
+      "goldDiff14": -1094,
+      "fiveStack": false,
+      "date": 1781520291811
+    },
+    {
+      "matchId": "EUW1_7888087834",
+      "queue": 420,
+      "champ": "Malzahar",
+      "role": "Mid",
+      "win": false,
+      "k": 2,
+      "d": 6,
+      "a": 7,
+      "kda": 1.5,
+      "csm": 7.34,
+      "kp": 27,
+      "vision": 6,
+      "dmgShare": 0.17,
+      "csAt10": 74,
+      "goldAt10": 3014,
+      "csDiff10": -14,
+      "goldDiff10": -1129,
+      "csDiff14": -17,
+      "goldDiff14": -1545,
+      "fiveStack": false,
+      "date": 1781518220091
+    },
     {
       "matchId": "EUW1_7887436161",
       "queue": 440,
@@ -1317,94 +1386,25 @@
       "goldDiff14": -767,
       "fiveStack": false,
       "date": 1780406706643
-    },
-    {
-      "matchId": "EUW1_7872219514",
-      "queue": 440,
-      "champ": "Orianna",
-      "role": "Mid",
-      "win": false,
-      "k": 7,
-      "d": 5,
-      "a": 10,
-      "kda": 3.4,
-      "csm": 4.21,
-      "kp": 43,
-      "vision": 17,
-      "dmgShare": 0.2,
-      "csAt10": 57,
-      "goldAt10": 2955,
-      "csDiff10": -8,
-      "goldDiff10": -193,
-      "csDiff14": -17,
-      "goldDiff14": -1570,
-      "fiveStack": true,
-      "date": 1780251495113
-    },
-    {
-      "matchId": "EUW1_7872160184",
-      "queue": 440,
-      "champ": "Lux",
-      "role": "Mid",
-      "win": false,
-      "k": 1,
-      "d": 5,
-      "a": 5,
-      "kda": 1.2,
-      "csm": 6.6,
-      "kp": 40,
-      "vision": 18,
-      "dmgShare": 0.29,
-      "csAt10": 58,
-      "goldAt10": 2810,
-      "csDiff10": -2,
-      "goldDiff10": -326,
-      "csDiff14": 3,
-      "goldDiff14": -70,
-      "fiveStack": true,
-      "date": 1780249291039
-    },
-    {
-      "matchId": "EUW1_7872113285",
-      "queue": 440,
-      "champ": "Orianna",
-      "role": "Mid",
-      "win": false,
-      "k": 3,
-      "d": 6,
-      "a": 3,
-      "kda": 1,
-      "csm": 5.65,
-      "kp": 38,
-      "vision": 15,
-      "dmgShare": 0.18,
-      "csAt10": 53,
-      "goldAt10": 2827,
-      "csDiff10": -30,
-      "goldDiff10": -1290,
-      "csDiff14": -44,
-      "goldDiff14": -1695,
-      "fiveStack": true,
-      "date": 1780247309947
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Lux",
-        "games": 17,
-        "wr": 41,
-        "kda": 3.93,
-        "csm": 6.82,
-        "csDiff10": 2.53
+        "games": 16,
+        "wr": 44,
+        "kda": 4.1,
+        "csm": 6.84,
+        "csDiff10": 2.81
       },
       {
         "champ": "Leblanc",
-        "games": 9,
-        "wr": 78,
-        "kda": 5.35,
-        "csm": 4.46,
-        "csDiff10": -12.33
+        "games": 10,
+        "wr": 80,
+        "kda": 5.32,
+        "csm": 4.6,
+        "csDiff10": -12.1
       },
       {
         "champ": "Galio",
@@ -1423,14 +1423,6 @@
         "csDiff10": -3
       },
       {
-        "champ": "Orianna",
-        "games": 5,
-        "wr": 40,
-        "kda": 7.1,
-        "csm": 5.84,
-        "csDiff10": -7.6
-      },
-      {
         "champ": "Morgana",
         "games": 3,
         "wr": 67,
@@ -1445,6 +1437,14 @@
         "kda": 3.12,
         "csm": 4.46,
         "csDiff10": -17
+      },
+      {
+        "champ": "Orianna",
+        "games": 3,
+        "wr": 67,
+        "kda": 10.36,
+        "csm": 6.44,
+        "csDiff10": 0
       },
       {
         "champ": "Seraphine",
@@ -1469,6 +1469,22 @@
         "kda": 1.87,
         "csm": 5.07,
         "csDiff10": 1
+      },
+      {
+        "champ": "Katarina",
+        "games": 1,
+        "wr": 0,
+        "kda": 1.75,
+        "csm": 5.21,
+        "csDiff10": 5
+      },
+      {
+        "champ": "Malzahar",
+        "games": 1,
+        "wr": 0,
+        "kda": 1.5,
+        "csm": 7.34,
+        "csDiff10": -14
       },
       {
         "champ": "Ahri",
@@ -1515,7 +1531,7 @@
       {
         "role": "Mid",
         "games": 52,
-        "wr": 52
+        "wr": 54
       },
       {
         "role": "Support",
@@ -1530,13 +1546,13 @@
     ],
     "form": [
       "W",
+      "L",
+      "L",
+      "W",
       "W",
       "L",
       "L",
       "L",
-      "W",
-      "L",
-      "W",
       "W",
       "L"
     ]
@@ -1544,20 +1560,20 @@
   "fiveStack": {
     "champPool": [
       {
-        "champ": "Orianna",
-        "games": 4,
-        "wr": 25,
-        "kda": 7.93,
-        "csm": 5.77,
-        "csDiff10": -1.75
-      },
-      {
         "champ": "Galio",
         "games": 2,
         "wr": 100,
         "kda": 5,
         "csm": 3.71,
         "csDiff10": 6
+      },
+      {
+        "champ": "Orianna",
+        "games": 2,
+        "wr": 50,
+        "kda": 13.67,
+        "csm": 6.6,
+        "csDiff10": 15.5
       },
       {
         "champ": "Yone",
@@ -1598,21 +1614,13 @@
         "kda": 0,
         "csm": 0,
         "csDiff10": null
-      },
-      {
-        "champ": "Lux",
-        "games": 1,
-        "wr": 0,
-        "kda": 1.2,
-        "csm": 6.6,
-        "csDiff10": -2
       }
     ],
     "roleSplits": [
       {
         "role": "Mid",
-        "games": 12,
-        "wr": 42
+        "games": 9,
+        "wr": 56
       },
       {
         "role": "Support",
