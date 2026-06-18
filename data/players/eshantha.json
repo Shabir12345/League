@@ -1,12 +1,81 @@
 {
   "player": "Eshantha",
   "puuid": "SmVhFbT3bTkwBT77RgXmb34GAVOnoXm4xOJhpmDCdlkm-5F6hRC-7gBA243sy5f9t3OeU68sQo5cDA",
-  "generatedAt": "2026-06-17T08:57:00.720Z",
+  "generatedAt": "2026-06-18T08:40:40.042Z",
   "rank": {
     "solo": "Gold II",
     "flex": "Gold IV"
   },
   "games": [
+    {
+      "matchId": "EUW1_7890705697",
+      "queue": 440,
+      "champ": "Anivia",
+      "role": "Top",
+      "win": true,
+      "k": 3,
+      "d": 5,
+      "a": 10,
+      "kda": 2.6,
+      "csm": 6.31,
+      "kp": 34,
+      "vision": 52,
+      "dmgShare": 0.18,
+      "csAt10": 70,
+      "goldAt10": 3333,
+      "csDiff10": -8,
+      "goldDiff10": -296,
+      "csDiff14": 15,
+      "goldDiff14": 339,
+      "fiveStack": false,
+      "date": 1781724615767
+    },
+    {
+      "matchId": "EUW1_7890650668",
+      "queue": 440,
+      "champ": "Ziggs",
+      "role": "Top",
+      "win": false,
+      "k": 1,
+      "d": 11,
+      "a": 4,
+      "kda": 0.45,
+      "csm": 6.07,
+      "kp": 26,
+      "vision": 13,
+      "dmgShare": 0.25,
+      "csAt10": 61,
+      "goldAt10": 2797,
+      "csDiff10": -27,
+      "goldDiff10": -1568,
+      "csDiff14": -45,
+      "goldDiff14": -2367,
+      "fiveStack": false,
+      "date": 1781722467048
+    },
+    {
+      "matchId": "EUW1_7890606990",
+      "queue": 440,
+      "champ": "Anivia",
+      "role": "Top",
+      "win": true,
+      "k": 7,
+      "d": 4,
+      "a": 13,
+      "kda": 5,
+      "csm": 5.66,
+      "kp": 54,
+      "vision": 27,
+      "dmgShare": 0.27,
+      "csAt10": 36,
+      "goldAt10": 3436,
+      "csDiff10": -13,
+      "goldDiff10": 846,
+      "csDiff14": -10,
+      "goldDiff14": 911,
+      "fiveStack": false,
+      "date": 1781720498791
+    },
     {
       "matchId": "EUW1_7887436161",
       "queue": 440,
@@ -1317,94 +1386,25 @@
       "goldDiff14": -968,
       "fiveStack": true,
       "date": 1779652451436
-    },
-    {
-      "matchId": "EUW1_7863455598",
-      "queue": 440,
-      "champ": "Yorick",
-      "role": "Top",
-      "win": true,
-      "k": 7,
-      "d": 4,
-      "a": 12,
-      "kda": 4.75,
-      "csm": 7.33,
-      "kp": 53,
-      "vision": 21,
-      "dmgShare": 0.27,
-      "csAt10": 72,
-      "goldAt10": 3800,
-      "csDiff10": 10,
-      "goldDiff10": 931,
-      "csDiff14": 8,
-      "goldDiff14": 142,
-      "fiveStack": true,
-      "date": 1779559268088
-    },
-    {
-      "matchId": "EUW1_7851211127",
-      "queue": 420,
-      "champ": "Teemo",
-      "role": "Top",
-      "win": true,
-      "k": 6,
-      "d": 1,
-      "a": 6,
-      "kda": 12,
-      "csm": 8.38,
-      "kp": 46,
-      "vision": 37,
-      "dmgShare": 0.29,
-      "csAt10": 84,
-      "goldAt10": 4094,
-      "csDiff10": 32,
-      "goldDiff10": 1340,
-      "csDiff14": 44,
-      "goldDiff14": 2398,
-      "fiveStack": false,
-      "date": 1778605531045
-    },
-    {
-      "matchId": "EUW1_7846803706",
-      "queue": 420,
-      "champ": "Veigar",
-      "role": "Mid",
-      "win": false,
-      "k": 4,
-      "d": 5,
-      "a": 7,
-      "kda": 2.2,
-      "csm": 8.01,
-      "kp": 39,
-      "vision": 34,
-      "dmgShare": 0.16,
-      "csAt10": 84,
-      "goldAt10": 3485,
-      "csDiff10": -12,
-      "goldDiff10": -68,
-      "csDiff14": -16,
-      "goldDiff14": 522,
-      "fiveStack": false,
-      "date": 1778264332852
     }
   ],
   "soloFlex": {
     "champPool": [
       {
-        "champ": "Yorick",
-        "games": 13,
-        "wr": 62,
-        "kda": 2.68,
-        "csm": 7.49,
-        "csDiff10": -0.77
+        "champ": "Anivia",
+        "games": 14,
+        "wr": 57,
+        "kda": 3.32,
+        "csm": 6.12,
+        "csDiff10": 2.92
       },
       {
-        "champ": "Anivia",
+        "champ": "Yorick",
         "games": 12,
-        "wr": 50,
-        "kda": 3.24,
-        "csm": 6.14,
-        "csDiff10": 5.6
+        "wr": 58,
+        "kda": 2.51,
+        "csm": 7.5,
+        "csDiff10": -1.67
       },
       {
         "champ": "Camille",
@@ -1463,12 +1463,12 @@
         "csDiff10": 1.5
       },
       {
-        "champ": "Teemo",
-        "games": 2,
-        "wr": 100,
-        "kda": 6.39,
-        "csm": 7.81,
-        "csDiff10": 0.5
+        "champ": "Ziggs",
+        "games": 1,
+        "wr": 0,
+        "kda": 0.45,
+        "csm": 6.07,
+        "csDiff10": -27
       },
       {
         "champ": "Zilean",
@@ -1543,19 +1543,19 @@
         "csDiff10": 27
       },
       {
-        "champ": "Veigar",
+        "champ": "Teemo",
         "games": 1,
-        "wr": 0,
-        "kda": 2.2,
-        "csm": 8.01,
-        "csDiff10": -12
+        "wr": 100,
+        "kda": 0.77,
+        "csm": 7.23,
+        "csDiff10": -31
       }
     ],
     "roleSplits": [
       {
         "role": "Top",
-        "games": 36,
-        "wr": 53
+        "games": 37,
+        "wr": 51
       },
       {
         "role": "Support",
@@ -1564,20 +1564,20 @@
       },
       {
         "role": "Mid",
-        "games": 8,
-        "wr": 25
+        "games": 7,
+        "wr": 29
       }
     ],
     "form": [
       "W",
+      "L",
+      "W",
+      "W",
       "W",
       "L",
       "L",
       "W",
       "L",
-      "W",
-      "L",
-      "W",
       "W"
     ]
   },
@@ -1592,20 +1592,20 @@
         "csDiff10": 7.8
       },
       {
-        "champ": "Yorick",
-        "games": 4,
-        "wr": 75,
-        "kda": 3.71,
-        "csm": 8.04,
-        "csDiff10": 15.5
-      },
-      {
         "champ": "Alistar",
         "games": 3,
         "wr": 33,
         "kda": 3.5,
         "csm": 0.82,
         "csDiff10": 4
+      },
+      {
+        "champ": "Yorick",
+        "games": 3,
+        "wr": 67,
+        "kda": 3.36,
+        "csm": 8.28,
+        "csDiff10": 17.33
       },
       {
         "champ": "Rell",
@@ -1659,8 +1659,8 @@
     "roleSplits": [
       {
         "role": "Top",
-        "games": 11,
-        "wr": 55
+        "games": 10,
+        "wr": 50
       },
       {
         "role": "Support",

@@ -1,12 +1,81 @@
 {
   "player": "Geeth",
   "puuid": "Df36AbNlLOIH8wlRXSAhOMfO-UvoqWvuM2MkscE3YpIMbXqL4X23TbbDbkXf3-knw1n9f11khr9Hzw",
-  "generatedAt": "2026-06-17T08:57:07.590Z",
+  "generatedAt": "2026-06-18T08:40:55.681Z",
   "rank": {
     "solo": "Gold I",
-    "flex": "Gold III"
+    "flex": "Gold II"
   },
   "games": [
+    {
+      "matchId": "EUW1_7890705697",
+      "queue": 440,
+      "champ": "Ashe",
+      "role": "ADC",
+      "win": true,
+      "k": 9,
+      "d": 7,
+      "a": 12,
+      "kda": 3,
+      "csm": 4.86,
+      "kp": 55,
+      "vision": 33,
+      "dmgShare": 0.18,
+      "csAt10": 65,
+      "goldAt10": 3379,
+      "csDiff10": 1,
+      "goldDiff10": 226,
+      "csDiff14": 11,
+      "goldDiff14": 424,
+      "fiveStack": false,
+      "date": 1781724615767
+    },
+    {
+      "matchId": "EUW1_7890650668",
+      "queue": 440,
+      "champ": "Kayn",
+      "role": "Jungle",
+      "win": false,
+      "k": 10,
+      "d": 9,
+      "a": 4,
+      "kda": 1.56,
+      "csm": 4.86,
+      "kp": 74,
+      "vision": 19,
+      "dmgShare": 0.27,
+      "csAt10": 65,
+      "goldAt10": 3156,
+      "csDiff10": 3,
+      "goldDiff10": -848,
+      "csDiff14": -9,
+      "goldDiff14": -742,
+      "fiveStack": false,
+      "date": 1781722467048
+    },
+    {
+      "matchId": "EUW1_7890606990",
+      "queue": 440,
+      "champ": "Talon",
+      "role": "Jungle",
+      "win": true,
+      "k": 2,
+      "d": 7,
+      "a": 4,
+      "kda": 0.86,
+      "csm": 7.26,
+      "kp": 16,
+      "vision": 17,
+      "dmgShare": 0.09,
+      "csAt10": 61,
+      "goldAt10": 3411,
+      "csDiff10": -4,
+      "goldDiff10": -738,
+      "csDiff14": 3,
+      "goldDiff14": -2493,
+      "fiveStack": false,
+      "date": 1781720498791
+    },
     {
       "matchId": "EUW1_7887436161",
       "queue": 440,
@@ -1317,85 +1386,16 @@
       "goldDiff14": -48,
       "fiveStack": false,
       "date": 1778432950921
-    },
-    {
-      "matchId": "EUW1_7848240800",
-      "queue": 420,
-      "champ": "MonkeyKing",
-      "role": "Jungle",
-      "win": true,
-      "k": 2,
-      "d": 8,
-      "a": 20,
-      "kda": 2.75,
-      "csm": 5.28,
-      "kp": 41,
-      "vision": 21,
-      "dmgShare": 0.12,
-      "csAt10": 62,
-      "goldAt10": 3331,
-      "csDiff10": -13,
-      "goldDiff10": -428,
-      "csDiff14": -9,
-      "goldDiff14": -827,
-      "fiveStack": false,
-      "date": 1778362772867
-    },
-    {
-      "matchId": "EUW1_7848191272",
-      "queue": 420,
-      "champ": "Mel",
-      "role": "Mid",
-      "win": false,
-      "k": 5,
-      "d": 4,
-      "a": 0,
-      "kda": 1.25,
-      "csm": 8.6,
-      "kp": 24,
-      "vision": 14,
-      "dmgShare": 0.23,
-      "csAt10": 80,
-      "goldAt10": 3704,
-      "csDiff10": 9,
-      "goldDiff10": 191,
-      "csDiff14": 17,
-      "goldDiff14": 185,
-      "fiveStack": false,
-      "date": 1778360882607
-    },
-    {
-      "matchId": "EUW1_7847923496",
-      "queue": 420,
-      "champ": "Jhin",
-      "role": "ADC",
-      "win": true,
-      "k": 11,
-      "d": 2,
-      "a": 7,
-      "kda": 9,
-      "csm": 6.75,
-      "kp": 62,
-      "vision": 18,
-      "dmgShare": 0.18,
-      "csAt10": 71,
-      "goldAt10": 3419,
-      "csDiff10": -17,
-      "goldDiff10": 102,
-      "csDiff14": -21,
-      "goldDiff14": 562,
-      "fiveStack": false,
-      "date": 1778348979506
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Talon",
-        "games": 5,
-        "wr": 80,
-        "kda": 2.97,
-        "csm": 6.28,
+        "games": 6,
+        "wr": 83,
+        "kda": 2.62,
+        "csm": 6.45,
         "csDiff10": -4
       },
       {
@@ -1431,20 +1431,20 @@
         "csDiff10": -3
       },
       {
+        "champ": "Kayn",
+        "games": 2,
+        "wr": 0,
+        "kda": 1.08,
+        "csm": 5.25,
+        "csDiff10": 5.5
+      },
+      {
         "champ": "Maokai",
         "games": 2,
         "wr": 50,
         "kda": 3.55,
         "csm": 3.43,
         "csDiff10": 11
-      },
-      {
-        "champ": "MonkeyKing",
-        "games": 2,
-        "wr": 50,
-        "kda": 3.08,
-        "csm": 5.22,
-        "csDiff10": -16.5
       },
       {
         "champ": "MissFortune",
@@ -1471,20 +1471,20 @@
         "csDiff10": -3.5
       },
       {
-        "champ": "Mel",
-        "games": 2,
-        "wr": 50,
-        "kda": 1.74,
-        "csm": 7.36,
-        "csDiff10": 2.5
-      },
-      {
         "champ": "Ekko",
         "games": 2,
         "wr": 100,
         "kda": 6.13,
         "csm": 6.05,
         "csDiff10": -8
+      },
+      {
+        "champ": "Ashe",
+        "games": 1,
+        "wr": 100,
+        "kda": 3,
+        "csm": 4.86,
+        "csDiff10": 1
       },
       {
         "champ": "Shen",
@@ -1535,20 +1535,20 @@
         "csDiff10": -1
       },
       {
-        "champ": "Kayn",
-        "games": 1,
-        "wr": 0,
-        "kda": 0.6,
-        "csm": 5.63,
-        "csDiff10": 8
-      },
-      {
         "champ": "Tristana",
         "games": 1,
         "wr": 0,
         "kda": 0.89,
         "csm": 6.39,
         "csDiff10": -5
+      },
+      {
+        "champ": "MonkeyKing",
+        "games": 1,
+        "wr": 0,
+        "kda": 3.4,
+        "csm": 5.16,
+        "csDiff10": -20
       },
       {
         "champ": "Naafiri",
@@ -1615,6 +1615,14 @@
         "csDiff10": -6
       },
       {
+        "champ": "Mel",
+        "games": 1,
+        "wr": 100,
+        "kda": 2.22,
+        "csm": 6.12,
+        "csDiff10": -4
+      },
+      {
         "champ": "Malzahar",
         "games": 1,
         "wr": 100,
@@ -1677,31 +1685,23 @@
         "kda": 9,
         "csm": 5.85,
         "csDiff10": -18
-      },
-      {
-        "champ": "Jhin",
-        "games": 1,
-        "wr": 100,
-        "kda": 9,
-        "csm": 6.75,
-        "csDiff10": -17
       }
     ],
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 26,
-        "wr": 54
-      },
-      {
-        "role": "Mid",
-        "games": 11,
-        "wr": 55
+        "games": 27,
+        "wr": 52
       },
       {
         "role": "ADC",
         "games": 11,
         "wr": 36
+      },
+      {
+        "role": "Mid",
+        "games": 10,
+        "wr": 60
       },
       {
         "role": "Support",
@@ -1716,15 +1716,15 @@
     ],
     "form": [
       "W",
+      "L",
+      "W",
+      "W",
       "W",
       "L",
       "L",
       "L",
       "W",
-      "W",
-      "L",
-      "W",
-      "L"
+      "W"
     ]
   },
   "fiveStack": {
