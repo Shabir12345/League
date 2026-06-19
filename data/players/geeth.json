@@ -1,12 +1,81 @@
 {
   "player": "Geeth",
   "puuid": "Df36AbNlLOIH8wlRXSAhOMfO-UvoqWvuM2MkscE3YpIMbXqL4X23TbbDbkXf3-knw1n9f11khr9Hzw",
-  "generatedAt": "2026-06-18T08:40:55.681Z",
+  "generatedAt": "2026-06-19T09:04:01.143Z",
   "rank": {
     "solo": "Gold I",
-    "flex": "Gold II"
+    "flex": "Gold III"
   },
   "games": [
+    {
+      "matchId": "EUW1_7891718476",
+      "queue": 440,
+      "champ": "MonkeyKing",
+      "role": "Jungle",
+      "win": true,
+      "k": 7,
+      "d": 5,
+      "a": 14,
+      "kda": 4.2,
+      "csm": 5.41,
+      "kp": 41,
+      "vision": 22,
+      "dmgShare": 0.14,
+      "csAt10": 48,
+      "goldAt10": 3493,
+      "csDiff10": -16,
+      "goldDiff10": -490,
+      "csDiff14": 8,
+      "goldDiff14": -203,
+      "fiveStack": true,
+      "date": 1781811068550
+    },
+    {
+      "matchId": "EUW1_7891645316",
+      "queue": 440,
+      "champ": "Nocturne",
+      "role": "Jungle",
+      "win": false,
+      "k": 18,
+      "d": 5,
+      "a": 8,
+      "kda": 5.2,
+      "csm": 5.17,
+      "kp": 59,
+      "vision": 41,
+      "dmgShare": 0.28,
+      "csAt10": 60,
+      "goldAt10": 3652,
+      "csDiff10": -15,
+      "goldDiff10": -848,
+      "csDiff14": -28,
+      "goldDiff14": -325,
+      "fiveStack": true,
+      "date": 1781808295598
+    },
+    {
+      "matchId": "EUW1_7891600973",
+      "queue": 440,
+      "champ": "Shen",
+      "role": "Jungle",
+      "win": false,
+      "k": 11,
+      "d": 3,
+      "a": 12,
+      "kda": 7.67,
+      "csm": 4.5,
+      "kp": 77,
+      "vision": 25,
+      "dmgShare": 0.26,
+      "csAt10": 55,
+      "goldAt10": 3683,
+      "csDiff10": -16,
+      "goldDiff10": 200,
+      "csDiff14": -19,
+      "goldDiff14": 560,
+      "fiveStack": true,
+      "date": 1781806170454
+    },
     {
       "matchId": "EUW1_7890705697",
       "queue": 440,
@@ -1317,75 +1386,6 @@
       "goldDiff14": 563,
       "fiveStack": false,
       "date": 1778956661178
-    },
-    {
-      "matchId": "EUW1_7854723347",
-      "queue": 420,
-      "champ": "Ekko",
-      "role": "Jungle",
-      "win": true,
-      "k": 8,
-      "d": 2,
-      "a": 10,
-      "kda": 9,
-      "csm": 5.93,
-      "kp": 46,
-      "vision": 21,
-      "dmgShare": 0.14,
-      "csAt10": 60,
-      "goldAt10": 3398,
-      "csDiff10": -5,
-      "goldDiff10": 156,
-      "csDiff14": -10,
-      "goldDiff14": 512,
-      "fiveStack": false,
-      "date": 1778866705055
-    },
-    {
-      "matchId": "EUW1_7853514301",
-      "queue": 420,
-      "champ": "Caitlyn",
-      "role": "ADC",
-      "win": false,
-      "k": 1,
-      "d": 5,
-      "a": 5,
-      "kda": 1.2,
-      "csm": 9.23,
-      "kp": 43,
-      "vision": 13,
-      "dmgShare": 0.2,
-      "csAt10": 87,
-      "goldAt10": 3470,
-      "csDiff10": 4,
-      "goldDiff10": 81,
-      "csDiff14": 18,
-      "goldDiff14": -281,
-      "fiveStack": false,
-      "date": 1778777510919
-    },
-    {
-      "matchId": "EUW1_7849098505",
-      "queue": 420,
-      "champ": "Vi",
-      "role": "Jungle",
-      "win": true,
-      "k": 0,
-      "d": 0,
-      "a": 9,
-      "kda": 9,
-      "csm": 5.85,
-      "kp": 43,
-      "vision": 12,
-      "dmgShare": 0.06,
-      "csAt10": 50,
-      "goldAt10": 3263,
-      "csDiff10": -18,
-      "goldDiff10": 66,
-      "csDiff14": -28,
-      "goldDiff14": -48,
-      "fiveStack": false,
-      "date": 1778432950921
     }
   ],
   "soloFlex": {
@@ -1399,12 +1399,12 @@
         "csDiff10": -4
       },
       {
-        "champ": "Caitlyn",
-        "games": 5,
-        "wr": 20,
-        "kda": 4.49,
-        "csm": 6.99,
-        "csDiff10": 11.4
+        "champ": "Nocturne",
+        "games": 4,
+        "wr": 50,
+        "kda": 8.75,
+        "csm": 5.6,
+        "csDiff10": -7
       },
       {
         "champ": "Viego",
@@ -1423,12 +1423,28 @@
         "csDiff10": -4.25
       },
       {
-        "champ": "Nocturne",
-        "games": 3,
-        "wr": 67,
-        "kda": 9.93,
-        "csm": 5.74,
-        "csDiff10": -3
+        "champ": "Caitlyn",
+        "games": 4,
+        "wr": 25,
+        "kda": 5.31,
+        "csm": 6.43,
+        "csDiff10": 13.25
+      },
+      {
+        "champ": "MonkeyKing",
+        "games": 2,
+        "wr": 50,
+        "kda": 3.8,
+        "csm": 5.29,
+        "csDiff10": -18
+      },
+      {
+        "champ": "Shen",
+        "games": 2,
+        "wr": 50,
+        "kda": 8.67,
+        "csm": 4.64,
+        "csDiff10": -13.5
       },
       {
         "champ": "Kayn",
@@ -1471,28 +1487,12 @@
         "csDiff10": -3.5
       },
       {
-        "champ": "Ekko",
-        "games": 2,
-        "wr": 100,
-        "kda": 6.13,
-        "csm": 6.05,
-        "csDiff10": -8
-      },
-      {
         "champ": "Ashe",
         "games": 1,
         "wr": 100,
         "kda": 3,
         "csm": 4.86,
         "csDiff10": 1
-      },
-      {
-        "champ": "Shen",
-        "games": 1,
-        "wr": 100,
-        "kda": 9.67,
-        "csm": 4.78,
-        "csDiff10": -11
       },
       {
         "champ": "Zaahen",
@@ -1541,14 +1541,6 @@
         "kda": 0.89,
         "csm": 6.39,
         "csDiff10": -5
-      },
-      {
-        "champ": "MonkeyKing",
-        "games": 1,
-        "wr": 0,
-        "kda": 3.4,
-        "csm": 5.16,
-        "csDiff10": -20
       },
       {
         "champ": "Naafiri",
@@ -1655,6 +1647,14 @@
         "csDiff10": -6
       },
       {
+        "champ": "Ekko",
+        "games": 1,
+        "wr": 100,
+        "kda": 3.25,
+        "csm": 6.16,
+        "csDiff10": -11
+      },
+      {
         "champ": "Lulu",
         "games": 1,
         "wr": 100,
@@ -1677,26 +1677,18 @@
         "kda": 2.43,
         "csm": 5.4,
         "csDiff10": -34
-      },
-      {
-        "champ": "Vi",
-        "games": 1,
-        "wr": 100,
-        "kda": 9,
-        "csm": 5.85,
-        "csDiff10": -18
       }
     ],
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 27,
-        "wr": 52
+        "games": 28,
+        "wr": 46
       },
       {
         "role": "ADC",
-        "games": 11,
-        "wr": 36
+        "games": 10,
+        "wr": 40
       },
       {
         "role": "Mid",
@@ -1717,25 +1709,41 @@
     "form": [
       "W",
       "L",
+      "L",
+      "W",
+      "L",
       "W",
       "W",
       "W",
       "L",
-      "L",
-      "L",
-      "W",
-      "W"
+      "L"
     ]
   },
   "fiveStack": {
     "champPool": [
       {
         "champ": "Nocturne",
+        "games": 3,
+        "wr": 67,
+        "kda": 11.4,
+        "csm": 5.04,
+        "csDiff10": -5
+      },
+      {
+        "champ": "MonkeyKing",
         "games": 2,
-        "wr": 100,
-        "kda": 14.5,
-        "csm": 4.97,
-        "csDiff10": 5
+        "wr": 50,
+        "kda": 3.8,
+        "csm": 5.29,
+        "csDiff10": -18
+      },
+      {
+        "champ": "Shen",
+        "games": 2,
+        "wr": 50,
+        "kda": 8.67,
+        "csm": 4.64,
+        "csDiff10": -13.5
       },
       {
         "champ": "Viego",
@@ -1760,22 +1768,6 @@
         "kda": 1.38,
         "csm": 0.76,
         "csDiff10": -3.5
-      },
-      {
-        "champ": "Shen",
-        "games": 1,
-        "wr": 100,
-        "kda": 9.67,
-        "csm": 4.78,
-        "csDiff10": -11
-      },
-      {
-        "champ": "MonkeyKing",
-        "games": 1,
-        "wr": 0,
-        "kda": 3.4,
-        "csm": 5.16,
-        "csDiff10": -20
       },
       {
         "champ": "Pantheon",
@@ -1837,8 +1829,8 @@
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 7,
-        "wr": 57
+        "games": 10,
+        "wr": 50
       },
       {
         "role": "Support",
@@ -1858,15 +1850,15 @@
     ],
     "form": [
       "W",
+      "L",
+      "L",
+      "W",
       "W",
       "W",
       "L",
       "W",
       "L",
-      "L",
-      "L",
-      "W",
-      "W"
+      "L"
     ]
   }
 }

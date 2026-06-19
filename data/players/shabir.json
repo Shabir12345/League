@@ -1,12 +1,127 @@
 {
   "player": "Shabir",
   "puuid": "1RJIy7lzs-1o-4vzu2wJkj0SGPaA2TNVDdbZR36Lp-OOAFXYsZnFrK2Al12k4yMDAyZlSGI8C3t44g",
-  "generatedAt": "2026-06-18T08:40:01.641Z",
+  "generatedAt": "2026-06-19T09:02:53.150Z",
   "rank": {
     "solo": "Gold IV",
     "flex": "Platinum IV"
   },
   "games": [
+    {
+      "matchId": "EUW1_7891718476",
+      "queue": 440,
+      "champ": "Malphite",
+      "role": "Top",
+      "win": true,
+      "k": 13,
+      "d": 9,
+      "a": 14,
+      "kda": 3,
+      "csm": 5.53,
+      "kp": 53,
+      "vision": 15,
+      "dmgShare": 0.22,
+      "csAt10": 65,
+      "goldAt10": 4142,
+      "csDiff10": 19,
+      "goldDiff10": 584,
+      "csDiff14": 18,
+      "goldDiff14": 1176,
+      "fiveStack": true,
+      "date": 1781811068550
+    },
+    {
+      "matchId": "EUW1_7891645316",
+      "queue": 440,
+      "champ": "Shen",
+      "role": "Top",
+      "win": false,
+      "k": 7,
+      "d": 9,
+      "a": 10,
+      "kda": 1.89,
+      "csm": 5.09,
+      "kp": 39,
+      "vision": 15,
+      "dmgShare": 0.2,
+      "csAt10": 60,
+      "goldAt10": 3137,
+      "csDiff10": -25,
+      "goldDiff10": -353,
+      "csDiff14": -37,
+      "goldDiff14": -1712,
+      "fiveStack": true,
+      "date": 1781808295598
+    },
+    {
+      "matchId": "EUW1_7891600973",
+      "queue": 440,
+      "champ": "Kayle",
+      "role": "Top",
+      "win": false,
+      "k": 9,
+      "d": 12,
+      "a": 6,
+      "kda": 1.25,
+      "csm": 6.86,
+      "kp": 50,
+      "vision": 9,
+      "dmgShare": 0.31,
+      "csAt10": 60,
+      "goldAt10": 3255,
+      "csDiff10": 7,
+      "goldDiff10": -78,
+      "csDiff14": 15,
+      "goldDiff14": -409,
+      "fiveStack": true,
+      "date": 1781806170454
+    },
+    {
+      "matchId": "EUW1_7891545716",
+      "queue": 440,
+      "champ": "Kayle",
+      "role": "Top",
+      "win": true,
+      "k": 5,
+      "d": 6,
+      "a": 8,
+      "kda": 2.17,
+      "csm": 8.76,
+      "kp": 37,
+      "vision": 33,
+      "dmgShare": 0.22,
+      "csAt10": 84,
+      "goldAt10": 3835,
+      "csDiff10": 44,
+      "goldDiff10": 1521,
+      "csDiff14": 58,
+      "goldDiff14": 2457,
+      "fiveStack": false,
+      "date": 1781803299205
+    },
+    {
+      "matchId": "EUW1_7891535495",
+      "queue": 440,
+      "champ": "Kayle",
+      "role": "Top",
+      "win": true,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "kda": 0,
+      "csm": 2.05,
+      "kp": 0,
+      "vision": 0,
+      "dmgShare": 0.07,
+      "csAt10": null,
+      "goldAt10": null,
+      "csDiff10": null,
+      "goldDiff10": null,
+      "csDiff14": null,
+      "goldDiff14": null,
+      "fiveStack": false,
+      "date": 1781802698892
+    },
     {
       "matchId": "EUW1_7887436161",
       "queue": 440,
@@ -1271,132 +1386,17 @@
       "goldDiff14": 1312,
       "fiveStack": true,
       "date": 1780251495113
-    },
-    {
-      "matchId": "EUW1_7872160184",
-      "queue": 440,
-      "champ": "Khazix",
-      "role": "Jungle",
-      "win": false,
-      "k": 10,
-      "d": 6,
-      "a": 1,
-      "kda": 1.83,
-      "csm": 6.24,
-      "kp": 73,
-      "vision": 38,
-      "dmgShare": 0.27,
-      "csAt10": 63,
-      "goldAt10": 3728,
-      "csDiff10": 6,
-      "goldDiff10": 590,
-      "csDiff14": 11,
-      "goldDiff14": 899,
-      "fiveStack": true,
-      "date": 1780249291039
-    },
-    {
-      "matchId": "EUW1_7872113285",
-      "queue": 440,
-      "champ": "Khazix",
-      "role": "Jungle",
-      "win": false,
-      "k": 4,
-      "d": 6,
-      "a": 5,
-      "kda": 1.5,
-      "csm": 5.76,
-      "kp": 56,
-      "vision": 15,
-      "dmgShare": 0.2,
-      "csAt10": 68,
-      "goldAt10": 4058,
-      "csDiff10": 3,
-      "goldDiff10": 480,
-      "csDiff14": -13,
-      "goldDiff14": -184,
-      "fiveStack": true,
-      "date": 1780247309947
-    },
-    {
-      "matchId": "EUW1_7872033912",
-      "queue": 420,
-      "champ": "Khazix",
-      "role": "Jungle",
-      "win": true,
-      "k": 16,
-      "d": 7,
-      "a": 8,
-      "kda": 3.43,
-      "csm": 6.9,
-      "kp": 47,
-      "vision": 59,
-      "dmgShare": 0.24,
-      "csAt10": 72,
-      "goldAt10": 3368,
-      "csDiff10": 0,
-      "goldDiff10": -476,
-      "csDiff14": 3,
-      "goldDiff14": 21,
-      "fiveStack": false,
-      "date": 1780243702545
-    },
-    {
-      "matchId": "EUW1_7871978884",
-      "queue": 420,
-      "champ": "Khazix",
-      "role": "Jungle",
-      "win": true,
-      "k": 9,
-      "d": 5,
-      "a": 8,
-      "kda": 3.4,
-      "csm": 6.42,
-      "kp": 63,
-      "vision": 45,
-      "dmgShare": 0.23,
-      "csAt10": 70,
-      "goldAt10": 3824,
-      "csDiff10": -3,
-      "goldDiff10": -10,
-      "csDiff14": -10,
-      "goldDiff14": 406,
-      "fiveStack": false,
-      "date": 1780241369081
-    },
-    {
-      "matchId": "EUW1_7871932649",
-      "queue": 420,
-      "champ": "Khazix",
-      "role": "Jungle",
-      "win": true,
-      "k": 14,
-      "d": 3,
-      "a": 7,
-      "kda": 7,
-      "csm": 7.74,
-      "kp": 50,
-      "vision": 28,
-      "dmgShare": 0.23,
-      "csAt10": 70,
-      "goldAt10": 4450,
-      "csDiff10": 12,
-      "goldDiff10": 289,
-      "csDiff14": 32,
-      "goldDiff14": 1345,
-      "fiveStack": false,
-      "date": 1780239134967
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Khazix",
-        "games": 24,
-        "wr": 33,
-        "kda": 2.88,
+        "games": 19,
+        "wr": 26,
+        "kda": 2.73,
         "csm": 6.62,
-        "csDiff10": -0.04
+        "csDiff10": -1
       },
       {
         "champ": "Ashe",
@@ -1405,6 +1405,14 @@
         "kda": 2.63,
         "csm": 6.28,
         "csDiff10": 2.6
+      },
+      {
+        "champ": "Kayle",
+        "games": 5,
+        "wr": 60,
+        "kda": 1.32,
+        "csm": 5.35,
+        "csDiff10": 17
       },
       {
         "champ": "Xerath",
@@ -1431,12 +1439,12 @@
         "csDiff10": 1.5
       },
       {
-        "champ": "Kayle",
+        "champ": "Shen",
         "games": 2,
         "wr": 50,
-        "kda": 1.59,
-        "csm": 4.53,
-        "csDiff10": 0
+        "kda": 0.95,
+        "csm": 3.56,
+        "csDiff10": -25
       },
       {
         "champ": "Rammus",
@@ -1447,12 +1455,12 @@
         "csDiff10": -7.5
       },
       {
-        "champ": "Shen",
+        "champ": "Malphite",
         "games": 1,
         "wr": 100,
-        "kda": 0,
-        "csm": 2.02,
-        "csDiff10": null
+        "kda": 3,
+        "csm": 5.53,
+        "csDiff10": 19
       },
       {
         "champ": "Lissandra",
@@ -1514,8 +1522,8 @@
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 32,
-        "wr": 38
+        "games": 27,
+        "wr": 33
       },
       {
         "role": "ADC",
@@ -1523,14 +1531,14 @@
         "wr": 53
       },
       {
+        "role": "Top",
+        "games": 8,
+        "wr": 63
+      },
+      {
         "role": "Mid",
         "games": 7,
         "wr": 43
-      },
-      {
-        "role": "Top",
-        "games": 3,
-        "wr": 67
       },
       {
         "role": "Support",
@@ -1540,15 +1548,15 @@
     ],
     "form": [
       "W",
+      "L",
+      "L",
+      "W",
+      "W",
+      "W",
       "W",
       "L",
       "L",
-      "L",
-      "L",
-      "L",
-      "L",
-      "L",
-      "W"
+      "L"
     ]
   },
   "fiveStack": {
@@ -1562,12 +1570,20 @@
         "csDiff10": -2.25
       },
       {
-        "champ": "Khazix",
-        "games": 3,
-        "wr": 0,
-        "kda": 1.91,
-        "csm": 5.85,
-        "csDiff10": 2.33
+        "champ": "Shen",
+        "games": 2,
+        "wr": 50,
+        "kda": 0.95,
+        "csm": 3.56,
+        "csDiff10": -25
+      },
+      {
+        "champ": "Kayle",
+        "games": 2,
+        "wr": 50,
+        "kda": 2.21,
+        "csm": 7.22,
+        "csDiff10": 3.5
       },
       {
         "champ": "Rammus",
@@ -1578,20 +1594,12 @@
         "csDiff10": -7.5
       },
       {
-        "champ": "Shen",
+        "champ": "Malphite",
         "games": 1,
         "wr": 100,
-        "kda": 0,
-        "csm": 2.02,
-        "csDiff10": null
-      },
-      {
-        "champ": "Kayle",
-        "games": 1,
-        "wr": 100,
-        "kda": 3.17,
-        "csm": 7.58,
-        "csDiff10": 0
+        "kda": 3,
+        "csm": 5.53,
+        "csDiff10": 19
       },
       {
         "champ": "Ashe",
@@ -1600,6 +1608,14 @@
         "kda": 5,
         "csm": 6.33,
         "csDiff10": -10
+      },
+      {
+        "champ": "Khazix",
+        "games": 1,
+        "wr": 0,
+        "kda": 2.4,
+        "csm": 5.54,
+        "csDiff10": -2
       },
       {
         "champ": "Draven",
@@ -1617,27 +1633,27 @@
         "wr": 50
       },
       {
-        "role": "Jungle",
+        "role": "Top",
         "games": 5,
-        "wr": 20
+        "wr": 60
       },
       {
-        "role": "Top",
-        "games": 2,
-        "wr": 100
+        "role": "Jungle",
+        "games": 3,
+        "wr": 33
       }
     ],
     "form": [
       "W",
+      "L",
+      "L",
+      "W",
       "W",
       "W",
       "L",
       "W",
       "L",
-      "L",
-      "L",
-      "W",
-      "W"
+      "L"
     ]
   }
 }
