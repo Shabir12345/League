@@ -1,12 +1,58 @@
 {
   "player": "Steven",
   "puuid": "rEUfV7nH6pNefn-stlAp3Egn0EYlr11hULP7Zdo8F0HBypEIcqZBYTHnpZC4GXko1ZmEK13LS9RboQ",
-  "generatedAt": "2026-06-19T09:03:23.990Z",
+  "generatedAt": "2026-06-20T07:45:59.066Z",
   "rank": {
     "solo": "Gold IV",
-    "flex": "Silver II"
+    "flex": "Silver III"
   },
   "games": [
+    {
+      "matchId": "EUW1_7892606696",
+      "queue": 440,
+      "champ": "Leblanc",
+      "role": "Mid",
+      "win": false,
+      "k": 12,
+      "d": 2,
+      "a": 8,
+      "kda": 10,
+      "csm": 5.89,
+      "kp": 87,
+      "vision": 22,
+      "dmgShare": 0.36,
+      "csAt10": 75,
+      "goldAt10": 3742,
+      "csDiff10": -1,
+      "goldDiff10": 704,
+      "csDiff14": -7,
+      "goldDiff14": 713,
+      "fiveStack": false,
+      "date": 1781890867401
+    },
+    {
+      "matchId": "EUW1_7892576222",
+      "queue": 440,
+      "champ": "Leblanc",
+      "role": "Mid",
+      "win": false,
+      "k": 4,
+      "d": 3,
+      "a": 0,
+      "kda": 1.33,
+      "csm": 5.55,
+      "kp": 33,
+      "vision": 6,
+      "dmgShare": 0.18,
+      "csAt10": 72,
+      "goldAt10": 3236,
+      "csDiff10": -17,
+      "goldDiff10": -171,
+      "csDiff14": -38,
+      "goldDiff14": -303,
+      "fiveStack": false,
+      "date": 1781889505111
+    },
     {
       "matchId": "EUW1_7891718476",
       "queue": 440,
@@ -1340,52 +1386,6 @@
       "goldDiff14": 353,
       "fiveStack": true,
       "date": 1780688698180
-    },
-    {
-      "matchId": "EUW1_7877578786",
-      "queue": 440,
-      "champ": "Yone",
-      "role": "Mid",
-      "win": false,
-      "k": 2,
-      "d": 4,
-      "a": 0,
-      "kda": 0.5,
-      "csm": 6.89,
-      "kp": 17,
-      "vision": 5,
-      "dmgShare": 0.15,
-      "csAt10": 74,
-      "goldAt10": 2970,
-      "csDiff10": -6,
-      "goldDiff10": -510,
-      "csDiff14": -14,
-      "goldDiff14": -881,
-      "fiveStack": true,
-      "date": 1780687005359
-    },
-    {
-      "matchId": "EUW1_7877523730",
-      "queue": 440,
-      "champ": "Yone",
-      "role": "Mid",
-      "win": true,
-      "k": 7,
-      "d": 5,
-      "a": 10,
-      "kda": 3.4,
-      "csm": 6.57,
-      "kp": 38,
-      "vision": 13,
-      "dmgShare": 0.15,
-      "csAt10": 60,
-      "goldAt10": 3199,
-      "csDiff10": -27,
-      "goldDiff10": -2329,
-      "csDiff14": -36,
-      "goldDiff14": -2874,
-      "fiveStack": true,
-      "date": 1780684473092
     }
   ],
   "soloFlex": {
@@ -1399,6 +1399,14 @@
         "csDiff10": 0.13
       },
       {
+        "champ": "Leblanc",
+        "games": 9,
+        "wr": 56,
+        "kda": 4.48,
+        "csm": 4.68,
+        "csDiff10": -8.78
+      },
+      {
         "champ": "Galio",
         "games": 8,
         "wr": 50,
@@ -1407,20 +1415,12 @@
         "csDiff10": -13
       },
       {
-        "champ": "Leblanc",
-        "games": 7,
-        "wr": 71,
-        "kda": 4.15,
-        "csm": 4.39,
-        "csDiff10": -8.71
-      },
-      {
         "champ": "Yone",
-        "games": 6,
-        "wr": 33,
-        "kda": 1.19,
-        "csm": 6.2,
-        "csDiff10": -5.8
+        "games": 4,
+        "wr": 25,
+        "kda": 0.81,
+        "csm": 5.93,
+        "csDiff10": 1.33
       },
       {
         "champ": "Ahri",
@@ -1523,7 +1523,7 @@
       {
         "role": "Mid",
         "games": 55,
-        "wr": 49
+        "wr": 47
       },
       {
         "role": "Support",
@@ -1537,16 +1537,16 @@
       }
     ],
     "form": [
-      "W",
       "L",
       "L",
       "W",
       "L",
+      "L",
       "W",
       "L",
+      "W",
       "L",
-      "L",
-      "W"
+      "L"
     ]
   },
   "fiveStack": {
@@ -1566,14 +1566,6 @@
         "kda": 13.67,
         "csm": 6.6,
         "csDiff10": 15.5
-      },
-      {
-        "champ": "Yone",
-        "games": 2,
-        "wr": 50,
-        "kda": 1.95,
-        "csm": 6.73,
-        "csDiff10": -16.5
       },
       {
         "champ": "Ahri",
@@ -1611,7 +1603,7 @@
     "roleSplits": [
       {
         "role": "Mid",
-        "games": 12,
+        "games": 10,
         "wr": 50
       }
     ],

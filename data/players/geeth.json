@@ -1,12 +1,58 @@
 {
   "player": "Geeth",
   "puuid": "Df36AbNlLOIH8wlRXSAhOMfO-UvoqWvuM2MkscE3YpIMbXqL4X23TbbDbkXf3-knw1n9f11khr9Hzw",
-  "generatedAt": "2026-06-19T09:04:01.143Z",
+  "generatedAt": "2026-06-20T07:46:33.191Z",
   "rank": {
     "solo": "Gold I",
     "flex": "Gold III"
   },
   "games": [
+    {
+      "matchId": "EUW1_7892606696",
+      "queue": 440,
+      "champ": "Malphite",
+      "role": "Top",
+      "win": false,
+      "k": 5,
+      "d": 4,
+      "a": 4,
+      "kda": 2.25,
+      "csm": 7.64,
+      "kp": 39,
+      "vision": 16,
+      "dmgShare": 0.22,
+      "csAt10": 75,
+      "goldAt10": 3037,
+      "csDiff10": -1,
+      "goldDiff10": -25,
+      "csDiff14": -6,
+      "goldDiff14": -253,
+      "fiveStack": false,
+      "date": 1781890867401
+    },
+    {
+      "matchId": "EUW1_7892576222",
+      "queue": 440,
+      "champ": "Viego",
+      "role": "Jungle",
+      "win": false,
+      "k": 1,
+      "d": 5,
+      "a": 4,
+      "kda": 1,
+      "csm": 5.29,
+      "kp": 42,
+      "vision": 9,
+      "dmgShare": 0.21,
+      "csAt10": 56,
+      "goldAt10": 3551,
+      "csDiff10": -13,
+      "goldDiff10": -408,
+      "csDiff14": -31,
+      "goldDiff14": -898,
+      "fiveStack": false,
+      "date": 1781889505111
+    },
     {
       "matchId": "EUW1_7891718476",
       "queue": 440,
@@ -1340,52 +1386,6 @@
       "goldDiff14": -1706,
       "fiveStack": false,
       "date": 1779124792213
-    },
-    {
-      "matchId": "EUW1_7858116156",
-      "queue": 420,
-      "champ": "Smolder",
-      "role": "ADC",
-      "win": false,
-      "k": 6,
-      "d": 7,
-      "a": 11,
-      "kda": 2.43,
-      "csm": 5.4,
-      "kp": 36,
-      "vision": 26,
-      "dmgShare": 0.14,
-      "csAt10": 53,
-      "goldAt10": 3101,
-      "csDiff10": -34,
-      "goldDiff10": -234,
-      "csDiff14": -60,
-      "goldDiff14": -1055,
-      "fiveStack": false,
-      "date": 1779122215426
-    },
-    {
-      "matchId": "EUW1_7855987120",
-      "queue": 420,
-      "champ": "Veigar",
-      "role": "Mid",
-      "win": false,
-      "k": 6,
-      "d": 5,
-      "a": 5,
-      "kda": 2.2,
-      "csm": 5.45,
-      "kp": 41,
-      "vision": 21,
-      "dmgShare": 0.22,
-      "csAt10": 76,
-      "goldAt10": 3374,
-      "csDiff10": 7,
-      "goldDiff10": 249,
-      "csDiff14": 28,
-      "goldDiff14": 563,
-      "fiveStack": false,
-      "date": 1778956661178
     }
   ],
   "soloFlex": {
@@ -1399,6 +1399,14 @@
         "csDiff10": -4
       },
       {
+        "champ": "Viego",
+        "games": 5,
+        "wr": 60,
+        "kda": 4.36,
+        "csm": 5.94,
+        "csDiff10": -11.8
+      },
+      {
         "champ": "Nocturne",
         "games": 4,
         "wr": 50,
@@ -1407,28 +1415,20 @@
         "csDiff10": -7
       },
       {
-        "champ": "Viego",
-        "games": 4,
-        "wr": 75,
-        "kda": 5.2,
-        "csm": 6.1,
-        "csDiff10": -11.5
-      },
-      {
-        "champ": "Veigar",
-        "games": 4,
-        "wr": 25,
-        "kda": 3.18,
-        "csm": 6.29,
-        "csDiff10": -4.25
-      },
-      {
         "champ": "Caitlyn",
         "games": 4,
         "wr": 25,
         "kda": 5.31,
         "csm": 6.43,
         "csDiff10": 13.25
+      },
+      {
+        "champ": "Veigar",
+        "games": 3,
+        "wr": 33,
+        "kda": 3.51,
+        "csm": 6.57,
+        "csDiff10": -8
       },
       {
         "champ": "MonkeyKing",
@@ -1485,6 +1485,14 @@
         "kda": 1.38,
         "csm": 0.76,
         "csDiff10": -3.5
+      },
+      {
+        "champ": "Malphite",
+        "games": 1,
+        "wr": 0,
+        "kda": 2.25,
+        "csm": 7.64,
+        "csDiff10": -1
       },
       {
         "champ": "Ashe",
@@ -1669,31 +1677,23 @@
         "kda": 2.43,
         "csm": 6.06,
         "csDiff10": -9
-      },
-      {
-        "champ": "Smolder",
-        "games": 1,
-        "wr": 0,
-        "kda": 2.43,
-        "csm": 5.4,
-        "csDiff10": -34
       }
     ],
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 28,
-        "wr": 46
+        "games": 29,
+        "wr": 45
       },
       {
         "role": "ADC",
-        "games": 10,
-        "wr": 40
+        "games": 9,
+        "wr": 44
       },
       {
         "role": "Mid",
-        "games": 10,
-        "wr": 60
+        "games": 9,
+        "wr": 67
       },
       {
         "role": "Support",
@@ -1702,21 +1702,21 @@
       },
       {
         "role": "Top",
-        "games": 4,
-        "wr": 75
+        "games": 5,
+        "wr": 60
       }
     ],
     "form": [
-      "W",
       "L",
       "L",
       "W",
       "L",
-      "W",
-      "W",
+      "L",
       "W",
       "L",
-      "L"
+      "W",
+      "W",
+      "W"
     ]
   },
   "fiveStack": {

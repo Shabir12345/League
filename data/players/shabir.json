@@ -1,12 +1,58 @@
 {
   "player": "Shabir",
   "puuid": "1RJIy7lzs-1o-4vzu2wJkj0SGPaA2TNVDdbZR36Lp-OOAFXYsZnFrK2Al12k4yMDAyZlSGI8C3t44g",
-  "generatedAt": "2026-06-19T09:02:53.150Z",
+  "generatedAt": "2026-06-20T07:45:42.600Z",
   "rank": {
     "solo": "Gold IV",
     "flex": "Platinum IV"
   },
   "games": [
+    {
+      "matchId": "EUW1_7892606696",
+      "queue": 440,
+      "champ": "Khazix",
+      "role": "Jungle",
+      "win": false,
+      "k": 2,
+      "d": 5,
+      "a": 8,
+      "kda": 2,
+      "csm": 6.09,
+      "kp": 43,
+      "vision": 33,
+      "dmgShare": 0.18,
+      "csAt10": 70,
+      "goldAt10": 3516,
+      "csDiff10": -3,
+      "goldDiff10": -347,
+      "csDiff14": -1,
+      "goldDiff14": -64,
+      "fiveStack": false,
+      "date": 1781890867401
+    },
+    {
+      "matchId": "EUW1_7892576222",
+      "queue": 440,
+      "champ": "Kayle",
+      "role": "Top",
+      "win": false,
+      "k": 3,
+      "d": 4,
+      "a": 1,
+      "kda": 1,
+      "csm": 5.23,
+      "kp": 33,
+      "vision": 7,
+      "dmgShare": 0.18,
+      "csAt10": 53,
+      "goldAt10": 3506,
+      "csDiff10": -45,
+      "goldDiff10": -1515,
+      "csDiff14": -68,
+      "goldDiff14": -2957,
+      "fiveStack": false,
+      "date": 1781889505111
+    },
     {
       "matchId": "EUW1_7891718476",
       "queue": 440,
@@ -1340,63 +1386,17 @@
       "goldDiff14": -245,
       "fiveStack": false,
       "date": 1780256829566
-    },
-    {
-      "matchId": "EUW1_7872282480",
-      "queue": 440,
-      "champ": "Quinn",
-      "role": "Jungle",
-      "win": false,
-      "k": 6,
-      "d": 16,
-      "a": 13,
-      "kda": 1.19,
-      "csm": 5.92,
-      "kp": 36,
-      "vision": 17,
-      "dmgShare": 0.13,
-      "csAt10": 65,
-      "goldAt10": 3640,
-      "csDiff10": -4,
-      "goldDiff10": -919,
-      "csDiff14": -7,
-      "goldDiff14": -873,
-      "fiveStack": false,
-      "date": 1780253845525
-    },
-    {
-      "matchId": "EUW1_7872219514",
-      "queue": 440,
-      "champ": "Caitlyn",
-      "role": "ADC",
-      "win": false,
-      "k": 21,
-      "d": 9,
-      "a": 6,
-      "kda": 3,
-      "csm": 7.17,
-      "kp": 68,
-      "vision": 23,
-      "dmgShare": 0.38,
-      "csAt10": 54,
-      "goldAt10": 4385,
-      "csDiff10": -12,
-      "goldDiff10": 404,
-      "csDiff14": -5,
-      "goldDiff14": 1312,
-      "fiveStack": true,
-      "date": 1780251495113
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Khazix",
-        "games": 19,
-        "wr": 26,
-        "kda": 2.73,
-        "csm": 6.62,
-        "csDiff10": -1
+        "games": 20,
+        "wr": 25,
+        "kda": 2.69,
+        "csm": 6.59,
+        "csDiff10": -1.1
       },
       {
         "champ": "Ashe",
@@ -1408,11 +1408,11 @@
       },
       {
         "champ": "Kayle",
-        "games": 5,
-        "wr": 60,
-        "kda": 1.32,
-        "csm": 5.35,
-        "csDiff10": 17
+        "games": 6,
+        "wr": 50,
+        "kda": 1.26,
+        "csm": 5.33,
+        "csDiff10": 1.5
       },
       {
         "champ": "Xerath",
@@ -1423,20 +1423,20 @@
         "csDiff10": 12.6
       },
       {
-        "champ": "Caitlyn",
-        "games": 4,
-        "wr": 25,
-        "kda": 2.94,
-        "csm": 7.17,
-        "csDiff10": -2.25
-      },
-      {
         "champ": "Ekko",
         "games": 4,
         "wr": 50,
         "kda": 3.58,
         "csm": 6.38,
         "csDiff10": 1.5
+      },
+      {
+        "champ": "Caitlyn",
+        "games": 3,
+        "wr": 33,
+        "kda": 2.91,
+        "csm": 7.17,
+        "csDiff10": 1
       },
       {
         "champ": "Shen",
@@ -1509,14 +1509,6 @@
         "kda": 2.17,
         "csm": 7.02,
         "csDiff10": 7
-      },
-      {
-        "champ": "Quinn",
-        "games": 1,
-        "wr": 0,
-        "kda": 1.19,
-        "csm": 5.92,
-        "csDiff10": -4
       }
     ],
     "roleSplits": [
@@ -1527,13 +1519,13 @@
       },
       {
         "role": "ADC",
-        "games": 17,
-        "wr": 53
+        "games": 16,
+        "wr": 56
       },
       {
         "role": "Top",
-        "games": 8,
-        "wr": 63
+        "games": 9,
+        "wr": 56
       },
       {
         "role": "Mid",
@@ -1547,6 +1539,8 @@
       }
     ],
     "form": [
+      "L",
+      "L",
       "W",
       "L",
       "L",
@@ -1554,8 +1548,6 @@
       "W",
       "W",
       "W",
-      "L",
-      "L",
       "L"
     ]
   },
@@ -1563,11 +1555,11 @@
     "champPool": [
       {
         "champ": "Caitlyn",
-        "games": 4,
-        "wr": 25,
-        "kda": 2.94,
+        "games": 3,
+        "wr": 33,
+        "kda": 2.91,
         "csm": 7.17,
-        "csDiff10": -2.25
+        "csDiff10": 1
       },
       {
         "champ": "Shen",
@@ -1628,12 +1620,12 @@
     ],
     "roleSplits": [
       {
-        "role": "ADC",
-        "games": 6,
-        "wr": 50
+        "role": "Top",
+        "games": 5,
+        "wr": 60
       },
       {
-        "role": "Top",
+        "role": "ADC",
         "games": 5,
         "wr": 60
       },

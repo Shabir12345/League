@@ -1,12 +1,35 @@
 {
   "player": "Harendra",
   "puuid": "q4q_teVE3JVjPkqQKIRQy4znJ8fgrCk2LHbQTZolQfPQiDL302Ry8aTT_s_njjGs8WfZM-Dw239OIw",
-  "generatedAt": "2026-06-19T09:03:11.390Z",
+  "generatedAt": "2026-06-20T07:45:49.517Z",
   "rank": {
     "solo": "Bronze III",
     "flex": "Bronze I"
   },
   "games": [
+    {
+      "matchId": "EUW1_7892585796",
+      "queue": 420,
+      "champ": "Ryze",
+      "role": "Mid",
+      "win": true,
+      "k": 13,
+      "d": 6,
+      "a": 13,
+      "kda": 4.33,
+      "csm": 6.78,
+      "kp": 68,
+      "vision": 36,
+      "dmgShare": 0.35,
+      "csAt10": 76,
+      "goldAt10": 3500,
+      "csDiff10": -2,
+      "goldDiff10": 324,
+      "csDiff14": -22,
+      "goldDiff14": -529,
+      "fiveStack": false,
+      "date": 1781889833117
+    },
     {
       "matchId": "EUW1_7891718476",
       "queue": 440,
@@ -1363,29 +1386,6 @@
       "goldDiff14": -1484,
       "fiveStack": false,
       "date": 1756883164787
-    },
-    {
-      "matchId": "EUW1_7508902193",
-      "queue": 420,
-      "champ": "Nautilus",
-      "role": "Jungle",
-      "win": true,
-      "k": 13,
-      "d": 6,
-      "a": 21,
-      "kda": 5.67,
-      "csm": 6.82,
-      "kp": 58,
-      "vision": 31,
-      "dmgShare": 0.19,
-      "csAt10": 61,
-      "goldAt10": 3718,
-      "csDiff10": 27,
-      "goldDiff10": 304,
-      "csDiff14": 35,
-      "goldDiff14": 689,
-      "fiveStack": false,
-      "date": 1756303778744
     }
   ],
   "soloFlex": {
@@ -1471,12 +1471,12 @@
         "csDiff10": -1.5
       },
       {
-        "champ": "Nautilus",
-        "games": 2,
-        "wr": 50,
-        "kda": 3.14,
-        "csm": 6.03,
-        "csDiff10": 1.5
+        "champ": "Ryze",
+        "games": 1,
+        "wr": 100,
+        "kda": 4.33,
+        "csm": 6.78,
+        "csDiff10": -2
       },
       {
         "champ": "Jinx",
@@ -1645,13 +1645,21 @@
         "kda": 5,
         "csm": 5.34,
         "csDiff10": -11
+      },
+      {
+        "champ": "Nautilus",
+        "games": 1,
+        "wr": 0,
+        "kda": 0.6,
+        "csm": 5.23,
+        "csDiff10": -24
       }
     ],
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 26,
-        "wr": 54
+        "games": 25,
+        "wr": 52
       },
       {
         "role": "Top",
@@ -1665,7 +1673,7 @@
       },
       {
         "role": "Mid",
-        "games": 3,
+        "games": 4,
         "wr": 100
       },
       {
@@ -1676,15 +1684,15 @@
     ],
     "form": [
       "W",
-      "L",
-      "L",
-      "W",
-      "W",
-      "W",
-      "W",
       "W",
       "L",
-      "W"
+      "L",
+      "W",
+      "W",
+      "W",
+      "W",
+      "W",
+      "L"
     ]
   },
   "fiveStack": {
