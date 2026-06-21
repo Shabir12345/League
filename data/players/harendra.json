@@ -1,12 +1,58 @@
 {
   "player": "Harendra",
   "puuid": "q4q_teVE3JVjPkqQKIRQy4znJ8fgrCk2LHbQTZolQfPQiDL302Ry8aTT_s_njjGs8WfZM-Dw239OIw",
-  "generatedAt": "2026-06-20T07:45:49.517Z",
+  "generatedAt": "2026-06-21T08:23:52.430Z",
   "rank": {
     "solo": "Bronze III",
     "flex": "Bronze I"
   },
   "games": [
+    {
+      "matchId": "EUW1_7893835981",
+      "queue": 440,
+      "champ": "Chogath",
+      "role": "Top",
+      "win": true,
+      "k": 2,
+      "d": 7,
+      "a": 1,
+      "kda": 0.43,
+      "csm": 6.71,
+      "kp": 10,
+      "vision": 20,
+      "dmgShare": 0.15,
+      "csAt10": 52,
+      "goldAt10": 2714,
+      "csDiff10": -23,
+      "goldDiff10": -1334,
+      "csDiff14": -23,
+      "goldDiff14": -1274,
+      "fiveStack": true,
+      "date": 1781984244474
+    },
+    {
+      "matchId": "EUW1_7893641854",
+      "queue": 440,
+      "champ": "TahmKench",
+      "role": "Top",
+      "win": true,
+      "k": 10,
+      "d": 5,
+      "a": 6,
+      "kda": 3.2,
+      "csm": 6.25,
+      "kp": 44,
+      "vision": 35,
+      "dmgShare": 0.26,
+      "csAt10": 48,
+      "goldAt10": 3259,
+      "csDiff10": -28,
+      "goldDiff10": -1030,
+      "csDiff14": -34,
+      "goldDiff14": -677,
+      "fiveStack": false,
+      "date": 1781973555224
+    },
     {
       "matchId": "EUW1_7892585796",
       "queue": 420,
@@ -1340,52 +1386,6 @@
       "goldDiff14": 0,
       "fiveStack": false,
       "date": 1764148184285
-    },
-    {
-      "matchId": "EUW1_7517079755",
-      "queue": 420,
-      "champ": "Ambessa",
-      "role": "Jungle",
-      "win": false,
-      "k": 4,
-      "d": 7,
-      "a": 5,
-      "kda": 1.29,
-      "csm": 5.66,
-      "kp": 24,
-      "vision": 16,
-      "dmgShare": 0.08,
-      "csAt10": 63,
-      "goldAt10": 3081,
-      "csDiff10": 6,
-      "goldDiff10": -594,
-      "csDiff14": -2,
-      "goldDiff14": -1112,
-      "fiveStack": false,
-      "date": 1756885092181
-    },
-    {
-      "matchId": "EUW1_7517067841",
-      "queue": 420,
-      "champ": "Nautilus",
-      "role": "Jungle",
-      "win": false,
-      "k": 2,
-      "d": 5,
-      "a": 1,
-      "kda": 0.6,
-      "csm": 5.23,
-      "kp": 38,
-      "vision": 10,
-      "dmgShare": 0.12,
-      "csAt10": 56,
-      "goldAt10": 2821,
-      "csDiff10": -24,
-      "goldDiff10": -536,
-      "csDiff14": -31,
-      "goldDiff14": -1484,
-      "fiveStack": false,
-      "date": 1756883164787
     }
   ],
   "soloFlex": {
@@ -1455,20 +1455,28 @@
         "csDiff10": -3.5
       },
       {
-        "champ": "Ambessa",
-        "games": 2,
-        "wr": 0,
-        "kda": 1.5,
-        "csm": 5.59,
-        "csDiff10": -11.5
-      },
-      {
         "champ": "Udyr",
         "games": 2,
         "wr": 100,
         "kda": 6.5,
         "csm": 6.23,
         "csDiff10": -1.5
+      },
+      {
+        "champ": "Chogath",
+        "games": 1,
+        "wr": 100,
+        "kda": 0.43,
+        "csm": 6.71,
+        "csDiff10": -23
+      },
+      {
+        "champ": "TahmKench",
+        "games": 1,
+        "wr": 100,
+        "kda": 3.2,
+        "csm": 6.25,
+        "csDiff10": -28
       },
       {
         "champ": "Ryze",
@@ -1591,6 +1599,14 @@
         "csDiff10": 21
       },
       {
+        "champ": "Ambessa",
+        "games": 1,
+        "wr": 0,
+        "kda": 1.71,
+        "csm": 5.52,
+        "csDiff10": -29
+      },
+      {
         "champ": "Singed",
         "games": 1,
         "wr": 100,
@@ -1645,26 +1661,18 @@
         "kda": 5,
         "csm": 5.34,
         "csDiff10": -11
-      },
-      {
-        "champ": "Nautilus",
-        "games": 1,
-        "wr": 0,
-        "kda": 0.6,
-        "csm": 5.23,
-        "csDiff10": -24
       }
     ],
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 25,
-        "wr": 52
+        "games": 23,
+        "wr": 57
       },
       {
         "role": "Top",
-        "games": 17,
-        "wr": 35
+        "games": 19,
+        "wr": 42
       },
       {
         "role": "ADC",
@@ -1685,14 +1693,14 @@
     "form": [
       "W",
       "W",
+      "W",
+      "W",
       "L",
       "L",
       "W",
       "W",
       "W",
-      "W",
-      "W",
-      "L"
+      "W"
     ]
   },
   "fiveStack": {
@@ -1720,6 +1728,14 @@
         "kda": 3.01,
         "csm": 5.7,
         "csDiff10": -3.5
+      },
+      {
+        "champ": "Chogath",
+        "games": 1,
+        "wr": 100,
+        "kda": 0.43,
+        "csm": 6.71,
+        "csDiff10": -23
       },
       {
         "champ": "Jinx",
@@ -1826,8 +1842,8 @@
       },
       {
         "role": "Top",
-        "games": 7,
-        "wr": 43
+        "games": 8,
+        "wr": 50
       },
       {
         "role": "Jungle",
@@ -1837,14 +1853,14 @@
     ],
     "form": [
       "W",
-      "L",
-      "L",
-      "W",
-      "W",
       "W",
       "L",
+      "L",
+      "W",
+      "W",
       "W",
       "L",
+      "W",
       "L"
     ]
   }

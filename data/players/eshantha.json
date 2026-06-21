@@ -1,12 +1,35 @@
 {
   "player": "Eshantha",
   "puuid": "SmVhFbT3bTkwBT77RgXmb34GAVOnoXm4xOJhpmDCdlkm-5F6hRC-7gBA243sy5f9t3OeU68sQo5cDA",
-  "generatedAt": "2026-06-20T07:46:03.072Z",
+  "generatedAt": "2026-06-21T08:24:10.379Z",
   "rank": {
     "solo": "Gold II",
     "flex": "Gold IV"
   },
   "games": [
+    {
+      "matchId": "EUW1_7893835981",
+      "queue": 440,
+      "champ": "Lux",
+      "role": "Support",
+      "win": true,
+      "k": 7,
+      "d": 6,
+      "a": 18,
+      "kda": 4.17,
+      "csm": 2.18,
+      "kp": 81,
+      "vision": 90,
+      "dmgShare": 0.25,
+      "csAt10": 11,
+      "goldAt10": 2875,
+      "csDiff10": 0,
+      "goldDiff10": 184,
+      "csDiff14": 4,
+      "goldDiff14": 523,
+      "fiveStack": true,
+      "date": 1781984244474
+    },
     {
       "matchId": "EUW1_7891718476",
       "queue": 440,
@@ -1363,40 +1386,17 @@
       "goldDiff14": 892,
       "fiveStack": false,
       "date": 1779807650012
-    },
-    {
-      "matchId": "EUW1_7866519788",
-      "queue": 420,
-      "champ": "Anivia",
-      "role": "Top",
-      "win": false,
-      "k": 6,
-      "d": 9,
-      "a": 3,
-      "kda": 1,
-      "csm": 6.25,
-      "kp": 45,
-      "vision": 50,
-      "dmgShare": 0.26,
-      "csAt10": 74,
-      "goldAt10": 3003,
-      "csDiff10": 22,
-      "goldDiff10": -44,
-      "csDiff14": 39,
-      "goldDiff14": 1096,
-      "fiveStack": false,
-      "date": 1779805269249
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Anivia",
-        "games": 13,
-        "wr": 62,
-        "kda": 3.51,
-        "csm": 6.1,
-        "csDiff10": 4
+        "games": 12,
+        "wr": 67,
+        "kda": 3.72,
+        "csm": 6.09,
+        "csDiff10": 2.2
       },
       {
         "champ": "Yorick",
@@ -1439,6 +1439,14 @@
         "csDiff10": 13
       },
       {
+        "champ": "Lux",
+        "games": 3,
+        "wr": 67,
+        "kda": 2.53,
+        "csm": 4.18,
+        "csDiff10": 1
+      },
+      {
         "champ": "Chogath",
         "games": 3,
         "wr": 33,
@@ -1461,14 +1469,6 @@
         "kda": 1.17,
         "csm": 3.71,
         "csDiff10": 0
-      },
-      {
-        "champ": "Lux",
-        "games": 2,
-        "wr": 50,
-        "kda": 1.72,
-        "csm": 5.18,
-        "csDiff10": 1.5
       },
       {
         "champ": "Ziggs",
@@ -1546,13 +1546,13 @@
     "roleSplits": [
       {
         "role": "Top",
-        "games": 34,
-        "wr": 50
+        "games": 33,
+        "wr": 52
       },
       {
         "role": "Support",
-        "games": 19,
-        "wr": 58
+        "games": 20,
+        "wr": 60
       },
       {
         "role": "Mid",
@@ -1562,6 +1562,7 @@
     ],
     "form": [
       "W",
+      "W",
       "L",
       "L",
       "W",
@@ -1569,7 +1570,6 @@
       "W",
       "W",
       "W",
-      "L",
       "L"
     ]
   },
@@ -1624,6 +1624,14 @@
         "csDiff10": 10.5
       },
       {
+        "champ": "Lux",
+        "games": 1,
+        "wr": 100,
+        "kda": 4.17,
+        "csm": 2.18,
+        "csDiff10": 0
+      },
+      {
         "champ": "Morgana",
         "games": 1,
         "wr": 100,
@@ -1651,8 +1659,8 @@
     "roleSplits": [
       {
         "role": "Support",
-        "games": 12,
-        "wr": 50
+        "games": 13,
+        "wr": 54
       },
       {
         "role": "Top",
@@ -1662,14 +1670,14 @@
     ],
     "form": [
       "W",
-      "L",
-      "L",
-      "W",
-      "W",
       "W",
       "L",
+      "L",
+      "W",
+      "W",
       "W",
       "L",
+      "W",
       "L"
     ]
   }

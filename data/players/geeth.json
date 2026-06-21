@@ -1,12 +1,58 @@
 {
   "player": "Geeth",
   "puuid": "Df36AbNlLOIH8wlRXSAhOMfO-UvoqWvuM2MkscE3YpIMbXqL4X23TbbDbkXf3-knw1n9f11khr9Hzw",
-  "generatedAt": "2026-06-20T07:46:33.191Z",
+  "generatedAt": "2026-06-21T08:24:48.608Z",
   "rank": {
     "solo": "Gold I",
     "flex": "Gold III"
   },
   "games": [
+    {
+      "matchId": "EUW1_7893835981",
+      "queue": 440,
+      "champ": "Sejuani",
+      "role": "Jungle",
+      "win": true,
+      "k": 3,
+      "d": 1,
+      "a": 10,
+      "kda": 13,
+      "csm": 5.62,
+      "kp": 42,
+      "vision": 20,
+      "dmgShare": 0.14,
+      "csAt10": 64,
+      "goldAt10": 3343,
+      "csDiff10": 1,
+      "goldDiff10": -431,
+      "csDiff14": -3,
+      "goldDiff14": -377,
+      "fiveStack": true,
+      "date": 1781984244474
+    },
+    {
+      "matchId": "EUW1_7893641854",
+      "queue": 440,
+      "champ": "Diana",
+      "role": "Jungle",
+      "win": true,
+      "k": 5,
+      "d": 7,
+      "a": 15,
+      "kda": 2.86,
+      "csm": 5.93,
+      "kp": 56,
+      "vision": 22,
+      "dmgShare": 0.17,
+      "csAt10": 51,
+      "goldAt10": 4037,
+      "csDiff10": -1,
+      "goldDiff10": 564,
+      "csDiff14": -5,
+      "goldDiff14": 552,
+      "fiveStack": false,
+      "date": 1781973555224
+    },
     {
       "matchId": "EUW1_7892606696",
       "queue": 440,
@@ -1340,52 +1386,6 @@
       "goldDiff14": 632,
       "fiveStack": false,
       "date": 1779134312728
-    },
-    {
-      "matchId": "EUW1_7858217239",
-      "queue": 420,
-      "champ": "MasterYi",
-      "role": "Jungle",
-      "win": false,
-      "k": 13,
-      "d": 7,
-      "a": 4,
-      "kda": 2.43,
-      "csm": 6.06,
-      "kp": 45,
-      "vision": 18,
-      "dmgShare": 0.21,
-      "csAt10": 64,
-      "goldAt10": 3990,
-      "csDiff10": -9,
-      "goldDiff10": -12,
-      "csDiff14": -22,
-      "goldDiff14": -2102,
-      "fiveStack": false,
-      "date": 1779126747924
-    },
-    {
-      "matchId": "EUW1_7858171423",
-      "queue": 420,
-      "champ": "Nocturne",
-      "role": "Jungle",
-      "win": false,
-      "k": 1,
-      "d": 5,
-      "a": 3,
-      "kda": 0.8,
-      "csm": 7.28,
-      "kp": 36,
-      "vision": 20,
-      "dmgShare": 0.13,
-      "csAt10": 60,
-      "goldAt10": 3042,
-      "csDiff10": -11,
-      "goldDiff10": -1358,
-      "csDiff14": -17,
-      "goldDiff14": -1706,
-      "fiveStack": false,
-      "date": 1779124792213
     }
   ],
   "soloFlex": {
@@ -1407,20 +1407,20 @@
         "csDiff10": -11.8
       },
       {
-        "champ": "Nocturne",
-        "games": 4,
-        "wr": 50,
-        "kda": 8.75,
-        "csm": 5.6,
-        "csDiff10": -7
-      },
-      {
         "champ": "Caitlyn",
         "games": 4,
         "wr": 25,
         "kda": 5.31,
         "csm": 6.43,
         "csDiff10": 13.25
+      },
+      {
+        "champ": "Nocturne",
+        "games": 3,
+        "wr": 67,
+        "kda": 11.4,
+        "csm": 5.04,
+        "csDiff10": -5
       },
       {
         "champ": "Veigar",
@@ -1485,6 +1485,22 @@
         "kda": 1.38,
         "csm": 0.76,
         "csDiff10": -3.5
+      },
+      {
+        "champ": "Sejuani",
+        "games": 1,
+        "wr": 100,
+        "kda": 13,
+        "csm": 5.62,
+        "csDiff10": 1
+      },
+      {
+        "champ": "Diana",
+        "games": 1,
+        "wr": 100,
+        "kda": 2.86,
+        "csm": 5.93,
+        "csDiff10": -1
       },
       {
         "champ": "Malphite",
@@ -1669,21 +1685,13 @@
         "kda": 6.5,
         "csm": 1.06,
         "csDiff10": -6
-      },
-      {
-        "champ": "MasterYi",
-        "games": 1,
-        "wr": 0,
-        "kda": 2.43,
-        "csm": 6.06,
-        "csDiff10": -9
       }
     ],
     "roleSplits": [
       {
         "role": "Jungle",
         "games": 29,
-        "wr": 45
+        "wr": 52
       },
       {
         "role": "ADC",
@@ -1707,6 +1715,8 @@
       }
     ],
     "form": [
+      "W",
+      "W",
       "L",
       "L",
       "W",
@@ -1714,8 +1724,6 @@
       "L",
       "W",
       "L",
-      "W",
-      "W",
       "W"
     ]
   },
@@ -1768,6 +1776,14 @@
         "kda": 1.38,
         "csm": 0.76,
         "csDiff10": -3.5
+      },
+      {
+        "champ": "Sejuani",
+        "games": 1,
+        "wr": 100,
+        "kda": 13,
+        "csm": 5.62,
+        "csDiff10": 1
       },
       {
         "champ": "Pantheon",
@@ -1829,8 +1845,8 @@
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 10,
-        "wr": 50
+        "games": 11,
+        "wr": 55
       },
       {
         "role": "Support",
@@ -1850,14 +1866,14 @@
     ],
     "form": [
       "W",
-      "L",
-      "L",
-      "W",
-      "W",
       "W",
       "L",
+      "L",
+      "W",
+      "W",
       "W",
       "L",
+      "W",
       "L"
     ]
   }

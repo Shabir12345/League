@@ -1,12 +1,58 @@
 {
   "player": "Steven",
   "puuid": "rEUfV7nH6pNefn-stlAp3Egn0EYlr11hULP7Zdo8F0HBypEIcqZBYTHnpZC4GXko1ZmEK13LS9RboQ",
-  "generatedAt": "2026-06-20T07:45:59.066Z",
+  "generatedAt": "2026-06-21T08:24:02.974Z",
   "rank": {
     "solo": "Gold IV",
-    "flex": "Silver III"
+    "flex": "Silver II"
   },
   "games": [
+    {
+      "matchId": "EUW1_7893835981",
+      "queue": 440,
+      "champ": "Yone",
+      "role": "Mid",
+      "win": true,
+      "k": 7,
+      "d": 3,
+      "a": 6,
+      "kda": 4.33,
+      "csm": 6.71,
+      "kp": 42,
+      "vision": 19,
+      "dmgShare": 0.2,
+      "csAt10": 65,
+      "goldAt10": 3489,
+      "csDiff10": -20,
+      "goldDiff10": -55,
+      "csDiff14": -22,
+      "goldDiff14": -409,
+      "fiveStack": true,
+      "date": 1781984244474
+    },
+    {
+      "matchId": "EUW1_7893641854",
+      "queue": 440,
+      "champ": "Mel",
+      "role": "Mid",
+      "win": true,
+      "k": 15,
+      "d": 2,
+      "a": 3,
+      "kda": 9,
+      "csm": 8.14,
+      "kp": 50,
+      "vision": 25,
+      "dmgShare": 0.31,
+      "csAt10": 82,
+      "goldAt10": 3170,
+      "csDiff10": 1,
+      "goldDiff10": -239,
+      "csDiff14": -4,
+      "goldDiff14": 774,
+      "fiveStack": false,
+      "date": 1781973555224
+    },
     {
       "matchId": "EUW1_7892606696",
       "queue": 440,
@@ -1340,52 +1386,6 @@
       "goldDiff14": -1515,
       "fiveStack": false,
       "date": 1780738807637
-    },
-    {
-      "matchId": "EUW1_7877680331",
-      "queue": 440,
-      "champ": "Yone",
-      "role": "Mid",
-      "win": false,
-      "k": 4,
-      "d": 9,
-      "a": 1,
-      "kda": 0.56,
-      "csm": 6.95,
-      "kp": 19,
-      "vision": 26,
-      "dmgShare": 0.13,
-      "csAt10": 74,
-      "goldAt10": 3806,
-      "csDiff10": 15,
-      "goldDiff10": 364,
-      "csDiff14": 8,
-      "goldDiff14": 125,
-      "fiveStack": false,
-      "date": 1780691262799
-    },
-    {
-      "matchId": "EUW1_7877621588",
-      "queue": 440,
-      "champ": "Diana",
-      "role": "Mid",
-      "win": false,
-      "k": 7,
-      "d": 13,
-      "a": 9,
-      "kda": 1.23,
-      "csm": 4.84,
-      "kp": 38,
-      "vision": 13,
-      "dmgShare": 0.22,
-      "csAt10": 67,
-      "goldAt10": 3477,
-      "csDiff10": 14,
-      "goldDiff10": 525,
-      "csDiff14": 11,
-      "goldDiff14": 353,
-      "fiveStack": true,
-      "date": 1780688698180
     }
   ],
   "soloFlex": {
@@ -1417,10 +1417,10 @@
       {
         "champ": "Yone",
         "games": 4,
-        "wr": 25,
-        "kda": 0.81,
-        "csm": 5.93,
-        "csDiff10": 1.33
+        "wr": 50,
+        "kda": 1.75,
+        "csm": 5.87,
+        "csDiff10": -10.33
       },
       {
         "champ": "Ahri",
@@ -1447,6 +1447,14 @@
         "csDiff10": 0
       },
       {
+        "champ": "Mel",
+        "games": 2,
+        "wr": 100,
+        "kda": 6.25,
+        "csm": 8.24,
+        "csDiff10": 10
+      },
+      {
         "champ": "Katarina",
         "games": 2,
         "wr": 0,
@@ -1471,28 +1479,12 @@
         "csDiff10": -17
       },
       {
-        "champ": "Diana",
-        "games": 2,
-        "wr": 50,
-        "kda": 1.87,
-        "csm": 5.07,
-        "csDiff10": 1
-      },
-      {
         "champ": "Morgana",
         "games": 2,
         "wr": 50,
         "kda": 2.91,
         "csm": 1.55,
         "csDiff10": 6
-      },
-      {
-        "champ": "Mel",
-        "games": 1,
-        "wr": 100,
-        "kda": 3.5,
-        "csm": 8.34,
-        "csDiff10": 19
       },
       {
         "champ": "Viktor",
@@ -1517,13 +1509,21 @@
         "kda": 10.5,
         "csm": 7.24,
         "csDiff10": 3
+      },
+      {
+        "champ": "Diana",
+        "games": 1,
+        "wr": 100,
+        "kda": 2.5,
+        "csm": 5.31,
+        "csDiff10": -12
       }
     ],
     "roleSplits": [
       {
         "role": "Mid",
         "games": 55,
-        "wr": 47
+        "wr": 51
       },
       {
         "role": "Support",
@@ -1537,16 +1537,16 @@
       }
     ],
     "form": [
-      "L",
-      "L",
+      "W",
       "W",
       "L",
       "L",
       "W",
       "L",
+      "L",
       "W",
       "L",
-      "L"
+      "W"
     ]
   },
   "fiveStack": {
@@ -1566,6 +1566,14 @@
         "kda": 13.67,
         "csm": 6.6,
         "csDiff10": 15.5
+      },
+      {
+        "champ": "Yone",
+        "games": 1,
+        "wr": 100,
+        "kda": 4.33,
+        "csm": 6.71,
+        "csDiff10": -20
       },
       {
         "champ": "Ahri",
@@ -1590,33 +1598,25 @@
         "kda": 2.17,
         "csm": 3.68,
         "csDiff10": -26
-      },
-      {
-        "champ": "Diana",
-        "games": 1,
-        "wr": 0,
-        "kda": 1.23,
-        "csm": 4.84,
-        "csDiff10": 14
       }
     ],
     "roleSplits": [
       {
         "role": "Mid",
         "games": 10,
-        "wr": 50
+        "wr": 60
       }
     ],
     "form": [
       "W",
-      "L",
-      "L",
-      "W",
-      "W",
       "W",
       "L",
+      "L",
+      "W",
+      "W",
       "W",
       "L",
+      "W",
       "L"
     ]
   }
