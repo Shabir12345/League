@@ -1,12 +1,35 @@
 {
   "player": "Shabir",
   "puuid": "1RJIy7lzs-1o-4vzu2wJkj0SGPaA2TNVDdbZR36Lp-OOAFXYsZnFrK2Al12k4yMDAyZlSGI8C3t44g",
-  "generatedAt": "2026-06-23T07:42:35.902Z",
+  "generatedAt": "2026-06-24T07:35:17.162Z",
   "rank": {
-    "solo": "Gold IV",
+    "solo": "Gold III",
     "flex": "Platinum IV"
   },
   "games": [
+    {
+      "matchId": "EUW1_7897333279",
+      "queue": 420,
+      "champ": "Ashe",
+      "role": "ADC",
+      "win": true,
+      "k": 3,
+      "d": 10,
+      "a": 17,
+      "kda": 2,
+      "csm": 6.11,
+      "kp": 37,
+      "vision": 29,
+      "dmgShare": 0.18,
+      "csAt10": 55,
+      "goldAt10": 2769,
+      "csDiff10": -9,
+      "goldDiff10": -1147,
+      "csDiff14": -18,
+      "goldDiff14": -1491,
+      "fiveStack": false,
+      "date": 1782262654111
+    },
     {
       "matchId": "EUW1_7893835981",
       "queue": 440,
@@ -1363,48 +1386,25 @@
       "goldDiff14": 489,
       "fiveStack": false,
       "date": 1780348399812
-    },
-    {
-      "matchId": "EUW1_7873456816",
-      "queue": 420,
-      "champ": "Khazix",
-      "role": "Jungle",
-      "win": true,
-      "k": 13,
-      "d": 4,
-      "a": 1,
-      "kda": 3.5,
-      "csm": 7.05,
-      "kp": 45,
-      "vision": 42,
-      "dmgShare": 0.21,
-      "csAt10": 69,
-      "goldAt10": 3698,
-      "csDiff10": 1,
-      "goldDiff10": 14,
-      "csDiff14": 10,
-      "goldDiff14": 690,
-      "fiveStack": false,
-      "date": 1780345815037
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Khazix",
-        "games": 20,
-        "wr": 25,
-        "kda": 2.69,
-        "csm": 6.59,
-        "csDiff10": -1.1
+        "games": 19,
+        "wr": 21,
+        "kda": 2.65,
+        "csm": 6.57,
+        "csDiff10": -1.21
       },
       {
         "champ": "Ashe",
-        "games": 12,
-        "wr": 67,
-        "kda": 2.71,
-        "csm": 6.38,
-        "csDiff10": 4.36
+        "games": 13,
+        "wr": 69,
+        "kda": 2.65,
+        "csm": 6.36,
+        "csDiff10": 3.25
       },
       {
         "champ": "Kayle",
@@ -1514,13 +1514,13 @@
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 27,
-        "wr": 33
+        "games": 26,
+        "wr": 31
       },
       {
         "role": "ADC",
-        "games": 17,
-        "wr": 59
+        "games": 18,
+        "wr": 61
       },
       {
         "role": "Top",
@@ -1540,12 +1540,12 @@
     ],
     "form": [
       "W",
-      "L",
-      "L",
       "W",
       "L",
       "L",
       "W",
+      "L",
+      "L",
       "W",
       "W",
       "W"
