@@ -1,12 +1,104 @@
 {
   "player": "Eshantha",
   "puuid": "SmVhFbT3bTkwBT77RgXmb34GAVOnoXm4xOJhpmDCdlkm-5F6hRC-7gBA243sy5f9t3OeU68sQo5cDA",
-  "generatedAt": "2026-06-24T07:35:48.040Z",
+  "generatedAt": "2026-06-25T07:38:28.424Z",
   "rank": {
-    "solo": "Gold II",
+    "solo": "Gold III",
     "flex": "Gold IV"
   },
   "games": [
+    {
+      "matchId": "EUW1_7898105005",
+      "queue": 440,
+      "champ": "Anivia",
+      "role": "Top",
+      "win": true,
+      "k": 5,
+      "d": 1,
+      "a": 12,
+      "kda": 17,
+      "csm": 6.96,
+      "kp": 46,
+      "vision": 41,
+      "dmgShare": 0.22,
+      "csAt10": 69,
+      "goldAt10": 3779,
+      "csDiff10": 39,
+      "goldDiff10": 1530,
+      "csDiff14": 64,
+      "goldDiff14": 1621,
+      "fiveStack": false,
+      "date": 1782329208638
+    },
+    {
+      "matchId": "EUW1_7897555976",
+      "queue": 420,
+      "champ": "Chogath",
+      "role": "Top",
+      "win": false,
+      "k": 11,
+      "d": 8,
+      "a": 5,
+      "kda": 2,
+      "csm": 6.49,
+      "kp": 37,
+      "vision": 33,
+      "dmgShare": 0.21,
+      "csAt10": 81,
+      "goldAt10": 3862,
+      "csDiff10": 29,
+      "goldDiff10": 1271,
+      "csDiff14": 42,
+      "goldDiff14": 1568,
+      "fiveStack": false,
+      "date": 1782302270670
+    },
+    {
+      "matchId": "EUW1_7897535533",
+      "queue": 420,
+      "champ": "Camille",
+      "role": "Top",
+      "win": false,
+      "k": 1,
+      "d": 9,
+      "a": 4,
+      "kda": 0.56,
+      "csm": 4.93,
+      "kp": 36,
+      "vision": 22,
+      "dmgShare": 0.14,
+      "csAt10": 49,
+      "goldAt10": 2479,
+      "csDiff10": -32,
+      "goldDiff10": -1648,
+      "csDiff14": -61,
+      "goldDiff14": -2843,
+      "fiveStack": false,
+      "date": 1782300343838
+    },
+    {
+      "matchId": "EUW1_7897502372",
+      "queue": 420,
+      "champ": "Yorick",
+      "role": "Top",
+      "win": false,
+      "k": 4,
+      "d": 7,
+      "a": 6,
+      "kda": 1.43,
+      "csm": 8.66,
+      "kp": 31,
+      "vision": 46,
+      "dmgShare": 0.29,
+      "csAt10": 60,
+      "goldAt10": 3459,
+      "csDiff10": -4,
+      "goldDiff10": 131,
+      "csDiff14": -11,
+      "goldDiff14": -683,
+      "fiveStack": false,
+      "date": 1782297774436
+    },
     {
       "matchId": "EUW1_7895601065",
       "queue": 420,
@@ -1294,133 +1386,41 @@
       "goldDiff14": -992,
       "fiveStack": false,
       "date": 1779890798739
-    },
-    {
-      "matchId": "EUW1_7867503712",
-      "queue": 420,
-      "champ": "Malzahar",
-      "role": "Top",
-      "win": false,
-      "k": 2,
-      "d": 7,
-      "a": 1,
-      "kda": 0.43,
-      "csm": 9.86,
-      "kp": 16,
-      "vision": 39,
-      "dmgShare": 0.14,
-      "csAt10": 93,
-      "goldAt10": 4120,
-      "csDiff10": 36,
-      "goldDiff10": 433,
-      "csDiff14": 19,
-      "goldDiff14": -439,
-      "fiveStack": false,
-      "date": 1779888750567
-    },
-    {
-      "matchId": "EUW1_7867473727",
-      "queue": 420,
-      "champ": "Galio",
-      "role": "Mid",
-      "win": false,
-      "k": 4,
-      "d": 9,
-      "a": 10,
-      "kda": 1.56,
-      "csm": 6.04,
-      "kp": 48,
-      "vision": 19,
-      "dmgShare": 0.18,
-      "csAt10": 69,
-      "goldAt10": 3380,
-      "csDiff10": 5,
-      "goldDiff10": -200,
-      "csDiff14": 4,
-      "goldDiff14": -248,
-      "fiveStack": false,
-      "date": 1779886493695
-    },
-    {
-      "matchId": "EUW1_7867429964",
-      "queue": 420,
-      "champ": "KogMaw",
-      "role": "Mid",
-      "win": false,
-      "k": 9,
-      "d": 15,
-      "a": 10,
-      "kda": 1.27,
-      "csm": 5.89,
-      "kp": 40,
-      "vision": 51,
-      "dmgShare": 0.22,
-      "csAt10": 86,
-      "goldAt10": 3909,
-      "csDiff10": 26,
-      "goldDiff10": 896,
-      "csDiff14": 19,
-      "goldDiff14": 48,
-      "fiveStack": false,
-      "date": 1779882902355
-    },
-    {
-      "matchId": "EUW1_7867412584",
-      "queue": 420,
-      "champ": "Malzahar",
-      "role": "Mid",
-      "win": false,
-      "k": 2,
-      "d": 7,
-      "a": 5,
-      "kda": 1,
-      "csm": 7.44,
-      "kp": 41,
-      "vision": 20,
-      "dmgShare": 0.18,
-      "csAt10": 78,
-      "goldAt10": 3339,
-      "csDiff10": 4,
-      "goldDiff10": -1082,
-      "csDiff14": 25,
-      "goldDiff14": -303,
-      "fiveStack": false,
-      "date": 1779881182927
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Anivia",
-        "games": 12,
-        "wr": 75,
-        "kda": 3.09,
-        "csm": 5.92,
-        "csDiff10": 0.1
+        "games": 13,
+        "wr": 77,
+        "kda": 4.16,
+        "csm": 6,
+        "csDiff10": 3.64
       },
       {
         "champ": "Yorick",
-        "games": 11,
-        "wr": 45,
-        "kda": 2.57,
-        "csm": 7.46,
-        "csDiff10": -1.91
+        "games": 12,
+        "wr": 42,
+        "kda": 2.48,
+        "csm": 7.56,
+        "csDiff10": -2.08
       },
       {
         "champ": "Camille",
-        "games": 6,
-        "wr": 83,
-        "kda": 1.89,
-        "csm": 0.86,
-        "csDiff10": -4.2
+        "games": 7,
+        "wr": 71,
+        "kda": 1.7,
+        "csm": 1.44,
+        "csDiff10": -8.83
       },
       {
         "champ": "Chogath",
-        "games": 4,
-        "wr": 25,
-        "kda": 2.18,
-        "csm": 7.21,
-        "csDiff10": 1
+        "games": 5,
+        "wr": 20,
+        "kda": 2.14,
+        "csm": 7.06,
+        "csDiff10": 6.6
       },
       {
         "champ": "Rell",
@@ -1469,14 +1469,6 @@
         "kda": 1.17,
         "csm": 3.71,
         "csDiff10": 0
-      },
-      {
-        "champ": "Malzahar",
-        "games": 2,
-        "wr": 0,
-        "kda": 0.72,
-        "csm": 8.65,
-        "csDiff10": 20
       },
       {
         "champ": "Sejuani",
@@ -1533,29 +1525,13 @@
         "kda": 3.25,
         "csm": 7.65,
         "csDiff10": 0
-      },
-      {
-        "champ": "Galio",
-        "games": 1,
-        "wr": 0,
-        "kda": 1.56,
-        "csm": 6.04,
-        "csDiff10": 5
-      },
-      {
-        "champ": "KogMaw",
-        "games": 1,
-        "wr": 0,
-        "kda": 1.27,
-        "csm": 5.89,
-        "csDiff10": 26
       }
     ],
     "roleSplits": [
       {
         "role": "Top",
-        "games": 34,
-        "wr": 50
+        "games": 37,
+        "wr": 49
       },
       {
         "role": "Support",
@@ -1566,24 +1542,19 @@
         "role": "Jungle",
         "games": 3,
         "wr": 67
-      },
-      {
-        "role": "Mid",
-        "games": 3,
-        "wr": 0
       }
     ],
     "form": [
       "W",
-      "W",
       "L",
       "L",
       "L",
       "W",
+      "W",
       "L",
-      "W",
-      "W",
-      "L"
+      "L",
+      "L",
+      "W"
     ]
   },
   "fiveStack": {

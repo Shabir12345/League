@@ -1,12 +1,35 @@
 {
   "player": "Geeth",
   "puuid": "Df36AbNlLOIH8wlRXSAhOMfO-UvoqWvuM2MkscE3YpIMbXqL4X23TbbDbkXf3-knw1n9f11khr9Hzw",
-  "generatedAt": "2026-06-24T07:36:26.575Z",
+  "generatedAt": "2026-06-25T07:39:08.115Z",
   "rank": {
     "solo": "Gold I",
     "flex": "Gold III"
   },
   "games": [
+    {
+      "matchId": "EUW1_7898105005",
+      "queue": 440,
+      "champ": "Viego",
+      "role": "Jungle",
+      "win": true,
+      "k": 14,
+      "d": 3,
+      "a": 5,
+      "kda": 6.33,
+      "csm": 6.54,
+      "kp": 51,
+      "vision": 44,
+      "dmgShare": 0.15,
+      "csAt10": 66,
+      "goldAt10": 3833,
+      "csDiff10": 9,
+      "goldDiff10": 578,
+      "csDiff14": 14,
+      "goldDiff14": 356,
+      "fiveStack": false,
+      "date": 1782329208638
+    },
     {
       "matchId": "EUW1_7893835981",
       "queue": 440,
@@ -1363,33 +1386,18 @@
       "goldDiff14": 1486,
       "fiveStack": false,
       "date": 1779903236679
-    },
-    {
-      "matchId": "EUW1_7858430646",
-      "queue": 420,
-      "champ": "Lulu",
-      "role": "Support",
-      "win": true,
-      "k": 2,
-      "d": 2,
-      "a": 11,
-      "kda": 6.5,
-      "csm": 1.06,
-      "kp": 48,
-      "vision": 72,
-      "dmgShare": 0.03,
-      "csAt10": 14,
-      "goldAt10": 2641,
-      "csDiff10": -6,
-      "goldDiff10": 147,
-      "csDiff14": -6,
-      "goldDiff14": 632,
-      "fiveStack": false,
-      "date": 1779134312728
     }
   ],
   "soloFlex": {
     "champPool": [
+      {
+        "champ": "Viego",
+        "games": 6,
+        "wr": 67,
+        "kda": 4.69,
+        "csm": 6.04,
+        "csDiff10": -8.33
+      },
       {
         "champ": "Talon",
         "games": 6,
@@ -1397,14 +1405,6 @@
         "kda": 2.62,
         "csm": 6.45,
         "csDiff10": -4
-      },
-      {
-        "champ": "Viego",
-        "games": 5,
-        "wr": 60,
-        "kda": 4.36,
-        "csm": 5.94,
-        "csDiff10": -11.8
       },
       {
         "champ": "Caitlyn",
@@ -1677,21 +1677,13 @@
         "kda": 3.25,
         "csm": 6.16,
         "csDiff10": -11
-      },
-      {
-        "champ": "Lulu",
-        "games": 1,
-        "wr": 100,
-        "kda": 6.5,
-        "csm": 1.06,
-        "csDiff10": -6
       }
     ],
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 29,
-        "wr": 52
+        "games": 30,
+        "wr": 53
       },
       {
         "role": "ADC",
@@ -1705,8 +1697,8 @@
       },
       {
         "role": "Support",
-        "games": 8,
-        "wr": 63
+        "games": 7,
+        "wr": 57
       },
       {
         "role": "Top",
@@ -1717,14 +1709,14 @@
     "form": [
       "W",
       "W",
-      "L",
-      "L",
       "W",
       "L",
       "L",
       "W",
       "L",
-      "W"
+      "L",
+      "W",
+      "L"
     ]
   },
   "fiveStack": {
