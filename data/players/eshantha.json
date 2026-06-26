@@ -1,12 +1,127 @@
 {
   "player": "Eshantha",
   "puuid": "SmVhFbT3bTkwBT77RgXmb34GAVOnoXm4xOJhpmDCdlkm-5F6hRC-7gBA243sy5f9t3OeU68sQo5cDA",
-  "generatedAt": "2026-06-25T07:38:28.424Z",
+  "generatedAt": "2026-06-26T07:45:41.885Z",
   "rank": {
     "solo": "Gold III",
     "flex": "Gold IV"
   },
   "games": [
+    {
+      "matchId": "EUW1_7899114207",
+      "queue": 440,
+      "champ": "Camille",
+      "role": "Support",
+      "win": true,
+      "k": 12,
+      "d": 2,
+      "a": 22,
+      "kda": 17,
+      "csm": 0.94,
+      "kp": 71,
+      "vision": 41,
+      "dmgShare": 0.25,
+      "csAt10": 2,
+      "goldAt10": 3851,
+      "csDiff10": -16,
+      "goldDiff10": 697,
+      "csDiff14": -22,
+      "goldDiff14": 1871,
+      "fiveStack": true,
+      "date": 1782408395495
+    },
+    {
+      "matchId": "EUW1_7899068603",
+      "queue": 440,
+      "champ": "Camille",
+      "role": "Support",
+      "win": true,
+      "k": 10,
+      "d": 8,
+      "a": 18,
+      "kda": 3.5,
+      "csm": 0.7,
+      "kp": 52,
+      "vision": 80,
+      "dmgShare": 0.19,
+      "csAt10": 6,
+      "goldAt10": 3581,
+      "csDiff10": -16,
+      "goldDiff10": 983,
+      "csDiff14": -20,
+      "goldDiff14": 590,
+      "fiveStack": true,
+      "date": 1782406073085
+    },
+    {
+      "matchId": "EUW1_7898887252",
+      "queue": 420,
+      "champ": "Yorick",
+      "role": "Top",
+      "win": true,
+      "k": 10,
+      "d": 7,
+      "a": 6,
+      "kda": 2.29,
+      "csm": 7.92,
+      "kp": 33,
+      "vision": 54,
+      "dmgShare": 0.19,
+      "csAt10": 77,
+      "goldAt10": 4525,
+      "csDiff10": 32,
+      "goldDiff10": 1847,
+      "csDiff14": 21,
+      "goldDiff14": 2124,
+      "fiveStack": false,
+      "date": 1782397274949
+    },
+    {
+      "matchId": "EUW1_7898872719",
+      "queue": 420,
+      "champ": "Zac",
+      "role": "Jungle",
+      "win": false,
+      "k": 3,
+      "d": 2,
+      "a": 1,
+      "kda": 2,
+      "csm": 6.44,
+      "kp": 40,
+      "vision": 5,
+      "dmgShare": 0.12,
+      "csAt10": 52,
+      "goldAt10": 2813,
+      "csDiff10": -27,
+      "goldDiff10": -2235,
+      "csDiff14": -31,
+      "goldDiff14": -1399,
+      "fiveStack": false,
+      "date": 1782396030550
+    },
+    {
+      "matchId": "EUW1_7898744761",
+      "queue": 420,
+      "champ": "Anivia",
+      "role": "Top",
+      "win": true,
+      "k": 4,
+      "d": 1,
+      "a": 15,
+      "kda": 19,
+      "csm": 6.68,
+      "kp": 49,
+      "vision": 24,
+      "dmgShare": 0.23,
+      "csAt10": 62,
+      "goldAt10": 3024,
+      "csDiff10": -4,
+      "goldDiff10": 149,
+      "csDiff14": 16,
+      "goldDiff14": 1319,
+      "fiveStack": false,
+      "date": 1782387786934
+    },
     {
       "matchId": "EUW1_7898105005",
       "queue": 440,
@@ -1271,148 +1386,33 @@
       "goldDiff14": -1290,
       "fiveStack": false,
       "date": 1779907968219
-    },
-    {
-      "matchId": "EUW1_7867797308",
-      "queue": 440,
-      "champ": "Renekton",
-      "role": "Top",
-      "win": true,
-      "k": 7,
-      "d": 4,
-      "a": 6,
-      "kda": 3.25,
-      "csm": 7.65,
-      "kp": 48,
-      "vision": 24,
-      "dmgShare": 0.28,
-      "csAt10": 66,
-      "goldAt10": 3753,
-      "csDiff10": 0,
-      "goldDiff10": 84,
-      "csDiff14": 14,
-      "goldDiff14": 768,
-      "fiveStack": false,
-      "date": 1779905622342
-    },
-    {
-      "matchId": "EUW1_7867750107",
-      "queue": 440,
-      "champ": "Camille",
-      "role": "Support",
-      "win": true,
-      "k": 0,
-      "d": 14,
-      "a": 20,
-      "kda": 1.43,
-      "csm": 1.59,
-      "kp": 43,
-      "vision": 97,
-      "dmgShare": 0.11,
-      "csAt10": 19,
-      "goldAt10": 2589,
-      "csDiff10": 1,
-      "goldDiff10": -468,
-      "csDiff14": 2,
-      "goldDiff14": -563,
-      "fiveStack": false,
-      "date": 1779903236679
-    },
-    {
-      "matchId": "EUW1_7867701323",
-      "queue": 440,
-      "champ": "Camille",
-      "role": "Support",
-      "win": true,
-      "k": 3,
-      "d": 7,
-      "a": 8,
-      "kda": 1.57,
-      "csm": 0.7,
-      "kp": 33,
-      "vision": 31,
-      "dmgShare": 0.12,
-      "csAt10": 12,
-      "goldAt10": 2748,
-      "csDiff10": 5,
-      "goldDiff10": -352,
-      "csDiff14": 1,
-      "goldDiff14": 79,
-      "fiveStack": false,
-      "date": 1779900967539
-    },
-    {
-      "matchId": "EUW1_7867629957",
-      "queue": 420,
-      "champ": "Camille",
-      "role": "Support",
-      "win": true,
-      "k": 8,
-      "d": 7,
-      "a": 16,
-      "kda": 3.43,
-      "csm": 0.67,
-      "kp": 45,
-      "vision": 139,
-      "dmgShare": 0.11,
-      "csAt10": 14,
-      "goldAt10": 3259,
-      "csDiff10": -10,
-      "goldDiff10": 406,
-      "csDiff14": -12,
-      "goldDiff14": 576,
-      "fiveStack": false,
-      "date": 1779896889107
-    },
-    {
-      "matchId": "EUW1_7867530227",
-      "queue": 420,
-      "champ": "Lux",
-      "role": "Support",
-      "win": false,
-      "k": 2,
-      "d": 7,
-      "a": 15,
-      "kda": 2.43,
-      "csm": 3.41,
-      "kp": 55,
-      "vision": 105,
-      "dmgShare": 0.19,
-      "csAt10": 25,
-      "goldAt10": 2503,
-      "csDiff10": 12,
-      "goldDiff10": -662,
-      "csDiff14": 15,
-      "goldDiff14": -992,
-      "fiveStack": false,
-      "date": 1779890798739
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Anivia",
-        "games": 13,
-        "wr": 77,
-        "kda": 4.16,
-        "csm": 6,
-        "csDiff10": 3.64
+        "games": 14,
+        "wr": 79,
+        "kda": 5.22,
+        "csm": 6.05,
+        "csDiff10": 3
       },
       {
         "champ": "Yorick",
-        "games": 12,
-        "wr": 42,
-        "kda": 2.48,
-        "csm": 7.56,
-        "csDiff10": -2.08
+        "games": 13,
+        "wr": 46,
+        "kda": 2.46,
+        "csm": 7.59,
+        "csDiff10": 0.54
       },
       {
         "champ": "Camille",
-        "games": 7,
-        "wr": 71,
-        "kda": 1.7,
-        "csm": 1.44,
-        "csDiff10": -8.83
+        "games": 6,
+        "wr": 67,
+        "kda": 4.33,
+        "csm": 1.46,
+        "csDiff10": -16.2
       },
       {
         "champ": "Chogath",
@@ -1440,19 +1440,11 @@
       },
       {
         "champ": "Zac",
-        "games": 2,
-        "wr": 100,
-        "kda": 10.75,
-        "csm": 5.57,
-        "csDiff10": -25.5
-      },
-      {
-        "champ": "Lux",
-        "games": 2,
-        "wr": 50,
-        "kda": 3.3,
-        "csm": 2.8,
-        "csDiff10": 6
+        "games": 3,
+        "wr": 67,
+        "kda": 7.83,
+        "csm": 5.86,
+        "csDiff10": -26
       },
       {
         "champ": "Zilean",
@@ -1477,6 +1469,14 @@
         "kda": 2.17,
         "csm": 5.86,
         "csDiff10": 1
+      },
+      {
+        "champ": "Lux",
+        "games": 1,
+        "wr": 100,
+        "kda": 4.17,
+        "csm": 2.18,
+        "csDiff10": 0
       },
       {
         "champ": "Ziggs",
@@ -1517,37 +1517,29 @@
         "kda": 0.33,
         "csm": 5.84,
         "csDiff10": -26
-      },
-      {
-        "champ": "Renekton",
-        "games": 1,
-        "wr": 100,
-        "kda": 3.25,
-        "csm": 7.65,
-        "csDiff10": 0
       }
     ],
     "roleSplits": [
       {
         "role": "Top",
-        "games": 37,
-        "wr": 49
+        "games": 38,
+        "wr": 50
       },
       {
         "role": "Support",
-        "games": 20,
-        "wr": 60
+        "games": 18,
+        "wr": 61
       },
       {
         "role": "Jungle",
-        "games": 3,
-        "wr": 67
+        "games": 4,
+        "wr": 50
       }
     ],
     "form": [
       "W",
-      "L",
-      "L",
+      "W",
+      "W",
       "L",
       "W",
       "W",
@@ -1560,20 +1552,20 @@
   "fiveStack": {
     "champPool": [
       {
+        "champ": "Camille",
+        "games": 5,
+        "wr": 80,
+        "kda": 5.09,
+        "csm": 0.77,
+        "csDiff10": -12.25
+      },
+      {
         "champ": "Anivia",
         "games": 5,
         "wr": 60,
         "kda": 3.57,
         "csm": 5.71,
         "csDiff10": 12
-      },
-      {
-        "champ": "Camille",
-        "games": 3,
-        "wr": 67,
-        "kda": 1.65,
-        "csm": 0.74,
-        "csDiff10": -8.5
       },
       {
         "champ": "Alistar",
@@ -1643,8 +1635,8 @@
     "roleSplits": [
       {
         "role": "Support",
-        "games": 13,
-        "wr": 54
+        "games": 15,
+        "wr": 60
       },
       {
         "role": "Top",
@@ -1655,12 +1647,12 @@
     "form": [
       "W",
       "W",
+      "W",
+      "W",
       "L",
       "L",
       "W",
       "W",
-      "W",
-      "L",
       "W",
       "L"
     ]

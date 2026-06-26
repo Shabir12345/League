@@ -1,12 +1,127 @@
 {
   "player": "Shabir",
   "puuid": "1RJIy7lzs-1o-4vzu2wJkj0SGPaA2TNVDdbZR36Lp-OOAFXYsZnFrK2Al12k4yMDAyZlSGI8C3t44g",
-  "generatedAt": "2026-06-25T07:37:31.923Z",
+  "generatedAt": "2026-06-26T07:44:52.415Z",
   "rank": {
     "solo": "Gold III",
     "flex": "Platinum IV"
   },
   "games": [
+    {
+      "matchId": "EUW1_7899313502",
+      "queue": 440,
+      "champ": "Fiora",
+      "role": "Top",
+      "win": true,
+      "k": 9,
+      "d": 7,
+      "a": 6,
+      "kda": 2.14,
+      "csm": 7.46,
+      "kp": 31,
+      "vision": 26,
+      "dmgShare": 0.22,
+      "csAt10": 75,
+      "goldAt10": 4255,
+      "csDiff10": 24,
+      "goldDiff10": 1526,
+      "csDiff14": 24,
+      "goldDiff14": 1779,
+      "fiveStack": false,
+      "date": 1782416465072
+    },
+    {
+      "matchId": "EUW1_7899250185",
+      "queue": 440,
+      "champ": "Draven",
+      "role": "ADC",
+      "win": false,
+      "k": 6,
+      "d": 10,
+      "a": 6,
+      "kda": 1.2,
+      "csm": 6.4,
+      "kp": 41,
+      "vision": 20,
+      "dmgShare": 0.28,
+      "csAt10": 74,
+      "goldAt10": 4448,
+      "csDiff10": 19,
+      "goldDiff10": 1314,
+      "csDiff14": 28,
+      "goldDiff14": 1953,
+      "fiveStack": false,
+      "date": 1782414163393
+    },
+    {
+      "matchId": "EUW1_7899212947",
+      "queue": 440,
+      "champ": "Ashe",
+      "role": "ADC",
+      "win": true,
+      "k": 4,
+      "d": 1,
+      "a": 8,
+      "kda": 12,
+      "csm": 7.74,
+      "kp": 55,
+      "vision": 7,
+      "dmgShare": 0.21,
+      "csAt10": 69,
+      "goldAt10": 3636,
+      "csDiff10": 8,
+      "goldDiff10": 809,
+      "csDiff14": 23,
+      "goldDiff14": 2143,
+      "fiveStack": false,
+      "date": 1782412584065
+    },
+    {
+      "matchId": "EUW1_7899114207",
+      "queue": 440,
+      "champ": "Kalista",
+      "role": "ADC",
+      "win": true,
+      "k": 25,
+      "d": 3,
+      "a": 10,
+      "kda": 11.67,
+      "csm": 8.98,
+      "kp": 73,
+      "vision": 15,
+      "dmgShare": 0.38,
+      "csAt10": 67,
+      "goldAt10": 6221,
+      "csDiff10": 39,
+      "goldDiff10": 3960,
+      "csDiff14": 52,
+      "goldDiff14": 5001,
+      "fiveStack": true,
+      "date": 1782408395495
+    },
+    {
+      "matchId": "EUW1_7899068603",
+      "queue": 440,
+      "champ": "Ashe",
+      "role": "ADC",
+      "win": true,
+      "k": 13,
+      "d": 7,
+      "a": 22,
+      "kda": 5,
+      "csm": 6.2,
+      "kp": 65,
+      "vision": 19,
+      "dmgShare": 0.25,
+      "csAt10": 59,
+      "goldAt10": 4146,
+      "csDiff10": 5,
+      "goldDiff10": 1279,
+      "csDiff14": 14,
+      "goldDiff14": 1367,
+      "fiveStack": true,
+      "date": 1782406073085
+    },
     {
       "matchId": "EUW1_7897333279",
       "queue": 420,
@@ -1271,140 +1386,25 @@
       "goldDiff14": -807,
       "fiveStack": false,
       "date": 1780532155725
-    },
-    {
-      "matchId": "EUW1_7875758070",
-      "queue": 440,
-      "champ": "Khazix",
-      "role": "Jungle",
-      "win": false,
-      "k": 12,
-      "d": 12,
-      "a": 11,
-      "kda": 1.92,
-      "csm": 5.84,
-      "kp": 49,
-      "vision": 50,
-      "dmgShare": 0.22,
-      "csAt10": 66,
-      "goldAt10": 5067,
-      "csDiff10": -3,
-      "goldDiff10": 591,
-      "csDiff14": 10,
-      "goldDiff14": 2319,
-      "fiveStack": false,
-      "date": 1780529478449
-    },
-    {
-      "matchId": "EUW1_7875470155",
-      "queue": 440,
-      "champ": "Ekko",
-      "role": "Jungle",
-      "win": true,
-      "k": 14,
-      "d": 9,
-      "a": 17,
-      "kda": 3.44,
-      "csm": 5.27,
-      "kp": 66,
-      "vision": 42,
-      "dmgShare": 0.21,
-      "csAt10": 68,
-      "goldAt10": 3545,
-      "csDiff10": -3,
-      "goldDiff10": -502,
-      "csDiff14": -8,
-      "goldDiff14": 1574,
-      "fiveStack": false,
-      "date": 1780515845317
-    },
-    {
-      "matchId": "EUW1_7874407070",
-      "queue": 420,
-      "champ": "Khazix",
-      "role": "Jungle",
-      "win": false,
-      "k": 9,
-      "d": 10,
-      "a": 5,
-      "kda": 1.4,
-      "csm": 6.55,
-      "kp": 56,
-      "vision": 47,
-      "dmgShare": 0.23,
-      "csAt10": 71,
-      "goldAt10": 4522,
-      "csDiff10": 4,
-      "goldDiff10": 916,
-      "csDiff14": 2,
-      "goldDiff14": 1037,
-      "fiveStack": false,
-      "date": 1780428014307
-    },
-    {
-      "matchId": "EUW1_7873610118",
-      "queue": 420,
-      "champ": "Khazix",
-      "role": "Jungle",
-      "win": false,
-      "k": 8,
-      "d": 5,
-      "a": 2,
-      "kda": 2,
-      "csm": 7.24,
-      "kp": 24,
-      "vision": 35,
-      "dmgShare": 0.1,
-      "csAt10": 68,
-      "goldAt10": 4344,
-      "csDiff10": -4,
-      "goldDiff10": 557,
-      "csDiff14": 12,
-      "goldDiff14": -867,
-      "fiveStack": false,
-      "date": 1780353063866
-    },
-    {
-      "matchId": "EUW1_7873525501",
-      "queue": 420,
-      "champ": "Ekko",
-      "role": "Jungle",
-      "win": true,
-      "k": 6,
-      "d": 0,
-      "a": 2,
-      "kda": 8,
-      "csm": 7.58,
-      "kp": 40,
-      "vision": 16,
-      "dmgShare": 0.16,
-      "csAt10": 63,
-      "goldAt10": 4257,
-      "csDiff10": 7,
-      "goldDiff10": 974,
-      "csDiff14": 25,
-      "goldDiff14": 489,
-      "fiveStack": false,
-      "date": 1780348399812
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Khazix",
-        "games": 19,
-        "wr": 21,
-        "kda": 2.65,
+        "games": 16,
+        "wr": 25,
+        "kda": 2.81,
         "csm": 6.57,
-        "csDiff10": -1.21
+        "csDiff10": -1.25
       },
       {
         "champ": "Ashe",
-        "games": 13,
-        "wr": 69,
-        "kda": 2.65,
-        "csm": 6.36,
-        "csDiff10": 3.25
+        "games": 15,
+        "wr": 73,
+        "kda": 3.43,
+        "csm": 6.44,
+        "csDiff10": 3.71
       },
       {
         "champ": "Kayle",
@@ -1423,20 +1423,20 @@
         "csDiff10": 18
       },
       {
-        "champ": "Ekko",
-        "games": 4,
-        "wr": 50,
-        "kda": 3.58,
-        "csm": 6.38,
-        "csDiff10": 1.5
-      },
-      {
         "champ": "Caitlyn",
         "games": 3,
         "wr": 33,
         "kda": 2.91,
         "csm": 7.17,
         "csDiff10": 1
+      },
+      {
+        "champ": "Draven",
+        "games": 2,
+        "wr": 50,
+        "kda": 0.6,
+        "csm": 4.72,
+        "csDiff10": 19
       },
       {
         "champ": "Shen",
@@ -1453,6 +1453,30 @@
         "kda": 6.75,
         "csm": 5.61,
         "csDiff10": -7.5
+      },
+      {
+        "champ": "Ekko",
+        "games": 2,
+        "wr": 0,
+        "kda": 1.44,
+        "csm": 6.34,
+        "csDiff10": 1
+      },
+      {
+        "champ": "Fiora",
+        "games": 1,
+        "wr": 100,
+        "kda": 2.14,
+        "csm": 7.46,
+        "csDiff10": 24
+      },
+      {
+        "champ": "Kalista",
+        "games": 1,
+        "wr": 100,
+        "kda": 11.67,
+        "csm": 8.98,
+        "csDiff10": 39
       },
       {
         "champ": "Malphite",
@@ -1495,14 +1519,6 @@
         "csDiff10": -2
       },
       {
-        "champ": "Draven",
-        "games": 1,
-        "wr": 100,
-        "kda": 0,
-        "csm": 3.03,
-        "csDiff10": null
-      },
-      {
         "champ": "MasterYi",
         "games": 1,
         "wr": 100,
@@ -1513,19 +1529,19 @@
     ],
     "roleSplits": [
       {
-        "role": "Jungle",
-        "games": 26,
-        "wr": 31
+        "role": "ADC",
+        "games": 22,
+        "wr": 64
       },
       {
-        "role": "ADC",
-        "games": 18,
-        "wr": 61
+        "role": "Jungle",
+        "games": 21,
+        "wr": 29
       },
       {
         "role": "Top",
-        "games": 9,
-        "wr": 56
+        "games": 10,
+        "wr": 60
       },
       {
         "role": "Mid",
@@ -1540,19 +1556,27 @@
     ],
     "form": [
       "W",
-      "W",
-      "L",
-      "L",
-      "W",
-      "L",
       "L",
       "W",
       "W",
+      "W",
+      "W",
+      "W",
+      "L",
+      "L",
       "W"
     ]
   },
   "fiveStack": {
     "champPool": [
+      {
+        "champ": "Ashe",
+        "games": 3,
+        "wr": 100,
+        "kda": 4.5,
+        "csm": 6.67,
+        "csDiff10": 5.67
+      },
       {
         "champ": "Caitlyn",
         "games": 3,
@@ -1560,14 +1584,6 @@
         "kda": 2.91,
         "csm": 7.17,
         "csDiff10": 1
-      },
-      {
-        "champ": "Ashe",
-        "games": 2,
-        "wr": 100,
-        "kda": 4.25,
-        "csm": 6.91,
-        "csDiff10": 6
       },
       {
         "champ": "Shen",
@@ -1592,6 +1608,14 @@
         "kda": 6.75,
         "csm": 5.61,
         "csDiff10": -7.5
+      },
+      {
+        "champ": "Kalista",
+        "games": 1,
+        "wr": 100,
+        "kda": 11.67,
+        "csm": 8.98,
+        "csDiff10": 39
       },
       {
         "champ": "Malphite",
@@ -1621,8 +1645,8 @@
     "roleSplits": [
       {
         "role": "ADC",
-        "games": 6,
-        "wr": 67
+        "games": 8,
+        "wr": 75
       },
       {
         "role": "Top",
@@ -1638,12 +1662,12 @@
     "form": [
       "W",
       "W",
+      "W",
+      "W",
       "L",
       "L",
       "W",
       "W",
-      "W",
-      "L",
       "W",
       "L"
     ]

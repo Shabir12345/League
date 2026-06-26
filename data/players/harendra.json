@@ -1,12 +1,58 @@
 {
   "player": "Harendra",
   "puuid": "q4q_teVE3JVjPkqQKIRQy4znJ8fgrCk2LHbQTZolQfPQiDL302Ry8aTT_s_njjGs8WfZM-Dw239OIw",
-  "generatedAt": "2026-06-25T07:37:39.153Z",
+  "generatedAt": "2026-06-26T07:45:05.123Z",
   "rank": {
     "solo": "Bronze III",
     "flex": "Bronze I"
   },
   "games": [
+    {
+      "matchId": "EUW1_7899114207",
+      "queue": 440,
+      "champ": "Galio",
+      "role": "Mid",
+      "win": true,
+      "k": 0,
+      "d": 0,
+      "a": 9,
+      "kda": 9,
+      "csm": 8.9,
+      "kp": 19,
+      "vision": 11,
+      "dmgShare": 0.13,
+      "csAt10": 91,
+      "goldAt10": 3368,
+      "csDiff10": 3,
+      "goldDiff10": 161,
+      "csDiff14": 1,
+      "goldDiff14": 340,
+      "fiveStack": true,
+      "date": 1782408395495
+    },
+    {
+      "matchId": "EUW1_7899068603",
+      "queue": 440,
+      "champ": "Gangplank",
+      "role": "Top",
+      "win": true,
+      "k": 12,
+      "d": 7,
+      "a": 9,
+      "kda": 3,
+      "csm": 5.9,
+      "kp": 39,
+      "vision": 29,
+      "dmgShare": 0.19,
+      "csAt10": 48,
+      "goldAt10": 2914,
+      "csDiff10": -18,
+      "goldDiff10": -311,
+      "csDiff14": -3,
+      "goldDiff14": 103,
+      "fiveStack": true,
+      "date": 1782406073085
+    },
     {
       "matchId": "EUW1_7893835981",
       "queue": 440,
@@ -1340,52 +1386,6 @@
       "goldDiff14": 3367,
       "fiveStack": false,
       "date": 1765415627754
-    },
-    {
-      "matchId": "EUW1_7617901615",
-      "queue": 420,
-      "champ": "Zaahen",
-      "role": "Top",
-      "win": true,
-      "k": 3,
-      "d": 2,
-      "a": 1,
-      "kda": 2,
-      "csm": 5.75,
-      "kp": 17,
-      "vision": 12,
-      "dmgShare": 0.2,
-      "csAt10": 58,
-      "goldAt10": 2764,
-      "csDiff10": -3,
-      "goldDiff10": -233,
-      "csDiff14": 0,
-      "goldDiff14": 515,
-      "fiveStack": false,
-      "date": 1764150996357
-    },
-    {
-      "matchId": "EUW1_7617882661",
-      "queue": 420,
-      "champ": "Zaahen",
-      "role": "Jungle",
-      "win": false,
-      "k": 4,
-      "d": 6,
-      "a": 11,
-      "kda": 2.5,
-      "csm": 5.21,
-      "kp": 71,
-      "vision": 32,
-      "dmgShare": 0.16,
-      "csAt10": 58,
-      "goldAt10": 3024,
-      "csDiff10": 1,
-      "goldDiff10": -280,
-      "csDiff14": -8,
-      "goldDiff14": 0,
-      "fiveStack": false,
-      "date": 1764148184285
     }
   ],
   "soloFlex": {
@@ -1407,20 +1407,20 @@
         "csDiff10": -28.6
       },
       {
-        "champ": "Zaahen",
-        "games": 5,
-        "wr": 20,
-        "kda": 1.74,
-        "csm": 5.54,
-        "csDiff10": -5.4
-      },
-      {
         "champ": "Malphite",
         "games": 4,
         "wr": 25,
         "kda": 3.31,
         "csm": 7.1,
         "csDiff10": 5
+      },
+      {
+        "champ": "Zaahen",
+        "games": 3,
+        "wr": 0,
+        "kda": 1.4,
+        "csm": 5.58,
+        "csDiff10": -8.33
       },
       {
         "champ": "Kaisa",
@@ -1461,6 +1461,22 @@
         "kda": 6.5,
         "csm": 6.23,
         "csDiff10": -1.5
+      },
+      {
+        "champ": "Galio",
+        "games": 1,
+        "wr": 100,
+        "kda": 9,
+        "csm": 8.9,
+        "csDiff10": 3
+      },
+      {
+        "champ": "Gangplank",
+        "games": 1,
+        "wr": 100,
+        "kda": 3,
+        "csm": 5.9,
+        "csDiff10": -18
       },
       {
         "champ": "Chogath",
@@ -1666,8 +1682,8 @@
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 23,
-        "wr": 57
+        "games": 22,
+        "wr": 59
       },
       {
         "role": "Top",
@@ -1681,7 +1697,7 @@
       },
       {
         "role": "Mid",
-        "games": 4,
+        "games": 5,
         "wr": 100
       },
       {
@@ -1695,10 +1711,10 @@
       "W",
       "W",
       "W",
-      "L",
-      "L",
       "W",
       "W",
+      "L",
+      "L",
       "W",
       "W"
     ]
@@ -1728,6 +1744,22 @@
         "kda": 3.01,
         "csm": 5.7,
         "csDiff10": -3.5
+      },
+      {
+        "champ": "Galio",
+        "games": 1,
+        "wr": 100,
+        "kda": 9,
+        "csm": 8.9,
+        "csDiff10": 3
+      },
+      {
+        "champ": "Gangplank",
+        "games": 1,
+        "wr": 100,
+        "kda": 3,
+        "csm": 5.9,
+        "csDiff10": -18
       },
       {
         "champ": "Chogath",
@@ -1842,24 +1874,29 @@
       },
       {
         "role": "Top",
-        "games": 8,
-        "wr": 50
+        "games": 9,
+        "wr": 56
       },
       {
         "role": "Jungle",
         "games": 3,
         "wr": 67
+      },
+      {
+        "role": "Mid",
+        "games": 1,
+        "wr": 100
       }
     ],
     "form": [
       "W",
       "W",
+      "W",
+      "W",
       "L",
       "L",
       "W",
       "W",
-      "W",
-      "L",
       "W",
       "L"
     ]
