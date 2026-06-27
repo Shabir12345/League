@@ -1,12 +1,58 @@
 {
   "player": "Shabir",
   "puuid": "1RJIy7lzs-1o-4vzu2wJkj0SGPaA2TNVDdbZR36Lp-OOAFXYsZnFrK2Al12k4yMDAyZlSGI8C3t44g",
-  "generatedAt": "2026-06-26T07:44:52.415Z",
+  "generatedAt": "2026-06-27T06:49:06.225Z",
   "rank": {
     "solo": "Gold III",
     "flex": "Platinum IV"
   },
   "games": [
+    {
+      "matchId": "EUW1_7900408415",
+      "queue": 440,
+      "champ": "Caitlyn",
+      "role": "ADC",
+      "win": false,
+      "k": 1,
+      "d": 8,
+      "a": 4,
+      "kda": 0.63,
+      "csm": 8.31,
+      "kp": 24,
+      "vision": 17,
+      "dmgShare": 0.17,
+      "csAt10": 59,
+      "goldAt10": 3261,
+      "csDiff10": -22,
+      "goldDiff10": -1818,
+      "csDiff14": -10,
+      "goldDiff14": -2114,
+      "fiveStack": false,
+      "date": 1782505249458
+    },
+    {
+      "matchId": "EUW1_7900359306",
+      "queue": 440,
+      "champ": "Ashe",
+      "role": "ADC",
+      "win": false,
+      "k": 3,
+      "d": 10,
+      "a": 7,
+      "kda": 1,
+      "csm": 6.2,
+      "kp": 31,
+      "vision": 20,
+      "dmgShare": 0.24,
+      "csAt10": 50,
+      "goldAt10": 3266,
+      "csDiff10": -11,
+      "goldDiff10": -649,
+      "csDiff14": -19,
+      "goldDiff14": -1559,
+      "fiveStack": false,
+      "date": 1782502896088
+    },
     {
       "matchId": "EUW1_7899313502",
       "queue": 440,
@@ -1340,71 +1386,25 @@
       "goldDiff14": -1412,
       "fiveStack": false,
       "date": 1780583010520
-    },
-    {
-      "matchId": "EUW1_7876121580",
-      "queue": 420,
-      "champ": "Khazix",
-      "role": "Jungle",
-      "win": true,
-      "k": 9,
-      "d": 7,
-      "a": 11,
-      "kda": 2.86,
-      "csm": 7.16,
-      "kp": 59,
-      "vision": 37,
-      "dmgShare": 0.23,
-      "csAt10": 62,
-      "goldAt10": 4349,
-      "csDiff10": 4,
-      "goldDiff10": 1225,
-      "csDiff14": 14,
-      "goldDiff14": 1890,
-      "fiveStack": false,
-      "date": 1780580681741
-    },
-    {
-      "matchId": "EUW1_7875786821",
-      "queue": 420,
-      "champ": "Khazix",
-      "role": "Jungle",
-      "win": false,
-      "k": 5,
-      "d": 9,
-      "a": 8,
-      "kda": 1.44,
-      "csm": 6.2,
-      "kp": 30,
-      "vision": 41,
-      "dmgShare": 0.16,
-      "csAt10": 64,
-      "goldAt10": 3564,
-      "csDiff10": -8,
-      "goldDiff10": -933,
-      "csDiff14": -14,
-      "goldDiff14": -807,
-      "fiveStack": false,
-      "date": 1780532155725
     }
   ],
   "soloFlex": {
     "champPool": [
       {
-        "champ": "Khazix",
+        "champ": "Ashe",
         "games": 16,
-        "wr": 25,
-        "kda": 2.81,
-        "csm": 6.57,
-        "csDiff10": -1.25
+        "wr": 69,
+        "kda": 3.28,
+        "csm": 6.43,
+        "csDiff10": 2.73
       },
       {
-        "champ": "Ashe",
-        "games": 15,
-        "wr": 73,
-        "kda": 3.43,
-        "csm": 6.44,
-        "csDiff10": 3.71
+        "champ": "Khazix",
+        "games": 14,
+        "wr": 21,
+        "kda": 2.91,
+        "csm": 6.56,
+        "csDiff10": -1.14
       },
       {
         "champ": "Kayle",
@@ -1415,20 +1415,20 @@
         "csDiff10": 1.5
       },
       {
+        "champ": "Caitlyn",
+        "games": 4,
+        "wr": 25,
+        "kda": 2.34,
+        "csm": 7.46,
+        "csDiff10": -4.75
+      },
+      {
         "champ": "Xerath",
         "games": 4,
         "wr": 50,
         "kda": 3.91,
         "csm": 7.26,
         "csDiff10": 18
-      },
-      {
-        "champ": "Caitlyn",
-        "games": 3,
-        "wr": 33,
-        "kda": 2.91,
-        "csm": 7.17,
-        "csDiff10": 1
       },
       {
         "champ": "Draven",
@@ -1530,13 +1530,13 @@
     "roleSplits": [
       {
         "role": "ADC",
-        "games": 22,
-        "wr": 64
+        "games": 24,
+        "wr": 58
       },
       {
         "role": "Jungle",
-        "games": 21,
-        "wr": 29
+        "games": 19,
+        "wr": 26
       },
       {
         "role": "Top",
@@ -1555,6 +1555,8 @@
       }
     ],
     "form": [
+      "L",
+      "L",
       "W",
       "L",
       "W",
@@ -1562,9 +1564,7 @@
       "W",
       "W",
       "W",
-      "L",
-      "L",
-      "W"
+      "L"
     ]
   },
   "fiveStack": {

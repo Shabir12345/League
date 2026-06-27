@@ -1,12 +1,173 @@
 {
   "player": "Geeth",
   "puuid": "Df36AbNlLOIH8wlRXSAhOMfO-UvoqWvuM2MkscE3YpIMbXqL4X23TbbDbkXf3-knw1n9f11khr9Hzw",
-  "generatedAt": "2026-06-26T07:46:35.420Z",
+  "generatedAt": "2026-06-27T06:50:58.329Z",
   "rank": {
     "solo": "Gold I",
     "flex": "Gold II"
   },
   "games": [
+    {
+      "matchId": "EUW1_7900490275",
+      "queue": 420,
+      "champ": "Swain",
+      "role": "Support",
+      "win": true,
+      "k": 3,
+      "d": 0,
+      "a": 5,
+      "kda": 8,
+      "csm": 1.25,
+      "kp": 38,
+      "vision": 17,
+      "dmgShare": 0.16,
+      "csAt10": 13,
+      "goldAt10": 3088,
+      "csDiff10": -8,
+      "goldDiff10": 803,
+      "csDiff14": -6,
+      "goldDiff14": 1416,
+      "fiveStack": false,
+      "date": 1782508903956
+    },
+    {
+      "matchId": "EUW1_7900408415",
+      "queue": 440,
+      "champ": "Fizz",
+      "role": "Jungle",
+      "win": false,
+      "k": 8,
+      "d": 7,
+      "a": 2,
+      "kda": 1.43,
+      "csm": 5.68,
+      "kp": 48,
+      "vision": 32,
+      "dmgShare": 0.16,
+      "csAt10": 65,
+      "goldAt10": 3833,
+      "csDiff10": -5,
+      "goldDiff10": -8,
+      "csDiff14": -23,
+      "goldDiff14": -453,
+      "fiveStack": false,
+      "date": 1782505249458
+    },
+    {
+      "matchId": "EUW1_7900359306",
+      "queue": 440,
+      "champ": "Locke",
+      "role": "Jungle",
+      "win": false,
+      "k": 8,
+      "d": 9,
+      "a": 8,
+      "kda": 1.78,
+      "csm": 4.97,
+      "kp": 50,
+      "vision": 16,
+      "dmgShare": 0.17,
+      "csAt10": 52,
+      "goldAt10": 3677,
+      "csDiff10": -12,
+      "goldDiff10": -218,
+      "csDiff14": -21,
+      "goldDiff14": -77,
+      "fiveStack": false,
+      "date": 1782502896088
+    },
+    {
+      "matchId": "EUW1_7900253740",
+      "queue": 440,
+      "champ": "Talon",
+      "role": "Jungle",
+      "win": false,
+      "k": 2,
+      "d": 5,
+      "a": 5,
+      "kda": 1.4,
+      "csm": 6.36,
+      "kp": 54,
+      "vision": 27,
+      "dmgShare": 0.17,
+      "csAt10": 61,
+      "goldAt10": 3016,
+      "csDiff10": -19,
+      "goldDiff10": -600,
+      "csDiff14": -27,
+      "goldDiff14": -1075,
+      "fiveStack": false,
+      "date": 1782497275946
+    },
+    {
+      "matchId": "EUW1_7900212286",
+      "queue": 420,
+      "champ": "Kayn",
+      "role": "Jungle",
+      "win": false,
+      "k": 2,
+      "d": 7,
+      "a": 4,
+      "kda": 0.86,
+      "csm": 5.51,
+      "kp": 40,
+      "vision": 16,
+      "dmgShare": 0.17,
+      "csAt10": 62,
+      "goldAt10": 3640,
+      "csDiff10": 4,
+      "goldDiff10": -778,
+      "csDiff14": 2,
+      "goldDiff14": -2066,
+      "fiveStack": false,
+      "date": 1782495441383
+    },
+    {
+      "matchId": "EUW1_7900200441",
+      "queue": 420,
+      "champ": "Nocturne",
+      "role": "Jungle",
+      "win": true,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "kda": 0,
+      "csm": 1.69,
+      "kp": 0,
+      "vision": 0,
+      "dmgShare": 0,
+      "csAt10": null,
+      "goldAt10": null,
+      "csDiff10": null,
+      "goldDiff10": null,
+      "csDiff14": null,
+      "goldDiff14": null,
+      "fiveStack": false,
+      "date": 1782494918354
+    },
+    {
+      "matchId": "EUW1_7900171036",
+      "queue": 440,
+      "champ": "Sylas",
+      "role": "Jungle",
+      "win": true,
+      "k": 4,
+      "d": 3,
+      "a": 12,
+      "kda": 5.33,
+      "csm": 6.87,
+      "kp": 50,
+      "vision": 17,
+      "dmgShare": 0.15,
+      "csAt10": 73,
+      "goldAt10": 3722,
+      "csDiff10": 2,
+      "goldDiff10": 100,
+      "csDiff14": 11,
+      "goldDiff14": -251,
+      "fiveStack": false,
+      "date": 1782493165137
+    },
     {
       "matchId": "EUW1_7899313502",
       "queue": 440,
@@ -1225,178 +1386,17 @@
       "goldDiff14": 75,
       "fiveStack": false,
       "date": 1780243702545
-    },
-    {
-      "matchId": "EUW1_7871978884",
-      "queue": 420,
-      "champ": "Malzahar",
-      "role": "Mid",
-      "win": true,
-      "k": 3,
-      "d": 2,
-      "a": 6,
-      "kda": 4.5,
-      "csm": 8.81,
-      "kp": 33,
-      "vision": 27,
-      "dmgShare": 0.19,
-      "csAt10": 79,
-      "goldAt10": 3436,
-      "csDiff10": -18,
-      "goldDiff10": -372,
-      "csDiff14": -15,
-      "goldDiff14": -326,
-      "fiveStack": false,
-      "date": 1780241369081
-    },
-    {
-      "matchId": "EUW1_7871932649",
-      "queue": 420,
-      "champ": "Veigar",
-      "role": "Mid",
-      "win": true,
-      "k": 9,
-      "d": 5,
-      "a": 11,
-      "kda": 4,
-      "csm": 6.87,
-      "kp": 48,
-      "vision": 17,
-      "dmgShare": 0.23,
-      "csAt10": 57,
-      "goldAt10": 3545,
-      "csDiff10": -1,
-      "goldDiff10": -298,
-      "csDiff14": 14,
-      "goldDiff14": 468,
-      "fiveStack": false,
-      "date": 1780239134967
-    },
-    {
-      "matchId": "EUW1_7871881722",
-      "queue": 420,
-      "champ": "Seraphine",
-      "role": "Support",
-      "win": true,
-      "k": 5,
-      "d": 8,
-      "a": 26,
-      "kda": 3.88,
-      "csm": 0.82,
-      "kp": 65,
-      "vision": 74,
-      "dmgShare": 0.15,
-      "csAt10": 9,
-      "goldAt10": 2958,
-      "csDiff10": -3,
-      "goldDiff10": 395,
-      "csDiff14": -3,
-      "goldDiff14": 1035,
-      "fiveStack": false,
-      "date": 1780236930126
-    },
-    {
-      "matchId": "EUW1_7871836897",
-      "queue": 420,
-      "champ": "Galio",
-      "role": "Mid",
-      "win": true,
-      "k": 13,
-      "d": 4,
-      "a": 10,
-      "kda": 5.75,
-      "csm": 5.78,
-      "kp": 64,
-      "vision": 22,
-      "dmgShare": 0.26,
-      "csAt10": 69,
-      "goldAt10": 4370,
-      "csDiff10": -10,
-      "goldDiff10": 1020,
-      "csDiff14": -4,
-      "goldDiff14": 1465,
-      "fiveStack": false,
-      "date": 1780234851159
-    },
-    {
-      "matchId": "EUW1_7871098446",
-      "queue": 440,
-      "champ": "Lux",
-      "role": "Support",
-      "win": true,
-      "k": 7,
-      "d": 6,
-      "a": 17,
-      "kda": 4,
-      "csm": 0.97,
-      "kp": 53,
-      "vision": 63,
-      "dmgShare": 0.2,
-      "csAt10": 12,
-      "goldAt10": 3256,
-      "csDiff10": -6,
-      "goldDiff10": 805,
-      "csDiff14": -16,
-      "goldDiff14": 906,
-      "fiveStack": true,
-      "date": 1780170379935
-    },
-    {
-      "matchId": "EUW1_7871050505",
-      "queue": 440,
-      "champ": "Maokai",
-      "role": "Support",
-      "win": true,
-      "k": 1,
-      "d": 10,
-      "a": 12,
-      "kda": 1.3,
-      "csm": 0.79,
-      "kp": 62,
-      "vision": 77,
-      "dmgShare": 0.11,
-      "csAt10": 11,
-      "goldAt10": 2357,
-      "csDiff10": 0,
-      "goldDiff10": -582,
-      "csDiff14": -1,
-      "goldDiff14": -673,
-      "fiveStack": true,
-      "date": 1780167712112
-    },
-    {
-      "matchId": "EUW1_7871001710",
-      "queue": 440,
-      "champ": "Nautilus",
-      "role": "Support",
-      "win": true,
-      "k": 2,
-      "d": 11,
-      "a": 22,
-      "kda": 2.18,
-      "csm": 0.62,
-      "kp": 52,
-      "vision": 103,
-      "dmgShare": 0.08,
-      "csAt10": 12,
-      "goldAt10": 3024,
-      "csDiff10": -8,
-      "goldDiff10": 230,
-      "csDiff14": -10,
-      "goldDiff14": 233,
-      "fiveStack": true,
-      "date": 1780164800201
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Talon",
-        "games": 7,
-        "wr": 86,
-        "kda": 3.08,
-        "csm": 6.59,
-        "csDiff10": -4
+        "games": 8,
+        "wr": 75,
+        "kda": 2.87,
+        "csm": 6.57,
+        "csDiff10": -6.5
       },
       {
         "champ": "Viego",
@@ -1407,36 +1407,52 @@
         "csDiff10": -8.33
       },
       {
-        "champ": "Nautilus",
-        "games": 3,
-        "wr": 33,
-        "kda": 2.05,
-        "csm": 0.82,
-        "csDiff10": -5
-      },
-      {
         "champ": "Nocturne",
-        "games": 3,
-        "wr": 67,
-        "kda": 11.4,
-        "csm": 5.04,
+        "games": 4,
+        "wr": 75,
+        "kda": 8.55,
+        "csm": 4.2,
         "csDiff10": -5
-      },
-      {
-        "champ": "Seraphine",
-        "games": 2,
-        "wr": 100,
-        "kda": 6.44,
-        "csm": 1.04,
-        "csDiff10": -1.5
       },
       {
         "champ": "Fizz",
+        "games": 3,
+        "wr": 33,
+        "kda": 5.11,
+        "csm": 5.6,
+        "csDiff10": -4.33
+      },
+      {
+        "champ": "Kayn",
+        "games": 3,
+        "wr": 0,
+        "kda": 1.01,
+        "csm": 5.33,
+        "csDiff10": 5
+      },
+      {
+        "champ": "Locke",
         "games": 2,
         "wr": 50,
-        "kda": 6.96,
-        "csm": 5.56,
-        "csDiff10": -4
+        "kda": 3.23,
+        "csm": 5.65,
+        "csDiff10": -16.5
+      },
+      {
+        "champ": "Sylas",
+        "games": 2,
+        "wr": 100,
+        "kda": 6.17,
+        "csm": 6.84,
+        "csDiff10": -7.5
+      },
+      {
+        "champ": "Nautilus",
+        "games": 2,
+        "wr": 0,
+        "kda": 1.99,
+        "csm": 0.92,
+        "csDiff10": -3.5
       },
       {
         "champ": "MonkeyKing",
@@ -1455,30 +1471,6 @@
         "csDiff10": -13.5
       },
       {
-        "champ": "Kayn",
-        "games": 2,
-        "wr": 0,
-        "kda": 1.08,
-        "csm": 5.25,
-        "csDiff10": 5.5
-      },
-      {
-        "champ": "Maokai",
-        "games": 2,
-        "wr": 50,
-        "kda": 3.55,
-        "csm": 3.43,
-        "csDiff10": 11
-      },
-      {
-        "champ": "Veigar",
-        "games": 2,
-        "wr": 50,
-        "kda": 3.6,
-        "csm": 6.22,
-        "csDiff10": -1
-      },
-      {
         "champ": "MissFortune",
         "games": 2,
         "wr": 50,
@@ -1495,12 +1487,20 @@
         "csDiff10": 20.5
       },
       {
-        "champ": "Locke",
+        "champ": "Swain",
         "games": 1,
         "wr": 100,
-        "kda": 4.67,
-        "csm": 6.32,
-        "csDiff10": -21
+        "kda": 8,
+        "csm": 1.25,
+        "csDiff10": -8
+      },
+      {
+        "champ": "Seraphine",
+        "games": 1,
+        "wr": 100,
+        "kda": 9,
+        "csm": 1.26,
+        "csDiff10": 0
       },
       {
         "champ": "Sejuani",
@@ -1551,12 +1551,12 @@
         "csDiff10": 28
       },
       {
-        "champ": "Sylas",
+        "champ": "Maokai",
         "games": 1,
-        "wr": 100,
-        "kda": 7,
-        "csm": 6.8,
-        "csDiff10": -17
+        "wr": 0,
+        "kda": 5.8,
+        "csm": 6.06,
+        "csDiff10": 22
       },
       {
         "champ": "Warwick",
@@ -1572,6 +1572,14 @@
         "wr": 100,
         "kda": 2.17,
         "csm": 5.82,
+        "csDiff10": -1
+      },
+      {
+        "champ": "Veigar",
+        "games": 1,
+        "wr": 0,
+        "kda": 3.2,
+        "csm": 5.56,
         "csDiff10": -1
       },
       {
@@ -1653,52 +1661,28 @@
         "kda": 2.22,
         "csm": 6.12,
         "csDiff10": -4
-      },
-      {
-        "champ": "Malzahar",
-        "games": 1,
-        "wr": 100,
-        "kda": 4.5,
-        "csm": 8.81,
-        "csDiff10": -18
-      },
-      {
-        "champ": "Galio",
-        "games": 1,
-        "wr": 100,
-        "kda": 5.75,
-        "csm": 5.78,
-        "csDiff10": -10
-      },
-      {
-        "champ": "Lux",
-        "games": 1,
-        "wr": 100,
-        "kda": 4,
-        "csm": 0.97,
-        "csDiff10": -6
       }
     ],
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 32,
-        "wr": 56
-      },
-      {
-        "role": "Support",
-        "games": 9,
-        "wr": 56
-      },
-      {
-        "role": "Mid",
-        "games": 8,
-        "wr": 75
+        "games": 38,
+        "wr": 53
       },
       {
         "role": "ADC",
         "games": 7,
         "wr": 43
+      },
+      {
+        "role": "Support",
+        "games": 6,
+        "wr": 33
+      },
+      {
+        "role": "Mid",
+        "games": 5,
+        "wr": 60
       },
       {
         "role": "Top",
@@ -1709,14 +1693,14 @@
     "form": [
       "W",
       "L",
-      "W",
-      "W",
-      "W",
+      "L",
+      "L",
+      "L",
       "W",
       "W",
       "W",
       "L",
-      "L"
+      "W"
     ]
   },
   "fiveStack": {
@@ -1760,14 +1744,6 @@
         "kda": 7.09,
         "csm": 6.45,
         "csDiff10": -6
-      },
-      {
-        "champ": "Nautilus",
-        "games": 2,
-        "wr": 50,
-        "kda": 1.38,
-        "csm": 0.76,
-        "csDiff10": -3.5
       },
       {
         "champ": "Locke",
@@ -1818,28 +1794,20 @@
         "csDiff10": 9
       },
       {
+        "champ": "Nautilus",
+        "games": 1,
+        "wr": 0,
+        "kda": 0.57,
+        "csm": 0.9,
+        "csDiff10": 1
+      },
+      {
         "champ": "Pyke",
         "games": 1,
         "wr": 0,
         "kda": 0.73,
         "csm": 1,
         "csDiff10": -6
-      },
-      {
-        "champ": "Lux",
-        "games": 1,
-        "wr": 100,
-        "kda": 4,
-        "csm": 0.97,
-        "csDiff10": -6
-      },
-      {
-        "champ": "Maokai",
-        "games": 1,
-        "wr": 100,
-        "kda": 1.3,
-        "csm": 0.79,
-        "csDiff10": 0
       }
     ],
     "roleSplits": [
@@ -1850,8 +1818,8 @@
       },
       {
         "role": "Support",
-        "games": 6,
-        "wr": 50
+        "games": 3,
+        "wr": 0
       },
       {
         "role": "ADC",

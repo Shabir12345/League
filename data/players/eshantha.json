@@ -1,12 +1,104 @@
 {
   "player": "Eshantha",
   "puuid": "SmVhFbT3bTkwBT77RgXmb34GAVOnoXm4xOJhpmDCdlkm-5F6hRC-7gBA243sy5f9t3OeU68sQo5cDA",
-  "generatedAt": "2026-06-26T07:45:41.885Z",
+  "generatedAt": "2026-06-27T06:50:07.575Z",
   "rank": {
     "solo": "Gold III",
     "flex": "Gold IV"
   },
   "games": [
+    {
+      "matchId": "EUW1_7900253740",
+      "queue": 440,
+      "champ": "Garen",
+      "role": "Top",
+      "win": false,
+      "k": 2,
+      "d": 10,
+      "a": 1,
+      "kda": 0.3,
+      "csm": 5.84,
+      "kp": 23,
+      "vision": 25,
+      "dmgShare": 0.12,
+      "csAt10": 51,
+      "goldAt10": 2563,
+      "csDiff10": -38,
+      "goldDiff10": -1947,
+      "csDiff14": -47,
+      "goldDiff14": -1957,
+      "fiveStack": false,
+      "date": 1782497275946
+    },
+    {
+      "matchId": "EUW1_7900212286",
+      "queue": 420,
+      "champ": "Sion",
+      "role": "Top",
+      "win": false,
+      "k": 3,
+      "d": 9,
+      "a": 0,
+      "kda": 0.33,
+      "csm": 5.85,
+      "kp": 20,
+      "vision": 16,
+      "dmgShare": 0.23,
+      "csAt10": 57,
+      "goldAt10": 3262,
+      "csDiff10": 3,
+      "goldDiff10": 93,
+      "csDiff14": -12,
+      "goldDiff14": -1113,
+      "fiveStack": false,
+      "date": 1782495441383
+    },
+    {
+      "matchId": "EUW1_7900200441",
+      "queue": 420,
+      "champ": "Anivia",
+      "role": "Top",
+      "win": true,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "kda": 0,
+      "csm": 0,
+      "kp": 0,
+      "vision": 0,
+      "dmgShare": 0.16,
+      "csAt10": null,
+      "goldAt10": null,
+      "csDiff10": null,
+      "goldDiff10": null,
+      "csDiff14": null,
+      "goldDiff14": null,
+      "fiveStack": false,
+      "date": 1782494918354
+    },
+    {
+      "matchId": "EUW1_7900171036",
+      "queue": 440,
+      "champ": "Yorick",
+      "role": "Top",
+      "win": true,
+      "k": 10,
+      "d": 1,
+      "a": 8,
+      "kda": 18,
+      "csm": 7.5,
+      "kp": 56,
+      "vision": 24,
+      "dmgShare": 0.26,
+      "csAt10": 90,
+      "goldAt10": 4544,
+      "csDiff10": 32,
+      "goldDiff10": 1707,
+      "csDiff14": 43,
+      "goldDiff14": 2982,
+      "fiveStack": false,
+      "date": 1782493165137
+    },
     {
       "matchId": "EUW1_7899114207",
       "queue": 440,
@@ -1294,117 +1386,25 @@
       "goldDiff14": -161,
       "fiveStack": true,
       "date": 1779989371803
-    },
-    {
-      "matchId": "EUW1_7868284014",
-      "queue": 420,
-      "champ": "Alistar",
-      "role": "Support",
-      "win": true,
-      "k": 1,
-      "d": 9,
-      "a": 24,
-      "kda": 2.78,
-      "csm": 0.89,
-      "kp": 69,
-      "vision": 73,
-      "dmgShare": 0.07,
-      "csAt10": 12,
-      "goldAt10": 2933,
-      "csDiff10": -5,
-      "goldDiff10": 49,
-      "csDiff14": -10,
-      "goldDiff14": -79,
-      "fiveStack": false,
-      "date": 1779946910594
-    },
-    {
-      "matchId": "EUW1_7868284927",
-      "queue": 420,
-      "champ": "Sion",
-      "role": "Top",
-      "win": false,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "kda": 0,
-      "csm": 0.78,
-      "kp": 0,
-      "vision": 0,
-      "dmgShare": 0,
-      "csAt10": null,
-      "goldAt10": null,
-      "csDiff10": null,
-      "goldDiff10": null,
-      "csDiff14": null,
-      "goldDiff14": null,
-      "fiveStack": false,
-      "date": 1779946575883
-    },
-    {
-      "matchId": "EUW1_7868285604",
-      "queue": 420,
-      "champ": "Rell",
-      "role": "Support",
-      "win": true,
-      "k": 0,
-      "d": 8,
-      "a": 17,
-      "kda": 2.13,
-      "csm": 0.9,
-      "kp": 65,
-      "vision": 74,
-      "dmgShare": 0.06,
-      "csAt10": 15,
-      "goldAt10": 2272,
-      "csDiff10": 3,
-      "goldDiff10": -324,
-      "csDiff14": 4,
-      "goldDiff14": 244,
-      "fiveStack": false,
-      "date": 1779944489371
-    },
-    {
-      "matchId": "EUW1_7867855664",
-      "queue": 440,
-      "champ": "Yorick",
-      "role": "Top",
-      "win": false,
-      "k": 1,
-      "d": 10,
-      "a": 0,
-      "kda": 0.1,
-      "csm": 6.24,
-      "kp": 5,
-      "vision": 24,
-      "dmgShare": 0.23,
-      "csAt10": 73,
-      "goldAt10": 3246,
-      "csDiff10": -1,
-      "goldDiff10": -94,
-      "csDiff14": -14,
-      "goldDiff14": -1290,
-      "fiveStack": false,
-      "date": 1779907968219
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Anivia",
-        "games": 14,
-        "wr": 79,
-        "kda": 5.22,
-        "csm": 6.05,
+        "games": 15,
+        "wr": 80,
+        "kda": 4.87,
+        "csm": 5.64,
         "csDiff10": 3
       },
       {
         "champ": "Yorick",
         "games": 13,
-        "wr": 46,
-        "kda": 2.46,
-        "csm": 7.59,
-        "csDiff10": 0.54
+        "wr": 54,
+        "kda": 3.84,
+        "csm": 7.69,
+        "csDiff10": 3.08
       },
       {
         "champ": "Camille",
@@ -1423,28 +1423,36 @@
         "csDiff10": 6.6
       },
       {
-        "champ": "Rell",
-        "games": 4,
-        "wr": 50,
-        "kda": 3.3,
-        "csm": 1.02,
-        "csDiff10": 0
-      },
-      {
-        "champ": "Alistar",
-        "games": 4,
-        "wr": 50,
-        "kda": 3.32,
-        "csm": 0.84,
-        "csDiff10": 1.75
-      },
-      {
         "champ": "Zac",
         "games": 3,
         "wr": 67,
         "kda": 7.83,
         "csm": 5.86,
         "csDiff10": -26
+      },
+      {
+        "champ": "Rell",
+        "games": 3,
+        "wr": 33,
+        "kda": 3.69,
+        "csm": 1.06,
+        "csDiff10": -1
+      },
+      {
+        "champ": "Alistar",
+        "games": 3,
+        "wr": 33,
+        "kda": 3.5,
+        "csm": 0.82,
+        "csDiff10": 4
+      },
+      {
+        "champ": "Sion",
+        "games": 2,
+        "wr": 50,
+        "kda": 1.33,
+        "csm": 6.24,
+        "csDiff10": 1.5
       },
       {
         "champ": "Zilean",
@@ -1455,12 +1463,12 @@
         "csDiff10": 8.5
       },
       {
-        "champ": "Sion",
-        "games": 2,
-        "wr": 50,
-        "kda": 1.17,
-        "csm": 3.71,
-        "csDiff10": 0
+        "champ": "Garen",
+        "games": 1,
+        "wr": 0,
+        "kda": 0.3,
+        "csm": 5.84,
+        "csDiff10": -38
       },
       {
         "champ": "Sejuani",
@@ -1522,13 +1530,13 @@
     "roleSplits": [
       {
         "role": "Top",
-        "games": 38,
-        "wr": 50
+        "games": 40,
+        "wr": 53
       },
       {
         "role": "Support",
-        "games": 18,
-        "wr": 61
+        "games": 16,
+        "wr": 56
       },
       {
         "role": "Jungle",
@@ -1537,15 +1545,15 @@
       }
     ],
     "form": [
+      "L",
+      "L",
+      "W",
+      "W",
       "W",
       "W",
       "W",
       "L",
       "W",
-      "W",
-      "L",
-      "L",
-      "L",
       "W"
     ]
   },
