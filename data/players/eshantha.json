@@ -1,12 +1,35 @@
 {
   "player": "Eshantha",
   "puuid": "SmVhFbT3bTkwBT77RgXmb34GAVOnoXm4xOJhpmDCdlkm-5F6hRC-7gBA243sy5f9t3OeU68sQo5cDA",
-  "generatedAt": "2026-06-27T06:50:07.575Z",
+  "generatedAt": "2026-06-28T07:46:38.751Z",
   "rank": {
     "solo": "Gold III",
-    "flex": "Gold IV"
+    "flex": "Gold III"
   },
   "games": [
+    {
+      "matchId": "EUW1_7901448155",
+      "queue": 440,
+      "champ": "Anivia",
+      "role": "Top",
+      "win": true,
+      "k": 4,
+      "d": 4,
+      "a": 19,
+      "kda": 5.75,
+      "csm": 6.12,
+      "kp": 57,
+      "vision": 32,
+      "dmgShare": 0.17,
+      "csAt10": 63,
+      "goldAt10": 3116,
+      "csDiff10": 28,
+      "goldDiff10": 688,
+      "csDiff14": 36,
+      "goldDiff14": 1290,
+      "fiveStack": false,
+      "date": 1782587645576
+    },
     {
       "matchId": "EUW1_7900253740",
       "queue": 440,
@@ -1363,40 +1386,17 @@
       "goldDiff14": 749,
       "fiveStack": true,
       "date": 1780164800201
-    },
-    {
-      "matchId": "EUW1_7868763085",
-      "queue": 440,
-      "champ": "Chogath",
-      "role": "Top",
-      "win": false,
-      "k": 4,
-      "d": 4,
-      "a": 6,
-      "kda": 2.5,
-      "csm": 6.74,
-      "kp": 25,
-      "vision": 43,
-      "dmgShare": 0.19,
-      "csAt10": 78,
-      "goldAt10": 3314,
-      "csDiff10": 1,
-      "goldDiff10": 291,
-      "csDiff14": -2,
-      "goldDiff14": -161,
-      "fiveStack": true,
-      "date": 1779989371803
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Anivia",
-        "games": 15,
-        "wr": 80,
-        "kda": 4.87,
-        "csm": 5.64,
-        "csDiff10": 3
+        "games": 16,
+        "wr": 81,
+        "kda": 4.93,
+        "csm": 5.67,
+        "csDiff10": 4.92
       },
       {
         "champ": "Yorick",
@@ -1416,11 +1416,11 @@
       },
       {
         "champ": "Chogath",
-        "games": 5,
-        "wr": 20,
-        "kda": 2.14,
-        "csm": 7.06,
-        "csDiff10": 6.6
+        "games": 4,
+        "wr": 25,
+        "kda": 2.05,
+        "csm": 7.15,
+        "csDiff10": 8
       },
       {
         "champ": "Zac",
@@ -1531,7 +1531,7 @@
       {
         "role": "Top",
         "games": 40,
-        "wr": 53
+        "wr": 55
       },
       {
         "role": "Support",
@@ -1545,15 +1545,15 @@
       }
     ],
     "form": [
-      "L",
-      "L",
-      "W",
-      "W",
-      "W",
-      "W",
       "W",
       "L",
+      "L",
       "W",
+      "W",
+      "W",
+      "W",
+      "W",
+      "L",
       "W"
     ]
   },
@@ -1630,14 +1630,6 @@
         "kda": 2,
         "csm": 1.45,
         "csDiff10": 0
-      },
-      {
-        "champ": "Chogath",
-        "games": 1,
-        "wr": 0,
-        "kda": 2.5,
-        "csm": 6.74,
-        "csDiff10": 1
       }
     ],
     "roleSplits": [
@@ -1648,8 +1640,8 @@
       },
       {
         "role": "Top",
-        "games": 8,
-        "wr": 50
+        "games": 7,
+        "wr": 57
       }
     ],
     "form": [

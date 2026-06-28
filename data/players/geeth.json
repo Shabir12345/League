@@ -1,12 +1,35 @@
 {
   "player": "Geeth",
   "puuid": "Df36AbNlLOIH8wlRXSAhOMfO-UvoqWvuM2MkscE3YpIMbXqL4X23TbbDbkXf3-knw1n9f11khr9Hzw",
-  "generatedAt": "2026-06-27T06:50:58.329Z",
+  "generatedAt": "2026-06-28T07:47:24.124Z",
   "rank": {
     "solo": "Gold I",
     "flex": "Gold II"
   },
   "games": [
+    {
+      "matchId": "EUW1_7901448155",
+      "queue": 440,
+      "champ": "Locke",
+      "role": "Jungle",
+      "win": true,
+      "k": 15,
+      "d": 5,
+      "a": 12,
+      "kda": 5.4,
+      "csm": 5.13,
+      "kp": 68,
+      "vision": 14,
+      "dmgShare": 0.22,
+      "csAt10": 52,
+      "goldAt10": 3650,
+      "csDiff10": -4,
+      "goldDiff10": -89,
+      "csDiff14": -17,
+      "goldDiff14": 56,
+      "fiveStack": false,
+      "date": 1782587645576
+    },
     {
       "matchId": "EUW1_7900490275",
       "queue": 420,
@@ -1363,29 +1386,6 @@
       "goldDiff14": 115,
       "fiveStack": true,
       "date": 1780247309947
-    },
-    {
-      "matchId": "EUW1_7872033912",
-      "queue": 420,
-      "champ": "Mel",
-      "role": "Mid",
-      "win": true,
-      "k": 11,
-      "d": 9,
-      "a": 9,
-      "kda": 2.22,
-      "csm": 6.12,
-      "kp": 39,
-      "vision": 32,
-      "dmgShare": 0.21,
-      "csAt10": 85,
-      "goldAt10": 3311,
-      "csDiff10": -4,
-      "goldDiff10": -42,
-      "csDiff14": -2,
-      "goldDiff14": 75,
-      "fiveStack": false,
-      "date": 1780243702545
     }
   ],
   "soloFlex": {
@@ -1415,6 +1415,14 @@
         "csDiff10": -5
       },
       {
+        "champ": "Locke",
+        "games": 3,
+        "wr": 67,
+        "kda": 3.95,
+        "csm": 5.47,
+        "csDiff10": -12.33
+      },
+      {
         "champ": "Fizz",
         "games": 3,
         "wr": 33,
@@ -1429,14 +1437,6 @@
         "kda": 1.01,
         "csm": 5.33,
         "csDiff10": 5
-      },
-      {
-        "champ": "Locke",
-        "games": 2,
-        "wr": 50,
-        "kda": 3.23,
-        "csm": 5.65,
-        "csDiff10": -16.5
       },
       {
         "champ": "Sylas",
@@ -1653,21 +1653,13 @@
         "kda": 0.73,
         "csm": 1,
         "csDiff10": -6
-      },
-      {
-        "champ": "Mel",
-        "games": 1,
-        "wr": 100,
-        "kda": 2.22,
-        "csm": 6.12,
-        "csDiff10": -4
       }
     ],
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 38,
-        "wr": 53
+        "games": 39,
+        "wr": 54
       },
       {
         "role": "ADC",
@@ -1680,18 +1672,19 @@
         "wr": 33
       },
       {
-        "role": "Mid",
-        "games": 5,
-        "wr": 60
+        "role": "Top",
+        "games": 4,
+        "wr": 50
       },
       {
-        "role": "Top",
+        "role": "Mid",
         "games": 4,
         "wr": 50
       }
     ],
     "form": [
       "W",
+      "W",
       "L",
       "L",
       "L",
@@ -1699,8 +1692,7 @@
       "W",
       "W",
       "W",
-      "L",
-      "W"
+      "L"
     ]
   },
   "fiveStack": {
