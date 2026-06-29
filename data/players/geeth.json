@@ -1,12 +1,35 @@
 {
   "player": "Geeth",
   "puuid": "Df36AbNlLOIH8wlRXSAhOMfO-UvoqWvuM2MkscE3YpIMbXqL4X23TbbDbkXf3-knw1n9f11khr9Hzw",
-  "generatedAt": "2026-06-28T07:47:24.124Z",
+  "generatedAt": "2026-06-29T08:54:51.197Z",
   "rank": {
     "solo": "Gold I",
     "flex": "Gold II"
   },
   "games": [
+    {
+      "matchId": "EUW1_7902796618",
+      "queue": 440,
+      "champ": "DrMundo",
+      "role": "Jungle",
+      "win": false,
+      "k": 8,
+      "d": 6,
+      "a": 15,
+      "kda": 3.83,
+      "csm": 4.71,
+      "kp": 59,
+      "vision": 10,
+      "dmgShare": 0.15,
+      "csAt10": 52,
+      "goldAt10": 3572,
+      "csDiff10": -26,
+      "goldDiff10": 149,
+      "csDiff14": -35,
+      "goldDiff14": 280,
+      "fiveStack": false,
+      "date": 1782678749041
+    },
     {
       "matchId": "EUW1_7901448155",
       "queue": 440,
@@ -1363,29 +1386,6 @@
       "goldDiff14": -65,
       "fiveStack": true,
       "date": 1780249291039
-    },
-    {
-      "matchId": "EUW1_7872113285",
-      "queue": 440,
-      "champ": "Pyke",
-      "role": "Support",
-      "win": false,
-      "k": 2,
-      "d": 11,
-      "a": 6,
-      "kda": 0.73,
-      "csm": 1,
-      "kp": 50,
-      "vision": 53,
-      "dmgShare": 0.13,
-      "csAt10": 7,
-      "goldAt10": 3013,
-      "csDiff10": -6,
-      "goldDiff10": 252,
-      "csDiff14": -3,
-      "goldDiff14": 115,
-      "fiveStack": true,
-      "date": 1780247309947
     }
   ],
   "soloFlex": {
@@ -1485,6 +1485,14 @@
         "kda": 1.21,
         "csm": 6.16,
         "csDiff10": 20.5
+      },
+      {
+        "champ": "DrMundo",
+        "games": 1,
+        "wr": 0,
+        "kda": 3.83,
+        "csm": 4.71,
+        "csDiff10": -26
       },
       {
         "champ": "Swain",
@@ -1645,21 +1653,13 @@
         "kda": 2.29,
         "csm": 4.86,
         "csDiff10": 9
-      },
-      {
-        "champ": "Pyke",
-        "games": 1,
-        "wr": 0,
-        "kda": 0.73,
-        "csm": 1,
-        "csDiff10": -6
       }
     ],
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 39,
-        "wr": 54
+        "games": 40,
+        "wr": 53
       },
       {
         "role": "ADC",
@@ -1668,8 +1668,8 @@
       },
       {
         "role": "Support",
-        "games": 6,
-        "wr": 33
+        "games": 5,
+        "wr": 40
       },
       {
         "role": "Top",
@@ -1683,6 +1683,7 @@
       }
     ],
     "form": [
+      "L",
       "W",
       "W",
       "L",
@@ -1691,8 +1692,7 @@
       "L",
       "W",
       "W",
-      "W",
-      "L"
+      "W"
     ]
   },
   "fiveStack": {
@@ -1792,14 +1792,6 @@
         "kda": 0.57,
         "csm": 0.9,
         "csDiff10": 1
-      },
-      {
-        "champ": "Pyke",
-        "games": 1,
-        "wr": 0,
-        "kda": 0.73,
-        "csm": 1,
-        "csDiff10": -6
       }
     ],
     "roleSplits": [
@@ -1810,7 +1802,7 @@
       },
       {
         "role": "Support",
-        "games": 3,
+        "games": 2,
         "wr": 0
       },
       {

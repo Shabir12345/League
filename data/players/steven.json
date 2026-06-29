@@ -1,12 +1,35 @@
 {
   "player": "Steven",
   "puuid": "rEUfV7nH6pNefn-stlAp3Egn0EYlr11hULP7Zdo8F0HBypEIcqZBYTHnpZC4GXko1ZmEK13LS9RboQ",
-  "generatedAt": "2026-06-28T07:46:31.875Z",
+  "generatedAt": "2026-06-29T08:53:53.491Z",
   "rank": {
     "solo": "Gold III",
     "flex": "Silver II"
   },
   "games": [
+    {
+      "matchId": "EUW1_7902796618",
+      "queue": 440,
+      "champ": "Orianna",
+      "role": "Mid",
+      "win": false,
+      "k": 5,
+      "d": 7,
+      "a": 16,
+      "kda": 3,
+      "csm": 4.52,
+      "kp": 54,
+      "vision": 5,
+      "dmgShare": 0.17,
+      "csAt10": 58,
+      "goldAt10": 3111,
+      "csDiff10": -16,
+      "goldDiff10": -301,
+      "csDiff14": -31,
+      "goldDiff14": -523,
+      "fiveStack": false,
+      "date": 1782678749041
+    },
     {
       "matchId": "EUW1_7900408415",
       "queue": 440,
@@ -1363,29 +1386,6 @@
       "goldDiff14": 840,
       "fiveStack": false,
       "date": 1781290619608
-    },
-    {
-      "matchId": "EUW1_7885086719",
-      "queue": 440,
-      "champ": "Galio",
-      "role": "Mid",
-      "win": false,
-      "k": 6,
-      "d": 9,
-      "a": 7,
-      "kda": 1.44,
-      "csm": 5.3,
-      "kp": 54,
-      "vision": 13,
-      "dmgShare": 0.21,
-      "csAt10": 60,
-      "goldAt10": 3010,
-      "csDiff10": -13,
-      "goldDiff10": 79,
-      "csDiff14": -6,
-      "goldDiff14": 430,
-      "fiveStack": false,
-      "date": 1781288008781
     }
   ],
   "soloFlex": {
@@ -1399,20 +1399,20 @@
         "csDiff10": -14.33
       },
       {
-        "champ": "Galio",
-        "games": 9,
-        "wr": 56,
-        "kda": 4.69,
-        "csm": 4.84,
-        "csDiff10": -12.37
-      },
-      {
         "champ": "Lux",
         "games": 8,
         "wr": 63,
         "kda": 4.39,
         "csm": 6.68,
         "csDiff10": 0.13
+      },
+      {
+        "champ": "Galio",
+        "games": 8,
+        "wr": 63,
+        "kda": 5.09,
+        "csm": 4.79,
+        "csDiff10": -12.29
       },
       {
         "champ": "Seraphine",
@@ -1455,6 +1455,14 @@
         "csDiff10": -3
       },
       {
+        "champ": "Orianna",
+        "games": 2,
+        "wr": 0,
+        "kda": 3.5,
+        "csm": 5.1,
+        "csDiff10": -15
+      },
+      {
         "champ": "Katarina",
         "games": 2,
         "wr": 0,
@@ -1469,14 +1477,6 @@
         "kda": 1.61,
         "csm": 8.14,
         "csDiff10": 3
-      },
-      {
-        "champ": "Orianna",
-        "games": 1,
-        "wr": 0,
-        "kda": 4,
-        "csm": 5.67,
-        "csDiff10": -14
       },
       {
         "champ": "Veigar",
@@ -1524,13 +1524,13 @@
       "L",
       "L",
       "L",
+      "L",
       "W",
       "L",
       "L",
       "W",
       "W",
-      "W",
-      "L"
+      "W"
     ]
   },
   "fiveStack": {

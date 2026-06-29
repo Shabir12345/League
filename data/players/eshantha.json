@@ -1,12 +1,35 @@
 {
   "player": "Eshantha",
   "puuid": "SmVhFbT3bTkwBT77RgXmb34GAVOnoXm4xOJhpmDCdlkm-5F6hRC-7gBA243sy5f9t3OeU68sQo5cDA",
-  "generatedAt": "2026-06-28T07:46:38.751Z",
+  "generatedAt": "2026-06-29T08:54:00.691Z",
   "rank": {
     "solo": "Gold III",
     "flex": "Gold III"
   },
   "games": [
+    {
+      "matchId": "EUW1_7902796618",
+      "queue": 440,
+      "champ": "Camille",
+      "role": "Support",
+      "win": false,
+      "k": 8,
+      "d": 11,
+      "a": 12,
+      "kda": 1.82,
+      "csm": 0.7,
+      "kp": 51,
+      "vision": 54,
+      "dmgShare": 0.16,
+      "csAt10": 5,
+      "goldAt10": 3961,
+      "csDiff10": -2,
+      "goldDiff10": 1115,
+      "csDiff14": -2,
+      "goldDiff14": 387,
+      "fiveStack": false,
+      "date": 1782678749041
+    },
     {
       "matchId": "EUW1_7901448155",
       "queue": 440,
@@ -1363,40 +1386,17 @@
       "goldDiff14": 1202,
       "fiveStack": true,
       "date": 1780167712112
-    },
-    {
-      "matchId": "EUW1_7871001710",
-      "queue": 440,
-      "champ": "Anivia",
-      "role": "Top",
-      "win": true,
-      "k": 6,
-      "d": 3,
-      "a": 17,
-      "kda": 7.67,
-      "csm": 6.89,
-      "kp": 50,
-      "vision": 40,
-      "dmgShare": 0.18,
-      "csAt10": 77,
-      "goldAt10": 3201,
-      "csDiff10": 29,
-      "goldDiff10": 254,
-      "csDiff14": 26,
-      "goldDiff14": 749,
-      "fiveStack": true,
-      "date": 1780164800201
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Anivia",
-        "games": 16,
-        "wr": 81,
-        "kda": 4.93,
-        "csm": 5.67,
-        "csDiff10": 4.92
+        "games": 15,
+        "wr": 80,
+        "kda": 4.74,
+        "csm": 5.59,
+        "csDiff10": 2.92
       },
       {
         "champ": "Yorick",
@@ -1408,11 +1408,11 @@
       },
       {
         "champ": "Camille",
-        "games": 6,
-        "wr": 67,
-        "kda": 4.33,
-        "csm": 1.46,
-        "csDiff10": -16.2
+        "games": 7,
+        "wr": 57,
+        "kda": 3.97,
+        "csm": 1.35,
+        "csDiff10": -13.83
       },
       {
         "champ": "Chogath",
@@ -1530,13 +1530,13 @@
     "roleSplits": [
       {
         "role": "Top",
-        "games": 40,
-        "wr": 55
+        "games": 39,
+        "wr": 54
       },
       {
         "role": "Support",
-        "games": 16,
-        "wr": 56
+        "games": 17,
+        "wr": 53
       },
       {
         "role": "Jungle",
@@ -1545,6 +1545,7 @@
       }
     ],
     "form": [
+      "L",
       "W",
       "L",
       "L",
@@ -1553,8 +1554,7 @@
       "W",
       "W",
       "W",
-      "L",
-      "W"
+      "L"
     ]
   },
   "fiveStack": {
@@ -1569,11 +1569,11 @@
       },
       {
         "champ": "Anivia",
-        "games": 5,
-        "wr": 60,
-        "kda": 3.57,
-        "csm": 5.71,
-        "csDiff10": 12
+        "games": 4,
+        "wr": 50,
+        "kda": 2.55,
+        "csm": 5.41,
+        "csDiff10": 6.33
       },
       {
         "champ": "Alistar",
@@ -1640,8 +1640,8 @@
       },
       {
         "role": "Top",
-        "games": 7,
-        "wr": 57
+        "games": 6,
+        "wr": 50
       }
     ],
     "form": [
