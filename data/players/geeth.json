@@ -1,12 +1,58 @@
 {
   "player": "Geeth",
   "puuid": "Df36AbNlLOIH8wlRXSAhOMfO-UvoqWvuM2MkscE3YpIMbXqL4X23TbbDbkXf3-knw1n9f11khr9Hzw",
-  "generatedAt": "2026-06-29T08:54:51.197Z",
+  "generatedAt": "2026-06-30T07:48:30.235Z",
   "rank": {
     "solo": "Gold I",
     "flex": "Gold II"
   },
   "games": [
+    {
+      "matchId": "EUW1_7903609004",
+      "queue": 440,
+      "champ": "Talon",
+      "role": "Jungle",
+      "win": true,
+      "k": 12,
+      "d": 6,
+      "a": 9,
+      "kda": 3.5,
+      "csm": 6.87,
+      "kp": 54,
+      "vision": 38,
+      "dmgShare": 0.21,
+      "csAt10": 53,
+      "goldAt10": 3786,
+      "csDiff10": -18,
+      "goldDiff10": 96,
+      "csDiff14": -7,
+      "goldDiff14": 322,
+      "fiveStack": false,
+      "date": 1782756272595
+    },
+    {
+      "matchId": "EUW1_7903579330",
+      "queue": 440,
+      "champ": "Nocturne",
+      "role": "Jungle",
+      "win": true,
+      "k": 5,
+      "d": 1,
+      "a": 7,
+      "kda": 12,
+      "csm": 6.45,
+      "kp": 67,
+      "vision": 9,
+      "dmgShare": 0.24,
+      "csAt10": 57,
+      "goldAt10": 4475,
+      "csDiff10": -4,
+      "goldDiff10": 1376,
+      "csDiff14": 10,
+      "goldDiff14": 2480,
+      "fiveStack": false,
+      "date": 1782754940490
+    },
     {
       "matchId": "EUW1_7902796618",
       "queue": 440,
@@ -1340,63 +1386,17 @@
       "goldDiff14": -169,
       "fiveStack": false,
       "date": 1780253845525
-    },
-    {
-      "matchId": "EUW1_7872219514",
-      "queue": 440,
-      "champ": "Quinn",
-      "role": "Jungle",
-      "win": false,
-      "k": 4,
-      "d": 7,
-      "a": 12,
-      "kda": 2.29,
-      "csm": 4.86,
-      "kp": 40,
-      "vision": 24,
-      "dmgShare": 0.14,
-      "csAt10": 65,
-      "goldAt10": 3425,
-      "csDiff10": 9,
-      "goldDiff10": -269,
-      "csDiff14": 5,
-      "goldDiff14": -369,
-      "fiveStack": true,
-      "date": 1780251495113
-    },
-    {
-      "matchId": "EUW1_7872160184",
-      "queue": 440,
-      "champ": "Nautilus",
-      "role": "Support",
-      "win": false,
-      "k": 0,
-      "d": 7,
-      "a": 4,
-      "kda": 0.57,
-      "csm": 0.9,
-      "kp": 27,
-      "vision": 85,
-      "dmgShare": 0.08,
-      "csAt10": 11,
-      "goldAt10": 2445,
-      "csDiff10": 1,
-      "goldDiff10": 56,
-      "csDiff14": -1,
-      "goldDiff14": -65,
-      "fiveStack": true,
-      "date": 1780249291039
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Talon",
-        "games": 8,
-        "wr": 75,
-        "kda": 2.87,
-        "csm": 6.57,
-        "csDiff10": -6.5
+        "games": 9,
+        "wr": 78,
+        "kda": 2.94,
+        "csm": 6.6,
+        "csDiff10": -8.14
       },
       {
         "champ": "Viego",
@@ -1408,11 +1408,11 @@
       },
       {
         "champ": "Nocturne",
-        "games": 4,
-        "wr": 75,
-        "kda": 8.55,
-        "csm": 4.2,
-        "csDiff10": -5
+        "games": 5,
+        "wr": 80,
+        "kda": 9.24,
+        "csm": 4.65,
+        "csDiff10": -4.67
       },
       {
         "champ": "Locke",
@@ -1445,14 +1445,6 @@
         "kda": 6.17,
         "csm": 6.84,
         "csDiff10": -7.5
-      },
-      {
-        "champ": "Nautilus",
-        "games": 2,
-        "wr": 0,
-        "kda": 1.99,
-        "csm": 0.92,
-        "csDiff10": -3.5
       },
       {
         "champ": "MonkeyKing",
@@ -1500,6 +1492,14 @@
         "wr": 100,
         "kda": 8,
         "csm": 1.25,
+        "csDiff10": -8
+      },
+      {
+        "champ": "Nautilus",
+        "games": 1,
+        "wr": 0,
+        "kda": 3.4,
+        "csm": 0.94,
         "csDiff10": -8
       },
       {
@@ -1645,21 +1645,13 @@
         "kda": 2.56,
         "csm": 4.36,
         "csDiff10": -15
-      },
-      {
-        "champ": "Quinn",
-        "games": 1,
-        "wr": 0,
-        "kda": 2.29,
-        "csm": 4.86,
-        "csDiff10": 9
       }
     ],
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 40,
-        "wr": 53
+        "games": 41,
+        "wr": 56
       },
       {
         "role": "ADC",
@@ -1668,8 +1660,8 @@
       },
       {
         "role": "Support",
-        "games": 5,
-        "wr": 40
+        "games": 4,
+        "wr": 50
       },
       {
         "role": "Top",
@@ -1683,6 +1675,8 @@
       }
     ],
     "form": [
+      "W",
+      "W",
       "L",
       "W",
       "W",
@@ -1690,8 +1684,6 @@
       "L",
       "L",
       "L",
-      "W",
-      "W",
       "W"
     ]
   },
@@ -1776,39 +1768,23 @@
         "kda": 0,
         "csm": 5.45,
         "csDiff10": null
-      },
-      {
-        "champ": "Quinn",
-        "games": 1,
-        "wr": 0,
-        "kda": 2.29,
-        "csm": 4.86,
-        "csDiff10": 9
-      },
-      {
-        "champ": "Nautilus",
-        "games": 1,
-        "wr": 0,
-        "kda": 0.57,
-        "csm": 0.9,
-        "csDiff10": 1
       }
     ],
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 13,
-        "wr": 62
-      },
-      {
-        "role": "Support",
-        "games": 2,
-        "wr": 0
+        "games": 12,
+        "wr": 67
       },
       {
         "role": "ADC",
         "games": 2,
         "wr": 50
+      },
+      {
+        "role": "Support",
+        "games": 1,
+        "wr": 0
       },
       {
         "role": "Mid",

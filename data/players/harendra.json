@@ -1,12 +1,58 @@
 {
   "player": "Harendra",
   "puuid": "q4q_teVE3JVjPkqQKIRQy4znJ8fgrCk2LHbQTZolQfPQiDL302Ry8aTT_s_njjGs8WfZM-Dw239OIw",
-  "generatedAt": "2026-06-29T08:53:46.357Z",
+  "generatedAt": "2026-06-30T07:47:25.504Z",
   "rank": {
     "solo": "Bronze III",
-    "flex": "Bronze I"
+    "flex": "Silver IV"
   },
   "games": [
+    {
+      "matchId": "EUW1_7903609004",
+      "queue": 440,
+      "champ": "Ashe",
+      "role": "ADC",
+      "win": true,
+      "k": 6,
+      "d": 5,
+      "a": 15,
+      "kda": 4.2,
+      "csm": 5.94,
+      "kp": 54,
+      "vision": 27,
+      "dmgShare": 0.19,
+      "csAt10": 76,
+      "goldAt10": 3091,
+      "csDiff10": 27,
+      "goldDiff10": 595,
+      "csDiff14": 27,
+      "goldDiff14": 977,
+      "fiveStack": false,
+      "date": 1782756272595
+    },
+    {
+      "matchId": "EUW1_7903579330",
+      "queue": 440,
+      "champ": "Jhin",
+      "role": "ADC",
+      "win": true,
+      "k": 2,
+      "d": 0,
+      "a": 5,
+      "kda": 7,
+      "csm": 7.73,
+      "kp": 39,
+      "vision": 7,
+      "dmgShare": 0.14,
+      "csAt10": 74,
+      "goldAt10": 3440,
+      "csDiff10": -1,
+      "goldDiff10": 376,
+      "csDiff14": 4,
+      "goldDiff14": 1065,
+      "fiveStack": false,
+      "date": 1782754940490
+    },
     {
       "matchId": "EUW1_7899114207",
       "queue": 440,
@@ -1340,52 +1386,6 @@
       "goldDiff14": null,
       "fiveStack": false,
       "date": 1768814152271
-    },
-    {
-      "matchId": "EUW1_7691992294",
-      "queue": 420,
-      "champ": "Zaahen",
-      "role": "Top",
-      "win": false,
-      "k": 4,
-      "d": 9,
-      "a": 1,
-      "kda": 0.56,
-      "csm": 4.6,
-      "kp": 26,
-      "vision": 18,
-      "dmgShare": 0.16,
-      "csAt10": 44,
-      "goldAt10": 3104,
-      "csDiff10": -24,
-      "goldDiff10": -812,
-      "csDiff14": -36,
-      "goldDiff14": -2050,
-      "fiveStack": false,
-      "date": 1768812318214
-    },
-    {
-      "matchId": "EUW1_7638051433",
-      "queue": 420,
-      "champ": "Zaahen",
-      "role": "Top",
-      "win": false,
-      "k": 9,
-      "d": 4,
-      "a": 4,
-      "kda": 3.25,
-      "csm": 5.55,
-      "kp": 46,
-      "vision": 21,
-      "dmgShare": 0.29,
-      "csAt10": 67,
-      "goldAt10": 4225,
-      "csDiff10": 10,
-      "goldDiff10": 1586,
-      "csDiff14": 12,
-      "goldDiff14": 3367,
-      "fiveStack": false,
-      "date": 1765415627754
     }
   ],
   "soloFlex": {
@@ -1413,14 +1413,6 @@
         "kda": 3.31,
         "csm": 7.1,
         "csDiff10": 5
-      },
-      {
-        "champ": "Zaahen",
-        "games": 3,
-        "wr": 0,
-        "kda": 1.4,
-        "csm": 5.58,
-        "csDiff10": -8.33
       },
       {
         "champ": "Kaisa",
@@ -1461,6 +1453,22 @@
         "kda": 6.5,
         "csm": 6.23,
         "csDiff10": -1.5
+      },
+      {
+        "champ": "Ashe",
+        "games": 1,
+        "wr": 100,
+        "kda": 4.2,
+        "csm": 5.94,
+        "csDiff10": 27
+      },
+      {
+        "champ": "Jhin",
+        "games": 1,
+        "wr": 100,
+        "kda": 7,
+        "csm": 7.73,
+        "csDiff10": -1
       },
       {
         "champ": "Galio",
@@ -1541,6 +1549,14 @@
         "kda": 5,
         "csm": 8.1,
         "csDiff10": -3
+      },
+      {
+        "champ": "Zaahen",
+        "games": 1,
+        "wr": 0,
+        "kda": 0.38,
+        "csm": 6.58,
+        "csDiff10": -11
       },
       {
         "champ": "Skarner",
@@ -1687,13 +1703,13 @@
       },
       {
         "role": "Top",
-        "games": 19,
-        "wr": 42
+        "games": 17,
+        "wr": 47
       },
       {
         "role": "ADC",
-        "games": 13,
-        "wr": 62
+        "games": 15,
+        "wr": 67
       },
       {
         "role": "Mid",
@@ -1713,10 +1729,10 @@
       "W",
       "W",
       "W",
-      "L",
-      "L",
       "W",
-      "W"
+      "W",
+      "L",
+      "L"
     ]
   },
   "fiveStack": {

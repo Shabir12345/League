@@ -1,12 +1,58 @@
 {
   "player": "Steven",
   "puuid": "rEUfV7nH6pNefn-stlAp3Egn0EYlr11hULP7Zdo8F0HBypEIcqZBYTHnpZC4GXko1ZmEK13LS9RboQ",
-  "generatedAt": "2026-06-29T08:53:53.491Z",
+  "generatedAt": "2026-06-30T07:47:35.096Z",
   "rank": {
     "solo": "Gold III",
     "flex": "Silver II"
   },
   "games": [
+    {
+      "matchId": "EUW1_7903609004",
+      "queue": 440,
+      "champ": "Seraphine",
+      "role": "Support",
+      "win": true,
+      "k": 6,
+      "d": 3,
+      "a": 17,
+      "kda": 7.67,
+      "csm": 1.33,
+      "kp": 59,
+      "vision": 70,
+      "dmgShare": 0.2,
+      "csAt10": 8,
+      "goldAt10": 2529,
+      "csDiff10": -8,
+      "goldDiff10": 147,
+      "csDiff14": -10,
+      "goldDiff14": 384,
+      "fiveStack": false,
+      "date": 1782756272595
+    },
+    {
+      "matchId": "EUW1_7903579330",
+      "queue": 440,
+      "champ": "Mel",
+      "role": "Mid",
+      "win": true,
+      "k": 7,
+      "d": 0,
+      "a": 0,
+      "kda": 7,
+      "csm": 8.5,
+      "kp": 39,
+      "vision": 3,
+      "dmgShare": 0.29,
+      "csAt10": 85,
+      "goldAt10": 4103,
+      "csDiff10": 49,
+      "goldDiff10": 799,
+      "csDiff14": 70,
+      "goldDiff14": 2257,
+      "fiveStack": false,
+      "date": 1782754940490
+    },
     {
       "matchId": "EUW1_7902796618",
       "queue": 440,
@@ -1340,52 +1386,6 @@
       "goldDiff14": null,
       "fiveStack": true,
       "date": 1781457929997
-    },
-    {
-      "matchId": "EUW1_7887389745",
-      "queue": 440,
-      "champ": "Galio",
-      "role": "Mid",
-      "win": true,
-      "k": 6,
-      "d": 3,
-      "a": 24,
-      "kda": 10,
-      "csm": 4.05,
-      "kp": 63,
-      "vision": 17,
-      "dmgShare": 0.16,
-      "csAt10": 64,
-      "goldAt10": 2840,
-      "csDiff10": 6,
-      "goldDiff10": 109,
-      "csDiff14": 4,
-      "goldDiff14": 330,
-      "fiveStack": true,
-      "date": 1781455645631
-    },
-    {
-      "matchId": "EUW1_7885139059",
-      "queue": 440,
-      "champ": "Lux",
-      "role": "Mid",
-      "win": false,
-      "k": 14,
-      "d": 5,
-      "a": 10,
-      "kda": 4.8,
-      "csm": 5.96,
-      "kp": 65,
-      "vision": 29,
-      "dmgShare": 0.34,
-      "csAt10": 68,
-      "goldAt10": 3676,
-      "csDiff10": 5,
-      "goldDiff10": 441,
-      "csDiff14": 6,
-      "goldDiff14": 840,
-      "fiveStack": false,
-      "date": 1781290619608
     }
   ],
   "soloFlex": {
@@ -1399,28 +1399,28 @@
         "csDiff10": -14.33
       },
       {
-        "champ": "Lux",
+        "champ": "Seraphine",
         "games": 8,
-        "wr": 63,
-        "kda": 4.39,
-        "csm": 6.68,
-        "csDiff10": 0.13
+        "wr": 75,
+        "kda": 5.47,
+        "csm": 1.16,
+        "csDiff10": -0.75
+      },
+      {
+        "champ": "Lux",
+        "games": 7,
+        "wr": 71,
+        "kda": 4.34,
+        "csm": 6.79,
+        "csDiff10": -0.57
       },
       {
         "champ": "Galio",
-        "games": 8,
-        "wr": 63,
-        "kda": 5.09,
-        "csm": 4.79,
-        "csDiff10": -12.29
-      },
-      {
-        "champ": "Seraphine",
         "games": 7,
-        "wr": 71,
-        "kda": 5.16,
-        "csm": 1.14,
-        "csDiff10": 0.29
+        "wr": 57,
+        "kda": 4.39,
+        "csm": 4.89,
+        "csDiff10": -15.33
       },
       {
         "champ": "Ahri",
@@ -1431,20 +1431,20 @@
         "csDiff10": 1
       },
       {
+        "champ": "Mel",
+        "games": 5,
+        "wr": 100,
+        "kda": 5.3,
+        "csm": 8.01,
+        "csDiff10": 20.2
+      },
+      {
         "champ": "Yone",
         "games": 5,
         "wr": 40,
         "kda": 1.51,
         "csm": 6.23,
         "csDiff10": -23.5
-      },
-      {
-        "champ": "Mel",
-        "games": 4,
-        "wr": 100,
-        "kda": 4.88,
-        "csm": 7.89,
-        "csDiff10": 13
       },
       {
         "champ": "Locke",
@@ -1506,13 +1506,13 @@
     "roleSplits": [
       {
         "role": "Mid",
-        "games": 52,
-        "wr": 50
+        "games": 51,
+        "wr": 51
       },
       {
         "role": "Support",
-        "games": 7,
-        "wr": 71
+        "games": 8,
+        "wr": 75
       },
       {
         "role": "Top",
@@ -1521,6 +1521,8 @@
       }
     ],
     "form": [
+      "W",
+      "W",
       "L",
       "L",
       "L",
@@ -1528,8 +1530,6 @@
       "W",
       "L",
       "L",
-      "W",
-      "W",
       "W"
     ]
   },
@@ -1537,11 +1537,11 @@
     "champPool": [
       {
         "champ": "Galio",
-        "games": 4,
-        "wr": 50,
-        "kda": 3.63,
-        "csm": 4.47,
-        "csDiff10": -12
+        "games": 3,
+        "wr": 33,
+        "kda": 1.5,
+        "csm": 4.61,
+        "csDiff10": -21
       },
       {
         "champ": "Yone",
@@ -1571,8 +1571,8 @@
     "roleSplits": [
       {
         "role": "Mid",
-        "games": 7,
-        "wr": 71
+        "games": 6,
+        "wr": 67
       },
       {
         "role": "Top",
@@ -1587,7 +1587,6 @@
       "W",
       "L",
       "L",
-      "W",
       "W"
     ]
   }
