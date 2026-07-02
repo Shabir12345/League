@@ -1,12 +1,81 @@
 {
   "player": "Geeth",
   "puuid": "Df36AbNlLOIH8wlRXSAhOMfO-UvoqWvuM2MkscE3YpIMbXqL4X23TbbDbkXf3-knw1n9f11khr9Hzw",
-  "generatedAt": "2026-07-01T08:07:34.139Z",
+  "generatedAt": "2026-07-02T07:27:31.597Z",
   "rank": {
     "solo": "Gold I",
     "flex": "Gold II"
   },
   "games": [
+    {
+      "matchId": "EUW1_7905791124",
+      "queue": 440,
+      "champ": "Viego",
+      "role": "Jungle",
+      "win": true,
+      "k": 17,
+      "d": 4,
+      "a": 4,
+      "kda": 5.25,
+      "csm": 6.25,
+      "kp": 46,
+      "vision": 11,
+      "dmgShare": 0.22,
+      "csAt10": 60,
+      "goldAt10": 3996,
+      "csDiff10": -3,
+      "goldDiff10": 344,
+      "csDiff14": 8,
+      "goldDiff14": 1430,
+      "fiveStack": false,
+      "date": 1782936885817
+    },
+    {
+      "matchId": "EUW1_7905738945",
+      "queue": 440,
+      "champ": "Briar",
+      "role": "Jungle",
+      "win": false,
+      "k": 11,
+      "d": 9,
+      "a": 2,
+      "kda": 1.44,
+      "csm": 5.05,
+      "kp": 45,
+      "vision": 22,
+      "dmgShare": 0.19,
+      "csAt10": 59,
+      "goldAt10": 3381,
+      "csDiff10": -15,
+      "goldDiff10": -800,
+      "csDiff14": -17,
+      "goldDiff14": -289,
+      "fiveStack": false,
+      "date": 1782934765686
+    },
+    {
+      "matchId": "EUW1_7905684572",
+      "queue": 440,
+      "champ": "Vex",
+      "role": "Mid",
+      "win": false,
+      "k": 6,
+      "d": 5,
+      "a": 3,
+      "kda": 1.8,
+      "csm": 8.53,
+      "kp": 41,
+      "vision": 17,
+      "dmgShare": 0.24,
+      "csAt10": 70,
+      "goldAt10": 3555,
+      "csDiff10": -1,
+      "goldDiff10": -35,
+      "csDiff14": 2,
+      "goldDiff14": 173,
+      "fiveStack": false,
+      "date": 1782932484090
+    },
     {
       "matchId": "EUW1_7903609004",
       "queue": 440,
@@ -1317,94 +1386,25 @@
       "goldDiff14": 921,
       "fiveStack": false,
       "date": 1780333729065
-    },
-    {
-      "matchId": "EUW1_7873135720",
-      "queue": 440,
-      "champ": "Talon",
-      "role": "Jungle",
-      "win": false,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "kda": 0,
-      "csm": 6.91,
-      "kp": 0,
-      "vision": 1,
-      "dmgShare": 0.03,
-      "csAt10": null,
-      "goldAt10": null,
-      "csDiff10": null,
-      "goldDiff10": null,
-      "csDiff14": null,
-      "goldDiff14": null,
-      "fiveStack": false,
-      "date": 1780332590461
-    },
-    {
-      "matchId": "EUW1_7872359530",
-      "queue": 440,
-      "champ": "Fizz",
-      "role": "Jungle",
-      "win": false,
-      "k": 22,
-      "d": 11,
-      "a": 10,
-      "kda": 2.91,
-      "csm": 4.31,
-      "kp": 63,
-      "vision": 38,
-      "dmgShare": 0.27,
-      "csAt10": 64,
-      "goldAt10": 5261,
-      "csDiff10": 3,
-      "goldDiff10": 1646,
-      "csDiff14": -1,
-      "goldDiff14": 2710,
-      "fiveStack": false,
-      "date": 1780256829566
-    },
-    {
-      "matchId": "EUW1_7872282480",
-      "queue": 440,
-      "champ": "Kassadin",
-      "role": "Mid",
-      "win": false,
-      "k": 19,
-      "d": 9,
-      "a": 4,
-      "kda": 2.56,
-      "csm": 4.36,
-      "kp": 43,
-      "vision": 28,
-      "dmgShare": 0.24,
-      "csAt10": 64,
-      "goldAt10": 3918,
-      "csDiff10": -15,
-      "goldDiff10": -115,
-      "csDiff14": -18,
-      "goldDiff14": -169,
-      "fiveStack": false,
-      "date": 1780253845525
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Talon",
-        "games": 9,
-        "wr": 78,
-        "kda": 2.94,
-        "csm": 6.6,
+        "games": 8,
+        "wr": 88,
+        "kda": 3.3,
+        "csm": 6.56,
         "csDiff10": -8.14
       },
       {
         "champ": "Viego",
-        "games": 6,
-        "wr": 67,
-        "kda": 4.69,
-        "csm": 6.04,
-        "csDiff10": -8.33
+        "games": 7,
+        "wr": 71,
+        "kda": 4.77,
+        "csm": 6.07,
+        "csDiff10": -7.57
       },
       {
         "champ": "Nocturne",
@@ -1423,20 +1423,20 @@
         "csDiff10": -12.33
       },
       {
-        "champ": "Fizz",
-        "games": 3,
-        "wr": 33,
-        "kda": 5.11,
-        "csm": 5.6,
-        "csDiff10": -4.33
-      },
-      {
         "champ": "Kayn",
         "games": 3,
         "wr": 0,
         "kda": 1.01,
         "csm": 5.33,
         "csDiff10": 5
+      },
+      {
+        "champ": "Fizz",
+        "games": 2,
+        "wr": 50,
+        "kda": 6.22,
+        "csm": 6.24,
+        "csDiff10": -8
       },
       {
         "champ": "Sylas",
@@ -1477,6 +1477,22 @@
         "kda": 1.21,
         "csm": 6.16,
         "csDiff10": 20.5
+      },
+      {
+        "champ": "Briar",
+        "games": 1,
+        "wr": 0,
+        "kda": 1.44,
+        "csm": 5.05,
+        "csDiff10": -15
+      },
+      {
+        "champ": "Vex",
+        "games": 1,
+        "wr": 0,
+        "kda": 1.8,
+        "csm": 8.53,
+        "csDiff10": -1
       },
       {
         "champ": "DrMundo",
@@ -1637,26 +1653,23 @@
         "kda": 6,
         "csm": 7.68,
         "csDiff10": -3
-      },
-      {
-        "champ": "Kassadin",
-        "games": 1,
-        "wr": 0,
-        "kda": 2.56,
-        "csm": 4.36,
-        "csDiff10": -15
       }
     ],
     "roleSplits": [
       {
         "role": "Jungle",
         "games": 41,
-        "wr": 56
+        "wr": 59
       },
       {
         "role": "ADC",
         "games": 7,
         "wr": 43
+      },
+      {
+        "role": "Mid",
+        "games": 4,
+        "wr": 50
       },
       {
         "role": "Support",
@@ -1667,24 +1680,19 @@
         "role": "Top",
         "games": 4,
         "wr": 50
-      },
-      {
-        "role": "Mid",
-        "games": 4,
-        "wr": 50
       }
     ],
     "form": [
       "W",
+      "L",
+      "L",
+      "W",
       "W",
       "L",
       "W",
       "W",
       "L",
-      "L",
-      "L",
-      "L",
-      "W"
+      "L"
     ]
   },
   "fiveStack": {
