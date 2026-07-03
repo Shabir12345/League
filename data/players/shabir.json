@@ -1,12 +1,81 @@
 {
   "player": "Shabir",
   "puuid": "1RJIy7lzs-1o-4vzu2wJkj0SGPaA2TNVDdbZR36Lp-OOAFXYsZnFrK2Al12k4yMDAyZlSGI8C3t44g",
-  "generatedAt": "2026-07-02T07:25:45.687Z",
+  "generatedAt": "2026-07-03T06:57:12.058Z",
   "rank": {
     "solo": "Gold IV",
     "flex": "Gold I"
   },
   "games": [
+    {
+      "matchId": "EUW1_7906679852",
+      "queue": 440,
+      "champ": "Ashe",
+      "role": "ADC",
+      "win": true,
+      "k": 17,
+      "d": 11,
+      "a": 13,
+      "kda": 2.73,
+      "csm": 7.7,
+      "kp": 65,
+      "vision": 30,
+      "dmgShare": 0.31,
+      "csAt10": 74,
+      "goldAt10": 3465,
+      "csDiff10": 9,
+      "goldDiff10": -169,
+      "csDiff14": 25,
+      "goldDiff14": 219,
+      "fiveStack": false,
+      "date": 1783018664535
+    },
+    {
+      "matchId": "EUW1_7906611593",
+      "queue": 440,
+      "champ": "Lissandra",
+      "role": "Mid",
+      "win": true,
+      "k": 10,
+      "d": 14,
+      "a": 19,
+      "kda": 2.07,
+      "csm": 5.61,
+      "kp": 66,
+      "vision": 22,
+      "dmgShare": 0.19,
+      "csAt10": 64,
+      "goldAt10": 3451,
+      "csDiff10": -23,
+      "goldDiff10": -371,
+      "csDiff14": -32,
+      "goldDiff14": -1526,
+      "fiveStack": false,
+      "date": 1783015399968
+    },
+    {
+      "matchId": "EUW1_7906520867",
+      "queue": 440,
+      "champ": "Malphite",
+      "role": "Top",
+      "win": false,
+      "k": 1,
+      "d": 4,
+      "a": 3,
+      "kda": 1,
+      "csm": 4.23,
+      "kp": 33,
+      "vision": 6,
+      "dmgShare": 0.21,
+      "csAt10": 55,
+      "goldAt10": 3184,
+      "csDiff10": -3,
+      "goldDiff10": -169,
+      "csDiff14": -8,
+      "goldDiff14": 79,
+      "fiveStack": true,
+      "date": 1783010923223
+    },
     {
       "matchId": "EUW1_7905791124",
       "queue": 440,
@@ -1317,94 +1386,25 @@
       "goldDiff14": null,
       "fiveStack": true,
       "date": 1780684115722
-    },
-    {
-      "matchId": "EUW1_7877457283",
-      "queue": 440,
-      "champ": "Khazix",
-      "role": "Jungle",
-      "win": false,
-      "k": 6,
-      "d": 10,
-      "a": 6,
-      "kda": 1.2,
-      "csm": 5.63,
-      "kp": 48,
-      "vision": 26,
-      "dmgShare": 0.24,
-      "csAt10": 68,
-      "goldAt10": 4216,
-      "csDiff10": -8,
-      "goldDiff10": 223,
-      "csDiff14": -22,
-      "goldDiff14": -376,
-      "fiveStack": false,
-      "date": 1780681417407
-    },
-    {
-      "matchId": "EUW1_7877419027",
-      "queue": 420,
-      "champ": "Khazix",
-      "role": "Jungle",
-      "win": true,
-      "k": 10,
-      "d": 0,
-      "a": 1,
-      "kda": 11,
-      "csm": 9.22,
-      "kp": 33,
-      "vision": 26,
-      "dmgShare": 0.27,
-      "csAt10": 72,
-      "goldAt10": 4260,
-      "csDiff10": 2,
-      "goldDiff10": 178,
-      "csDiff14": 16,
-      "goldDiff14": 587,
-      "fiveStack": false,
-      "date": 1780679309355
-    },
-    {
-      "matchId": "EUW1_7876614928",
-      "queue": 440,
-      "champ": "Khazix",
-      "role": "Jungle",
-      "win": true,
-      "k": 9,
-      "d": 4,
-      "a": 7,
-      "kda": 4,
-      "csm": 7.7,
-      "kp": 30,
-      "vision": 33,
-      "dmgShare": 0.14,
-      "csAt10": 78,
-      "goldAt10": 4127,
-      "csDiff10": 16,
-      "goldDiff10": 1060,
-      "csDiff14": 14,
-      "goldDiff14": 329,
-      "fiveStack": false,
-      "date": 1780603886880
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Ashe",
-        "games": 18,
-        "wr": 61,
-        "kda": 3.13,
-        "csm": 6.45,
-        "csDiff10": 0.47
+        "games": 19,
+        "wr": 63,
+        "kda": 3.11,
+        "csm": 6.51,
+        "csDiff10": 0.94
       },
       {
         "champ": "Khazix",
-        "games": 11,
-        "wr": 18,
-        "kda": 2.94,
-        "csm": 6.52,
-        "csDiff10": -1
+        "games": 8,
+        "wr": 0,
+        "kda": 2.02,
+        "csm": 6.14,
+        "csDiff10": -2.62
       },
       {
         "champ": "Xerath",
@@ -1432,11 +1432,19 @@
       },
       {
         "champ": "Lissandra",
+        "games": 3,
+        "wr": 67,
+        "kda": 1.83,
+        "csm": 6.54,
+        "csDiff10": 7
+      },
+      {
+        "champ": "Malphite",
         "games": 2,
         "wr": 50,
-        "kda": 1.72,
-        "csm": 7,
-        "csDiff10": 22
+        "kda": 2,
+        "csm": 4.88,
+        "csDiff10": 8
       },
       {
         "champ": "Draven",
@@ -1487,14 +1495,6 @@
         "csDiff10": 39
       },
       {
-        "champ": "Malphite",
-        "games": 1,
-        "wr": 100,
-        "kda": 3,
-        "csm": 5.53,
-        "csDiff10": 19
-      },
-      {
         "champ": "Ezreal",
         "games": 1,
         "wr": 0,
@@ -1522,23 +1522,23 @@
     "roleSplits": [
       {
         "role": "ADC",
-        "games": 26,
-        "wr": 54
-      },
-      {
-        "role": "Jungle",
-        "games": 13,
-        "wr": 23
+        "games": 27,
+        "wr": 56
       },
       {
         "role": "Mid",
-        "games": 10,
-        "wr": 50
+        "games": 11,
+        "wr": 55
       },
       {
         "role": "Top",
+        "games": 11,
+        "wr": 55
+      },
+      {
+        "role": "Jungle",
         "games": 10,
-        "wr": 60
+        "wr": 10
       },
       {
         "role": "Support",
@@ -1548,14 +1548,14 @@
     ],
     "form": [
       "W",
-      "L",
-      "L",
+      "W",
       "L",
       "W",
       "L",
       "L",
       "L",
       "W",
+      "L",
       "L"
     ]
   },
@@ -1576,6 +1576,14 @@
         "kda": 2.91,
         "csm": 7.17,
         "csDiff10": 1
+      },
+      {
+        "champ": "Malphite",
+        "games": 2,
+        "wr": 50,
+        "kda": 2,
+        "csm": 4.88,
+        "csDiff10": 8
       },
       {
         "champ": "Shen",
@@ -1610,14 +1618,6 @@
         "csDiff10": 39
       },
       {
-        "champ": "Malphite",
-        "games": 1,
-        "wr": 100,
-        "kda": 3,
-        "csm": 5.53,
-        "csDiff10": 19
-      },
-      {
         "champ": "Khazix",
         "games": 1,
         "wr": 0,
@@ -1642,8 +1642,8 @@
       },
       {
         "role": "Top",
-        "games": 5,
-        "wr": 60
+        "games": 6,
+        "wr": 50
       },
       {
         "role": "Jungle",
@@ -1652,6 +1652,7 @@
       }
     ],
     "form": [
+      "L",
       "W",
       "W",
       "W",
@@ -1660,8 +1661,7 @@
       "L",
       "W",
       "W",
-      "W",
-      "L"
+      "W"
     ]
   }
 }

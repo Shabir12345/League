@@ -1,12 +1,35 @@
 {
   "player": "Harendra",
   "puuid": "q4q_teVE3JVjPkqQKIRQy4znJ8fgrCk2LHbQTZolQfPQiDL302Ry8aTT_s_njjGs8WfZM-Dw239OIw",
-  "generatedAt": "2026-07-02T07:26:07.040Z",
+  "generatedAt": "2026-07-03T06:57:33.321Z",
   "rank": {
     "solo": "Bronze III",
     "flex": "Silver IV"
   },
   "games": [
+    {
+      "matchId": "EUW1_7906520867",
+      "queue": 440,
+      "champ": "Ashe",
+      "role": "ADC",
+      "win": false,
+      "k": 1,
+      "d": 8,
+      "a": 0,
+      "kda": 0.13,
+      "csm": 5.21,
+      "kp": 8,
+      "vision": 22,
+      "dmgShare": 0.2,
+      "csAt10": 56,
+      "goldAt10": 2869,
+      "csDiff10": -22,
+      "goldDiff10": -1381,
+      "csDiff14": -50,
+      "goldDiff14": -2930,
+      "fiveStack": true,
+      "date": 1783010923223
+    },
     {
       "matchId": "EUW1_7903609004",
       "queue": 440,
@@ -1363,39 +1386,16 @@
       "goldDiff14": -164,
       "fiveStack": false,
       "date": 1768814680831
-    },
-    {
-      "matchId": "EUW1_7692007092",
-      "queue": 420,
-      "champ": "Sylas",
-      "role": "Jungle",
-      "win": true,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "kda": 0,
-      "csm": 0,
-      "kp": 0,
-      "vision": 0,
-      "dmgShare": 0,
-      "csAt10": null,
-      "goldAt10": null,
-      "csDiff10": null,
-      "goldDiff10": null,
-      "csDiff14": null,
-      "goldDiff14": null,
-      "fiveStack": false,
-      "date": 1768814152271
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Sylas",
-        "games": 11,
-        "wr": 45,
-        "kda": 2.54,
-        "csm": 4.72,
+        "games": 10,
+        "wr": 40,
+        "kda": 2.79,
+        "csm": 5.19,
         "csDiff10": -8.3
       },
       {
@@ -1413,6 +1413,14 @@
         "kda": 3.31,
         "csm": 7.1,
         "csDiff10": 5
+      },
+      {
+        "champ": "Ashe",
+        "games": 2,
+        "wr": 50,
+        "kda": 2.17,
+        "csm": 5.58,
+        "csDiff10": 2.5
       },
       {
         "champ": "Kaisa",
@@ -1453,14 +1461,6 @@
         "kda": 6.5,
         "csm": 6.23,
         "csDiff10": -1.5
-      },
-      {
-        "champ": "Ashe",
-        "games": 1,
-        "wr": 100,
-        "kda": 4.2,
-        "csm": 5.94,
-        "csDiff10": 27
       },
       {
         "champ": "Jhin",
@@ -1698,8 +1698,8 @@
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 22,
-        "wr": 59
+        "games": 21,
+        "wr": 57
       },
       {
         "role": "Top",
@@ -1708,8 +1708,8 @@
       },
       {
         "role": "ADC",
-        "games": 15,
-        "wr": 67
+        "games": 16,
+        "wr": 63
       },
       {
         "role": "Mid",
@@ -1723,15 +1723,15 @@
       }
     ],
     "form": [
-      "W",
-      "W",
-      "W",
-      "W",
-      "W",
-      "W",
-      "W",
-      "W",
       "L",
+      "W",
+      "W",
+      "W",
+      "W",
+      "W",
+      "W",
+      "W",
+      "W",
       "L"
     ]
   },
@@ -1760,6 +1760,14 @@
         "kda": 3.01,
         "csm": 5.7,
         "csDiff10": -3.5
+      },
+      {
+        "champ": "Ashe",
+        "games": 1,
+        "wr": 0,
+        "kda": 0.13,
+        "csm": 5.21,
+        "csDiff10": -22
       },
       {
         "champ": "Galio",
@@ -1885,8 +1893,8 @@
     "roleSplits": [
       {
         "role": "ADC",
-        "games": 11,
-        "wr": 55
+        "games": 12,
+        "wr": 50
       },
       {
         "role": "Top",
@@ -1905,6 +1913,7 @@
       }
     ],
     "form": [
+      "L",
       "W",
       "W",
       "W",
@@ -1913,8 +1922,7 @@
       "L",
       "W",
       "W",
-      "W",
-      "L"
+      "W"
     ]
   }
 }

@@ -1,12 +1,81 @@
 {
   "player": "Geeth",
   "puuid": "Df36AbNlLOIH8wlRXSAhOMfO-UvoqWvuM2MkscE3YpIMbXqL4X23TbbDbkXf3-knw1n9f11khr9Hzw",
-  "generatedAt": "2026-07-02T07:27:31.597Z",
+  "generatedAt": "2026-07-03T06:59:09.845Z",
   "rank": {
     "solo": "Gold I",
     "flex": "Gold II"
   },
   "games": [
+    {
+      "matchId": "EUW1_7906679852",
+      "queue": 440,
+      "champ": "Seraphine",
+      "role": "Support",
+      "win": true,
+      "k": 2,
+      "d": 9,
+      "a": 36,
+      "kda": 4.22,
+      "csm": 0.94,
+      "kp": 83,
+      "vision": 112,
+      "dmgShare": 0.12,
+      "csAt10": 11,
+      "goldAt10": 2818,
+      "csDiff10": -3,
+      "goldDiff10": 234,
+      "csDiff14": -9,
+      "goldDiff14": 362,
+      "fiveStack": false,
+      "date": 1783018664535
+    },
+    {
+      "matchId": "EUW1_7906611593",
+      "queue": 440,
+      "champ": "Ekko",
+      "role": "Jungle",
+      "win": true,
+      "k": 15,
+      "d": 9,
+      "a": 23,
+      "kda": 4.22,
+      "csm": 5.23,
+      "kp": 86,
+      "vision": 32,
+      "dmgShare": 0.26,
+      "csAt10": 55,
+      "goldAt10": 4540,
+      "csDiff10": -14,
+      "goldDiff10": 707,
+      "csDiff14": -14,
+      "goldDiff14": 679,
+      "fiveStack": false,
+      "date": 1783015399968
+    },
+    {
+      "matchId": "EUW1_7906520867",
+      "queue": 440,
+      "champ": "Locke",
+      "role": "Jungle",
+      "win": false,
+      "k": 6,
+      "d": 5,
+      "a": 4,
+      "kda": 2,
+      "csm": 4.72,
+      "kp": 83,
+      "vision": 11,
+      "dmgShare": 0.22,
+      "csAt10": 49,
+      "goldAt10": 4184,
+      "csDiff10": 3,
+      "goldDiff10": 507,
+      "csDiff14": -19,
+      "goldDiff14": 319,
+      "fiveStack": true,
+      "date": 1783010923223
+    },
     {
       "matchId": "EUW1_7905791124",
       "queue": 440,
@@ -1317,87 +1386,10 @@
       "goldDiff14": 1404,
       "fiveStack": false,
       "date": 1780597760380
-    },
-    {
-      "matchId": "EUW1_7876399427",
-      "queue": 440,
-      "champ": "Sett",
-      "role": "Top",
-      "win": true,
-      "k": 10,
-      "d": 8,
-      "a": 6,
-      "kda": 2,
-      "csm": 5.27,
-      "kp": 40,
-      "vision": 15,
-      "dmgShare": 0.26,
-      "csAt10": 55,
-      "goldAt10": 3437,
-      "csDiff10": -2,
-      "goldDiff10": 635,
-      "csDiff14": -11,
-      "goldDiff14": -62,
-      "fiveStack": false,
-      "date": 1780595550396
-    },
-    {
-      "matchId": "EUW1_7876362042",
-      "queue": 440,
-      "champ": "Yorick",
-      "role": "Top",
-      "win": true,
-      "k": 4,
-      "d": 1,
-      "a": 2,
-      "kda": 6,
-      "csm": 7.68,
-      "kp": 25,
-      "vision": 24,
-      "dmgShare": 0.27,
-      "csAt10": 68,
-      "goldAt10": 3035,
-      "csDiff10": -3,
-      "goldDiff10": 36,
-      "csDiff14": 8,
-      "goldDiff14": 314,
-      "fiveStack": false,
-      "date": 1780593563803
-    },
-    {
-      "matchId": "EUW1_7873158864",
-      "queue": 440,
-      "champ": "Talon",
-      "role": "Jungle",
-      "win": true,
-      "k": 9,
-      "d": 3,
-      "a": 8,
-      "kda": 5.67,
-      "csm": 7.38,
-      "kp": 52,
-      "vision": 43,
-      "dmgShare": 0.16,
-      "csAt10": 54,
-      "goldAt10": 3453,
-      "csDiff10": 3,
-      "goldDiff10": 636,
-      "csDiff14": 2,
-      "goldDiff14": 921,
-      "fiveStack": false,
-      "date": 1780333729065
     }
   ],
   "soloFlex": {
     "champPool": [
-      {
-        "champ": "Talon",
-        "games": 8,
-        "wr": 88,
-        "kda": 3.3,
-        "csm": 6.56,
-        "csDiff10": -8.14
-      },
       {
         "champ": "Viego",
         "games": 7,
@@ -1405,6 +1397,14 @@
         "kda": 4.77,
         "csm": 6.07,
         "csDiff10": -7.57
+      },
+      {
+        "champ": "Talon",
+        "games": 7,
+        "wr": 86,
+        "kda": 2.97,
+        "csm": 6.44,
+        "csDiff10": -10
       },
       {
         "champ": "Nocturne",
@@ -1416,11 +1416,11 @@
       },
       {
         "champ": "Locke",
-        "games": 3,
-        "wr": 67,
-        "kda": 3.95,
-        "csm": 5.47,
-        "csDiff10": -12.33
+        "games": 4,
+        "wr": 50,
+        "kda": 3.46,
+        "csm": 5.29,
+        "csDiff10": -8.5
       },
       {
         "champ": "Kayn",
@@ -1429,6 +1429,14 @@
         "kda": 1.01,
         "csm": 5.33,
         "csDiff10": 5
+      },
+      {
+        "champ": "Seraphine",
+        "games": 2,
+        "wr": 100,
+        "kda": 6.61,
+        "csm": 1.1,
+        "csDiff10": -1.5
       },
       {
         "champ": "Fizz",
@@ -1479,6 +1487,14 @@
         "csDiff10": 20.5
       },
       {
+        "champ": "Ekko",
+        "games": 1,
+        "wr": 100,
+        "kda": 4.22,
+        "csm": 5.23,
+        "csDiff10": -14
+      },
+      {
         "champ": "Briar",
         "games": 1,
         "wr": 0,
@@ -1517,14 +1533,6 @@
         "kda": 3.4,
         "csm": 0.94,
         "csDiff10": -8
-      },
-      {
-        "champ": "Seraphine",
-        "games": 1,
-        "wr": 100,
-        "kda": 9,
-        "csm": 1.26,
-        "csDiff10": 0
       },
       {
         "champ": "Sejuani",
@@ -1637,29 +1645,13 @@
         "kda": 6,
         "csm": 5.72,
         "csDiff10": 1
-      },
-      {
-        "champ": "Sett",
-        "games": 1,
-        "wr": 100,
-        "kda": 2,
-        "csm": 5.27,
-        "csDiff10": -2
-      },
-      {
-        "champ": "Yorick",
-        "games": 1,
-        "wr": 100,
-        "kda": 6,
-        "csm": 7.68,
-        "csDiff10": -3
       }
     ],
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 41,
-        "wr": 59
+        "games": 42,
+        "wr": 57
       },
       {
         "role": "ADC",
@@ -1667,32 +1659,32 @@
         "wr": 43
       },
       {
+        "role": "Support",
+        "games": 5,
+        "wr": 60
+      },
+      {
         "role": "Mid",
         "games": 4,
         "wr": 50
       },
       {
-        "role": "Support",
-        "games": 4,
-        "wr": 50
-      },
-      {
         "role": "Top",
-        "games": 4,
-        "wr": 50
+        "games": 2,
+        "wr": 0
       }
     ],
     "form": [
       "W",
+      "W",
+      "L",
+      "W",
       "L",
       "L",
       "W",
       "W",
       "L",
-      "W",
-      "W",
-      "L",
-      "L"
+      "W"
     ]
   },
   "fiveStack": {
@@ -1704,6 +1696,14 @@
         "kda": 11.4,
         "csm": 5.04,
         "csDiff10": -5
+      },
+      {
+        "champ": "Locke",
+        "games": 2,
+        "wr": 50,
+        "kda": 3.34,
+        "csm": 5.52,
+        "csDiff10": -9
       },
       {
         "champ": "MonkeyKing",
@@ -1736,14 +1736,6 @@
         "kda": 7.09,
         "csm": 6.45,
         "csDiff10": -6
-      },
-      {
-        "champ": "Locke",
-        "games": 1,
-        "wr": 100,
-        "kda": 4.67,
-        "csm": 6.32,
-        "csDiff10": -21
       },
       {
         "champ": "Fizz",
@@ -1781,8 +1773,8 @@
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 12,
-        "wr": 67
+        "games": 13,
+        "wr": 62
       },
       {
         "role": "ADC",
@@ -1801,6 +1793,7 @@
       }
     ],
     "form": [
+      "L",
       "W",
       "W",
       "W",
@@ -1809,8 +1802,7 @@
       "L",
       "W",
       "W",
-      "W",
-      "L"
+      "W"
     ]
   }
 }
