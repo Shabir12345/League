@@ -1,12 +1,58 @@
 {
   "player": "Shabir",
   "puuid": "1RJIy7lzs-1o-4vzu2wJkj0SGPaA2TNVDdbZR36Lp-OOAFXYsZnFrK2Al12k4yMDAyZlSGI8C3t44g",
-  "generatedAt": "2026-07-03T06:57:12.058Z",
+  "generatedAt": "2026-07-04T06:42:27.117Z",
   "rank": {
     "solo": "Gold IV",
     "flex": "Gold I"
   },
   "games": [
+    {
+      "matchId": "EUW1_7907561844",
+      "queue": 420,
+      "champ": "Ashe",
+      "role": "ADC",
+      "win": false,
+      "k": 2,
+      "d": 12,
+      "a": 6,
+      "kda": 0.67,
+      "csm": 6.05,
+      "kp": 44,
+      "vision": 23,
+      "dmgShare": 0.15,
+      "csAt10": 61,
+      "goldAt10": 3298,
+      "csDiff10": -9,
+      "goldDiff10": -391,
+      "csDiff14": -30,
+      "goldDiff14": -1069,
+      "fiveStack": false,
+      "date": 1783100322352
+    },
+    {
+      "matchId": "EUW1_7907510380",
+      "queue": 420,
+      "champ": "Ashe",
+      "role": "ADC",
+      "win": true,
+      "k": 8,
+      "d": 11,
+      "a": 16,
+      "kda": 2.18,
+      "csm": 6.64,
+      "kp": 43,
+      "vision": 21,
+      "dmgShare": 0.17,
+      "csAt10": 55,
+      "goldAt10": 2893,
+      "csDiff10": -4,
+      "goldDiff10": -877,
+      "csDiff14": 2,
+      "goldDiff14": -1450,
+      "fiveStack": false,
+      "date": 1783097786316
+    },
     {
       "matchId": "EUW1_7906679852",
       "queue": 440,
@@ -1340,63 +1386,17 @@
       "goldDiff14": -600,
       "fiveStack": true,
       "date": 1780687005359
-    },
-    {
-      "matchId": "EUW1_7877523730",
-      "queue": 440,
-      "champ": "Rammus",
-      "role": "Jungle",
-      "win": true,
-      "k": 6,
-      "d": 3,
-      "a": 27,
-      "kda": 11,
-      "csm": 6.12,
-      "kp": 73,
-      "vision": 27,
-      "dmgShare": 0.23,
-      "csAt10": 57,
-      "goldAt10": 4170,
-      "csDiff10": -12,
-      "goldDiff10": 149,
-      "csDiff14": -23,
-      "goldDiff14": -398,
-      "fiveStack": true,
-      "date": 1780684473092
-    },
-    {
-      "matchId": "EUW1_7877511374",
-      "queue": 440,
-      "champ": "Draven",
-      "role": "ADC",
-      "win": true,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "kda": 0,
-      "csm": 3.03,
-      "kp": 0,
-      "vision": 0,
-      "dmgShare": 0.16,
-      "csAt10": null,
-      "goldAt10": null,
-      "csDiff10": null,
-      "goldDiff10": null,
-      "csDiff14": null,
-      "goldDiff14": null,
-      "fiveStack": true,
-      "date": 1780684115722
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Ashe",
-        "games": 19,
-        "wr": 63,
-        "kda": 3.11,
-        "csm": 6.51,
-        "csDiff10": 0.94
+        "games": 21,
+        "wr": 62,
+        "kda": 2.95,
+        "csm": 6.5,
+        "csDiff10": 0.2
       },
       {
         "champ": "Khazix",
@@ -1447,28 +1447,12 @@
         "csDiff10": 8
       },
       {
-        "champ": "Draven",
-        "games": 2,
-        "wr": 50,
-        "kda": 0.6,
-        "csm": 4.72,
-        "csDiff10": 19
-      },
-      {
         "champ": "Shen",
         "games": 2,
         "wr": 50,
         "kda": 0.95,
         "csm": 3.56,
         "csDiff10": -25
-      },
-      {
-        "champ": "Rammus",
-        "games": 2,
-        "wr": 50,
-        "kda": 6.75,
-        "csm": 5.61,
-        "csDiff10": -7.5
       },
       {
         "champ": "Lux",
@@ -1485,6 +1469,14 @@
         "kda": 2.14,
         "csm": 7.46,
         "csDiff10": 24
+      },
+      {
+        "champ": "Draven",
+        "games": 1,
+        "wr": 0,
+        "kda": 1.2,
+        "csm": 6.4,
+        "csDiff10": 19
       },
       {
         "champ": "Kalista",
@@ -1517,13 +1509,21 @@
         "kda": 1.42,
         "csm": 1.68,
         "csDiff10": -2
+      },
+      {
+        "champ": "Rammus",
+        "games": 1,
+        "wr": 0,
+        "kda": 2.5,
+        "csm": 5.09,
+        "csDiff10": -3
       }
     ],
     "roleSplits": [
       {
         "role": "ADC",
-        "games": 27,
-        "wr": 56
+        "games": 28,
+        "wr": 54
       },
       {
         "role": "Mid",
@@ -1537,8 +1537,8 @@
       },
       {
         "role": "Jungle",
-        "games": 10,
-        "wr": 10
+        "games": 9,
+        "wr": 0
       },
       {
         "role": "Support",
@@ -1547,6 +1547,8 @@
       }
     ],
     "form": [
+      "L",
+      "W",
       "W",
       "W",
       "L",
@@ -1554,9 +1556,7 @@
       "L",
       "L",
       "L",
-      "W",
-      "L",
-      "L"
+      "W"
     ]
   },
   "fiveStack": {
@@ -1602,14 +1602,6 @@
         "csDiff10": 3.5
       },
       {
-        "champ": "Rammus",
-        "games": 2,
-        "wr": 50,
-        "kda": 6.75,
-        "csm": 5.61,
-        "csDiff10": -7.5
-      },
-      {
         "champ": "Kalista",
         "games": 1,
         "wr": 100,
@@ -1626,19 +1618,19 @@
         "csDiff10": -2
       },
       {
-        "champ": "Draven",
+        "champ": "Rammus",
         "games": 1,
-        "wr": 100,
-        "kda": 0,
-        "csm": 3.03,
-        "csDiff10": null
+        "wr": 0,
+        "kda": 2.5,
+        "csm": 5.09,
+        "csDiff10": -3
       }
     ],
     "roleSplits": [
       {
         "role": "ADC",
-        "games": 8,
-        "wr": 75
+        "games": 7,
+        "wr": 71
       },
       {
         "role": "Top",
@@ -1647,8 +1639,8 @@
       },
       {
         "role": "Jungle",
-        "games": 3,
-        "wr": 33
+        "games": 2,
+        "wr": 0
       }
     ],
     "form": [
