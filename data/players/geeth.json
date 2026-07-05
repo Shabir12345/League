@@ -1,12 +1,104 @@
 {
   "player": "Geeth",
   "puuid": "Df36AbNlLOIH8wlRXSAhOMfO-UvoqWvuM2MkscE3YpIMbXqL4X23TbbDbkXf3-knw1n9f11khr9Hzw",
-  "generatedAt": "2026-07-04T06:44:17.078Z",
+  "generatedAt": "2026-07-05T07:21:23.374Z",
   "rank": {
     "solo": "Gold I",
-    "flex": "Gold II"
+    "flex": "Gold III"
   },
   "games": [
+    {
+      "matchId": "EUW1_7908842337",
+      "queue": 420,
+      "champ": "Caitlyn",
+      "role": "ADC",
+      "win": true,
+      "k": 4,
+      "d": 8,
+      "a": 11,
+      "kda": 1.88,
+      "csm": 6.4,
+      "kp": 35,
+      "vision": 28,
+      "dmgShare": 0.19,
+      "csAt10": 80,
+      "goldAt10": 3454,
+      "csDiff10": 3,
+      "goldDiff10": 395,
+      "csDiff14": 5,
+      "goldDiff14": -875,
+      "fiveStack": false,
+      "date": 1783198585383
+    },
+    {
+      "matchId": "EUW1_7908788088",
+      "queue": 440,
+      "champ": "Urgot",
+      "role": "Top",
+      "win": false,
+      "k": 10,
+      "d": 6,
+      "a": 2,
+      "kda": 2,
+      "csm": 6.84,
+      "kp": 52,
+      "vision": 27,
+      "dmgShare": 0.32,
+      "csAt10": 69,
+      "goldAt10": 3747,
+      "csDiff10": -2,
+      "goldDiff10": 257,
+      "csDiff14": 7,
+      "goldDiff14": 1051,
+      "fiveStack": false,
+      "date": 1783196176985
+    },
+    {
+      "matchId": "EUW1_7908758068",
+      "queue": 440,
+      "champ": "Maokai",
+      "role": "Jungle",
+      "win": false,
+      "k": 1,
+      "d": 4,
+      "a": 2,
+      "kda": 0.75,
+      "csm": 5.52,
+      "kp": 75,
+      "vision": 9,
+      "dmgShare": 0.19,
+      "csAt10": 60,
+      "goldAt10": 3155,
+      "csDiff10": -18,
+      "goldDiff10": -916,
+      "csDiff14": -18,
+      "goldDiff14": -611,
+      "fiveStack": false,
+      "date": 1783194858942
+    },
+    {
+      "matchId": "EUW1_7908650481",
+      "queue": 440,
+      "champ": "Mordekaiser",
+      "role": "Jungle",
+      "win": false,
+      "k": 12,
+      "d": 12,
+      "a": 15,
+      "kda": 2.25,
+      "csm": 4.82,
+      "kp": 52,
+      "vision": 29,
+      "dmgShare": 0.17,
+      "csAt10": 69,
+      "goldAt10": 3942,
+      "csDiff10": 4,
+      "goldDiff10": 299,
+      "csDiff14": -7,
+      "goldDiff14": 870,
+      "fiveStack": false,
+      "date": 1783188940770
+    },
     {
       "matchId": "EUW1_7906679852",
       "queue": 440,
@@ -1294,98 +1386,6 @@
       "goldDiff14": 875,
       "fiveStack": true,
       "date": 1780684473092
-    },
-    {
-      "matchId": "EUW1_7877511374",
-      "queue": 440,
-      "champ": "Talon",
-      "role": "Mid",
-      "win": true,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "kda": 0,
-      "csm": 5.45,
-      "kp": 0,
-      "vision": 0,
-      "dmgShare": 0.14,
-      "csAt10": null,
-      "goldAt10": null,
-      "csDiff10": null,
-      "goldDiff10": null,
-      "csDiff14": null,
-      "goldDiff14": null,
-      "fiveStack": true,
-      "date": 1780684115722
-    },
-    {
-      "matchId": "EUW1_7876614928",
-      "queue": 440,
-      "champ": "Vayne",
-      "role": "ADC",
-      "win": true,
-      "k": 13,
-      "d": 4,
-      "a": 11,
-      "kda": 6,
-      "csm": 5.72,
-      "kp": 45,
-      "vision": 24,
-      "dmgShare": 0.23,
-      "csAt10": 63,
-      "goldAt10": 4148,
-      "csDiff10": 1,
-      "goldDiff10": 1019,
-      "csDiff14": 16,
-      "goldDiff14": 2254,
-      "fiveStack": false,
-      "date": 1780603886880
-    },
-    {
-      "matchId": "EUW1_7876582630",
-      "queue": 440,
-      "champ": "Caitlyn",
-      "role": "ADC",
-      "win": false,
-      "k": 2,
-      "d": 4,
-      "a": 0,
-      "kda": 0.5,
-      "csm": 6.62,
-      "kp": 50,
-      "vision": 5,
-      "dmgShare": 0.28,
-      "csAt10": 70,
-      "goldAt10": 3369,
-      "csDiff10": 10,
-      "goldDiff10": -255,
-      "csDiff14": -1,
-      "goldDiff14": -355,
-      "fiveStack": false,
-      "date": 1780602631033
-    },
-    {
-      "matchId": "EUW1_7876461468",
-      "queue": 440,
-      "champ": "Caitlyn",
-      "role": "ADC",
-      "win": false,
-      "k": 9,
-      "d": 11,
-      "a": 12,
-      "kda": 1.91,
-      "csm": 5.7,
-      "kp": 49,
-      "vision": 13,
-      "dmgShare": 0.2,
-      "csAt10": 75,
-      "goldAt10": 4638,
-      "csDiff10": 31,
-      "goldDiff10": 1003,
-      "csDiff14": 32,
-      "goldDiff14": 1404,
-      "fiveStack": false,
-      "date": 1780597760380
     }
   ],
   "soloFlex": {
@@ -1400,10 +1400,10 @@
       },
       {
         "champ": "Talon",
-        "games": 7,
-        "wr": 86,
-        "kda": 2.97,
-        "csm": 6.44,
+        "games": 6,
+        "wr": 83,
+        "kda": 3.46,
+        "csm": 6.61,
         "csDiff10": -10
       },
       {
@@ -1429,6 +1429,14 @@
         "kda": 1.01,
         "csm": 5.33,
         "csDiff10": 5
+      },
+      {
+        "champ": "Maokai",
+        "games": 2,
+        "wr": 0,
+        "kda": 3.28,
+        "csm": 5.79,
+        "csDiff10": 2
       },
       {
         "champ": "Seraphine",
@@ -1480,11 +1488,27 @@
       },
       {
         "champ": "Caitlyn",
-        "games": 2,
+        "games": 1,
+        "wr": 100,
+        "kda": 1.88,
+        "csm": 6.4,
+        "csDiff10": 3
+      },
+      {
+        "champ": "Urgot",
+        "games": 1,
         "wr": 0,
-        "kda": 1.21,
-        "csm": 6.16,
-        "csDiff10": 20.5
+        "kda": 2,
+        "csm": 6.84,
+        "csDiff10": -2
+      },
+      {
+        "champ": "Mordekaiser",
+        "games": 1,
+        "wr": 0,
+        "kda": 2.25,
+        "csm": 4.82,
+        "csDiff10": 4
       },
       {
         "champ": "Ekko",
@@ -1583,14 +1607,6 @@
         "csDiff10": 28
       },
       {
-        "champ": "Maokai",
-        "games": 1,
-        "wr": 0,
-        "kda": 5.8,
-        "csm": 6.06,
-        "csDiff10": 22
-      },
-      {
         "champ": "Warwick",
         "games": 1,
         "wr": 0,
@@ -1637,26 +1653,18 @@
         "kda": 1.36,
         "csm": 2.11,
         "csDiff10": 3
-      },
-      {
-        "champ": "Vayne",
-        "games": 1,
-        "wr": 100,
-        "kda": 6,
-        "csm": 5.72,
-        "csDiff10": 1
       }
     ],
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 42,
-        "wr": 57
+        "games": 44,
+        "wr": 55
       },
       {
         "role": "ADC",
-        "games": 7,
-        "wr": 43
+        "games": 5,
+        "wr": 60
       },
       {
         "role": "Support",
@@ -1664,27 +1672,27 @@
         "wr": 60
       },
       {
-        "role": "Mid",
-        "games": 4,
-        "wr": 50
+        "role": "Top",
+        "games": 3,
+        "wr": 0
       },
       {
-        "role": "Top",
-        "games": 2,
-        "wr": 0
+        "role": "Mid",
+        "games": 3,
+        "wr": 33
       }
     ],
     "form": [
       "W",
+      "L",
+      "L",
+      "L",
+      "W",
       "W",
       "L",
       "W",
       "L",
-      "L",
-      "W",
-      "W",
-      "L",
-      "W"
+      "L"
     ]
   },
   "fiveStack": {
@@ -1760,14 +1768,6 @@
         "kda": 1.36,
         "csm": 2.11,
         "csDiff10": 3
-      },
-      {
-        "champ": "Talon",
-        "games": 1,
-        "wr": 100,
-        "kda": 0,
-        "csm": 5.45,
-        "csDiff10": null
       }
     ],
     "roleSplits": [
@@ -1785,11 +1785,6 @@
         "role": "Support",
         "games": 1,
         "wr": 0
-      },
-      {
-        "role": "Mid",
-        "games": 1,
-        "wr": 100
       }
     ],
     "form": [

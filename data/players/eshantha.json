@@ -1,12 +1,35 @@
 {
   "player": "Eshantha",
   "puuid": "SmVhFbT3bTkwBT77RgXmb34GAVOnoXm4xOJhpmDCdlkm-5F6hRC-7gBA243sy5f9t3OeU68sQo5cDA",
-  "generatedAt": "2026-07-04T06:43:31.807Z",
+  "generatedAt": "2026-07-05T07:20:28.927Z",
   "rank": {
     "solo": "Gold III",
     "flex": "Gold IV"
   },
   "games": [
+    {
+      "matchId": "EUW1_7908650481",
+      "queue": 440,
+      "champ": "Yorick",
+      "role": "Top",
+      "win": false,
+      "k": 5,
+      "d": 18,
+      "a": 15,
+      "kda": 1.11,
+      "csm": 4.33,
+      "kp": 38,
+      "vision": 39,
+      "dmgShare": 0.13,
+      "csAt10": 55,
+      "goldAt10": 2811,
+      "csDiff10": -20,
+      "goldDiff10": -1655,
+      "csDiff14": -47,
+      "goldDiff14": -2838,
+      "fiveStack": false,
+      "date": 1783188940770
+    },
     {
       "matchId": "EUW1_7906611593",
       "queue": 440,
@@ -1363,48 +1386,25 @@
       "goldDiff14": 270,
       "fiveStack": false,
       "date": 1780333729065
-    },
-    {
-      "matchId": "EUW1_7873135720",
-      "queue": 440,
-      "champ": "Anivia",
-      "role": "Top",
-      "win": false,
-      "k": 1,
-      "d": 0,
-      "a": 0,
-      "kda": 1,
-      "csm": 4.93,
-      "kp": 100,
-      "vision": 0,
-      "dmgShare": 0.38,
-      "csAt10": null,
-      "goldAt10": null,
-      "csDiff10": null,
-      "goldDiff10": null,
-      "csDiff14": null,
-      "goldDiff14": null,
-      "fiveStack": false,
-      "date": 1780332590461
     }
   ],
   "soloFlex": {
     "champPool": [
       {
-        "champ": "Anivia",
-        "games": 14,
-        "wr": 86,
-        "kda": 5.14,
-        "csm": 5.53,
-        "csDiff10": 2.36
+        "champ": "Yorick",
+        "games": 13,
+        "wr": 54,
+        "kda": 3.42,
+        "csm": 7.3,
+        "csDiff10": 2.77
       },
       {
-        "champ": "Yorick",
-        "games": 12,
-        "wr": 58,
-        "kda": 3.62,
-        "csm": 7.54,
-        "csDiff10": 4.67
+        "champ": "Anivia",
+        "games": 13,
+        "wr": 92,
+        "kda": 5.46,
+        "csm": 5.58,
+        "csDiff10": 2.36
       },
       {
         "champ": "Camille",
@@ -1545,16 +1545,16 @@
       }
     ],
     "form": [
-      "W",
       "L",
       "W",
-      "L",
-      "L",
       "L",
       "W",
       "L",
       "L",
-      "W"
+      "L",
+      "W",
+      "L",
+      "L"
     ]
   },
   "fiveStack": {

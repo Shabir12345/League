@@ -1,12 +1,58 @@
 {
   "player": "Shabir",
   "puuid": "1RJIy7lzs-1o-4vzu2wJkj0SGPaA2TNVDdbZR36Lp-OOAFXYsZnFrK2Al12k4yMDAyZlSGI8C3t44g",
-  "generatedAt": "2026-07-04T06:42:27.117Z",
+  "generatedAt": "2026-07-05T07:19:41.184Z",
   "rank": {
     "solo": "Gold IV",
     "flex": "Gold I"
   },
   "games": [
+    {
+      "matchId": "EUW1_7908788088",
+      "queue": 440,
+      "champ": "Ekko",
+      "role": "Jungle",
+      "win": false,
+      "k": 2,
+      "d": 8,
+      "a": 9,
+      "kda": 1.38,
+      "csm": 6.25,
+      "kp": 48,
+      "vision": 17,
+      "dmgShare": 0.16,
+      "csAt10": 62,
+      "goldAt10": 3252,
+      "csDiff10": -12,
+      "goldDiff10": -223,
+      "csDiff14": -18,
+      "goldDiff14": -716,
+      "fiveStack": false,
+      "date": 1783196176985
+    },
+    {
+      "matchId": "EUW1_7908758068",
+      "queue": 440,
+      "champ": "Teemo",
+      "role": "Top",
+      "win": false,
+      "k": 1,
+      "d": 2,
+      "a": 1,
+      "kda": 1,
+      "csm": 8.02,
+      "kp": 50,
+      "vision": 10,
+      "dmgShare": 0.43,
+      "csAt10": 76,
+      "goldAt10": 3496,
+      "csDiff10": -1,
+      "goldDiff10": 145,
+      "csDiff14": -1,
+      "goldDiff14": -386,
+      "fiveStack": false,
+      "date": 1783194858942
+    },
     {
       "matchId": "EUW1_7907561844",
       "queue": 420,
@@ -1340,52 +1386,6 @@
       "goldDiff14": 591,
       "fiveStack": false,
       "date": 1780691262799
-    },
-    {
-      "matchId": "EUW1_7877621588",
-      "queue": 440,
-      "champ": "Khazix",
-      "role": "Jungle",
-      "win": false,
-      "k": 14,
-      "d": 10,
-      "a": 10,
-      "kda": 2.4,
-      "csm": 5.54,
-      "kp": 57,
-      "vision": 30,
-      "dmgShare": 0.28,
-      "csAt10": 64,
-      "goldAt10": 3878,
-      "csDiff10": -2,
-      "goldDiff10": 273,
-      "csDiff14": -3,
-      "goldDiff14": 608,
-      "fiveStack": true,
-      "date": 1780688698180
-    },
-    {
-      "matchId": "EUW1_7877578786",
-      "queue": 440,
-      "champ": "Rammus",
-      "role": "Jungle",
-      "win": false,
-      "k": 2,
-      "d": 4,
-      "a": 8,
-      "kda": 2.5,
-      "csm": 5.09,
-      "kp": 83,
-      "vision": 21,
-      "dmgShare": 0.19,
-      "csAt10": 71,
-      "goldAt10": 3818,
-      "csDiff10": -3,
-      "goldDiff10": 63,
-      "csDiff14": -16,
-      "goldDiff14": -600,
-      "fiveStack": true,
-      "date": 1780687005359
     }
   ],
   "soloFlex": {
@@ -1400,11 +1400,11 @@
       },
       {
         "champ": "Khazix",
-        "games": 8,
+        "games": 7,
         "wr": 0,
-        "kda": 2.02,
-        "csm": 6.14,
-        "csDiff10": -2.62
+        "kda": 1.96,
+        "csm": 6.23,
+        "csDiff10": -2.71
       },
       {
         "champ": "Xerath",
@@ -1453,6 +1453,22 @@
         "kda": 0.95,
         "csm": 3.56,
         "csDiff10": -25
+      },
+      {
+        "champ": "Ekko",
+        "games": 1,
+        "wr": 0,
+        "kda": 1.38,
+        "csm": 6.25,
+        "csDiff10": -12
+      },
+      {
+        "champ": "Teemo",
+        "games": 1,
+        "wr": 0,
+        "kda": 1,
+        "csm": 8.02,
+        "csDiff10": -1
       },
       {
         "champ": "Lux",
@@ -1509,14 +1525,6 @@
         "kda": 1.42,
         "csm": 1.68,
         "csDiff10": -2
-      },
-      {
-        "champ": "Rammus",
-        "games": 1,
-        "wr": 0,
-        "kda": 2.5,
-        "csm": 5.09,
-        "csDiff10": -3
       }
     ],
     "roleSplits": [
@@ -1526,18 +1534,18 @@
         "wr": 54
       },
       {
+        "role": "Top",
+        "games": 12,
+        "wr": 50
+      },
+      {
         "role": "Mid",
         "games": 11,
         "wr": 55
       },
       {
-        "role": "Top",
-        "games": 11,
-        "wr": 55
-      },
-      {
         "role": "Jungle",
-        "games": 9,
+        "games": 8,
         "wr": 0
       },
       {
@@ -1548,15 +1556,15 @@
     ],
     "form": [
       "L",
+      "L",
+      "L",
       "W",
       "W",
       "W",
       "L",
       "W",
       "L",
-      "L",
-      "L",
-      "W"
+      "L"
     ]
   },
   "fiveStack": {
@@ -1608,22 +1616,6 @@
         "kda": 11.67,
         "csm": 8.98,
         "csDiff10": 39
-      },
-      {
-        "champ": "Khazix",
-        "games": 1,
-        "wr": 0,
-        "kda": 2.4,
-        "csm": 5.54,
-        "csDiff10": -2
-      },
-      {
-        "champ": "Rammus",
-        "games": 1,
-        "wr": 0,
-        "kda": 2.5,
-        "csm": 5.09,
-        "csDiff10": -3
       }
     ],
     "roleSplits": [
@@ -1636,11 +1628,6 @@
         "role": "Top",
         "games": 6,
         "wr": 50
-      },
-      {
-        "role": "Jungle",
-        "games": 2,
-        "wr": 0
       }
     ],
     "form": [

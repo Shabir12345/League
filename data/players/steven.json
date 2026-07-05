@@ -1,12 +1,81 @@
 {
   "player": "Steven",
   "puuid": "rEUfV7nH6pNefn-stlAp3Egn0EYlr11hULP7Zdo8F0HBypEIcqZBYTHnpZC4GXko1ZmEK13LS9RboQ",
-  "generatedAt": "2026-07-04T06:43:27.670Z",
+  "generatedAt": "2026-07-05T07:20:21.944Z",
   "rank": {
     "solo": "Gold II",
     "flex": "Silver II"
   },
   "games": [
+    {
+      "matchId": "EUW1_7908788088",
+      "queue": 440,
+      "champ": "Leblanc",
+      "role": "Mid",
+      "win": false,
+      "k": 5,
+      "d": 6,
+      "a": 3,
+      "kda": 1.33,
+      "csm": 5.4,
+      "kp": 35,
+      "vision": 12,
+      "dmgShare": 0.26,
+      "csAt10": 73,
+      "goldAt10": 3426,
+      "csDiff10": 13,
+      "goldDiff10": 281,
+      "csDiff14": 10,
+      "goldDiff14": -260,
+      "fiveStack": false,
+      "date": 1783196176985
+    },
+    {
+      "matchId": "EUW1_7908758068",
+      "queue": 440,
+      "champ": "Syndra",
+      "role": "Mid",
+      "win": false,
+      "k": 1,
+      "d": 4,
+      "a": 1,
+      "kda": 0.5,
+      "csm": 7.49,
+      "kp": 50,
+      "vision": 10,
+      "dmgShare": 0.16,
+      "csAt10": 77,
+      "goldAt10": 3151,
+      "csDiff10": -6,
+      "goldDiff10": -844,
+      "csDiff14": -20,
+      "goldDiff14": -1158,
+      "fiveStack": false,
+      "date": 1783194858942
+    },
+    {
+      "matchId": "EUW1_7908650481",
+      "queue": 440,
+      "champ": "Cassiopeia",
+      "role": "Mid",
+      "win": false,
+      "k": 4,
+      "d": 9,
+      "a": 18,
+      "kda": 2.44,
+      "csm": 5.22,
+      "kp": 42,
+      "vision": 22,
+      "dmgShare": 0.1,
+      "csAt10": 68,
+      "goldAt10": 2847,
+      "csDiff10": -18,
+      "goldDiff10": -834,
+      "csDiff14": -28,
+      "goldDiff14": -2012,
+      "fiveStack": false,
+      "date": 1783188940770
+    },
     {
       "matchId": "EUW1_7907413584",
       "queue": 420,
@@ -1317,79 +1386,18 @@
       "goldDiff14": -452,
       "fiveStack": false,
       "date": 1782133923435
-    },
-    {
-      "matchId": "EUW1_7895549910",
-      "queue": 420,
-      "champ": "Ahri",
-      "role": "Mid",
-      "win": false,
-      "k": 12,
-      "d": 5,
-      "a": 6,
-      "kda": 3.6,
-      "csm": 7.01,
-      "kp": 49,
-      "vision": 23,
-      "dmgShare": 0.28,
-      "csAt10": 66,
-      "goldAt10": 3669,
-      "csDiff10": 1,
-      "goldDiff10": 843,
-      "csDiff14": 2,
-      "goldDiff14": 1139,
-      "fiveStack": false,
-      "date": 1782131656601
-    },
-    {
-      "matchId": "EUW1_7895515295",
-      "queue": 420,
-      "champ": "Viktor",
-      "role": "Mid",
-      "win": false,
-      "k": 4,
-      "d": 7,
-      "a": 2,
-      "kda": 0.86,
-      "csm": 6.38,
-      "kp": 30,
-      "vision": 11,
-      "dmgShare": 0.22,
-      "csAt10": 61,
-      "goldAt10": 3300,
-      "csDiff10": 6,
-      "goldDiff10": 127,
-      "csDiff14": 10,
-      "goldDiff14": 322,
-      "fiveStack": false,
-      "date": 1782129302082
-    },
-    {
-      "matchId": "EUW1_7895494895",
-      "queue": 420,
-      "champ": "Yone",
-      "role": "Mid",
-      "win": false,
-      "k": 2,
-      "d": 9,
-      "a": 3,
-      "kda": 0.56,
-      "csm": 6.99,
-      "kp": 24,
-      "vision": 5,
-      "dmgShare": 0.13,
-      "csAt10": 65,
-      "goldAt10": 3536,
-      "csDiff10": -29,
-      "goldDiff10": -1215,
-      "csDiff14": -56,
-      "goldDiff14": -1753,
-      "fiveStack": false,
-      "date": 1782127164945
     }
   ],
   "soloFlex": {
     "champPool": [
+      {
+        "champ": "Leblanc",
+        "games": 13,
+        "wr": 62,
+        "kda": 5.81,
+        "csm": 5.12,
+        "csDiff10": -14.17
+      },
       {
         "champ": "Seraphine",
         "games": 13,
@@ -1397,14 +1405,6 @@
         "kda": 4.47,
         "csm": 1.19,
         "csDiff10": -5.33
-      },
-      {
-        "champ": "Leblanc",
-        "games": 12,
-        "wr": 67,
-        "kda": 6.18,
-        "csm": 5.1,
-        "csDiff10": -16.64
       },
       {
         "champ": "Lux",
@@ -1415,20 +1415,20 @@
         "csDiff10": 5
       },
       {
-        "champ": "Ahri",
-        "games": 5,
-        "wr": 60,
-        "kda": 5.35,
-        "csm": 6.66,
-        "csDiff10": 1.8
-      },
-      {
         "champ": "Mel",
         "games": 4,
         "wr": 100,
         "kda": 3.88,
         "csm": 7.68,
         "csDiff10": 22
+      },
+      {
+        "champ": "Ahri",
+        "games": 4,
+        "wr": 75,
+        "kda": 5.78,
+        "csm": 6.57,
+        "csDiff10": 2
       },
       {
         "champ": "Orianna",
@@ -1447,20 +1447,36 @@
         "csDiff10": -3
       },
       {
-        "champ": "Yone",
-        "games": 3,
-        "wr": 33,
-        "kda": 1.08,
-        "csm": 6.38,
-        "csDiff10": -24.67
-      },
-      {
         "champ": "Veigar",
         "games": 2,
         "wr": 100,
         "kda": 12.2,
         "csm": 6.07,
         "csDiff10": -17.5
+      },
+      {
+        "champ": "Yone",
+        "games": 2,
+        "wr": 50,
+        "kda": 1.34,
+        "csm": 6.08,
+        "csDiff10": -22.5
+      },
+      {
+        "champ": "Syndra",
+        "games": 1,
+        "wr": 0,
+        "kda": 0.5,
+        "csm": 7.49,
+        "csDiff10": -6
+      },
+      {
+        "champ": "Cassiopeia",
+        "games": 1,
+        "wr": 0,
+        "kda": 2.44,
+        "csm": 5.22,
+        "csDiff10": -18
       },
       {
         "champ": "Nocturne",
@@ -1493,14 +1509,6 @@
         "kda": 1,
         "csm": 6.42,
         "csDiff10": null
-      },
-      {
-        "champ": "Viktor",
-        "games": 1,
-        "wr": 0,
-        "kda": 0.86,
-        "csm": 6.38,
-        "csDiff10": 6
       }
     ],
     "roleSplits": [
@@ -1527,15 +1535,15 @@
     ],
     "form": [
       "L",
+      "L",
+      "L",
+      "L",
       "W",
       "L",
       "W",
       "W",
       "W",
-      "L",
-      "W",
-      "W",
-      "W"
+      "L"
     ]
   },
   "fiveStack": {
