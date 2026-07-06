@@ -1,12 +1,58 @@
 {
   "player": "Harendra",
   "puuid": "q4q_teVE3JVjPkqQKIRQy4znJ8fgrCk2LHbQTZolQfPQiDL302Ry8aTT_s_njjGs8WfZM-Dw239OIw",
-  "generatedAt": "2026-07-05T07:20:03.278Z",
+  "generatedAt": "2026-07-06T08:15:45.520Z",
   "rank": {
     "solo": "Bronze III",
     "flex": "Silver IV"
   },
   "games": [
+    {
+      "matchId": "EUW1_7909696381",
+      "queue": 440,
+      "champ": "Kayn",
+      "role": "Jungle",
+      "win": false,
+      "k": 4,
+      "d": 9,
+      "a": 9,
+      "kda": 1.44,
+      "csm": 5.18,
+      "kp": 42,
+      "vision": 21,
+      "dmgShare": 0.16,
+      "csAt10": 64,
+      "goldAt10": 4028,
+      "csDiff10": -2,
+      "goldDiff10": -161,
+      "csDiff14": -24,
+      "goldDiff14": -637,
+      "fiveStack": false,
+      "date": 1783271940319
+    },
+    {
+      "matchId": "EUW1_7909648075",
+      "queue": 440,
+      "champ": "Jax",
+      "role": "Jungle",
+      "win": false,
+      "k": 3,
+      "d": 10,
+      "a": 7,
+      "kda": 1,
+      "csm": 5.18,
+      "kp": 38,
+      "vision": 38,
+      "dmgShare": 0.15,
+      "csAt10": 57,
+      "goldAt10": 3702,
+      "csDiff10": 7,
+      "goldDiff10": 489,
+      "csDiff14": 16,
+      "goldDiff14": 326,
+      "fiveStack": true,
+      "date": 1783269672253
+    },
     {
       "matchId": "EUW1_7906520867",
       "queue": 440,
@@ -1340,63 +1386,17 @@
       "goldDiff14": -68,
       "fiveStack": false,
       "date": 1769263747742
-    },
-    {
-      "matchId": "EUW1_7693342098",
-      "queue": 420,
-      "champ": "Sylas",
-      "role": "Jungle",
-      "win": true,
-      "k": 5,
-      "d": 4,
-      "a": 6,
-      "kda": 2.75,
-      "csm": 6.93,
-      "kp": 28,
-      "vision": 30,
-      "dmgShare": 0.1,
-      "csAt10": 58,
-      "goldAt10": 3323,
-      "csDiff10": 1,
-      "goldDiff10": 175,
-      "csDiff14": -7,
-      "goldDiff14": -52,
-      "fiveStack": false,
-      "date": 1768901996336
-    },
-    {
-      "matchId": "EUW1_7692012977",
-      "queue": 420,
-      "champ": "Sylas",
-      "role": "Jungle",
-      "win": false,
-      "k": 2,
-      "d": 10,
-      "a": 8,
-      "kda": 1,
-      "csm": 5.11,
-      "kp": 33,
-      "vision": 29,
-      "dmgShare": 0.13,
-      "csAt10": 52,
-      "goldAt10": 3464,
-      "csDiff10": -18,
-      "goldDiff10": -169,
-      "csDiff14": -18,
-      "goldDiff14": -164,
-      "fiveStack": false,
-      "date": 1768814680831
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Sylas",
-        "games": 10,
-        "wr": 40,
-        "kda": 2.79,
-        "csm": 5.19,
-        "csDiff10": -8.3
+        "games": 8,
+        "wr": 38,
+        "kda": 3.02,
+        "csm": 4.99,
+        "csDiff10": -8.25
       },
       {
         "champ": "Shen",
@@ -1413,6 +1413,14 @@
         "kda": 3.31,
         "csm": 7.1,
         "csDiff10": 5
+      },
+      {
+        "champ": "Jax",
+        "games": 2,
+        "wr": 50,
+        "kda": 1.21,
+        "csm": 5.76,
+        "csDiff10": -3
       },
       {
         "champ": "Ashe",
@@ -1461,6 +1469,14 @@
         "kda": 6.5,
         "csm": 6.23,
         "csDiff10": -1.5
+      },
+      {
+        "champ": "Kayn",
+        "games": 1,
+        "wr": 0,
+        "kda": 1.44,
+        "csm": 5.18,
+        "csDiff10": -2
       },
       {
         "champ": "Jhin",
@@ -1679,14 +1695,6 @@
         "csDiff10": -20
       },
       {
-        "champ": "Jax",
-        "games": 1,
-        "wr": 100,
-        "kda": 1.43,
-        "csm": 6.33,
-        "csDiff10": -13
-      },
-      {
         "champ": "XinZhao",
         "games": 1,
         "wr": 100,
@@ -1699,7 +1707,7 @@
       {
         "role": "Jungle",
         "games": 21,
-        "wr": 57
+        "wr": 52
       },
       {
         "role": "Top",
@@ -1724,15 +1732,15 @@
     ],
     "form": [
       "L",
+      "L",
+      "L",
       "W",
       "W",
       "W",
       "W",
       "W",
       "W",
-      "W",
-      "W",
-      "L"
+      "W"
     ]
   },
   "fiveStack": {
@@ -1744,6 +1752,14 @@
         "kda": 2.61,
         "csm": 5.65,
         "csDiff10": -28.6
+      },
+      {
+        "champ": "Jax",
+        "games": 2,
+        "wr": 50,
+        "kda": 1.21,
+        "csm": 5.76,
+        "csDiff10": -3
       },
       {
         "champ": "Kaisa",
@@ -1880,14 +1896,6 @@
         "kda": 1.71,
         "csm": 5.52,
         "csDiff10": -29
-      },
-      {
-        "champ": "Jax",
-        "games": 1,
-        "wr": 100,
-        "kda": 1.43,
-        "csm": 6.33,
-        "csDiff10": -13
       }
     ],
     "roleSplits": [
@@ -1903,8 +1911,8 @@
       },
       {
         "role": "Jungle",
-        "games": 3,
-        "wr": 67
+        "games": 4,
+        "wr": 50
       },
       {
         "role": "Mid",
@@ -1914,13 +1922,13 @@
     ],
     "form": [
       "L",
+      "L",
       "W",
       "W",
       "W",
       "W",
       "L",
       "L",
-      "W",
       "W",
       "W"
     ]
