@@ -1,12 +1,35 @@
 {
   "player": "Harendra",
   "puuid": "q4q_teVE3JVjPkqQKIRQy4znJ8fgrCk2LHbQTZolQfPQiDL302Ry8aTT_s_njjGs8WfZM-Dw239OIw",
-  "generatedAt": "2026-07-06T08:15:45.520Z",
+  "generatedAt": "2026-07-07T07:33:31.902Z",
   "rank": {
     "solo": "Bronze III",
-    "flex": "Silver IV"
+    "flex": "Bronze I"
   },
   "games": [
+    {
+      "matchId": "EUW1_7910730690",
+      "queue": 440,
+      "champ": "Renekton",
+      "role": "Top",
+      "win": false,
+      "k": 4,
+      "d": 10,
+      "a": 19,
+      "kda": 2.3,
+      "csm": 6.63,
+      "kp": 66,
+      "vision": 34,
+      "dmgShare": 0.32,
+      "csAt10": 66,
+      "goldAt10": 2837,
+      "csDiff10": -6,
+      "goldDiff10": -1606,
+      "csDiff14": -11,
+      "goldDiff14": -296,
+      "fiveStack": false,
+      "date": 1783360222556
+    },
     {
       "matchId": "EUW1_7909696381",
       "queue": 440,
@@ -1363,40 +1386,17 @@
       "goldDiff14": 120,
       "fiveStack": false,
       "date": 1769265377774
-    },
-    {
-      "matchId": "EUW1_7699472953",
-      "queue": 420,
-      "champ": "Sylas",
-      "role": "Jungle",
-      "win": false,
-      "k": 9,
-      "d": 5,
-      "a": 0,
-      "kda": 1.8,
-      "csm": 4.48,
-      "kp": 75,
-      "vision": 21,
-      "dmgShare": 0.21,
-      "csAt10": 62,
-      "goldAt10": 4222,
-      "csDiff10": -7,
-      "goldDiff10": 633,
-      "csDiff14": -29,
-      "goldDiff14": -68,
-      "fiveStack": false,
-      "date": 1769263747742
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Sylas",
-        "games": 8,
-        "wr": 38,
-        "kda": 3.02,
-        "csm": 4.99,
-        "csDiff10": -8.25
+        "games": 7,
+        "wr": 43,
+        "kda": 3.19,
+        "csm": 5.06,
+        "csDiff10": -8.43
       },
       {
         "champ": "Shen",
@@ -1469,6 +1469,14 @@
         "kda": 6.5,
         "csm": 6.23,
         "csDiff10": -1.5
+      },
+      {
+        "champ": "Renekton",
+        "games": 1,
+        "wr": 0,
+        "kda": 2.3,
+        "csm": 6.63,
+        "csDiff10": -6
       },
       {
         "champ": "Kayn",
@@ -1706,13 +1714,13 @@
     "roleSplits": [
       {
         "role": "Jungle",
-        "games": 21,
-        "wr": 52
+        "games": 20,
+        "wr": 55
       },
       {
         "role": "Top",
-        "games": 17,
-        "wr": 47
+        "games": 18,
+        "wr": 44
       },
       {
         "role": "ADC",
@@ -1734,7 +1742,7 @@
       "L",
       "L",
       "L",
-      "W",
+      "L",
       "W",
       "W",
       "W",

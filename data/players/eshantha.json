@@ -1,12 +1,81 @@
 {
   "player": "Eshantha",
   "puuid": "SmVhFbT3bTkwBT77RgXmb34GAVOnoXm4xOJhpmDCdlkm-5F6hRC-7gBA243sy5f9t3OeU68sQo5cDA",
-  "generatedAt": "2026-07-06T08:16:36.729Z",
+  "generatedAt": "2026-07-07T07:34:07.619Z",
   "rank": {
     "solo": "Gold III",
-    "flex": "Gold IV"
+    "flex": "Silver I"
   },
   "games": [
+    {
+      "matchId": "EUW1_7910831143",
+      "queue": 440,
+      "champ": "Zac",
+      "role": "Jungle",
+      "win": true,
+      "k": 4,
+      "d": 3,
+      "a": 5,
+      "kda": 3,
+      "csm": 5.84,
+      "kp": 43,
+      "vision": 11,
+      "dmgShare": 0.15,
+      "csAt10": 56,
+      "goldAt10": 3758,
+      "csDiff10": -5,
+      "goldDiff10": -28,
+      "csDiff14": -3,
+      "goldDiff14": 198,
+      "fiveStack": false,
+      "date": 1783365066864
+    },
+    {
+      "matchId": "EUW1_7910788889",
+      "queue": 440,
+      "champ": "Zac",
+      "role": "Jungle",
+      "win": true,
+      "k": 12,
+      "d": 5,
+      "a": 18,
+      "kda": 6,
+      "csm": 6.04,
+      "kp": 68,
+      "vision": 26,
+      "dmgShare": 0.21,
+      "csAt10": 60,
+      "goldAt10": 3779,
+      "csDiff10": -4,
+      "goldDiff10": -249,
+      "csDiff14": -10,
+      "goldDiff14": 764,
+      "fiveStack": false,
+      "date": 1783362902862
+    },
+    {
+      "matchId": "EUW1_7910730690",
+      "queue": 440,
+      "champ": "Syndra",
+      "role": "Mid",
+      "win": false,
+      "k": 8,
+      "d": 8,
+      "a": 8,
+      "kda": 2,
+      "csm": 7.36,
+      "kp": 46,
+      "vision": 30,
+      "dmgShare": 0.24,
+      "csAt10": 79,
+      "goldAt10": 3088,
+      "csDiff10": 3,
+      "goldDiff10": 115,
+      "csDiff14": -15,
+      "goldDiff14": -1253,
+      "fiveStack": false,
+      "date": 1783360222556
+    },
     {
       "matchId": "EUW1_7909885867",
       "queue": 440,
@@ -1317,75 +1386,6 @@
       "goldDiff14": 871,
       "fiveStack": true,
       "date": 1780688698180
-    },
-    {
-      "matchId": "EUW1_7877578786",
-      "queue": 440,
-      "champ": "Braum",
-      "role": "Support",
-      "win": false,
-      "k": 1,
-      "d": 4,
-      "a": 7,
-      "kda": 2,
-      "csm": 1.45,
-      "kp": 67,
-      "vision": 60,
-      "dmgShare": 0.14,
-      "csAt10": 17,
-      "goldAt10": 2641,
-      "csDiff10": 0,
-      "goldDiff10": 53,
-      "csDiff14": 0,
-      "goldDiff14": -387,
-      "fiveStack": true,
-      "date": 1780687005359
-    },
-    {
-      "matchId": "EUW1_7877523730",
-      "queue": 440,
-      "champ": "Alistar",
-      "role": "Support",
-      "win": true,
-      "k": 4,
-      "d": 5,
-      "a": 26,
-      "kda": 6,
-      "csm": 1.16,
-      "kp": 67,
-      "vision": 115,
-      "dmgShare": 0.08,
-      "csAt10": 17,
-      "goldAt10": 2815,
-      "csDiff10": 14,
-      "goldDiff10": 2,
-      "csDiff14": 12,
-      "goldDiff14": -468,
-      "fiveStack": true,
-      "date": 1780684473092
-    },
-    {
-      "matchId": "EUW1_7877511374",
-      "queue": 440,
-      "champ": "Anivia",
-      "role": "Top",
-      "win": true,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "kda": 0,
-      "csm": 0.61,
-      "kp": 0,
-      "vision": 0,
-      "dmgShare": 0.28,
-      "csAt10": null,
-      "goldAt10": null,
-      "csDiff10": null,
-      "goldDiff10": null,
-      "csDiff14": null,
-      "goldDiff14": null,
-      "fiveStack": true,
-      "date": 1780684115722
     }
   ],
   "soloFlex": {
@@ -1408,11 +1408,19 @@
       },
       {
         "champ": "Anivia",
-        "games": 11,
-        "wr": 91,
-        "kda": 5.88,
-        "csm": 5.35,
+        "games": 10,
+        "wr": 90,
+        "kda": 6.47,
+        "csm": 5.82,
         "csDiff10": 1.89
+      },
+      {
+        "champ": "Zac",
+        "games": 5,
+        "wr": 80,
+        "kda": 6.5,
+        "csm": 5.89,
+        "csDiff10": -17.4
       },
       {
         "champ": "Chogath",
@@ -1421,14 +1429,6 @@
         "kda": 2.05,
         "csm": 7.15,
         "csDiff10": 8
-      },
-      {
-        "champ": "Zac",
-        "games": 3,
-        "wr": 67,
-        "kda": 7.83,
-        "csm": 5.86,
-        "csDiff10": -26
       },
       {
         "champ": "Rell",
@@ -1463,12 +1463,12 @@
         "csDiff10": 8.5
       },
       {
-        "champ": "Alistar",
-        "games": 2,
-        "wr": 50,
-        "kda": 3.57,
-        "csm": 0.89,
-        "csDiff10": 0.5
+        "champ": "Syndra",
+        "games": 1,
+        "wr": 0,
+        "kda": 2,
+        "csm": 7.36,
+        "csDiff10": 3
       },
       {
         "champ": "Sett",
@@ -1527,42 +1527,47 @@
         "csDiff10": -3
       },
       {
-        "champ": "Braum",
+        "champ": "Alistar",
         "games": 1,
         "wr": 0,
-        "kda": 2,
-        "csm": 1.45,
-        "csDiff10": 0
+        "kda": 1.13,
+        "csm": 0.61,
+        "csDiff10": -13
       }
     ],
     "roleSplits": [
       {
         "role": "Top",
-        "games": 36,
-        "wr": 47
+        "games": 35,
+        "wr": 46
       },
       {
         "role": "Support",
-        "games": 20,
-        "wr": 45
+        "games": 18,
+        "wr": 44
       },
       {
         "role": "Jungle",
-        "games": 4,
-        "wr": 50
+        "games": 6,
+        "wr": 67
+      },
+      {
+        "role": "Mid",
+        "games": 1,
+        "wr": 0
       }
     ],
     "form": [
-      "L",
-      "L",
-      "L",
-      "L",
-      "L",
-      "L",
+      "W",
       "W",
       "L",
-      "W",
-      "L"
+      "L",
+      "L",
+      "L",
+      "L",
+      "L",
+      "L",
+      "W"
     ]
   },
   "fiveStack": {
@@ -1592,22 +1597,6 @@
         "csDiff10": -1.5
       },
       {
-        "champ": "Alistar",
-        "games": 2,
-        "wr": 50,
-        "kda": 3.57,
-        "csm": 0.89,
-        "csDiff10": 0.5
-      },
-      {
-        "champ": "Anivia",
-        "games": 2,
-        "wr": 50,
-        "kda": 1.75,
-        "csm": 4.06,
-        "csDiff10": 4
-      },
-      {
         "champ": "Lux",
         "games": 1,
         "wr": 100,
@@ -1624,24 +1613,32 @@
         "csDiff10": -3
       },
       {
-        "champ": "Braum",
+        "champ": "Alistar",
         "games": 1,
         "wr": 0,
-        "kda": 2,
-        "csm": 1.45,
-        "csDiff10": 0
+        "kda": 1.13,
+        "csm": 0.61,
+        "csDiff10": -13
+      },
+      {
+        "champ": "Anivia",
+        "games": 1,
+        "wr": 0,
+        "kda": 3.5,
+        "csm": 7.51,
+        "csDiff10": 4
       }
     ],
     "roleSplits": [
       {
         "role": "Support",
-        "games": 16,
-        "wr": 56
+        "games": 14,
+        "wr": 57
       },
       {
         "role": "Top",
-        "games": 2,
-        "wr": 50
+        "games": 1,
+        "wr": 0
       }
     ],
     "form": [
