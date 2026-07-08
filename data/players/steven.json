@@ -1,12 +1,58 @@
 {
   "player": "Steven",
   "puuid": "rEUfV7nH6pNefn-stlAp3Egn0EYlr11hULP7Zdo8F0HBypEIcqZBYTHnpZC4GXko1ZmEK13LS9RboQ",
-  "generatedAt": "2026-07-07T07:33:54.273Z",
+  "generatedAt": "2026-07-08T06:24:22.055Z",
   "rank": {
     "solo": "Gold II",
-    "flex": "Silver II"
+    "flex": "Silver III"
   },
   "games": [
+    {
+      "matchId": "EUW1_7911707666",
+      "queue": 440,
+      "champ": "Galio",
+      "role": "Mid",
+      "win": false,
+      "k": 0,
+      "d": 2,
+      "a": 1,
+      "kda": 0.5,
+      "csm": 7.31,
+      "kp": 11,
+      "vision": 9,
+      "dmgShare": 0.08,
+      "csAt10": 65,
+      "goldAt10": 2822,
+      "csDiff10": -30,
+      "goldDiff10": -1009,
+      "csDiff14": -35,
+      "goldDiff14": -1623,
+      "fiveStack": false,
+      "date": 1783448298968
+    },
+    {
+      "matchId": "EUW1_7911653286",
+      "queue": 440,
+      "champ": "Galio",
+      "role": "Mid",
+      "win": false,
+      "k": 3,
+      "d": 5,
+      "a": 6,
+      "kda": 1.8,
+      "csm": 5.77,
+      "kp": 36,
+      "vision": 12,
+      "dmgShare": 0.17,
+      "csAt10": 72,
+      "goldAt10": 3212,
+      "csDiff10": 9,
+      "goldDiff10": -413,
+      "csDiff14": 2,
+      "goldDiff14": -537,
+      "fiveStack": false,
+      "date": 1783445486418
+    },
     {
       "matchId": "EUW1_7910831143",
       "queue": 440,
@@ -1340,52 +1386,6 @@
       "goldDiff14": 1414,
       "fiveStack": false,
       "date": 1782414163393
-    },
-    {
-      "matchId": "EUW1_7899212947",
-      "queue": 440,
-      "champ": "Locke",
-      "role": "Mid",
-      "win": true,
-      "k": 6,
-      "d": 3,
-      "a": 3,
-      "kda": 3,
-      "csm": 6.2,
-      "kp": 41,
-      "vision": 0,
-      "dmgShare": 0.23,
-      "csAt10": 62,
-      "goldAt10": 3597,
-      "csDiff10": -2,
-      "goldDiff10": 718,
-      "csDiff14": 3,
-      "goldDiff14": 603,
-      "fiveStack": false,
-      "date": 1782412584065
-    },
-    {
-      "matchId": "EUW1_7899114207",
-      "queue": 440,
-      "champ": "Yone",
-      "role": "Top",
-      "win": true,
-      "k": 3,
-      "d": 6,
-      "a": 7,
-      "kda": 1.67,
-      "csm": 5.54,
-      "kp": 21,
-      "vision": 5,
-      "dmgShare": 0.09,
-      "csAt10": 62,
-      "goldAt10": 3047,
-      "csDiff10": -17,
-      "goldDiff10": -934,
-      "csDiff14": -26,
-      "goldDiff14": -1213,
-      "fiveStack": true,
-      "date": 1782408395495
     }
   ],
   "soloFlex": {
@@ -1423,6 +1423,14 @@
         "csDiff10": -16.5
       },
       {
+        "champ": "Galio",
+        "games": 3,
+        "wr": 33,
+        "kda": 2.3,
+        "csm": 5.94,
+        "csDiff10": -9.67
+      },
+      {
         "champ": "Mel",
         "games": 3,
         "wr": 67,
@@ -1432,11 +1440,11 @@
       },
       {
         "champ": "Locke",
-        "games": 3,
-        "wr": 33,
-        "kda": 2.43,
-        "csm": 5.43,
-        "csDiff10": -3
+        "games": 2,
+        "wr": 0,
+        "kda": 2.15,
+        "csm": 5.05,
+        "csDiff10": -3.5
       },
       {
         "champ": "Ahri",
@@ -1493,29 +1501,13 @@
         "kda": 5.33,
         "csm": 1.05,
         "csDiff10": 5
-      },
-      {
-        "champ": "Galio",
-        "games": 1,
-        "wr": 100,
-        "kda": 4.6,
-        "csm": 4.73,
-        "csDiff10": -8
-      },
-      {
-        "champ": "Yone",
-        "games": 1,
-        "wr": 100,
-        "kda": 1.67,
-        "csm": 5.54,
-        "csDiff10": -17
       }
     ],
     "roleSplits": [
       {
         "role": "Mid",
-        "games": 46,
-        "wr": 48
+        "games": 47,
+        "wr": 45
       },
       {
         "role": "Support",
@@ -1526,21 +1518,16 @@
         "role": "Jungle",
         "games": 1,
         "wr": 0
-      },
-      {
-        "role": "Top",
-        "games": 1,
-        "wr": 100
       }
     ],
     "form": [
+      "L",
+      "L",
       "W",
       "W",
       "L",
       "W",
       "W",
-      "L",
-      "L",
       "L",
       "L",
       "L"
@@ -1563,14 +1550,6 @@
         "kda": 1.6,
         "csm": 5.6,
         "csDiff10": -19
-      },
-      {
-        "champ": "Yone",
-        "games": 1,
-        "wr": 100,
-        "kda": 1.67,
-        "csm": 5.54,
-        "csDiff10": -17
       }
     ],
     "roleSplits": [
@@ -1578,17 +1557,11 @@
         "role": "Mid",
         "games": 2,
         "wr": 0
-      },
-      {
-        "role": "Top",
-        "games": 1,
-        "wr": 100
       }
     ],
     "form": [
       "L",
-      "L",
-      "W"
+      "L"
     ]
   }
 }

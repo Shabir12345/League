@@ -1,12 +1,58 @@
 {
   "player": "Harendra",
   "puuid": "q4q_teVE3JVjPkqQKIRQy4znJ8fgrCk2LHbQTZolQfPQiDL302Ry8aTT_s_njjGs8WfZM-Dw239OIw",
-  "generatedAt": "2026-07-07T07:33:31.902Z",
+  "generatedAt": "2026-07-08T06:24:11.891Z",
   "rank": {
     "solo": "Bronze III",
     "flex": "Bronze I"
   },
   "games": [
+    {
+      "matchId": "EUW1_7911610923",
+      "queue": 440,
+      "champ": "Smolder",
+      "role": "ADC",
+      "win": true,
+      "k": 13,
+      "d": 9,
+      "a": 20,
+      "kda": 3.67,
+      "csm": 5.78,
+      "kp": 53,
+      "vision": 20,
+      "dmgShare": 0.21,
+      "csAt10": 59,
+      "goldAt10": 3247,
+      "csDiff10": 1,
+      "goldDiff10": 309,
+      "csDiff14": 18,
+      "goldDiff14": 1284,
+      "fiveStack": false,
+      "date": 1783442931384
+    },
+    {
+      "matchId": "EUW1_7911574005",
+      "queue": 440,
+      "champ": "Zaahen",
+      "role": "Top",
+      "win": false,
+      "k": 3,
+      "d": 7,
+      "a": 3,
+      "kda": 0.86,
+      "csm": 5.89,
+      "kp": 26,
+      "vision": 21,
+      "dmgShare": 0.1,
+      "csAt10": 53,
+      "goldAt10": 2713,
+      "csDiff10": -22,
+      "goldDiff10": -931,
+      "csDiff14": -36,
+      "goldDiff14": -1400,
+      "fiveStack": false,
+      "date": 1783440658937
+    },
     {
       "matchId": "EUW1_7910730690",
       "queue": 440,
@@ -1340,64 +1386,10 @@
       "goldDiff14": -1111,
       "fiveStack": false,
       "date": 1769334136271
-    },
-    {
-      "matchId": "EUW1_7699631943",
-      "queue": 420,
-      "champ": "Sylas",
-      "role": "Jungle",
-      "win": false,
-      "k": 8,
-      "d": 12,
-      "a": 22,
-      "kda": 2.5,
-      "csm": 3.96,
-      "kp": 67,
-      "vision": 41,
-      "dmgShare": 0.14,
-      "csAt10": 49,
-      "goldAt10": 3648,
-      "csDiff10": -13,
-      "goldDiff10": 315,
-      "csDiff14": -12,
-      "goldDiff14": -1534,
-      "fiveStack": false,
-      "date": 1769269697350
-    },
-    {
-      "matchId": "EUW1_7699516580",
-      "queue": 420,
-      "champ": "Sylas",
-      "role": "Jungle",
-      "win": true,
-      "k": 8,
-      "d": 3,
-      "a": 9,
-      "kda": 5.67,
-      "csm": 6.41,
-      "kp": 36,
-      "vision": 28,
-      "dmgShare": 0.14,
-      "csAt10": 52,
-      "goldAt10": 3062,
-      "csDiff10": 6,
-      "goldDiff10": 322,
-      "csDiff14": 26,
-      "goldDiff14": 120,
-      "fiveStack": false,
-      "date": 1769265377774
     }
   ],
   "soloFlex": {
     "champPool": [
-      {
-        "champ": "Sylas",
-        "games": 7,
-        "wr": 43,
-        "kda": 3.19,
-        "csm": 5.06,
-        "csDiff10": -8.43
-      },
       {
         "champ": "Shen",
         "games": 5,
@@ -1407,12 +1399,36 @@
         "csDiff10": -28.6
       },
       {
+        "champ": "Sylas",
+        "games": 5,
+        "wr": 40,
+        "kda": 2.83,
+        "csm": 5.01,
+        "csDiff10": -10.4
+      },
+      {
         "champ": "Malphite",
         "games": 4,
         "wr": 25,
         "kda": 3.31,
         "csm": 7.1,
         "csDiff10": 5
+      },
+      {
+        "champ": "Smolder",
+        "games": 2,
+        "wr": 100,
+        "kda": 4.34,
+        "csm": 6.94,
+        "csDiff10": -1
+      },
+      {
+        "champ": "Zaahen",
+        "games": 2,
+        "wr": 0,
+        "kda": 0.62,
+        "csm": 6.24,
+        "csDiff10": -16.5
       },
       {
         "champ": "Jax",
@@ -1567,22 +1583,6 @@
         "csDiff10": -5
       },
       {
-        "champ": "Smolder",
-        "games": 1,
-        "wr": 100,
-        "kda": 5,
-        "csm": 8.1,
-        "csDiff10": -3
-      },
-      {
-        "champ": "Zaahen",
-        "games": 1,
-        "wr": 0,
-        "kda": 0.38,
-        "csm": 6.58,
-        "csDiff10": -11
-      },
-      {
         "champ": "Skarner",
         "games": 1,
         "wr": 100,
@@ -1713,19 +1713,19 @@
     ],
     "roleSplits": [
       {
-        "role": "Jungle",
-        "games": 20,
-        "wr": 55
+        "role": "Top",
+        "games": 19,
+        "wr": 42
       },
       {
-        "role": "Top",
+        "role": "Jungle",
         "games": 18,
-        "wr": 44
+        "wr": 56
       },
       {
         "role": "ADC",
-        "games": 16,
-        "wr": 63
+        "games": 17,
+        "wr": 65
       },
       {
         "role": "Mid",
@@ -1739,12 +1739,12 @@
       }
     ],
     "form": [
-      "L",
-      "L",
-      "L",
-      "L",
       "W",
-      "W",
+      "L",
+      "L",
+      "L",
+      "L",
+      "L",
       "W",
       "W",
       "W",
