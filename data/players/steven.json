@@ -1,12 +1,81 @@
 {
   "player": "Steven",
   "puuid": "rEUfV7nH6pNefn-stlAp3Egn0EYlr11hULP7Zdo8F0HBypEIcqZBYTHnpZC4GXko1ZmEK13LS9RboQ",
-  "generatedAt": "2026-07-09T07:38:51.765Z",
+  "generatedAt": "2026-07-10T07:30:53.119Z",
   "rank": {
     "solo": "Gold II",
     "flex": "Silver III"
   },
   "games": [
+    {
+      "matchId": "EUW1_7913228180",
+      "queue": 420,
+      "champ": "Ahri",
+      "role": "Mid",
+      "win": true,
+      "k": 5,
+      "d": 3,
+      "a": 6,
+      "kda": 3.67,
+      "csm": 6.7,
+      "kp": 29,
+      "vision": 13,
+      "dmgShare": 0.18,
+      "csAt10": 72,
+      "goldAt10": 3657,
+      "csDiff10": 21,
+      "goldDiff10": 1050,
+      "csDiff14": 24,
+      "goldDiff14": 1133,
+      "fiveStack": false,
+      "date": 1783591335290
+    },
+    {
+      "matchId": "EUW1_7913216556",
+      "queue": 420,
+      "champ": "Leblanc",
+      "role": "Mid",
+      "win": false,
+      "k": 3,
+      "d": 4,
+      "a": 5,
+      "kda": 2,
+      "csm": 5.17,
+      "kp": 36,
+      "vision": 8,
+      "dmgShare": 0.16,
+      "csAt10": 62,
+      "goldAt10": 2726,
+      "csDiff10": -28,
+      "goldDiff10": -699,
+      "csDiff14": -56,
+      "goldDiff14": -1450,
+      "fiveStack": false,
+      "date": 1783589132534
+    },
+    {
+      "matchId": "EUW1_7913192018",
+      "queue": 420,
+      "champ": "Lux",
+      "role": "Mid",
+      "win": true,
+      "k": 11,
+      "d": 2,
+      "a": 7,
+      "kda": 9,
+      "csm": 7.71,
+      "kp": 49,
+      "vision": 20,
+      "dmgShare": 0.3,
+      "csAt10": 72,
+      "goldAt10": 3334,
+      "csDiff10": 2,
+      "goldDiff10": 122,
+      "csDiff14": 5,
+      "goldDiff14": 508,
+      "fiveStack": false,
+      "date": 1783586246927
+    },
     {
       "matchId": "EUW1_7912448543",
       "queue": 420,
@@ -1317,118 +1386,49 @@
       "goldDiff14": -1563,
       "fiveStack": false,
       "date": 1782909222104
-    },
-    {
-      "matchId": "EUW1_7903609004",
-      "queue": 440,
-      "champ": "Seraphine",
-      "role": "Support",
-      "win": true,
-      "k": 6,
-      "d": 3,
-      "a": 17,
-      "kda": 7.67,
-      "csm": 1.33,
-      "kp": 59,
-      "vision": 70,
-      "dmgShare": 0.2,
-      "csAt10": 8,
-      "goldAt10": 2529,
-      "csDiff10": -8,
-      "goldDiff10": 147,
-      "csDiff14": -10,
-      "goldDiff14": 384,
-      "fiveStack": false,
-      "date": 1782756272595
-    },
-    {
-      "matchId": "EUW1_7903579330",
-      "queue": 440,
-      "champ": "Mel",
-      "role": "Mid",
-      "win": true,
-      "k": 7,
-      "d": 0,
-      "a": 0,
-      "kda": 7,
-      "csm": 8.5,
-      "kp": 39,
-      "vision": 3,
-      "dmgShare": 0.29,
-      "csAt10": 85,
-      "goldAt10": 4103,
-      "csDiff10": 49,
-      "goldDiff10": 799,
-      "csDiff14": 70,
-      "goldDiff14": 2257,
-      "fiveStack": false,
-      "date": 1782754940490
-    },
-    {
-      "matchId": "EUW1_7902796618",
-      "queue": 440,
-      "champ": "Orianna",
-      "role": "Mid",
-      "win": false,
-      "k": 5,
-      "d": 7,
-      "a": 16,
-      "kda": 3,
-      "csm": 4.52,
-      "kp": 54,
-      "vision": 5,
-      "dmgShare": 0.17,
-      "csAt10": 58,
-      "goldAt10": 3111,
-      "csDiff10": -16,
-      "goldDiff10": -301,
-      "csDiff14": -31,
-      "goldDiff14": -523,
-      "fiveStack": false,
-      "date": 1782678749041
     }
   ],
   "soloFlex": {
     "champPool": [
       {
         "champ": "Leblanc",
-        "games": 20,
-        "wr": 50,
-        "kda": 6.04,
-        "csm": 4.97,
-        "csDiff10": -14.89
+        "games": 21,
+        "wr": 48,
+        "kda": 5.85,
+        "csm": 4.98,
+        "csDiff10": -15.55
       },
       {
         "champ": "Lux",
-        "games": 11,
-        "wr": 55,
-        "kda": 6.09,
-        "csm": 5.36,
-        "csDiff10": -0.3
+        "games": 12,
+        "wr": 58,
+        "kda": 6.33,
+        "csm": 5.56,
+        "csDiff10": -0.09
       },
       {
         "champ": "Seraphine",
-        "games": 6,
-        "wr": 83,
-        "kda": 3.67,
-        "csm": 1.24,
-        "csDiff10": -13.2
-      },
-      {
-        "champ": "Mel",
-        "games": 4,
-        "wr": 50,
-        "kda": 2.7,
-        "csm": 8.07,
-        "csDiff10": 22
+        "games": 5,
+        "wr": 80,
+        "kda": 2.88,
+        "csm": 1.23,
+        "csDiff10": -14.5
       },
       {
         "champ": "Ahri",
+        "games": 4,
+        "wr": 50,
+        "kda": 4.06,
+        "csm": 6.21,
+        "csDiff10": -1.75
+      },
+      {
+        "champ": "Mel",
         "games": 3,
         "wr": 33,
-        "kda": 4.19,
-        "csm": 6.05,
-        "csDiff10": -9.33
+        "kda": 1.26,
+        "csm": 7.92,
+        "csDiff10": 8.5
       },
       {
         "champ": "Malzahar",
@@ -1439,20 +1439,20 @@
         "csDiff10": 4
       },
       {
-        "champ": "Orianna",
-        "games": 3,
-        "wr": 33,
-        "kda": 4.09,
-        "csm": 5.42,
-        "csDiff10": -17.33
-      },
-      {
         "champ": "Galio",
         "games": 2,
         "wr": 0,
         "kda": 1.15,
         "csm": 6.54,
         "csDiff10": -10.5
+      },
+      {
+        "champ": "Orianna",
+        "games": 2,
+        "wr": 50,
+        "kda": 4.64,
+        "csm": 5.87,
+        "csDiff10": -18
       },
       {
         "champ": "Yasuo",
@@ -1522,13 +1522,13 @@
     "roleSplits": [
       {
         "role": "Mid",
-        "games": 50,
-        "wr": 46
+        "games": 51,
+        "wr": 47
       },
       {
         "role": "Support",
-        "games": 8,
-        "wr": 88
+        "games": 7,
+        "wr": 86
       },
       {
         "role": "ADC",
@@ -1542,15 +1542,15 @@
       }
     ],
     "form": [
-      "L",
-      "L",
-      "L",
-      "L",
-      "L",
+      "W",
       "L",
       "W",
-      "W",
-      "W",
+      "L",
+      "L",
+      "L",
+      "L",
+      "L",
+      "L",
       "W"
     ]
   },
